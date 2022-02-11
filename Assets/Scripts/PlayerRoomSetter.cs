@@ -1,0 +1,84 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerRoomSetter : MonoBehaviour
+{
+    [SerializeField]
+    Player player;
+
+    [SerializeField]
+    GameMapCreator mapCreator;
+
+    [SerializeField]
+    GameEvent onPlayerPositionUpdated;
+
+    [SerializeField]
+    GameEvent moveDownEvent, moveUpEvent, moveLeftEvent, moveRightEvent;
+
+    enum SpawnLocation { RIGHT, LEFT, TOP, BOTTOM };
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    public void SetPlayerPosition(GameEvent moveEvent)
+    {
+        Debug.LogWarning("Should move player");
+        Vector2Int playerNewLocation = player.CurrentRoomLocation;
+        SpawnLocation newSpawn = SpawnLocation.LEFT;
+        if (moveEvent == moveDownEvent)
+        {
+            newSpawn = SpawnLocation.TOP;
+            playerNewLocation.y--;
+        }
+        else if (moveEvent == moveUpEvent)
+        {
+            newSpawn = SpawnLocation.BOTTOM;
+            playerNewLocation.y++;
+        }
+        else if (moveEvent == moveLeftEvent)
+        {
+            newSpawn = SpawnLocation.RIGHT;
+            playerNewLocation.x--;
+        }
+        else if (moveEvent == moveRightEvent)
+        {
+            newSpawn = SpawnLocation.LEFT;
+            playerNewLocation.x++;
+        }
+
+        var room = mapCreator.GetRoomAtLocation(playerNewLocation);
+
+        if (room == null)
+        {
+            Debug.LogError("Missing room for location: " + playerNewLocation);
+            return;
+        }
+
+        //Flip on entrance to other room
+
+        player.CurrentRoomLocation = playerNewLocation;
+
+        switch (newSpawn)
+        {
+            case SpawnLocation.LEFT:
+                player.transform.position = room.LeftPlayerSpawn.transform.position;
+                break;
+            case SpawnLocation.RIGHT:
+                player.transform.position = room.RightPlayerSpawn.transform.position;
+                break;
+            case SpawnLocation.TOP:
+                player.transform.position = room.UpPlayerSpawn.transform.position;
+                break;
+            case SpawnLocation.BOTTOM:
+                player.transform.position = room.DownPlayerSpawn.transform.position;
+                break;
+        }
+
+        onPlayerPositionUpdated.Invoke();
+
+    }
+}
