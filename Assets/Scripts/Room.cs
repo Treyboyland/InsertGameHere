@@ -69,4 +69,13 @@ public class Room : MonoBehaviour
         }
         return false;
     }
+
+    public void GenerateRoomStuff(RoomDataSO roomData)
+    {
+        foreach(var spawn in roomData.Spawns)
+        {
+            var obj = Instantiate(spawn.Prefab, spawn.Location, Quaternion.identity, transform);
+            //TODO: We probably want to disable these on room leave if enemy, and then reenable?
+        }
+    }
 }

@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleMove(InputAction.CallbackContext context)
     {
-        Debug.LogWarning("Handling");
+        //Debug.LogWarning("Handling");
         currentMovementVector = context.ReadValue<Vector2>();
         elapsed = 0;
     }

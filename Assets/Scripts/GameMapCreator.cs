@@ -22,6 +22,15 @@ public class GameMapCreator : MonoBehaviour
     [SerializeField]
     GameEvent onSetPlayerStartingPosition;
 
+    [SerializeField]
+    RoomDataSO coinRoom;
+
+    [SerializeField]
+    RoomDataSO cabinetRoom;
+
+    [SerializeField]
+    RoomDataSO cartridgeRoom;
+
     MapGenerator.MapData mapData;
 
     Dictionary<Vector2Int, Room> roomDictionary = new Dictionary<Vector2Int, Room>();
@@ -68,6 +77,17 @@ public class GameMapCreator : MonoBehaviour
                 }
             }
         }
+
+        mapData.DeadEnds.Shuffle();
+        Vector2Int coinRoomLocation, cartridgeRoomLocation, cabinetRoomLocation;
+
+        coinRoomLocation = mapData.DeadEnds[0];
+        cartridgeRoomLocation = mapData.DeadEnds[1];
+        cabinetRoomLocation = mapData.DeadEnds[2];
+
+        roomDictionary[coinRoomLocation].GenerateRoomStuff(coinRoom);
+        roomDictionary[cartridgeRoomLocation].GenerateRoomStuff(cartridgeRoom);
+        roomDictionary[cabinetRoomLocation].GenerateRoomStuff(cabinetRoom);
 
         onSetPlayerStartingPosition.Invoke();
 

@@ -350,7 +350,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.06354573, g: 0.07552113, b: 0.09433961, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -620,6 +620,9 @@ MonoBehaviour:
   spacing: {x: 0, y: 0}
   player: {fileID: 1772886971}
   onSetPlayerStartingPosition: {fileID: 11400000, guid: beababd693fce8846a6b593b154a35b5, type: 2}
+  coinRoom: {fileID: 11400000, guid: f0aa500f0f9ff1a449c2fd2a244b0ea3, type: 2}
+  cabinetRoom: {fileID: 11400000, guid: 287a0f1bd8ad91f4b8976d83015c2cad, type: 2}
+  cartridgeRoom: {fileID: 11400000, guid: 00d307a2b0156484d874a3cc0ad11f0e, type: 2}
 --- !u!4 &1062533287
 Transform:
   m_ObjectHideFlags: 0
@@ -833,6 +836,7 @@ GameObject:
   - component: {fileID: 1772886966}
   - component: {fileID: 1772886971}
   - component: {fileID: 1772886970}
+  - component: {fileID: 1772886972}
   - component: {fileID: 1772886969}
   - component: {fileID: 1772886965}
   - component: {fileID: 1772886968}
@@ -1094,6 +1098,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21c81610c6feb748854932f6b1ef1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1772886972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772886964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d20c73acad433f4e93db4db8b10a78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialInventory: []
 --- !u!1 &1838362976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,6 +1265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -1261,6 +1279,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!114 &1960152736
 MonoBehaviour:
   m_ObjectHideFlags: 0

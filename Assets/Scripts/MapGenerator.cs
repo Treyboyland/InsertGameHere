@@ -20,7 +20,7 @@ public class MapGenerator : MonoBehaviour
     /// <summary>
     /// Coin, Cartridge, Cabinet
     /// </summary>
-    const int NUM_SPECIAL_ROOMS = 3;
+    public const int NUM_SPECIAL_ROOMS = 3;
 
     List<Vector2Int> locations;
 
