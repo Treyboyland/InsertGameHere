@@ -25,11 +25,16 @@ public class Room : MonoBehaviour
     /// <value></value>
     public Vector2Int RoomLocation { get { return roomLocation; } set { roomLocation = value; } }
 
+    [Header("Spawns for player")]
     [SerializeField]
     GameObject leftPlayerSpawn, rightPlayerSpawn, upPlayerSpawn, downPlayerSpawn, centerPlayerSpawn;
 
+    [Header("Doors")]
     [SerializeField]
     DoorType leftDoor, rightDoor, upDoor, downDoor;
+
+    [Header("Exit Triggers")]
+    GameObject leftTrigger, rightTrigger, upTrigger, downTrigger;
 
     public GameObject LeftPlayerSpawn { get { return leftPlayerSpawn; } }
     public GameObject RightPlayerSpawn { get { return rightPlayerSpawn; } }
@@ -72,9 +77,10 @@ public class Room : MonoBehaviour
 
     public void GenerateRoomStuff(RoomDataSO roomData)
     {
-        foreach(var spawn in roomData.Spawns)
+        foreach (var spawn in roomData.Spawns)
         {
-            var obj = Instantiate(spawn.Prefab, spawn.Location, Quaternion.identity, transform);
+            var obj = Instantiate(spawn.Prefab, transform);
+            obj.transform.localPosition = spawn.Location;
             //TODO: We probably want to disable these on room leave if enemy, and then reenable?
         }
     }

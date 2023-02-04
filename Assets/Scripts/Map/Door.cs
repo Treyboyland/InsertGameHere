@@ -11,6 +11,9 @@ public class Door : MonoBehaviour
     Collider2D doorCollider;
 
     [SerializeField]
+    RoomTrigger triggerForDoor;
+
+    [SerializeField]
     Room room;
 
     [SerializeField]
@@ -33,5 +36,6 @@ public class Door : MonoBehaviour
         var color = doorSprite.color;
         color.a = open ? 0 : 1;
         doorSprite.color = color;
+        triggerForDoor.Trigger.enabled = open;
     }
 }

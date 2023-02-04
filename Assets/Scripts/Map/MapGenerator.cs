@@ -189,4 +189,9 @@ public class MapGenerator : MonoBehaviour
 
         return count;
     }
+
+    public void IncreaseLevel()
+    {
+        level++;
+    }
 }

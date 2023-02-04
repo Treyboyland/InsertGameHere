@@ -26,7 +26,7 @@ public class PlayerRoomSetter : MonoBehaviour
 
     public void SetPlayerPosition(GameEvent moveEvent)
     {
-        Debug.LogWarning("Should move player");
+        //Debug.LogWarning("Should move player");
         Vector2Int playerNewLocation = player.CurrentRoomLocation;
         SpawnLocation newSpawn = SpawnLocation.LEFT;
         if (moveEvent == moveDownEvent)
