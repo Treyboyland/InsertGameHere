@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6177391645608693886}
   - component: {fileID: 6177391645608693872}
   - component: {fileID: 6177391645608693875}
+  - component: {fileID: 1988203469620843774}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   owner: {fileID: 0}
   stats: {fileID: 0}
   body: {fileID: 6177391645608693875}
+  disabler: {fileID: 1988203469620843774}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   neutralOwner: {fileID: 11400000, guid: 780ed82ef9a81ff41971063e1a44f195, type: 2}
   enemyOwner: {fileID: 11400000, guid: d5fc2bb9062dea44ba5329f4d79c8087, type: 2}
@@ -117,7 +119,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -138,9 +140,23 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1988203469620843774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6177391645608693887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2e515f0bf9fc14cb737116df10e5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsToWait: 0
+  disabledAtLocation: {fileID: 0}

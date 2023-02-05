@@ -26,6 +26,14 @@ public class GameMapCreator : MonoBehaviour
     RoomDataSO coinRoom;
 
     [SerializeField]
+    List<RoomDataSO> codedRooms;
+
+    [SerializeField]
+    List<DesignerRoom> designedRooms;
+
+    List<List<RoomDataSO.SpawnData>> randomRooms = new List<List<RoomDataSO.SpawnData>>();
+
+    [SerializeField]
     RoomDataSO cabinetRoom;
 
     [SerializeField]
@@ -38,6 +46,7 @@ public class GameMapCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AddRandomRooms();
         GenerateGameMap();
     }
 
@@ -78,6 +87,44 @@ public class GameMapCreator : MonoBehaviour
             }
         }
 
+        CreateSpecialRooms();
+        CreateGeneralRooms();
+
+        onSetPlayerStartingPosition.Invoke();
+
+        // player.transform.position = new Vector3(mapData.StartingPosition.x * dimensions.x + spacing.x * mapData.StartingPosition.x,
+        //     mapData.StartingPosition.y * dimensions.y + spacing.y + mapData.StartingPosition.y);
+    }
+
+    void AddRandomRooms()
+    {
+        foreach(var room in designedRooms)
+        {
+            randomRooms.Add(room);
+        }
+        foreach(var room in codedRooms)
+        {
+            randomRooms.Add(room);
+        }
+    }
+
+    void CreateGeneralRooms()
+    {
+        foreach (var keyVal in roomDictionary)
+        {
+            //TODO: Should we restrict to the used special rooms?
+            if (keyVal.Key == mapData.StartingPosition || mapData.DeadEnds.Contains(keyVal.Key))
+            {
+                continue;
+            }
+
+            keyVal.Value.GenerateRoomStuff(randomRooms.RandomItem());
+        }
+    }
+
+
+    void CreateSpecialRooms()
+    {
         mapData.DeadEnds.Shuffle();
         Vector2Int coinRoomLocation, cartridgeRoomLocation, cabinetRoomLocation;
 
@@ -88,11 +135,6 @@ public class GameMapCreator : MonoBehaviour
         roomDictionary[coinRoomLocation].GenerateRoomStuff(coinRoom);
         roomDictionary[cartridgeRoomLocation].GenerateRoomStuff(cartridgeRoom);
         roomDictionary[cabinetRoomLocation].GenerateRoomStuff(cabinetRoom);
-
-        onSetPlayerStartingPosition.Invoke();
-
-        // player.transform.position = new Vector3(mapData.StartingPosition.x * dimensions.x + spacing.x * mapData.StartingPosition.x,
-        //     mapData.StartingPosition.y * dimensions.y + spacing.y + mapData.StartingPosition.y);
     }
 
     public Room GetRoomAtLocation(Vector2Int location)

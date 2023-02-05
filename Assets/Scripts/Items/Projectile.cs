@@ -13,6 +13,8 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     Rigidbody2D body;
 
+    [SerializeField]
+    DisableAfterTime disabler;
 
     public OwnerTypeSO Owner { get => owner; set => owner = value; }
 
@@ -33,6 +35,14 @@ public class Projectile : MonoBehaviour
     DirectionSO left;
     [SerializeField]
     DirectionSO right;
+
+    /// <summary>
+    /// This function is called when the object becomes enabled and active.
+    /// </summary>
+    private void OnEnable()
+    {
+        disabler.SecondsToWait = stats.Lifetime;
+    }
 
     void DisableIfNotPiercing()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,16 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     PlayerWeapon weapon;
+
+    [Header("Directions")]
+    [SerializeField]
+    DirectionSO up;
+    [SerializeField]
+    DirectionSO down;
+    [SerializeField]
+    DirectionSO left;
+    [SerializeField]
+    DirectionSO right;
 
     public bool HasQuarter { get; set; } = false;
 
@@ -46,6 +57,38 @@ public class Player : MonoBehaviour
         if (weapon)
         {
             weapon.HandleFireAction(direction);
+        }
+    }
+
+    public void HandleWeaponFireLeft(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            FireWeapon(left);
+        }
+    }
+
+    public void HandleWeaponFireRight(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            FireWeapon(right);
+        }
+    }
+
+    public void HandleWeaponFireUp(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            FireWeapon(up);
+        }
+    }
+
+    public void HandleWeaponFireDown(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            FireWeapon(down);
         }
     }
 }

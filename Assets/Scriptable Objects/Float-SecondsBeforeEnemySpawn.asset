@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e98883551e0f8d24485ea9fcd574ee77, type: 3}
   m_Name: Float-SecondsBeforeEnemySpawn
   m_EditorClassIdentifier: 
-  value: 0.25
+  value: 0.5

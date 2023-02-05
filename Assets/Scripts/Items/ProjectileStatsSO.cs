@@ -14,10 +14,16 @@ public class ProjectileStatsSO : ScriptableObject
     bool isPiercing;
 
     [Tooltip("How fast this bullet travels")]
+    [SerializeField]
     float speed;
+
+    [Tooltip("How long this bullet lasts")]
+    [SerializeField]
+    float lifetime;
 
     public int Damage { get => damage; }
 
     public bool IsPiercing { get => isPiercing; }
     public float Speed { get => speed; }
+    public float Lifetime { get => lifetime; }
 }
