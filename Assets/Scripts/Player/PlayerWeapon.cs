@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour
 {
-    
+    public virtual void HandleFireAction(DirectionSO direction)
+    {
+        
+    }
 }

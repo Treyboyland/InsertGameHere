@@ -7,6 +7,9 @@ using UnityEngine.Events;
 public class Room : MonoBehaviour
 {
     [SerializeField]
+    FloatValueSO secondsBeforeSpawn;
+
+    [SerializeField]
     bool isOpen;
 
     public UnityEvent<bool> OnOpenStateChanged = new UnityEvent<bool>();
@@ -47,6 +50,13 @@ public class Room : MonoBehaviour
     public bool CanUpOpen { get; set; } = false;
     public bool CanDownOpen { get; set; } = false;
 
+    List<GameObject> spawnedObjects = new List<GameObject>();
+    List<GameObject> enemies = new List<GameObject>();
+
+    public const string ENEMY_TAG = "Enemy";
+    public const string OBSTACLE_TAG = "Obstacle";
+
+    bool alreadySpawned = false;
 
     // Start is called before the first frame update
     void Start()
@@ -75,13 +85,55 @@ public class Room : MonoBehaviour
         return false;
     }
 
-    public void GenerateRoomStuff(RoomDataSO roomData)
+    void DestroyOldStuff()
     {
-        foreach (var spawn in roomData.Spawns)
+        //TODO: Inefficient
+        foreach (var obj in spawnedObjects)
+        {
+            Destroy(obj);
+        }
+        alreadySpawned = false;
+    }
+
+    public void GenerateRoomStuff(List<RoomDataSO.SpawnData> roomData)
+    {
+        DestroyOldStuff();
+
+        foreach (var spawn in roomData)
         {
             var obj = Instantiate(spawn.Prefab, transform);
             obj.transform.localPosition = spawn.Location;
+            spawnedObjects.Add(obj);
+            if (obj.tag == ENEMY_TAG)
+            {
+                obj.gameObject.SetActive(false);
+                enemies.Add(obj);
+            }
             //TODO: We probably want to disable these on room leave if enemy, and then reenable?
         }
+    }
+
+    public void CheckToSpawnEnemies(Vector3Int pos)
+    {
+        Vector2Int posCast = new Vector2Int(pos.x, pos.y);
+
+        if (gameObject.activeInHierarchy && !alreadySpawned && posCast == roomLocation)
+        {
+            StartCoroutine(WaitThenSpawn());
+        }
+        else
+        {
+            StopAllCoroutines();
+        }
+    }
+
+    IEnumerator WaitThenSpawn()
+    {
+        yield return new WaitForSeconds(secondsBeforeSpawn);
+        foreach (var obj in enemies)
+        {
+            obj.gameObject.SetActive(true);
+        }
+        alreadySpawned = true;
     }
 }

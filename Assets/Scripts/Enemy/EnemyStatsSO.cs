@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStatsSO : MonoBehaviour
+[CreateAssetMenu(fileName = "EnemyStats-", menuName = "Game/Enemy Stats")]
+public class EnemyStatsSO : ScriptableObject
 {
     [SerializeField]
     int health;

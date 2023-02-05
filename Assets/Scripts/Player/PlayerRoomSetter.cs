@@ -14,6 +14,9 @@ public class PlayerRoomSetter : MonoBehaviour
     GameEvent onPlayerPositionUpdated;
 
     [SerializeField]
+    GameEventVectorInt onNewPlayerMapPosition;
+
+    [SerializeField]
     GameEvent moveDownEvent, moveUpEvent, moveLeftEvent, moveRightEvent;
 
     enum SpawnLocation { RIGHT, LEFT, TOP, BOTTOM };
@@ -79,6 +82,8 @@ public class PlayerRoomSetter : MonoBehaviour
         }
 
         onPlayerPositionUpdated.Invoke();
-
+        Vector3Int pos = new Vector3Int(player.CurrentRoomLocation.x, player.CurrentRoomLocation.y, 0);
+        onNewPlayerMapPosition.Value = pos;
+        onNewPlayerMapPosition.Invoke();
     }
 }

@@ -18,4 +18,9 @@ public class RoomDataSO : ScriptableObject
         public GameObject Prefab;
         public Vector2 Location;
     }
+
+    public static implicit operator List<SpawnData>(RoomDataSO data)
+    {
+        return data.spawns;
+    }
 }

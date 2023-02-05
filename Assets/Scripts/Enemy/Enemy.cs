@@ -7,15 +7,21 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     EnemyStatsSO stats;
 
+    int currentHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        currentHealth = stats.Health;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damage)
     {
+        currentHealth -= damage;
 
+        if (currentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -4,9 +4,48 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    int maxLives;
+
+    [SerializeField]
+    PlayerWeapon weapon;
+
     public bool HasQuarter { get; set; } = false;
 
     public bool HasCartridge { get; set; } = false;
 
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
+
+    int currentLives;
+
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    private void Start()
+    {
+        currentLives = 0;
+    }
+
+    public void TakeDamage()
+    {
+        currentLives--;
+        if (currentLives <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void FireWeapon(DirectionSO direction)
+    {
+        if (weapon)
+        {
+            weapon.HandleFireAction(direction);
+        }
+    }
 }

@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameEvent", menuName = "Game Event/Vector Event")]
-public class GameEventVector : ScriptableObject
+[CreateAssetMenu(fileName = "GameEvent", menuName = "Game Event/VectorInt Event")]
+public class GameEventVectorInt : ScriptableObject
 {
-    List<GameEventListenerVector> listeners = new List<GameEventListenerVector>();
+    List<GameEventListenerVectorInt> listeners = new List<GameEventListenerVectorInt>();
 
-    public Vector3 Value;
+    public Vector3Int Value;
 
-    public void AddListener(GameEventListenerVector listener)
+    public void AddListener(GameEventListenerVectorInt listener)
     {
         if (!listeners.Contains(listener))
         {
@@ -17,7 +17,7 @@ public class GameEventVector : ScriptableObject
         }
     }
 
-    public void RemoveListener(GameEventListenerVector listener)
+    public void RemoveListener(GameEventListenerVectorInt listener)
     {
         listeners.Remove(listener);
     }
