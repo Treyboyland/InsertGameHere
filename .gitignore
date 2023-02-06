@@ -29,6 +29,9 @@
 # Visual Studio Code Project directory
 .vscode/
 
+# Screenshot directory
+/[Ss]creenshots/
+
 # Gradle cache directory
 .gradle/
 

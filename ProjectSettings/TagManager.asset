@@ -40,8 +40,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4191995497
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy Particle
+    uniqueID: 3112642839
     locked: 0
   - name: Player
     uniqueID: 1888620955
