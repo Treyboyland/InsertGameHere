@@ -22,8 +22,7 @@ public class GameMapCreator : MonoBehaviour
     [SerializeField]
     GameEvent onSetPlayerStartingPosition;
 
-    [SerializeField]
-    RoomDataSO coinRoom;
+    [Header("Rooms")]
 
     [SerializeField]
     List<RoomDataSO> codedRooms;
@@ -34,14 +33,28 @@ public class GameMapCreator : MonoBehaviour
     List<List<RoomDataSO.SpawnData>> randomRooms = new List<List<RoomDataSO.SpawnData>>();
 
     [SerializeField]
+    RoomDataSO coinRoom;
+
+    [SerializeField]
     RoomDataSO cabinetRoom;
 
     [SerializeField]
     RoomDataSO cartridgeRoom;
 
+    [Header("Themes")]
+    [SerializeField]
+    RoomThemeSO specialRoomTheme;
+
+    [SerializeField]
+    List<RoomThemeSO> otherThemes;
+
     MapGenerator.MapData mapData;
 
     Dictionary<Vector2Int, Room> roomDictionary = new Dictionary<Vector2Int, Room>();
+
+    RoomThemeSO chosenTheme;
+
+    List<Vector2Int> specialRoomLocations = new List<Vector2Int>();
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +65,10 @@ public class GameMapCreator : MonoBehaviour
 
     public void GenerateGameMap()
     {
+        chosenTheme = otherThemes.RandomItem();
         roomPool.DisableAll();
         mapData = generator.GenerateMap();
+        specialRoomLocations.Clear();
         roomDictionary.Clear();
         for (int x = 0; x < mapData.Map.GetLength(0); x++)
         {
@@ -89,6 +104,7 @@ public class GameMapCreator : MonoBehaviour
 
         CreateSpecialRooms();
         CreateGeneralRooms();
+        SetThemeForSpecialRooms();
 
         onSetPlayerStartingPosition.Invoke();
 
@@ -98,11 +114,11 @@ public class GameMapCreator : MonoBehaviour
 
     void AddRandomRooms()
     {
-        foreach(var room in designedRooms)
+        foreach (var room in designedRooms)
         {
             randomRooms.Add(room);
         }
-        foreach(var room in codedRooms)
+        foreach (var room in codedRooms)
         {
             randomRooms.Add(room);
         }
@@ -113,6 +129,7 @@ public class GameMapCreator : MonoBehaviour
         foreach (var keyVal in roomDictionary)
         {
             //TODO: Should we restrict to the used special rooms?
+            keyVal.Value.OnSetTheme.Invoke(chosenTheme);
             if (keyVal.Key == mapData.StartingPosition || mapData.DeadEnds.Contains(keyVal.Key))
             {
                 continue;
@@ -132,9 +149,21 @@ public class GameMapCreator : MonoBehaviour
         cartridgeRoomLocation = mapData.DeadEnds[1];
         cabinetRoomLocation = mapData.DeadEnds[2];
 
+        specialRoomLocations.Add(coinRoomLocation);
+        specialRoomLocations.Add(cartridgeRoomLocation);
+        specialRoomLocations.Add(cabinetRoomLocation);
+
         roomDictionary[coinRoomLocation].GenerateRoomStuff(coinRoom);
         roomDictionary[cartridgeRoomLocation].GenerateRoomStuff(cartridgeRoom);
         roomDictionary[cabinetRoomLocation].GenerateRoomStuff(cabinetRoom);
+    }
+
+    void SetThemeForSpecialRooms()
+    {
+        foreach (var location in specialRoomLocations)
+        {
+            roomDictionary[location].OnSetTheme.Invoke(specialRoomTheme);
+        }
     }
 
     public Room GetRoomAtLocation(Vector2Int location)

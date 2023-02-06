@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
+    Player player;
+
+    [SerializeField]
     float speed;
 
     [SerializeField]
@@ -38,17 +41,19 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsed += Time.deltaTime;
-        if (elapsed >= secondsToWait && body.velocity.sqrMagnitude < thresholdMagnitude)
+        if (player.CanPerformAction)
         {
-            body.velocity = new Vector2();
+            elapsed += Time.deltaTime;
+            if (elapsed >= secondsToWait && body.velocity.sqrMagnitude < thresholdMagnitude)
+            {
+                body.velocity = new Vector2();
+            }
+            Move();
         }
-        Move();
     }
 
     void Move()
     {
-
         Vector2 movement = currentMovementVector;
         if (movement != new Vector2())
         {

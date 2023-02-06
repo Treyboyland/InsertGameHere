@@ -12,7 +12,12 @@ public class Room : MonoBehaviour
     [SerializeField]
     bool isOpen;
 
+    [SerializeField]
+    ParticleStopOnEnemySpawn spawnParticle;
+
     public UnityEvent<bool> OnOpenStateChanged = new UnityEvent<bool>();
+
+    public UnityEvent<RoomThemeSO> OnSetTheme = new UnityEvent<RoomThemeSO>();
 
     public bool IsOpen
     { get { return isOpen; } set { isOpen = value; OnOpenStateChanged.Invoke(isOpen); } }
@@ -129,10 +134,26 @@ public class Room : MonoBehaviour
 
     IEnumerator WaitThenSpawn()
     {
+        foreach (var obj in enemies)
+        {
+            if (!obj)
+            {
+                continue;
+            }
+            var particle = Instantiate(spawnParticle);
+            var enemy = obj.GetComponent<Enemy>();
+            enemy.CurrentRoom = RoomLocation;
+            particle.transform.position = obj.transform.position;
+            particle.Enemy = enemy;
+            particle.gameObject.SetActive(true);
+        }
         yield return new WaitForSeconds(secondsBeforeSpawn);
         foreach (var obj in enemies)
         {
-            obj.gameObject.SetActive(true);
+            if (obj)
+            {
+                obj.gameObject.SetActive(true);
+            }
         }
         alreadySpawned = true;
     }

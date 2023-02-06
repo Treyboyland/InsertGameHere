@@ -185,6 +185,8 @@ MonoBehaviour:
   - Item: {fileID: 11400000, guid: 8bd5ea00b1a289d4a8953a8ef139ce91, type: 2}
     Count: 1
   onCabinetPassed: {fileID: 11400000, guid: 12db31de43785664b9b8c8019595f987, type: 2}
+  onPassSound: {fileID: 11400000, guid: 438412f51731ee649ae61075fc1697fe, type: 2}
+  onFailSound: {fileID: 11400000, guid: b4489c982b32b5a4f81087c98ab1a366, type: 2}
 --- !u!61 &6104367507242323703
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -23,6 +23,11 @@ public class PlayerInventory : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        Initialize();
+    }
+
+    void Initialize()
+    {
         foreach (var slot in initialInventory)
         {
             AddItem(slot);
@@ -131,5 +136,11 @@ public class PlayerInventory : MonoBehaviour
         {
             RemoveItem(item, GetItemCount(item));
         }
+    }
+
+    public void ClearInventory()
+    {
+        inventory.Clear();
+        Initialize();
     }
 }

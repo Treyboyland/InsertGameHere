@@ -7,6 +7,9 @@ public class Pickup : MonoBehaviour
     [SerializeField]
     PlayerInventory.InventorySlot itemData;
 
+    [SerializeField]
+    GameEvent onPickup;
+
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
     /// object (2D physics only).
@@ -19,6 +22,7 @@ public class Pickup : MonoBehaviour
         if (inventory)
         {
             inventory.AddItem(itemData);
+            onPickup?.Invoke();
             gameObject.SetActive(false);
         }
     }

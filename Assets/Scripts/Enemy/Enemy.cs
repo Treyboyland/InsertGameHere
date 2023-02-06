@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class Enemy : MonoBehaviour
     EnemyStatsSO stats;
 
     int currentHealth;
+
+    public UnityEvent OnEnemySpawned;
+
+    public Vector2Int CurrentRoom { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +26,12 @@ public class Enemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            gameObject.SetActive(false);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        gameObject.SetActive(false);
     }
 }

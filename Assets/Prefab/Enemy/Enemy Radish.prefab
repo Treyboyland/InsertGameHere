@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5288410813708758340}
   - component: {fileID: 5288410813708758341}
+  - component: {fileID: 3536501850672711792}
+  - component: {fileID: 3506891251882951333}
   - component: {fileID: 5288410813708758343}
   - component: {fileID: 5288410813708758342}
   - component: {fileID: 5288410813708758337}
+  - component: {fileID: 3357427974313413144}
   m_Layer: 0
   m_Name: Enemy Radish
   m_TagString: Enemy
@@ -47,6 +50,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: e4b4bacb96c843e4fb05421ed905c2fe, type: 2}
+  OnEnemySpawned:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3536501850672711792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288410813708758336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11a247ddd7203d45866c5a8600f74d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3506891251882951333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288410813708758336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cc7f7f75855dd4b9eed26285353ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 5288410813708758341}
+  body: {fileID: 3357427974313413144}
+  secondsBetweenMove: {fileID: 11400000, guid: 4c2b2e2b5a9027f4b8afecb45df0e7fb, type: 2}
+  force: {fileID: 11400000, guid: 3c209ab512a1cec44b680baf394b3a0e, type: 2}
 --- !u!212 &5288410813708758343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84,8 +118,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 861158101
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e9f558ed906fc64289511a4ffa96233, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -134,3 +168,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &3357427974313413144
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288410813708758336}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

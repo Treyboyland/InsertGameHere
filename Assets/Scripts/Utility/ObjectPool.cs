@@ -39,6 +39,12 @@ public class ObjectPool : MonoBehaviour
         return CreateObject();
     }
 
+    public void ActivateObject()
+    {
+        var obj = GetObject();
+        obj.SetActive(true);
+    }
+
     public void DisableAll()
     {
         foreach (var obj in pool)

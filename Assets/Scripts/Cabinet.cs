@@ -10,6 +10,12 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     GameEvent onCabinetPassed;
 
+    [SerializeField]
+    GameEvent onPassSound;
+
+    [SerializeField]
+    GameEvent onFailSound;
+
     bool HasItems(PlayerInventory inventory)
     {
         foreach (var slot in itemsToCheck)
@@ -31,10 +37,21 @@ public class Cabinet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerInventory inventory = other.gameObject.GetComponent<PlayerInventory>();
-
-        if (inventory && HasItems(inventory))
+        if (!inventory)
         {
+            return;
+        }
+
+        bool hasItems = HasItems(inventory);
+
+        if (hasItems)
+        {
+            onPassSound?.Invoke();
             onCabinetPassed.Invoke();
+        }
+        else
+        {
+            onFailSound?.Invoke();
         }
     }
 }

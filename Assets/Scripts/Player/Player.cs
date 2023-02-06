@@ -9,6 +9,12 @@ public class Player : MonoBehaviour
     int maxLives;
 
     [SerializeField]
+    SpriteRenderer spriteRenderer;
+
+    [SerializeField]
+    Collider2D playerCollider;
+
+    [SerializeField]
     PlayerWeapon weapon;
 
     [Header("Directions")]
@@ -21,11 +27,16 @@ public class Player : MonoBehaviour
     [SerializeField]
     DirectionSO right;
 
-    public bool HasQuarter { get; set; } = false;
+    [Header("Events")]
+    [SerializeField]
+    GameEvent onUpdateLives;
 
-    public bool HasCartridge { get; set; } = false;
+    [SerializeField]
+    GameEvent onPlayerDamaged;
 
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
+    public int CurrentLives { get => currentLives; }
+    public int MaxLives { get => maxLives; set => maxLives = value; }
 
     int currentLives;
 
@@ -35,12 +46,15 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        currentLives = 0;
+        currentLives = maxLives;
+        onUpdateLives.Invoke();
     }
 
     public void TakeDamage()
     {
         currentLives--;
+        onUpdateLives.Invoke();
+        onPlayerDamaged?.Invoke();
         if (currentLives <= 0)
         {
             Die();
@@ -49,12 +63,21 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        gameObject.SetActive(false);
+        spriteRenderer.enabled = false;
+        playerCollider.enabled = false;
+    }
+
+    public void Revive()
+    {
+        currentLives = maxLives;
+        onUpdateLives.Invoke();
+        spriteRenderer.enabled = true;
+        playerCollider.enabled = true;
     }
 
     public void FireWeapon(DirectionSO direction)
     {
-        if (weapon)
+        if (weapon && CanPerformAction)
         {
             weapon.HandleFireAction(direction);
         }
@@ -89,6 +112,16 @@ public class Player : MonoBehaviour
         if (context.started)
         {
             FireWeapon(down);
+        }
+    }
+
+    public bool IsImmobilized { get; set; } = false;
+
+    public bool CanPerformAction
+    {
+        get
+        {
+            return !IsImmobilized && currentLives > 0;
         }
     }
 }
