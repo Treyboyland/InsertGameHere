@@ -5,13 +5,25 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyStats-", menuName = "Game/Enemy Stats")]
 public class EnemyStatsSO : ScriptableObject
 {
+    [Tooltip("Health that the enemy has")]
     [SerializeField]
     int health;
 
+    [Tooltip("How fast the enemy moves")]
     [SerializeField]
     float speed;
+
+    [Tooltip("Seconds between moves")]
+    [SerializeField]
+    float secondsBetweenMove;
+
+    [Tooltip("How difficult this enemy is")]
+    [SerializeField]
+    int challengeRating;
 
 
     public int Health { get => health; }
     public float Speed { get => speed; }
+    public float SecondsBetweenMove { get => secondsBetweenMove; }
+    public int ChallengeRating { get => challengeRating; }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class EnemyMove : MonoBehaviour
 {
     [SerializeField]
-    Enemy enemy;
+    protected Enemy enemy;
 
     protected static Player player;
 

@@ -79,8 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5288410813708758341}
   body: {fileID: 3357427974313413144}
-  secondsBetweenMove: {fileID: 11400000, guid: 4c2b2e2b5a9027f4b8afecb45df0e7fb, type: 2}
-  force: {fileID: 11400000, guid: 3c209ab512a1cec44b680baf394b3a0e, type: 2}
+  stats: {fileID: 11400000, guid: e4b4bacb96c843e4fb05421ed905c2fe, type: 2}
 --- !u!212 &5288410813708758343
 SpriteRenderer:
   m_ObjectHideFlags: 0

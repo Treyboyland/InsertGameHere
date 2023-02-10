@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8564419618472912590}
-  isBackground: 0
+  objectType: {fileID: 11400000, guid: 29944140d3f922640a386cc0715a1aec, type: 2}
+  comparator: {fileID: 11400000, guid: 0e68d7010a777eb4985e5c525d4480ef, type: 2}
 --- !u!212 &8564419618472912590
 SpriteRenderer:
   m_ObjectHideFlags: 0

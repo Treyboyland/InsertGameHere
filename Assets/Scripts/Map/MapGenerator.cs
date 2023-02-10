@@ -31,6 +31,10 @@ public class MapGenerator : MonoBehaviour
 
         public List<Vector2Int> DeadEnds;
 
+        public int TotalChallengeRating;
+
+        public int MaxChallengeRatingPerRoom;
+
         public bool IsWithinBounds(Vector2Int pos)
         {
             return pos.x < Map.GetLength(0) && pos.x >= 0 && pos.y < Map.GetLength(1) && pos.y >= 0;
@@ -127,7 +131,14 @@ public class MapGenerator : MonoBehaviour
         Debug.LogWarning(GetRoomLayout(mapGrid));
 
 
-        return new MapData { Map = mapGrid, StartingPosition = start, DeadEnds = deadends };
+        return new MapData
+        {
+            Map = mapGrid,
+            StartingPosition = start,
+            DeadEnds = deadends,
+            MaxChallengeRatingPerRoom = 5,
+            TotalChallengeRating = 5 * (roomsAdded - deadends.Count)
+        };
     }
 
     string GetRoomLayout(bool[,] grid)

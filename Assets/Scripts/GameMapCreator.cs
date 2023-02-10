@@ -30,7 +30,7 @@ public class GameMapCreator : MonoBehaviour
     [SerializeField]
     List<DesignerRoom> designedRooms;
 
-    List<List<RoomDataSO.SpawnData>> randomRooms = new List<List<RoomDataSO.SpawnData>>();
+    List<EverythingARoomNeedsForSpawn> randomRooms = new List<EverythingARoomNeedsForSpawn>();
 
     [SerializeField]
     RoomDataSO coinRoom;
@@ -56,6 +56,8 @@ public class GameMapCreator : MonoBehaviour
 
     List<Vector2Int> specialRoomLocations = new List<Vector2Int>();
 
+    int currentMapChallengeRating;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,13 +65,19 @@ public class GameMapCreator : MonoBehaviour
         GenerateGameMap();
     }
 
-    public void GenerateGameMap()
+    void Initialize()
     {
         chosenTheme = otherThemes.RandomItem();
         roomPool.DisableAll();
         mapData = generator.GenerateMap();
         specialRoomLocations.Clear();
         roomDictionary.Clear();
+        currentMapChallengeRating = mapData.TotalChallengeRating;
+    }
+
+    public void GenerateGameMap()
+    {
+        Initialize();
         for (int x = 0; x < mapData.Map.GetLength(0); x++)
         {
             for (int y = 0; y < mapData.Map.GetLength(1); y++)
@@ -135,7 +143,15 @@ public class GameMapCreator : MonoBehaviour
                 continue;
             }
 
-            keyVal.Value.GenerateRoomStuff(randomRooms.RandomItem());
+            int challengeRating = 0;
+
+            if (currentMapChallengeRating > 0)
+            {
+                challengeRating = UnityEngine.Random.Range(1, mapData.MaxChallengeRatingPerRoom + 1);
+                currentMapChallengeRating -= challengeRating;
+            }
+
+            keyVal.Value.GenerateRoomStuff(randomRooms.RandomItem(), challengeRating);
         }
     }
 
@@ -153,9 +169,9 @@ public class GameMapCreator : MonoBehaviour
         specialRoomLocations.Add(cartridgeRoomLocation);
         specialRoomLocations.Add(cabinetRoomLocation);
 
-        roomDictionary[coinRoomLocation].GenerateRoomStuff(coinRoom);
-        roomDictionary[cartridgeRoomLocation].GenerateRoomStuff(cartridgeRoom);
-        roomDictionary[cabinetRoomLocation].GenerateRoomStuff(cabinetRoom);
+        roomDictionary[coinRoomLocation].GenerateRoomStuff(coinRoom, 0);
+        roomDictionary[cartridgeRoomLocation].GenerateRoomStuff(cartridgeRoom, 0);
+        roomDictionary[cabinetRoomLocation].GenerateRoomStuff(cabinetRoom, 0);
     }
 
     void SetThemeForSpecialRooms()

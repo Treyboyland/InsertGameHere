@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   speed: 1
+  secondsBetweenMove: 3
+  challengeRating: 1

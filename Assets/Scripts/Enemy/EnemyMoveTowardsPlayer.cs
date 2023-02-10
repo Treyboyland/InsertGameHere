@@ -7,12 +7,6 @@ public class EnemyMoveTowardsPlayer : EnemyMove
     [SerializeField]
     Rigidbody2D body;
 
-    [SerializeField]
-    FloatValueSO secondsBetweenMove;
-
-    [SerializeField]
-    FloatValueSO force;
-
     float elapsed = 0;
 
     /// <summary>
@@ -29,11 +23,11 @@ public class EnemyMoveTowardsPlayer : EnemyMove
     void MovementAction()
     {
         elapsed += Time.deltaTime;
-        if (elapsed >= secondsBetweenMove)
+        if (elapsed >= enemy.Stats.SecondsBetweenMove)
         {
             elapsed = 0;
             Vector3 direction = (player.transform.position - transform.position).normalized;
-            direction *= force;
+            direction *= enemy.Stats.Speed;
 
             body.AddForce(direction, ForceMode2D.Impulse);
         }

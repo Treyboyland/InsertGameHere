@@ -195,7 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 5998932064897669167}
-  isBackground: 1
+  objectType: {fileID: 11400000, guid: 5e151ed7c7f4560479f45a0f710b6a6f, type: 2}
+  comparator: {fileID: 11400000, guid: 0e68d7010a777eb4985e5c525d4480ef, type: 2}
 --- !u!212 &5998932064897669167
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -315,7 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsBeforeSpawn: {fileID: 11400000, guid: 297a40344af8f6a429d61af0f7277c71, type: 2}
   isOpen: 1
-  spawnParticle: {fileID: 2416570217172485924, guid: 35444da503c791d49a290ff89de0060e, type: 3}
+  enemySpawner: {fileID: 1098248510276717400, guid: 4909c4fa2cedf0346ad86033114033e4, type: 3}
   OnOpenStateChanged:
     m_PersistentCalls:
       m_Calls: []

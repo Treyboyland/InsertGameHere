@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
-  m_Name: EnemyStats-Radish
+  m_Script: {fileID: 11500000, guid: 750fa6f271822364f8090340d8d4dc9d, type: 3}
+  m_Name: _EnemyDatabase
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 15
-  secondsBetweenMove: 2
-  challengeRating: 1
+  enemies:
+  - {fileID: 5288410813708758341, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
+  - {fileID: 8338456628916303231, guid: b00ca3acc75d54b4490a7e6f08a57978, type: 3}

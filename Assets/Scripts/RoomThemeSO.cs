@@ -11,6 +11,10 @@ public class RoomThemeSO : ScriptableObject
     [SerializeField]
     Sprite wall;
 
+    [SerializeField]
+    Sprite obstacle;
+
     public Sprite Background { get => background; }
     public Sprite Wall { get => wall; }
+    public Sprite Obstacle { get => obstacle; }
 }

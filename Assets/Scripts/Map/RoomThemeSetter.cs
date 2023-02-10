@@ -8,7 +8,10 @@ public class RoomThemeSetter : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     [SerializeField]
-    bool isBackground;
+    ThemeObjectTypeSO objectType;
+
+    [SerializeField]
+    ThemeObjectComparator comparator;
 
     Room room;
 
@@ -22,8 +25,19 @@ public class RoomThemeSetter : MonoBehaviour
         }
     }
 
-    void UpdateTheme(RoomThemeSO themeData)
+    public void UpdateTheme(RoomThemeSO themeData)
     {
-        spriteRenderer.sprite = isBackground ? themeData.Background : themeData.Wall;
+        if (comparator.IsBackground(objectType))
+        {
+            spriteRenderer.sprite = themeData.Background;
+        }
+        else if (comparator.IsObstacle(objectType))
+        {
+            spriteRenderer.sprite = themeData.Obstacle;
+        }
+        else if (comparator.IsWall(objectType))
+        {
+            spriteRenderer.sprite = themeData.Wall;
+        }
     }
 }

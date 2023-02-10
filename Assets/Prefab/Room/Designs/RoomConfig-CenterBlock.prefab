@@ -26,11 +26,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5709103373809821059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 6967505523095003684}
+  m_Father: {fileID: 5350163484769109852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2868044532117991632
@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6484371554984492314}
-  isBackground: 0
+  objectType: {fileID: 11400000, guid: abfa9902b10483840a13a01f82a6e49c, type: 2}
+  comparator: {fileID: 11400000, guid: 0e68d7010a777eb4985e5c525d4480ef, type: 2}
 --- !u!212 &6484371554984492314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -124,6 +125,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &5793631894607267089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5350163484769109852}
+  m_Layer: 0
+  m_Name: Valid Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5350163484769109852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793631894607267089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1818621113364854594}
+  m_Father: {fileID: 6967505523095003684}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6967505523095003686
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +184,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1818621113364854594}
+  - {fileID: 5350163484769109852}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -168,4 +200,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75073ac59aa9edc4b85f3f2aaa185076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnParent: {fileID: 6967505523095003684}
+  spawnParent: {fileID: 5350163484769109852}
+  spawnConfig: {fileID: 8576610452428056760, guid: 44223e14783615f44a3c009920772ee4, type: 3}

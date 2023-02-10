@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
-  m_Name: EnemyStats-Radish
+  m_Script: {fileID: 11500000, guid: 9b1ffcf80d7d11143b8d8d8d9fe3dca2, type: 3}
+  m_Name: ThemeObjectType-Obstacle
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 15
-  secondsBetweenMove: 2
-  challengeRating: 1
+  objectName: Obstacle

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
 
 
 public class Room : MonoBehaviour
@@ -13,7 +14,7 @@ public class Room : MonoBehaviour
     bool isOpen;
 
     [SerializeField]
-    ParticleStopOnEnemySpawn spawnParticle;
+    EnemySpawner enemySpawner;
 
     public UnityEvent<bool> OnOpenStateChanged = new UnityEvent<bool>();
 
@@ -63,6 +64,10 @@ public class Room : MonoBehaviour
 
     bool alreadySpawned = false;
 
+    List<Vector2> chosenEnemyPositions = new List<Vector2>();
+
+    List<EnemySpawner> createdSpawners = new List<EnemySpawner>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,23 +103,73 @@ public class Room : MonoBehaviour
             Destroy(obj);
         }
         alreadySpawned = false;
+        foreach (var obj in createdSpawners)
+        {
+            Destroy(obj.gameObject);
+        }
+        chosenEnemyPositions.Clear();
+        createdSpawners.Clear();
     }
 
-    public void GenerateRoomStuff(List<RoomDataSO.SpawnData> roomData)
+    public void GenerateRoomStuff(EverythingARoomNeedsForSpawn roomData, int challengeRating)
     {
         DestroyOldStuff();
 
-        foreach (var spawn in roomData)
+        foreach (var spawn in roomData.Spawns)
         {
             var obj = Instantiate(spawn.Prefab, transform);
             obj.transform.localPosition = spawn.Location;
             spawnedObjects.Add(obj);
-            if (obj.tag == ENEMY_TAG)
-            {
-                obj.gameObject.SetActive(false);
-                enemies.Add(obj);
-            }
+
+            // if (obj.tag == ENEMY_TAG)
+            // {
+            //     obj.gameObject.SetActive(false);
+            //     enemies.Add(obj);
+            // }
             //TODO: We probably want to disable these on room leave if enemy, and then reenable?
+        }
+
+
+        //Create Spawners
+        if (roomData.EnemySpawnLocations != null && roomData.EnemySpawnLocations.Count > 0)
+        {
+            //Make sure that each enemy spawn location has at least 1 challenge point
+            var possibleConfigs = roomData.EnemySpawnLocations.Where(x => x.Count <= challengeRating).ToList();
+            if (possibleConfigs.Count > 0)
+            {
+                int chosenIndex = Random.Range(0, possibleConfigs.Count);
+
+                chosenEnemyPositions = possibleConfigs[chosenIndex];
+                CreateEnemySpawners(challengeRating);
+            }
+        }
+    }
+
+    void CreateEnemySpawners(int challengeRating)
+    {
+        List<int> ratingsPerSpawner = new List<int>(chosenEnemyPositions.Count);
+        int ratingPerSpawn = challengeRating / chosenEnemyPositions.Count;
+        int remainder = challengeRating % chosenEnemyPositions.Count;
+
+        for (int i = 0; i < chosenEnemyPositions.Count; i++)
+        {
+            ratingsPerSpawner.Add(ratingPerSpawn);
+        }
+
+        for (int i = 0; i < remainder; i++)
+        {
+            int chosenIndex = UnityEngine.Random.Range(0, ratingsPerSpawner.Count);
+            ratingsPerSpawner[chosenIndex] = ratingsPerSpawner[chosenIndex] + 1;
+        }
+
+        for (int i = 0; i < ratingsPerSpawner.Count; i++)
+        {
+            int rating = ratingsPerSpawner[i];
+            Vector2 pos = chosenEnemyPositions[i];
+            var spawner = Instantiate(enemySpawner, transform);
+            spawner.transform.localPosition = pos;
+            spawner.SelectEnemy(rating);
+            createdSpawners.Add(spawner);
         }
     }
 
@@ -122,39 +177,29 @@ public class Room : MonoBehaviour
     {
         Vector2Int posCast = new Vector2Int(pos.x, pos.y);
 
-        if (gameObject.activeInHierarchy && !alreadySpawned && posCast == roomLocation)
+        if (gameObject.activeInHierarchy && posCast == roomLocation)
         {
-            StartCoroutine(WaitThenSpawn());
+            BeginSpawning();
         }
         else
         {
-            StopAllCoroutines();
+            StopSpawning();
         }
     }
 
-    IEnumerator WaitThenSpawn()
+    void BeginSpawning()
     {
-        foreach (var obj in enemies)
+        foreach (var spawner in createdSpawners)
         {
-            if (!obj)
-            {
-                continue;
-            }
-            var particle = Instantiate(spawnParticle);
-            var enemy = obj.GetComponent<Enemy>();
-            enemy.CurrentRoom = RoomLocation;
-            particle.transform.position = obj.transform.position;
-            particle.Enemy = enemy;
-            particle.gameObject.SetActive(true);
+            spawner.SpawnEnemy(this);
         }
-        yield return new WaitForSeconds(secondsBeforeSpawn);
-        foreach (var obj in enemies)
+    }
+
+    void StopSpawning()
+    {
+        foreach (var spawner in createdSpawners)
         {
-            if (obj)
-            {
-                obj.gameObject.SetActive(true);
-            }
+            spawner.StopEnemySpawn();
         }
-        alreadySpawned = true;
     }
 }
