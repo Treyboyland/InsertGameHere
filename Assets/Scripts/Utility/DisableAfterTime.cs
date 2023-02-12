@@ -40,4 +40,13 @@ public class DisableAfterTime : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    public void CallDisabledEvent()
+    {
+        if (disabledAtLocation)
+        {
+            disabledAtLocation.Value = transform.position;
+            disabledAtLocation.Invoke();
+        }
+    }
 }

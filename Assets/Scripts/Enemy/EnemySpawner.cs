@@ -51,6 +51,14 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    public void DestroySpawnedEnemy()
+    {
+        if (spawnedEnemyObject)
+        {
+            Destroy(spawnedEnemyObject.gameObject);
+        }
+    }
+
     public void StopEnemySpawn()
     {
         StopAllCoroutines();
@@ -58,7 +66,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Destroy(spawnedEnemyObject.gameObject);
         }
-        
+
         spawnParticle.gameObject.SetActive(false);
         spawnParticle.Enemy = null;
     }

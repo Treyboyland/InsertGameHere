@@ -102,13 +102,15 @@ public class Room : MonoBehaviour
         {
             Destroy(obj);
         }
-        alreadySpawned = false;
+
         foreach (var obj in createdSpawners)
         {
+            obj.DestroySpawnedEnemy();
             Destroy(obj.gameObject);
         }
         chosenEnemyPositions.Clear();
         createdSpawners.Clear();
+        alreadySpawned = false;
     }
 
     public void GenerateRoomStuff(EverythingARoomNeedsForSpawn roomData, int challengeRating)
@@ -147,6 +149,10 @@ public class Room : MonoBehaviour
 
     void CreateEnemySpawners(int challengeRating)
     {
+        if (chosenEnemyPositions.Count == 0)
+        {
+            return;
+        }
         List<int> ratingsPerSpawner = new List<int>(chosenEnemyPositions.Count);
         int ratingPerSpawn = challengeRating / chosenEnemyPositions.Count;
         int remainder = challengeRating % chosenEnemyPositions.Count;

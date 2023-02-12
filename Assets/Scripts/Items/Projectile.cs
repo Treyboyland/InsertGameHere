@@ -48,8 +48,14 @@ public class Projectile : MonoBehaviour
     {
         if (!stats.IsPiercing)
         {
-            gameObject.SetActive(false);
+            DisableProjectile();
         }
+    }
+
+    public void DisableProjectile()
+    {
+        disabler.CallDisabledEvent();
+        gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -116,6 +122,10 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Fires in one of the given directions
+    /// </summary>
+    /// <param name="directionSO"></param>
     public void SetDirection(DirectionSO directionSO)
     {
         if (directionSO == up)
@@ -134,5 +144,15 @@ public class Projectile : MonoBehaviour
         {
             body.velocity = new Vector2(stats.Speed, 0);
         }
+    }
+
+    /// <summary>
+    /// Fires in the given direction
+    /// </summary>
+    /// <param name="direction"></param>
+    public void SetDirection(Vector2 direction)
+    {
+        direction *= stats.Speed;
+        body.velocity = direction;
     }
 }

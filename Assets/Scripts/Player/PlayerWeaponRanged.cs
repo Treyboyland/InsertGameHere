@@ -23,6 +23,7 @@ public class PlayerWeaponRanged : PlayerWeapon
         {
             projectile.Owner = playerOwner;
             projectile.transform.position = transform.position;
+            projectile.transform.SetParent(null);
             projectile.gameObject.SetActive(true);
             projectile.SetDirection(direction);
         }
