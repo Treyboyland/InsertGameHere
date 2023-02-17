@@ -15,6 +15,7 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Test" ID="{84CF5AB4-E596-4F15-AC41-05F384F1A104}"/>
+				<Event Name="Test2" ID="{45702E1F-D99E-409A-A08A-9F0545FBF2DF}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
