@@ -7,8 +7,13 @@ public class Pickup : MonoBehaviour
     [SerializeField]
     PlayerInventory.InventorySlot itemData;
 
+    [Tooltip("Use for specific events on this item")]
     [SerializeField]
     GameEvent onPickup;
+
+    [Tooltip("Use for the general pickup event")]
+    [SerializeField]
+    GameEventItemSO onPickupGeneral;
 
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
@@ -23,6 +28,12 @@ public class Pickup : MonoBehaviour
         {
             inventory.AddItem(itemData);
             onPickup?.Invoke();
+
+            if (onPickupGeneral)
+            {
+                onPickupGeneral.Value = itemData.Item;
+                onPickupGeneral?.Invoke();
+            }
             gameObject.SetActive(false);
         }
     }

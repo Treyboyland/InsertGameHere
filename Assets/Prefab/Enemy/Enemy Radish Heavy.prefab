@@ -59,6 +59,14 @@ PrefabInstance:
       propertyPath: stats
       value: 
       objectReference: {fileID: 11400000, guid: 073c1920242f1e248a740b7fde2c59f6, type: 2}
+    - target: {fileID: 5288410813708758341, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
+      propertyPath: onAddToScore
+      value: 
+      objectReference: {fileID: 11400000, guid: 7543163534175044a89fafbe52102347, type: 2}
+    - target: {fileID: 5288410813708758341, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
+      propertyPath: onEnemyDefeated
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
     - target: {fileID: 5288410813708758343, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
       propertyPath: m_Color.b
       value: 0

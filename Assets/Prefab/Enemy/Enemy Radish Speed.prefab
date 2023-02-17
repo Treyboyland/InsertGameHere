@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5288410813708758336, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
       propertyPath: m_Name
-      value: Enemy Radish Heavy 1
+      value: Enemy Radish Speed
       objectReference: {fileID: 0}
     - target: {fileID: 5288410813708758340, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
       propertyPath: m_RootOrder
@@ -59,6 +59,14 @@ PrefabInstance:
       propertyPath: stats
       value: 
       objectReference: {fileID: 11400000, guid: 3d03a91aa209ac94daf99c00c0ef7ef4, type: 2}
+    - target: {fileID: 5288410813708758341, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
+      propertyPath: onAddToScore
+      value: 
+      objectReference: {fileID: 11400000, guid: 7543163534175044a89fafbe52102347, type: 2}
+    - target: {fileID: 5288410813708758341, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
+      propertyPath: onEnemyDefeated
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
     - target: {fileID: 5288410813708758343, guid: ac3f4572560af484b9f8224a190b8243, type: 3}
       propertyPath: m_Color.b
       value: 0

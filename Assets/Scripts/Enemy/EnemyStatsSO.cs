@@ -29,6 +29,9 @@ public class EnemyStatsSO : ScriptableObject
     [SerializeField]
     int challengeRating;
 
+    [Tooltip("How much this enemy is worth when defeated")]
+    [SerializeField]
+    int score;
 
     public int Health { get => health; }
     public float Speed { get => speed; }
@@ -36,4 +39,5 @@ public class EnemyStatsSO : ScriptableObject
     public int ChallengeRating { get => challengeRating; }
     public float DistanceFromPlayer { get => distanceFromPlayer; }
     public float FireRate { get => fireRate; }
+    public int Score { get => score; }
 }

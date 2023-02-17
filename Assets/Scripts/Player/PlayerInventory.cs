@@ -17,6 +17,10 @@ public class PlayerInventory : MonoBehaviour
 
     Dictionary<ItemSO, int> inventory = new Dictionary<ItemSO, int>();
 
+    [SerializeField]
+    GameEvent inventoryUpdated;
+
+
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
@@ -58,6 +62,7 @@ public class PlayerInventory : MonoBehaviour
         {
             inventory[item] = 1;
         }
+        FireUpdateEvent();
     }
 
     /// <summary>
@@ -114,6 +119,7 @@ public class PlayerInventory : MonoBehaviour
         {
             inventory.Remove(item);
         }
+        FireUpdateEvent();
     }
 
     /// <summary>
@@ -142,5 +148,14 @@ public class PlayerInventory : MonoBehaviour
     {
         inventory.Clear();
         Initialize();
+        FireUpdateEvent();
+    }
+
+    void FireUpdateEvent()
+    {
+        if (inventoryUpdated)
+        {
+            inventoryUpdated.Invoke();
+        }
     }
 }

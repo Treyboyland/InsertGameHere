@@ -27,6 +27,11 @@ public class RoomThemeSetter : MonoBehaviour
 
     public void UpdateTheme(RoomThemeSO themeData)
     {
+        if (themeData == null)
+        {
+            return;
+        }
+
         if (comparator.IsBackground(objectType))
         {
             spriteRenderer.sprite = themeData.Background;

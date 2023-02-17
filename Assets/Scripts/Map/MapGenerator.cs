@@ -129,6 +129,7 @@ public class MapGenerator : MonoBehaviour
         }
 
         Debug.LogWarning(GetRoomLayout(mapGrid));
+        Debug.LogWarning("Starting Position: " + start);
 
 
         return new MapData

@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   speed: 10
+  distanceFromPlayer: 0
   secondsBetweenMove: 1
+  fireRate: 0
   challengeRating: 2
+  score: 150

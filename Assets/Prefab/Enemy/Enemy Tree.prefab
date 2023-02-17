@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 1116332b33506af49ad3fb16ed348965, type: 2}
+  onAddToScore: {fileID: 11400000, guid: 7543163534175044a89fafbe52102347, type: 2}
+  onEnemyDefeated: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []

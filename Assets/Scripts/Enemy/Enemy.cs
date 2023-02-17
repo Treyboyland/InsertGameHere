@@ -8,6 +8,12 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     EnemyStatsSO stats;
 
+    [SerializeField]
+    GameEventInt onAddToScore;
+
+    [SerializeField]
+    GameEventVector onEnemyDefeated;
+
     int currentHealth;
 
     public UnityEvent OnEnemySpawned;
@@ -33,6 +39,17 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        if (onEnemyDefeated)
+        {
+            onEnemyDefeated.Value = transform.position;
+            onEnemyDefeated.Invoke();
+        }
+        if (onAddToScore)
+        {
+            onAddToScore.Value = stats.Score;
+            onAddToScore.Invoke();
+        }
+
         gameObject.SetActive(false);
     }
 }

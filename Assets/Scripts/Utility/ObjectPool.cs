@@ -52,4 +52,12 @@ public class ObjectPool : MonoBehaviour
             obj.SetActive(false);
         }
     }
+
+    public void SpawnAtPosition(Vector3 position)
+    {
+        var obj = GetObject();
+
+        obj.transform.position = position;
+        obj.gameObject.SetActive(true);
+    }
 }

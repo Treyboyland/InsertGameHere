@@ -18,6 +18,8 @@ public class Room : MonoBehaviour
 
     public UnityEvent<bool> OnOpenStateChanged = new UnityEvent<bool>();
 
+    RoomThemeSO currentTheme;
+
     public UnityEvent<RoomThemeSO> OnSetTheme = new UnityEvent<RoomThemeSO>();
 
     public bool IsOpen
@@ -67,6 +69,11 @@ public class Room : MonoBehaviour
     List<Vector2> chosenEnemyPositions = new List<Vector2>();
 
     List<EnemySpawner> createdSpawners = new List<EnemySpawner>();
+
+    private void Awake()
+    {
+        OnSetTheme.AddListener(newTheme => currentTheme = newTheme);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -123,12 +130,11 @@ public class Room : MonoBehaviour
             obj.transform.localPosition = spawn.Location;
             spawnedObjects.Add(obj);
 
-            // if (obj.tag == ENEMY_TAG)
-            // {
-            //     obj.gameObject.SetActive(false);
-            //     enemies.Add(obj);
-            // }
-            //TODO: We probably want to disable these on room leave if enemy, and then reenable?
+            var themed = obj.GetComponent<RoomThemeSetter>();
+            if (themed)
+            {
+                themed.UpdateTheme(currentTheme);
+            }
         }
 
 

@@ -50,6 +50,7 @@ MonoBehaviour:
     Item: {fileID: 11400000, guid: 8bd5ea00b1a289d4a8953a8ef139ce91, type: 2}
     Count: 1
   onPickup: {fileID: 11400000, guid: 8a95a1bfb2b3b5c478668016ae3bfcda, type: 2}
+  onPickupGeneral: {fileID: 11400000, guid: 87050f7d39a652f47ad393f76ebd9a0d, type: 2}
 --- !u!212 &8997872823221387214
 SpriteRenderer:
   m_ObjectHideFlags: 0

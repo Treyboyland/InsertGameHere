@@ -25,4 +25,18 @@ public static class HelperFunctions
         int index = Random.Range(0, list.Count);
         return list[index];
     }
+
+    /// <summary>
+    /// Waits for the given state. Assumes on the 0th layer
+    /// </summary>
+    /// <param name="animator"></param>
+    /// <param name="state"></param>
+    /// <returns></returns>
+    public static IEnumerator WaitForState(this Animator animator, string state)
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName(state))
+        {
+            yield return null;
+        }
+    }
 }

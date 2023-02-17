@@ -18,3 +18,4 @@ MonoBehaviour:
   secondsBetweenMove: 0
   fireRate: 1
   challengeRating: 2
+  score: 150
