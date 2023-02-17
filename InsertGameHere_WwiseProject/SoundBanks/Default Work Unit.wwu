@@ -5,6 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="AllInOne" ID="{57A09D41-1E6F-4E78-A88C-3D8E91EEB074}">
 					<ObjectInclusionList>
+						<ObjectRef Name="CoinPickup" ID="{45702E1F-D99E-409A-A08A-9F0545FBF2DF}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerShoot" ID="{AF274234-D15A-43F8-960C-A63D38ED42DF}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerHurt" ID="{C7DF5884-18BF-4617-94E5-20347D2F95C5}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NewLevel" ID="{DA7DCB0B-7792-4E2F-8306-BD899F4C4213}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CartridgePickup" ID="{84CF5AB4-E596-4F15-AC41-05F384F1A104}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ItemsNotFound" ID="{7443356B-300D-4F60-A771-046239CB3022}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EnemyDeath_2" ID="{CD67E096-9439-4F6D-887B-90CFA32EBD7F}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayMusic" ID="{5D027208-84FD-4F9F-810E-7E8325412845}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

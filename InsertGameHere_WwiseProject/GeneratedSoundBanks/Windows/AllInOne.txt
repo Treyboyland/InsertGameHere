@@ -1,21 +1,35 @@
 Event	ID	Name			Wwise Object Path	Notes
-	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
+	668664389	NewLevel			\Default Work Unit\Sounds\NewLevel	
+	1841172904	CartridgePickup			\Default Work Unit\Sounds\CartridgePickup	
+	2438804636	EnemyDeath_2			\Default Work Unit\Sounds\EnemyDeath_2	
+	2538918815	PlayerShoot			\Default Work Unit\Sounds\PlayerShoot	
+	2752428610	CoinPickup			\Default Work Unit\Sounds\CoinPickup	
+	3537581393	PlayerHurt			\Default Work Unit\Sounds\PlayerHurt	
+	3875358038	ItemsNotFound			\Default Work Unit\Sounds\ItemsNotFound	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	48276901	EnemyDeath-2	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\EnemyDeath-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemy\EnemyDeath-2		68086
 	92453598	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	103251704	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp7_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
 	132294065	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	187710334	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
+	247716395	ItemsNotFound	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\ItemsNotFound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\ItemsNotFound		10294
+	274916498	NewLevel	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\NewLevel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Environment\NewLevel		65634
 	300250873	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
 	316856820	Drums	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmDrumsB_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum B\Drums		3079076
 	361609316	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233692
+	383723619	PlayerHurt	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\PlayerHurt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\PlayerHurt		21006
 	417254143	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	608676237	Drums	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmDrums1WithSwell_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum ASwell\Drums		4618568
 	629740398	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
 	680660083	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	711720068	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass7_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	711885076	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
+	722084351	CoinPickup	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\CoinPickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\CoinPickup		18520
+	755881394	PlayerShoot	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\PlayerShoot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\PlayerShoot		26788
 	801015139	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
+	834041014	CartridgePickup	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\CartridgePickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\CartridgePickup		50294
 	864167629	IGH110BpmArp1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmArp2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmArp1		4233696
 	875214318	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233696
 	899809738	IGH110BpmBass1	F:\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\.cache\Windows\SFX\IGH110BpmBass1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Full Drum A\IGH110BpmBass1		4233692

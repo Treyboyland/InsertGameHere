@@ -3,19 +3,102 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8C725ECE-0880-4E33-A346-D8651677EB27}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PlayMusic" ID="{5D027208-84FD-4F9F-810E-7E8325412845}">
+				<Folder Name="Music" ID="{E51C300A-9A39-46F8-B671-074B1B3C761F}" ShortID="111973158">
 					<ChildrenList>
-						<Action Name="" ID="{B6E471AC-C04D-4E40-900F-8FA0076798C3}" ShortID="999331557">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music Playlist" ID="{ED39083A-E7C4-4852-A7EE-6CEA8840FE65}" WorkUnitID="{504FE070-9DAC-4595-A4C8-B42B985EA281}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="PlayMusic" ID="{5D027208-84FD-4F9F-810E-7E8325412845}">
+							<ChildrenList>
+								<Action Name="" ID="{B6E471AC-C04D-4E40-900F-8FA0076798C3}" ShortID="999331557">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Playlist" ID="{ED39083A-E7C4-4852-A7EE-6CEA8840FE65}" WorkUnitID="{504FE070-9DAC-4595-A4C8-B42B985EA281}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Test" ID="{84CF5AB4-E596-4F15-AC41-05F384F1A104}"/>
-				<Event Name="Test2" ID="{45702E1F-D99E-409A-A08A-9F0545FBF2DF}"/>
+				</Folder>
+				<Folder Name="Sounds" ID="{9614D750-3007-42D3-901F-17DA62855B91}" ShortID="883006076">
+					<ChildrenList>
+						<Event Name="CartridgePickup" ID="{84CF5AB4-E596-4F15-AC41-05F384F1A104}">
+							<ChildrenList>
+								<Action Name="" ID="{37F2363C-CDE9-42F1-A95D-E80FD452219C}" ShortID="444186065">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CartridgePickup" ID="{BD86782A-EBBE-45DD-A80B-A6E32C45DC83}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CoinPickup" ID="{45702E1F-D99E-409A-A08A-9F0545FBF2DF}">
+							<ChildrenList>
+								<Action Name="" ID="{E8EFA769-9C9F-433B-8F98-933BF1CCEE0E}" ShortID="169324505">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CoinPickup" ID="{2A343FF5-C078-40CF-92B8-5FA7DCA709A5}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EnemyDeath_2" ID="{CD67E096-9439-4F6D-887B-90CFA32EBD7F}">
+							<ChildrenList>
+								<Action Name="" ID="{CEFD75B4-B21E-42B2-B251-C15564698CF6}" ShortID="596698711">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyDeath-2" ID="{CA63F6AA-16B9-48D4-84EC-D03264DD0079}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ItemsNotFound" ID="{7443356B-300D-4F60-A771-046239CB3022}">
+							<ChildrenList>
+								<Action Name="" ID="{6FD9CCBD-4547-4E3A-AE48-92E0053DC679}" ShortID="932230014">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ItemsNotFound" ID="{D57181D3-854F-4BF6-A4B7-BE73530DF6BD}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="NewLevel" ID="{DA7DCB0B-7792-4E2F-8306-BD899F4C4213}">
+							<ChildrenList>
+								<Action Name="" ID="{AEB4CB5E-C79F-4C32-B57D-C46DD9FDE1AF}" ShortID="800184524">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NewLevel" ID="{32700A91-3631-4C9D-9288-588550991685}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerHurt" ID="{C7DF5884-18BF-4617-94E5-20347D2F95C5}">
+							<ChildrenList>
+								<Action Name="" ID="{77AEFD5B-F08D-40C0-ACAE-3EA0F3D1D16A}" ShortID="505765911">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerHurt" ID="{002DE5CC-520F-4F85-8C11-B459DA8326FE}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerShoot" ID="{AF274234-D15A-43F8-960C-A63D38ED42DF}">
+							<ChildrenList>
+								<Action Name="" ID="{FD57CBAD-D2A6-4CD4-9A81-3DBF72A3DD7E}" ShortID="748478968">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerShoot" ID="{7C80C7E5-E304-4912-960A-9E3FAEEFB40F}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -13,6 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CARTRIDGEPICKUP = 1841172904U;
+        static const AkUniqueID COINPICKUP = 2752428610U;
+        static const AkUniqueID ENEMYDEATH_2 = 2438804636U;
+        static const AkUniqueID ITEMSNOTFOUND = 3875358038U;
+        static const AkUniqueID NEWLEVEL = 668664389U;
+        static const AkUniqueID PLAYERHURT = 3537581393U;
+        static const AkUniqueID PLAYERSHOOT = 2538918815U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
     } // namespace EVENTS
 

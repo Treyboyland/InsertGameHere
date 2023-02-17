@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{80E11CCE-B522-D4CF-64F9-7DEAA2B1A688}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{58C2796E-C26C-E671-D3B2-FCB83E8298A5}">
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<Media>
+				<File Id="48276901" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EnemyDeath-2.wav</ShortName>
+					<CachePath>SFX/EnemyDeath-2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="92453598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass3.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass3_D79FB2B7.wem</CachePath>
@@ -42,6 +46,14 @@
 					<ShortName>IGH110BpmArp4.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp4_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="247716395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ItemsNotFound.wav</ShortName>
+					<CachePath>SFX/ItemsNotFound_10C4C929.wem</CachePath>
+				</File>
+				<File Id="274916498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NewLevel.wav</ShortName>
+					<CachePath>SFX/NewLevel_10C4C929.wem</CachePath>
+				</File>
 				<File Id="300250873" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp6.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp6_D79FB2B7.wem</CachePath>
@@ -53,6 +65,10 @@
 				<File Id="361609316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp1.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="383723619" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerHurt.wav</ShortName>
+					<CachePath>SFX/PlayerHurt_10C4C929.wem</CachePath>
 				</File>
 				<File Id="417254143" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass8.wav</ShortName>
@@ -78,9 +94,21 @@
 					<ShortName>IGH110BpmArp8.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp8_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="722084351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CoinPickup.wav</ShortName>
+					<CachePath>SFX/CoinPickup_10C4C929.wem</CachePath>
+				</File>
+				<File Id="755881394" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerShoot.wav</ShortName>
+					<CachePath>SFX/PlayerShoot_10C4C929.wem</CachePath>
+				</File>
 				<File Id="801015139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp3.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp3_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="834041014" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CartridgePickup.wav</ShortName>
+					<CachePath>SFX/CartridgePickup_10C4C929.wem</CachePath>
 				</File>
 				<File Id="864167629" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp2.wav</ShortName>
@@ -108,6 +136,41 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1841172904" Name="CartridgePickup" DurationType="OneShot" DurationMin="0.56913835" DurationMax="0.56913835">
+					<MediaRefs>
+						<MediaRef Id="834041014"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2752428610" Name="CoinPickup" DurationType="OneShot" DurationMin="0.20888889" DurationMax="0.20888889">
+					<MediaRefs>
+						<MediaRef Id="722084351"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2438804636" Name="EnemyDeath_2" DurationType="OneShot" DurationMin="0.7708617" DurationMax="0.7708617">
+					<MediaRefs>
+						<MediaRef Id="48276901"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3875358038" Name="ItemsNotFound" DurationType="OneShot" DurationMin="0.115623586" DurationMax="0.115623586">
+					<MediaRefs>
+						<MediaRef Id="247716395"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="668664389" Name="NewLevel" DurationType="OneShot" DurationMin="0.74306124" DurationMax="0.74306124">
+					<MediaRefs>
+						<MediaRef Id="274916498"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3537581393" Name="PlayerHurt" DurationType="OneShot" DurationMin="0.23707484" DurationMax="0.23707484">
+					<MediaRefs>
+						<MediaRef Id="383723619"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2538918815" Name="PlayerShoot" DurationType="OneShot" DurationMin="0.23282139" DurationMax="0.39932323">
+					<MediaRefs>
+						<MediaRef Id="755881394"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="417627684" Name="PlayMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="92453598"/>
@@ -135,5 +198,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8412E972-6AB3-EAD7-4FA6-BB72EF95D6D3}</FileHash>
+	<FileHash>{F1178FC1-AC2F-9778-9946-43CB4D3226DE}</FileHash>
 </SoundBanksInfo>
