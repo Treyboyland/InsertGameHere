@@ -626,6 +626,7 @@ GameObject:
   - component: {fileID: 468319355}
   - component: {fileID: 468319357}
   - component: {fileID: 468319356}
+  - component: {fileID: 468319358}
   m_Layer: 0
   m_Name: Player Weapon Fire
   m_TagString: Untagged
@@ -678,10 +679,10 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 468319356}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
-        m_MethodName: SpawnAtPosition
-        m_Mode: 0
+      - m_Target: {fileID: 468319358}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -690,6 +691,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &468319358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468319354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8ce90b5114e63f74f94df3622a4883dd, type: 2}
 --- !u!1 &485899545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1540,7 @@ GameObject:
   - component: {fileID: 753768653}
   - component: {fileID: 753768655}
   - component: {fileID: 753768654}
+  - component: {fileID: 753768656}
   m_Layer: 0
   m_Name: Player Damaged Listener
   m_TagString: Untagged
@@ -1575,9 +1593,9 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 753768654}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
-        m_MethodName: ActivateObject
+      - m_Target: {fileID: 753768656}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1587,6 +1605,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &753768656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753768652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ca049e15fd5f02c4288153a058244adf, type: 2}
 --- !u!1 &809954146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2265,7 @@ GameObject:
   - component: {fileID: 1132069896}
   - component: {fileID: 1132069898}
   - component: {fileID: 1132069897}
+  - component: {fileID: 1132069899}
   m_Layer: 0
   m_Name: Enemy Defeated
   m_TagString: Untagged
@@ -2283,10 +2318,10 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1132069897}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
-        m_MethodName: SpawnAtPosition
-        m_Mode: 0
+      - m_Target: {fileID: 1132069899}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2295,6 +2330,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1132069899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132069895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a2451d943b9c45f4d99cf9e74275eadc, type: 2}
 --- !u!1 &1202647684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,6 +2462,7 @@ GameObject:
   - component: {fileID: 1216926796}
   - component: {fileID: 1216926798}
   - component: {fileID: 1216926797}
+  - component: {fileID: 1216926799}
   m_Layer: 0
   m_Name: Cartridge Pickup Listener
   m_TagString: Untagged
@@ -2475,6 +2527,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1216926799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216926795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db9fde401cec07d4888d6476623be3e2, type: 2}
 --- !u!1 &1272150352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +2869,7 @@ GameObject:
   - component: {fileID: 1624593485}
   - component: {fileID: 1624593487}
   - component: {fileID: 1624593486}
+  - component: {fileID: 1624593488}
   m_Layer: 0
   m_Name: Coin Pickup Listener
   m_TagString: Untagged
@@ -2853,9 +2922,9 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1624593486}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
-        m_MethodName: ActivateObject
+      - m_Target: {fileID: 1624593488}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2865,6 +2934,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1624593488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624593484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
 --- !u!1 &1629822817
 GameObject:
   m_ObjectHideFlags: 0

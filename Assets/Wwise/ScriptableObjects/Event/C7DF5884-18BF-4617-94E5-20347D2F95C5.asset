@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b02875235931f7449b0bb948a5342f94, type: 3}
-  m_Name: 84CF5AB4-E596-4F15-AC41-05F384F1A104
+  m_Name: C7DF5884-18BF-4617-94E5-20347D2F95C5
   m_EditorClassIdentifier: 
-  objectName: CartridgePickup
-  id: 1841172904
-  guid: 84CF5AB4-E596-4F15-AC41-05F384F1A104
+  objectName: PlayerHurt
+  id: 3537581393
+  guid: C7DF5884-18BF-4617-94E5-20347D2F95C5

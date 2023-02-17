@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b02875235931f7449b0bb948a5342f94, type: 3}
-  m_Name: 84CF5AB4-E596-4F15-AC41-05F384F1A104
+  m_Name: 45702E1F-D99E-409A-A08A-9F0545FBF2DF
   m_EditorClassIdentifier: 
-  objectName: CartridgePickup
-  id: 1841172904
-  guid: 84CF5AB4-E596-4F15-AC41-05F384F1A104
+  objectName: CoinPickup
+  id: 2752428610
+  guid: 45702E1F-D99E-409A-A08A-9F0545FBF2DF
