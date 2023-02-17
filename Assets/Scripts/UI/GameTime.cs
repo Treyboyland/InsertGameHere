@@ -92,7 +92,13 @@ public class GameTime : MonoBehaviour
 
     public void ResetTime()
     {
-        elapsed = 0;
+        elapsed = elapsed < 0 ? elapsed : 0;
+        UpdateTime();
+    }
+
+    public void AddTime(float timeToAdd)
+    {
+        elapsed -= timeToAdd;
         UpdateTime();
     }
 }
