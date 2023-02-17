@@ -1,0 +1,4322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{504FE070-9DAC-4595-A4C8-B42B985EA281}" SchemaVersion="110">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{504FE070-9DAC-4595-A4C8-B42B985EA281}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Music Playlist" ID="{ED39083A-E7C4-4852-A7EE-6CEA8840FE65}" ShortID="679187123">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="110"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Full Drum A" ID="{89E7E2A8-5CE8-4AD8-A8C9-6787A6C13EA0}" ShortID="298776503">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="37090.8987837559"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="IGH110BpmBass1" ID="{3D014B54-9E70-4D1F-97E4-8C0615614501}" ShortID="153077696">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmBass1" ID="{461C1049-F0EB-41FB-80E7-8053A84DEC1E}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899809738"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass2" ID="{14DEBB6F-E61A-42C1-B5E1-B2D2C20FF06B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="132294065"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass3" ID="{7830853B-8C22-47E5-887B-56540FFB6364}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="92453598"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass4" ID="{480E11A4-D21D-4765-B7F5-14C7A1C39CA9}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680660083"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass5" ID="{9EC2209D-5E17-437B-B2DD-D54BE33BA87B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937561067"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass6" ID="{D7861930-06C7-4DA6-88C2-E58FF627A64A}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875214318"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass7" ID="{174A2D4C-D6BD-442B-A5C7-FDB5E06E4472}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711720068"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass8" ID="{AA65E5EA-1920-489B-96B3-EE79B085909B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417254143"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5790B1DB-E429-41EB-B289-29107980919D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F5D4E276-7C48-4C8D-B310-8D8FC04B14C0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{7A44ABAF-A39D-4993-8E48-338AB7E4BBB8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{461C1049-F0EB-41FB-80E7-8053A84DEC1E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{72F26079-62A9-4228-B68A-AE0506F864AD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{9983FA7B-57F8-4A1D-A4A8-5B44752E7747}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{14DEBB6F-E61A-42C1-B5E1-B2D2C20FF06B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E5BD6377-257D-4F7E-B660-4417901ABC03}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{C7599EAC-150C-4860-BA8D-6CDC7A2BBF2D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{7830853B-8C22-47E5-887B-56540FFB6364}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{33197D32-A8E2-45A7-82ED-6CD427CC066C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{85156EFC-5EF8-4820-B756-8BB6CCBC9B53}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{480E11A4-D21D-4765-B7F5-14C7A1C39CA9}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B19D0AE8-8B2B-4C79-AB05-B869D0CD72D9}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{8859A242-8D68-4AB5-9A73-8A44A161268F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{9EC2209D-5E17-437B-B2DD-D54BE33BA87B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C2ED0B2A-9893-4DE1-8288-664429A58281}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{830A14EE-0D34-4EBC-B097-2BC746622EDE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{D7861930-06C7-4DA6-88C2-E58FF627A64A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9E3DB92A-4B43-43C3-B7B1-5C70E735BBF8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{1A159B8A-C134-47F4-AA1D-FEF98A2FF7F2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{174A2D4C-D6BD-442B-A5C7-FDB5E06E4472}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{972AE8E6-E58C-4958-AB22-25AC98483DBB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{7C2F3179-E64A-4E53-B642-DAC57550EF1D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{AA65E5EA-1920-489B-96B3-EE79B085909B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3415DF56-2FDC-4490-9CC9-3CAF904CFE23}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{1293B783-6927-4C53-AEA1-B826BEE6A39F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{461C1049-F0EB-41FB-80E7-8053A84DEC1E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EEAE57F1-4590-491B-B800-96047F240AFF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{C1E39CAA-842D-490B-BF40-E36996A1007F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{14DEBB6F-E61A-42C1-B5E1-B2D2C20FF06B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{AFAB59A7-0B0B-4DC1-9523-4FDC99ACA31A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{1ECA6A64-D2C6-4C9E-A759-0A01987BC5DF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{7830853B-8C22-47E5-887B-56540FFB6364}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B7C3F183-E852-4B16-A0B6-FBBFC79DE555}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{950B27E8-B8FE-453E-8210-F077D2FCB588}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{480E11A4-D21D-4765-B7F5-14C7A1C39CA9}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{488BC6FA-7514-40B8-A1B7-8744CD46AB2A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{CCF4C7C6-3F5E-4849-B141-25C18F107690}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{9EC2209D-5E17-437B-B2DD-D54BE33BA87B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C4C62026-0B59-4E48-8CE7-740620B74AA4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{C0950B0A-43C5-46FB-BAA0-0EF08161B2B9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{D7861930-06C7-4DA6-88C2-E58FF627A64A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{192B037B-2084-417C-8A41-AE87456962BE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{48F32818-C998-4A42-99BE-47DC22A0790B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{174A2D4C-D6BD-442B-A5C7-FDB5E06E4472}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D89196FA-1A43-45C9-ADBE-F398C99E1F0A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{4CE26A09-D1A1-44ED-84DE-5B1775C24985}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{AA65E5EA-1920-489B-96B3-EE79B085909B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EA8BA90F-C20A-4CC3-AFE7-59E1C5E172D9}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="IGH110BpmArp1" ID="{451E4A73-3033-421E-AAC0-C90124496542}" ShortID="185101910">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmArp1" ID="{0AE21011-D5BF-4912-B1E0-BEC7D7E91F19}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361609316"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp2" ID="{7F77DEF7-BDA2-4AF7-8544-BB18DC664F85}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864167629"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp3" ID="{7B61FC91-F51C-445F-BCCD-24AC4590BB91}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801015139"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp4" ID="{B3B02D8A-B280-4FB6-93B3-DCDDA250F4C6}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187710334"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp5" ID="{D1AD68D2-D7B7-4B1C-A445-FC2ECF17C397}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="629740398"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp6" ID="{06D7E506-3D76-416A-AB77-460CCF93C5C0}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300250873"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp7" ID="{368DBF97-833E-4AD5-989E-6059139CF3F1}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103251704"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp8" ID="{BB9EE928-6F2C-4C12-B770-25B3E154348A}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711885076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{81BC242A-123A-4A1F-B20C-CD30172CDB9F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{BD86BE68-A624-4E2D-8D02-8BE94483A249}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{1BD6F48A-6F7B-47DC-8509-29F06F7BF682}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{0AE21011-D5BF-4912-B1E0-BEC7D7E91F19}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B53703B1-BA86-46BE-9CEA-345306A1762B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{C9FFBBAD-3945-4AC1-AA74-2C859C0A3A7E}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{7F77DEF7-BDA2-4AF7-8544-BB18DC664F85}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{982F379A-FACB-482D-B38C-5C478F7FD8A7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{31939D39-B9D2-4096-AB48-6D8C06BD89A9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{7B61FC91-F51C-445F-BCCD-24AC4590BB91}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EDBD6D31-E112-4215-8018-B0A3913BECF2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{7BF2FA29-8A98-4948-8C6D-CEFC224E7DF0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{B3B02D8A-B280-4FB6-93B3-DCDDA250F4C6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0B48B466-C666-46BD-BFB3-A2FEC591A6B7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{D4C3D239-5FB3-4C71-953F-86F9BDD75DE0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{D1AD68D2-D7B7-4B1C-A445-FC2ECF17C397}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9A8A9207-EDD3-4B4A-829C-DCF299546D4C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{B96010F7-6C47-46F2-8028-6A280C5D9813}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{06D7E506-3D76-416A-AB77-460CCF93C5C0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B8D2F87D-4CB1-4357-9E9B-CA6ECC0672FE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{A4BBD7D4-F672-41F3-81FD-5D92BCFBC2A0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{368DBF97-833E-4AD5-989E-6059139CF3F1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{39D025DA-E557-47BB-B1EF-D6EDB98CBA98}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{41E83057-88C0-4953-8A3E-0B5D34E6DB87}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{BB9EE928-6F2C-4C12-B770-25B3E154348A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9F72AEDC-3016-4E42-996F-0A6F850804EF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{21EBC216-D794-4616-8EA1-C37F1CA984FE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{0AE21011-D5BF-4912-B1E0-BEC7D7E91F19}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{499F8AC2-AD07-4BD2-98F8-86DAF2E3DFF4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{104DF239-85F7-4D5A-9F9C-E1C00D156D03}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{7F77DEF7-BDA2-4AF7-8544-BB18DC664F85}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0628C817-0512-4E92-A84E-B1FD920841EC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{DB7DEEFA-48DD-4364-929B-2985738ED72F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{7B61FC91-F51C-445F-BCCD-24AC4590BB91}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{373DCE96-CDC2-44EE-B68C-AC384EC0DAFC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{8865A525-3CE2-4872-ADEF-2267B73494C8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{B3B02D8A-B280-4FB6-93B3-DCDDA250F4C6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{6C8572EA-B5DE-4A83-9428-E20D66A2BC0F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{FF9677E5-9F5C-47BD-B8B5-2DB5508CCE95}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{D1AD68D2-D7B7-4B1C-A445-FC2ECF17C397}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7B5A732B-6171-4FFD-A6B4-CEA252C6AFB8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{BE160F19-7787-4B43-B179-91425653757E}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{06D7E506-3D76-416A-AB77-460CCF93C5C0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{BB96111C-D2EB-4FEA-8EFF-7D48C957DD8E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{F690DCE4-39EF-4785-BF6D-AEF8C3711173}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{368DBF97-833E-4AD5-989E-6059139CF3F1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0A7B06A1-CFC5-4A4A-9790-A3762C28911C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{16CF50EF-30FF-419B-BB14-5B4D7AD99DE0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{BB9EE928-6F2C-4C12-B770-25B3E154348A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{83C567D7-2CFE-48BB-AD5A-45B2F8944511}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Drums" ID="{B37BD9C9-E33E-4FCF-BB40-2849A424A4B0}" ShortID="52738496">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmDrumsA" ID="{DCCFC47C-1745-4897-A709-7719BF9B0B6D}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmDrumsA.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="953815548"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{ED5E4F46-441E-4950-96A9-D7C250286BFA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{71F42C65-BAC7-4B41-8955-76DB64496F16}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmDrumsA" ID="{038FFED7-C120-44DC-AF0B-D073DFC9F1BC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="17454.5351473923"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmDrumsA" ID="{DCCFC47C-1745-4897-A709-7719BF9B0B6D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{AB8ED51F-FF82-40A0-A384-BEE89AA23D85}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E7BDAA01-C0C2-4857-B842-B60BB84F59CD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="17454.5454545455"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Full Drum ASwell" ID="{5A475BD0-C36F-4E24-A40E-CE150520A817}" ShortID="450070394">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="37090.8987837559"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="IGH110BpmBass1" ID="{0AEC1C11-C97F-4FB5-BC10-2F61E02239A6}" ShortID="953643244">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmBass1" ID="{106D3986-AFB3-4C74-92FB-5E67D9517C5D}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899809738"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass2" ID="{0944B578-7525-42A2-8B93-1514AD8FBAD6}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="132294065"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass3" ID="{B4DED6E9-87B4-4E2E-907C-C66606D22313}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="92453598"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass4" ID="{5583315A-07BC-4E90-8F08-4D437BD0163B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680660083"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass5" ID="{B5A3C362-6E0C-4426-AD2A-6B05A37BBE54}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937561067"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass6" ID="{1CB4413F-DFCF-4C4B-A8CF-C922803A545B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875214318"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass7" ID="{7D44DB04-0E98-4E96-A65E-68451266DD5E}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711720068"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass8" ID="{BD30AD7F-37B4-4E76-ADA9-93CD22740CB2}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417254143"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{18E05D84-2C34-419E-81AF-A8A1BC36A4D0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F2753544-3B19-49E1-B803-F5533E4337DE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{5FDAE311-399E-4264-8335-4EF01B8EFA8B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{106D3986-AFB3-4C74-92FB-5E67D9517C5D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F69A518E-373F-4D4C-AB10-F1239DEBD154}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{301E2A1C-F0D2-422D-BC9E-8CC77FB3F9A2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{0944B578-7525-42A2-8B93-1514AD8FBAD6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{35CB6D32-2176-424F-BE97-C8A153F50CFC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{07BE60DF-2D44-42F1-BAAC-539A31441B05}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{B4DED6E9-87B4-4E2E-907C-C66606D22313}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{09C572F5-A55A-45C7-AD8A-1E7883E42DDF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{06A38E74-FF55-4AA4-9257-8AF123D477E1}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{5583315A-07BC-4E90-8F08-4D437BD0163B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F03A54C4-4595-4F9A-B158-CF1A8351167E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{8A8CC0EC-89D1-4B2D-92A2-8078D8DDE759}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{B5A3C362-6E0C-4426-AD2A-6B05A37BBE54}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4FADDFF2-5FAD-44F1-A7E9-78B5DF55C6A9}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{3D5E2B34-EE1E-441B-AC3B-0C47EEBC1F35}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{1CB4413F-DFCF-4C4B-A8CF-C922803A545B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2AF5EC68-B7A8-4B4D-8001-550B41552EE0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{3A1019C0-9979-488E-97F6-4B4E5F7F85E2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{7D44DB04-0E98-4E96-A65E-68451266DD5E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F95F7405-78F4-4A32-A0E5-0CBE4D4049C5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{8F625999-8BF3-4ED5-92F1-B616F772CDE5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{BD30AD7F-37B4-4E76-ADA9-93CD22740CB2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D1237F99-0BA7-4A5F-8942-A52E15851A56}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{659CA809-C130-44DE-9F65-08F2BF8589A0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{106D3986-AFB3-4C74-92FB-5E67D9517C5D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3D13FF92-CBF0-4755-9DC3-83D122BEFAB4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{E8F77BC4-401F-484E-AB10-600B9C4B39B4}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{0944B578-7525-42A2-8B93-1514AD8FBAD6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C94C6444-F11D-49B0-92B6-B3E409C5CD9E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{AA302996-06C5-42D5-B54B-33DDC176D196}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{B4DED6E9-87B4-4E2E-907C-C66606D22313}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7FD737CC-0A3F-41A8-A868-48C2F13F6214}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{E6F7E9D7-ABAA-433D-9C44-AF1F5370BFE3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{5583315A-07BC-4E90-8F08-4D437BD0163B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{6DDBB5E1-AA26-40A4-8972-134294C714D3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{8156318E-9C10-4BC5-9710-5714C09FC60D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{B5A3C362-6E0C-4426-AD2A-6B05A37BBE54}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7E234917-2247-48A0-8082-6A62704CFCC5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{3A53DE64-7583-496F-9728-AF650EDB0B6F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{1CB4413F-DFCF-4C4B-A8CF-C922803A545B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{57A52F59-8BC0-4BF2-836E-4DCA5199135E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{9741834E-0974-4240-A173-27E7AC366C22}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{7D44DB04-0E98-4E96-A65E-68451266DD5E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1CD43A91-B5C5-49A4-A59D-1108E2227F8E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{08098533-3484-4F53-A3DF-0F54F1EF02D9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{BD30AD7F-37B4-4E76-ADA9-93CD22740CB2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{04088C19-1031-488F-B0BE-C360A985843D}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="IGH110BpmArp1" ID="{8BECA856-4BB6-409B-A1E5-C9E9EC3C0C8C}" ShortID="334462605">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmArp1" ID="{5E8867FC-BD61-4C2B-A366-DAE13AA1080A}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361609316"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp2" ID="{D36CA94A-6EA9-497F-8E27-E22AE76F201F}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864167629"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp3" ID="{B311F8F4-DF05-4CB6-AE7E-D30F36B414D1}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801015139"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp4" ID="{9A3D629C-EAC8-4EE3-901F-74FD89757D21}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187710334"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp5" ID="{618A16D2-F4BD-4AC4-AEC6-227CFE54C6A8}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="629740398"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp6" ID="{1B83253B-56E2-4EE9-AED4-E9C87CF95367}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300250873"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp7" ID="{0BCC04A0-8DC1-4E1D-BE51-27839310FBBF}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103251704"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp8" ID="{C66558D3-C14B-46D6-914C-E6FAD0B3C215}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711885076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{787A8A9A-E420-46DF-BB13-4036B23AFE01}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{12808E8C-7EE4-4113-97E5-B45C69220E1A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{8D606EAC-6A05-41C4-838E-AC1369C1CEF0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{5E8867FC-BD61-4C2B-A366-DAE13AA1080A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5E63ADB9-C5D6-4D32-B3B4-15FFF730A56B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{E4AE073C-4B77-49BC-83C7-A90F626B0955}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{D36CA94A-6EA9-497F-8E27-E22AE76F201F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5EC1990D-19F5-4750-91E5-176E21E44C65}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{C4299F5E-E363-4D60-9B61-0CB3D57257B2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{B311F8F4-DF05-4CB6-AE7E-D30F36B414D1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{446D0BBB-EAEE-4A2E-98A0-0BC2DADEC944}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{15776E82-8D54-4157-A681-E2B96F33C4B1}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{9A3D629C-EAC8-4EE3-901F-74FD89757D21}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{289DB664-0B7D-47B6-9364-C40121868908}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{3691BB6C-B90B-4DA6-A9AA-96D4110FE882}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{618A16D2-F4BD-4AC4-AEC6-227CFE54C6A8}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C3DE10E9-760A-4957-AFF3-8E7B6578B411}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{7E2F885E-E835-41CE-A1D2-1C8A40C42F81}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{1B83253B-56E2-4EE9-AED4-E9C87CF95367}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{427FCB0B-1A13-4215-BCE9-7356EBDFD006}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{39A69EEA-9FF9-45A8-AFD6-CBF45527C7FA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{0BCC04A0-8DC1-4E1D-BE51-27839310FBBF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{615BA201-A622-4B9B-B6EA-7E5D0C223E2D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{058318F9-35C3-4F47-A8AB-67A9DB6CE505}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{C66558D3-C14B-46D6-914C-E6FAD0B3C215}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D0E6B2A5-2983-4D84-B270-4285192812FD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{B1F60CEE-6F95-4855-8FA4-994B32CCDD65}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{5E8867FC-BD61-4C2B-A366-DAE13AA1080A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{90AFA58A-1AEF-48CF-BF54-CB16BE252B95}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{8A86E941-682E-41D0-8A61-F5E60EE1D8DA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{D36CA94A-6EA9-497F-8E27-E22AE76F201F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8290458E-2AE1-4BD2-BCCC-C63030870E4A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{DFADD922-4547-4CD0-8F9B-AA50BA238135}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{B311F8F4-DF05-4CB6-AE7E-D30F36B414D1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{CF7A2697-A3F9-48F4-9A27-DB396BC0EC25}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{0CBEB6C2-9937-4FC1-B4B6-329987925B79}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{9A3D629C-EAC8-4EE3-901F-74FD89757D21}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2849E112-FF4E-4A8C-B25C-BAFC78B66453}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{CF596CF7-8174-4DD0-9CA0-9B76D4A723A8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{618A16D2-F4BD-4AC4-AEC6-227CFE54C6A8}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F702C801-D2C7-4A64-8391-C6D64C224E9B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{02E9338B-9480-4B55-ADC4-89D50EC9F7ED}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{1B83253B-56E2-4EE9-AED4-E9C87CF95367}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5DE8406D-C3CF-4AF2-A29F-AE69C726B394}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{FB842FEE-0FC1-4B1F-85EA-24BA4BB3DBA9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{0BCC04A0-8DC1-4E1D-BE51-27839310FBBF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4362625B-7CAD-46C7-BB1F-413209953215}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{47B623CD-D60F-418A-9938-F25606151BE9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{C66558D3-C14B-46D6-914C-E6FAD0B3C215}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{41B1C584-8EBC-4BFA-9CAA-1207FB6CF03B}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Drums" ID="{D78F3BD6-BE80-4941-B412-300B1E34A44C}" ShortID="785832696">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmDrums1WithSwell" ID="{8E72EB08-ECD4-45AE-8C4E-616DBEFF82A4}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmDrums1WithSwell.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="608676237"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{48737C47-2723-4A97-9755-33638B3FCC5E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0AB953C1-5378-44B1-BB22-EDD54C8E8D37}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmDrums1WithSwell" ID="{8D826201-343A-410D-951A-03EB0FAF3DBF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="26181.8140589569"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmDrums1WithSwell" ID="{8E72EB08-ECD4-45AE-8C4E-616DBEFF82A4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{0219FA21-ECF2-4196-90CB-3F006CA8E77C}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="4363.63636363636"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{5023360F-E5D5-4BDA-88A3-6FB347D5C7F3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="21818.1818181818"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Full Drum BSwell" ID="{25C451CE-65F1-4350-A113-41976425E3F5}" ShortID="547143520">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="37090.8987837559"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="IGH110BpmBass1" ID="{CFECF64F-6A5E-41DF-A5C1-91024190C6B6}" ShortID="836112329">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmBass1" ID="{E8837705-94B7-42E7-83A6-3BC9877131F4}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899809738"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass2" ID="{9C27058E-FDF7-4F82-A0FC-4F5B274E12BD}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="132294065"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass3" ID="{8DD59C43-B332-4BAD-9343-254A94FA7165}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="92453598"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass4" ID="{D6E64626-B051-46CD-A36B-C215879EE4EF}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680660083"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass5" ID="{C15E9287-9FD8-4654-B602-0213285646C1}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937561067"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass6" ID="{172ECDA9-BD9C-490A-8EBB-DECEE0D8A45D}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875214318"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass7" ID="{3157CD42-C8E3-40A5-B204-A5D05247D4C0}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711720068"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass8" ID="{E1051E75-614E-48EC-99F8-3CCDD961E871}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417254143"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E74D3E83-BC3F-40EB-9F48-A1E07898697C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{38A9F2E6-7EBD-4CA0-82DC-C77B3112536D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{CA5B3C8A-DB5F-4E8A-9F1E-733F37F0CD7A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{E8837705-94B7-42E7-83A6-3BC9877131F4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2E1C62F9-5760-438A-96FE-947723C5D1A2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{E098E3B0-B48E-45DF-94E1-CB9ECCC3BC38}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{9C27058E-FDF7-4F82-A0FC-4F5B274E12BD}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{BB8BA067-62C6-438E-A2ED-763D335A2AC9}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{BCF6C908-534F-49ED-BEAA-5C6EB3727072}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{8DD59C43-B332-4BAD-9343-254A94FA7165}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1DB46569-E92A-4728-A3A1-0F6DA57E34AA}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{3570172C-D740-40AF-BBEB-4535EC9E5424}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{D6E64626-B051-46CD-A36B-C215879EE4EF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B4274DE1-A8AC-432B-A267-B260A0A924CC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{C2C1F33B-ACAD-473A-A4B3-BE7A89F94B38}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{C15E9287-9FD8-4654-B602-0213285646C1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2859312F-1732-4087-B373-5367A1440AF7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{7A8B4811-5544-421B-8362-F8491958C962}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{172ECDA9-BD9C-490A-8EBB-DECEE0D8A45D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B4E53FBD-1AA0-470F-8F67-BED8DC7250A3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{3D78B449-ECD2-410C-B0A9-A4B098A526AB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{3157CD42-C8E3-40A5-B204-A5D05247D4C0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D1D30296-B84B-4DB0-93B8-E6E9B9BEA3B3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{5C6DF954-C3C8-480C-8397-8EF5A0924D7C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{E1051E75-614E-48EC-99F8-3CCDD961E871}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3528E22F-EE8F-41A4-A1F4-6405D7ED0A9D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{DF10A8F2-4206-477C-8B2B-21B67E2CB769}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{E8837705-94B7-42E7-83A6-3BC9877131F4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{27C1DC72-EE8A-490E-8B98-DC80A8C5C012}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{061DD250-CEBE-412F-9D0C-BB419B8B8C66}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{9C27058E-FDF7-4F82-A0FC-4F5B274E12BD}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7E53947F-98E6-4D18-BF4C-42531CE6A839}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{D0B0CF28-981E-4C48-AF25-BE37EAFBA514}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{8DD59C43-B332-4BAD-9343-254A94FA7165}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{A05D9A7F-DC68-47F4-AB2D-8FF19DA0D1CF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{19560006-DEEE-4419-9001-5BBD94E10E8C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{D6E64626-B051-46CD-A36B-C215879EE4EF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{745302F4-5A41-4CE4-976E-D96952F703BF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{0956D902-4BF5-4F86-B7AA-63E4386AEBFA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{C15E9287-9FD8-4654-B602-0213285646C1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8CC9D19E-763D-4E62-B714-AFE42A8C0B63}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{E70F6258-11A3-4B4C-BC54-A18C589FA877}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{172ECDA9-BD9C-490A-8EBB-DECEE0D8A45D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9412DE05-10FA-4892-B4AC-E2F6674185A9}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{C13F6BF8-DABE-4BCF-BCBB-1BDC38A29E8C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{3157CD42-C8E3-40A5-B204-A5D05247D4C0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{A5D04628-63D2-4602-B9B2-103858CD30C1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{6DDA11D2-3575-4D63-BB62-F2AAE169A8CD}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{E1051E75-614E-48EC-99F8-3CCDD961E871}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{931335CA-6A3F-412D-A930-40A0CA700AFB}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="IGH110BpmArp1" ID="{0BCB1D83-EC70-48DB-B1CD-45BF404114B5}" ShortID="222906624">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmArp1" ID="{7CFCE44B-77EB-402B-BE8B-30369DBF93AA}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361609316"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp2" ID="{A9041FF4-1825-4F56-BEA5-438FF21940B4}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864167629"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp3" ID="{6FE93B15-F23C-4EE7-9409-96BAA3A7EC6F}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801015139"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp4" ID="{D0D1F01B-1A3B-467C-99A5-64322442AA4E}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187710334"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp5" ID="{81526931-81F1-4CA3-92A1-B8D583880519}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="629740398"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp6" ID="{293D6FB0-C2BD-4117-AA79-F0A7F30E39E8}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300250873"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp7" ID="{A8DCBD6F-3876-43B9-8A3B-AE095A59A944}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103251704"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp8" ID="{D3AA8AEA-5715-4FC4-A84A-60441B5C1CE6}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711885076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F0779416-1D0B-4136-9C9B-08BCA8415C68}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{13504B9A-5F11-4671-A023-DA1831F85A15}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{6299691A-AAB7-4B72-A1F8-228851909166}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{7CFCE44B-77EB-402B-BE8B-30369DBF93AA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D63C11B5-6F0C-468A-A533-1D1DC35384BF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{33C25379-EFD1-45A8-A30A-DFF295799995}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{A9041FF4-1825-4F56-BEA5-438FF21940B4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2185172E-1451-4B53-8A45-B198150564AA}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{B4C43995-439E-40A1-BB88-2F2BDBC276E2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{6FE93B15-F23C-4EE7-9409-96BAA3A7EC6F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4CF582F8-6807-4E72-AD74-0B82B4F900EE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{1F3A1866-F7E2-4EA5-9E13-9CD721F55F2F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{D0D1F01B-1A3B-467C-99A5-64322442AA4E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{78FE02D2-8100-4C6C-801F-D6E7B9B66989}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{63A61D37-E738-4DFE-ADDB-29ADD4BECEB5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{81526931-81F1-4CA3-92A1-B8D583880519}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C646270F-253A-4D60-9CCB-C2E72A77604E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{0B1703F8-4E3A-4B44-84D6-CE24FA233AD3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{293D6FB0-C2BD-4117-AA79-F0A7F30E39E8}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{900F4DEF-C206-4A24-87B4-83F3F1A7402F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{6D1429E1-1E3C-4C65-9B21-008527B9004A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{A8DCBD6F-3876-43B9-8A3B-AE095A59A944}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C364B4C1-6647-4D1F-AC24-925F559C6967}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{69DF16B8-7AFC-4F9F-839C-023B85424F6C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{D3AA8AEA-5715-4FC4-A84A-60441B5C1CE6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2D81AE7B-8BAC-4928-BD8A-CC97CC7DD805}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{74372E30-5FBC-4186-98D2-A7F0F4214DD6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{7CFCE44B-77EB-402B-BE8B-30369DBF93AA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{A1498FE9-30AA-4C0E-9CC1-915FF0884300}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{9B1195E8-2CDA-4D1D-9253-E08773FD4C58}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{A9041FF4-1825-4F56-BEA5-438FF21940B4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F521E588-F64F-4881-AAA5-A6A471A9AA50}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{B3927F7C-9A19-41DE-8A2F-93FF79C291F6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{6FE93B15-F23C-4EE7-9409-96BAA3A7EC6F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{FCC92225-7ABC-4785-809A-4EA4FEE27BE2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{37285D9F-C952-4DAE-8317-7B9832D5FD71}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{D0D1F01B-1A3B-467C-99A5-64322442AA4E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3BE21591-B72E-488F-B067-28E8F5496593}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{36EA763F-C178-4094-99BB-7D7EA1030DFB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{81526931-81F1-4CA3-92A1-B8D583880519}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{ED059CB9-095B-41C4-B066-E04C8DD1CA99}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{D94FC537-24FB-4E72-902E-2ACDAEE365C3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{293D6FB0-C2BD-4117-AA79-F0A7F30E39E8}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EA159B68-4C50-451B-AE79-E79A092DB5F5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{A9C0726A-8F8B-4189-A915-C6216C4C9FA7}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{A8DCBD6F-3876-43B9-8A3B-AE095A59A944}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{75F3D79D-C26F-431B-B604-F347595565FF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{9EE31C50-AFB4-4394-88E1-6337F4B94BDA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4363.63636363636"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{D3AA8AEA-5715-4FC4-A84A-60441B5C1CE6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{65FC60DB-39C4-4E16-8581-79F226E099EF}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Drums" ID="{C81FD989-E674-46E6-8158-C77F7C139D21}" ShortID="917945237">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmDrums2WithSwell" ID="{73674CA5-A3C6-4EAA-9C0C-63937BFCE43D}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmDrums2WithSwell.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1014985132"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E655FF2D-DFDA-4D2C-A1DA-7E5A014AB651}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C07B0EA5-244F-4A17-A4C9-EEB7EAA75FF5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmDrums2WithSwell" ID="{B3C381E4-ACDD-4EB9-B6DE-24326B9AFF24}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="26181.8140589569"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmDrums2WithSwell" ID="{73674CA5-A3C6-4EAA-9C0C-63937BFCE43D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{9C5A47FC-9475-4D11-B300-1D9BD896E673}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="4363.63636363636"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{255B00D3-C09A-4A70-BB75-C86F2180E9E5}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="21818.1818181818"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Full Drum B" ID="{075E1720-D4B6-49CB-B90C-F9E947449F34}" ShortID="1043897800">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="37090.8987837559"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="IGH110BpmBass1" ID="{5D843EDE-9D41-46CD-85E8-0F03C83D6189}" ShortID="58200009">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmBass1" ID="{BF01DBA0-A770-4688-B3EA-496289776214}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899809738"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass2" ID="{936D1D40-2C20-43EE-9AA6-7D1A2F7DEB7B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="132294065"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass3" ID="{3F744541-2459-4780-BEEA-D5F272B4D0A2}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="92453598"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass4" ID="{25B18F1A-E1D0-4FAA-814E-690223A9B5E1}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680660083"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass5" ID="{D6C349D1-7697-4276-990C-43D226511097}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937561067"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass6" ID="{BB5A8F55-335F-4DF7-BD84-FAB8E86BCCD2}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875214318"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass7" ID="{FEF2D014-EDD6-44D2-B1B8-023FF31BB848}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711720068"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmBass8" ID="{4955F124-59ED-4C33-BF0A-39CC5D228A80}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmBass8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417254143"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{763183DF-0F2B-4082-998A-9DF86F74F49A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{42A0EEE4-2AB1-4C53-8C8B-E694F89EBFB2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{2BE80DC0-CA66-456C-B147-2F4918BD6A83}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{BF01DBA0-A770-4688-B3EA-496289776214}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B0A7E1D5-F321-47A9-8BC3-FC432076871E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{B491471A-A6D2-4CFE-A0C4-A0711B6A7012}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{936D1D40-2C20-43EE-9AA6-7D1A2F7DEB7B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7E548A3A-DCEF-40CD-973A-454E384685AE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{A0FF2376-7214-4018-8AED-836ABFBB2A9F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{3F744541-2459-4780-BEEA-D5F272B4D0A2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5ED7308D-B764-49A9-885D-0BB989A07B69}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{C5614631-ACED-42C0-879E-3FDD0CACF9DA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{25B18F1A-E1D0-4FAA-814E-690223A9B5E1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{A7E8135D-44F6-400A-BBFC-F02E1A86B7B7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{827FBEB4-F708-44F7-A147-ADA3C2215525}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{D6C349D1-7697-4276-990C-43D226511097}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2680ACA3-70C4-4F1F-9B0F-96D3102F7E02}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{215E5B78-C194-447D-9B4C-3A9F35F2AFE9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{BB5A8F55-335F-4DF7-BD84-FAB8E86BCCD2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{246A0E4B-CDDD-4727-A05F-EF1B46B99C50}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{A027E4CE-832E-4A4F-9B78-8F957D2AEB84}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{FEF2D014-EDD6-44D2-B1B8-023FF31BB848}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{53871C49-229D-4E62-9672-8BE7E32180F0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{9C95345D-CA1D-4A23-9AE2-8468F3F91C60}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{4955F124-59ED-4C33-BF0A-39CC5D228A80}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{246684A3-A914-48DC-ADA3-4860B5D5B633}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass1" ID="{6E5C416F-0AB4-4EA6-92DF-04D3530641DC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass1" ID="{BF01DBA0-A770-4688-B3EA-496289776214}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{DBE98169-73E1-4C22-B549-8303249471A5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass2" ID="{BD504DE2-D57C-4377-8D81-33C884F154F2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass2" ID="{936D1D40-2C20-43EE-9AA6-7D1A2F7DEB7B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1F88427D-6433-4BFD-B3D1-B1B8BFCE0CD6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass3" ID="{29A3EB72-5AA9-40EF-8AD3-25E5F18FC2A8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass3" ID="{3F744541-2459-4780-BEEA-D5F272B4D0A2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{708BE340-3490-454F-BD48-FAD170BF0E25}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass4" ID="{317E9329-BAC1-4B25-9DA6-2D286A17546A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass4" ID="{25B18F1A-E1D0-4FAA-814E-690223A9B5E1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{6AB0B666-86F1-4065-A42D-F600C9498DD2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass5" ID="{8A910CC0-719A-4788-9587-5B19F98E0A3A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass5" ID="{D6C349D1-7697-4276-990C-43D226511097}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4F27B6B4-41AA-4F6D-AEC5-EB67CCAE8FCC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass6" ID="{E6B4C085-DC10-4A03-9EB5-D21511C99D73}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass6" ID="{BB5A8F55-335F-4DF7-BD84-FAB8E86BCCD2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{98E9EB37-7841-46B5-B3B1-7036D138697F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass7" ID="{9FB9F3E6-46DA-4B2F-BAD0-21887EFF3CD5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass7" ID="{FEF2D014-EDD6-44D2-B1B8-023FF31BB848}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{938BB1F6-B417-46D1-889B-A1E3C46DD13B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmBass8" ID="{F8EAA4D3-0A89-4E34-9740-C4A7C7854CD3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmBass8" ID="{4955F124-59ED-4C33-BF0A-39CC5D228A80}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D9C852DE-E49A-4A5E-A762-023665E18B8A}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="IGH110BpmArp1" ID="{4954717E-A24A-444B-ABAA-5A29D7CD6B05}" ShortID="335853292">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmArp1" ID="{08D33552-72C4-4926-9FB2-20EC9A92AEAC}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361609316"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp2" ID="{E26EB39D-C5C5-4907-B08F-B77AEC6D9C4B}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864167629"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp3" ID="{F672AF82-0C23-4A0A-9DB6-7BFD62B6E420}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801015139"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp4" ID="{F19CA1C2-15DF-4B2C-94DF-4A19AB67EA95}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187710334"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp5" ID="{8BBF7651-733A-4F54-8818-804880597C95}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="629740398"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp6" ID="{C0BBAD01-722A-49C4-9F00-6EE553E50AEE}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300250873"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp7" ID="{B125414E-E027-4EB8-A6B8-18A33FB49046}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103251704"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp8" ID="{49070585-0224-4F2C-B55B-5AE27910020E}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711885076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0A072FA6-EEF0-4FA2-AAA9-1F16FC06AE8A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{AC59F206-ABE7-4E1E-8ED7-336DA8CB64F3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{858A2CDE-37CA-41FA-B4B7-512BA148BAD3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{08D33552-72C4-4926-9FB2-20EC9A92AEAC}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{DFB6898E-1250-4040-8D4F-98929E91540F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{FA3B10B9-0B93-4C02-BD7A-66FA6E6B10F1}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{E26EB39D-C5C5-4907-B08F-B77AEC6D9C4B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{71EBFFB6-CD46-42CB-B934-AEA4AB48CD12}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{473A18B6-7031-471F-97BE-68D4E796890F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{F672AF82-0C23-4A0A-9DB6-7BFD62B6E420}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F82EDA90-DDB8-45C6-B384-32743615B571}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{B798F8AF-7AE3-4142-997F-34AD8F9CE64C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{F19CA1C2-15DF-4B2C-94DF-4A19AB67EA95}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{864646DF-B350-4B58-BA64-C596D92A9314}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{E995E6F1-DA25-499F-BC07-D01F6AEDAF67}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{8BBF7651-733A-4F54-8818-804880597C95}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4E6BAFCC-700A-4C77-B867-825CD04F352C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{0B144E57-48B7-4E6C-A7BA-3C7905A50347}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{C0BBAD01-722A-49C4-9F00-6EE553E50AEE}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8AF165A7-0965-4B90-B6DB-DDCB6A2F7D35}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{2134C713-CD90-4B29-9B8E-A4382E05BE04}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{B125414E-E027-4EB8-A6B8-18A33FB49046}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4067A6A5-5092-498D-8BE4-B38C24AD1855}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{BDCDA450-F0FD-4578-9DA3-BD687929A347}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{49070585-0224-4F2C-B55B-5AE27910020E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{55EAD7AF-D9F1-47F0-8879-7DB959D319D5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{889C6F07-C594-4906-9F86-6ECA5F424956}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{08D33552-72C4-4926-9FB2-20EC9A92AEAC}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{930F5B1D-8085-4523-911C-93EAC7ABF1D2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{EE4739C0-01CA-4682-9E07-16C07F425B21}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{E26EB39D-C5C5-4907-B08F-B77AEC6D9C4B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{93F9ADD2-F868-4B4B-9964-13351C8E6DD6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{0340ECB8-A2D1-4F71-AA9B-BF0976F5B7EC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{F672AF82-0C23-4A0A-9DB6-7BFD62B6E420}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{76CB4A60-DD3D-4CDF-A4BF-1E23BFFA3A52}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{E07C1371-3CF9-4751-9568-D5BD1B99B95A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{F19CA1C2-15DF-4B2C-94DF-4A19AB67EA95}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{532A358F-7B15-4121-BC76-273EA719A157}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{FE9405C3-292A-42A1-A38F-1316A99F3A78}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{8BBF7651-733A-4F54-8818-804880597C95}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7CC0F62A-738F-4F18-B507-B82F1A293B0D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{E9F1CAC7-0042-4958-B098-33AB9F0027CC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{C0BBAD01-722A-49C4-9F00-6EE553E50AEE}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9EEE860F-B4B0-41F3-893F-CEEEC366FF91}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{65E57BF2-8B9F-4DB7-A6EA-7D9246C7F78B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{B125414E-E027-4EB8-A6B8-18A33FB49046}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3B344784-D78F-46A6-B8E9-427C78442826}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{CA265026-3388-499D-B7AC-A280062F1FF0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{49070585-0224-4F2C-B55B-5AE27910020E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{33D0BC15-89C4-4B3C-B23A-33549776CDDC}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Drums" ID="{EDA9C82F-B4D7-4D25-8E37-0148844024D1}" ShortID="467286913">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmDrumsB" ID="{405F2734-0556-469C-BE0F-E97B642B3E85}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmDrumsB.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="316856820"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C5322519-1250-4A12-8DCE-65796E02742E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E7D510AE-3E6F-4064-B5E7-7AAFEE7A0D61}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmDrumsB" ID="{9C78E879-6FFC-4C3E-B8F8-A07512008D94}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="17454.5351473923"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmDrumsB" ID="{405F2734-0556-469C-BE0F-E97B642B3E85}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{5AAD6F06-2C0C-41E5-B41B-BF0311832C26}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{3CB03CF9-EED1-4BEC-9039-DE4F57338EDD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="17454.5454545455"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Just Arp" ID="{8288FB77-1C33-46FB-9A79-FBC8FF15BF3A}" ShortID="427734284">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="37090.8987837559"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F3642E79-17DD-486F-8569-BC45F2525CB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="IGH110BpmArp1" ID="{1992C587-1D4C-4B77-8C46-82FB963C7AE3}" ShortID="161126020">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D513355-B01F-4E21-B788-A23BE9002277}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IGH110BpmArp1" ID="{415119F3-58CF-4A02-B34B-BBAE6C2D3EC2}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361609316"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp2" ID="{7577EA09-B0F2-440E-B1CF-3148E5721CCE}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864167629"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp3" ID="{0FFD3B3E-D4AE-4586-9F9F-E302824304B2}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801015139"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp4" ID="{133620B7-5407-42C4-BE12-DF504C25EB99}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187710334"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp5" ID="{39BB95DA-0A7B-451D-B8F5-79B01ABE6E23}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="629740398"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp6" ID="{399761A5-D3B1-49B7-8780-5CC8660543F9}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300250873"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp7" ID="{6C1CA3B2-56CE-4AFF-A9D7-3E09CD17A5F4}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103251704"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="IGH110BpmArp8" ID="{EB8291E5-95FB-477D-8096-16D2F7B83CEC}">
+											<Language>SFX</Language>
+											<AudioFile>IGH110BpmArp8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711885076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5CFDFE49-F2B6-452E-9FE9-75C2A983417B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{96CFC1BB-B721-49C1-AA1B-D4ED6B3923A8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp1" ID="{E0C0C987-6BF5-4DDB-BBB6-11D698AED855}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23999.977324263"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp1" ID="{415119F3-58CF-4A02-B34B-BBAE6C2D3EC2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0D5E12AF-803F-47E3-B491-F41A8AD47E03}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp2" ID="{EF2687D6-8BF4-4C15-8156-C45952FA789B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp2" ID="{7577EA09-B0F2-440E-B1CF-3148E5721CCE}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C71BB641-0C84-4599-B42D-9D2B9DA86E44}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp3" ID="{5182AD3E-8B5B-41CB-ADE4-96099CCEACCA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp3" ID="{0FFD3B3E-D4AE-4586-9F9F-E302824304B2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{718745E5-09E8-4429-B1B8-B981B9D14E41}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp4" ID="{AB54D8C7-F2C1-4E12-AB2D-D6D5DC60CD33}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp4" ID="{133620B7-5407-42C4-BE12-DF504C25EB99}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9717E9FA-E444-400D-8EF5-C7313C229274}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp5" ID="{7CA205E6-B255-444D-AA44-A8D925B19534}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp5" ID="{39BB95DA-0A7B-451D-B8F5-79B01ABE6E23}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B9A2F5BD-987B-43E1-8F2D-1BAA497C5810}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp6" ID="{D505167A-843C-430F-93E3-3BE84F97A052}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp6" ID="{399761A5-D3B1-49B7-8780-5CC8660543F9}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3C797218-8079-4682-8C53-11FDF7CC5A5B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp7" ID="{29A6DC41-165B-4459-A846-4F1455C2A808}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp7" ID="{6C1CA3B2-56CE-4AFF-A9D7-3E09CD17A5F4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{39AA6C98-C4ED-4E90-9121-DF928E52E2FD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="IGH110BpmArp8" ID="{66CBCC3D-7420-4B91-AA60-EF904FA4DAE6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="IGH110BpmArp8" ID="{EB8291E5-95FB-477D-8096-16D2F7B83CEC}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{CE90E376-A900-4AF2-8FA1-D0DCE6865592}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{AD881CB9-4CA4-4685-B2D9-473BAD3E2C37}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="17454.5454545455"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{67FA7111-6D91-4DCD-8E69-698DC0AB651B}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{5ED305F5-7D64-43CB-9DE1-D651683D7AB4}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{4F15B5E2-9CBA-4C59-9B59-E3025157CDFA}" ShortID="128865266">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{B889C895-F917-4FA3-9E55-321D52927BAA}" ShortID="920983286">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Just Arp" ID="{8288FB77-1C33-46FB-9A79-FBC8FF15BF3A}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{D9E55CDB-E182-4E94-95E8-26ADEBC02994}" ShortID="126673204">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{D473BAC5-EA8F-43DF-A49E-724D2B384148}" ShortID="1043360996">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{3A7C2A76-6BE3-4D2E-8095-54BC393A7AA7}" ShortID="562891292">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Full Drum ASwell" ID="{5A475BD0-C36F-4E24-A40E-CE150520A817}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{AA751A53-1C4A-4D9A-B3F7-AA509888C720}" ShortID="697478640">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Full Drum A" ID="{89E7E2A8-5CE8-4AD8-A8C9-6787A6C13EA0}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{24E8E809-77B4-41A1-984D-63D08273E1EE}" ShortID="676199864">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{92F1F301-6D9A-40EB-B64C-D87D659D322B}" ShortID="224999733">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Full Drum BSwell" ID="{25C451CE-65F1-4350-A113-41976425E3F5}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{C147AF12-56CC-43F3-8CAF-F062E24A20DC}" ShortID="500699431">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Full Drum B" ID="{075E1720-D4B6-49CB-B90C-F9E947449F34}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>
