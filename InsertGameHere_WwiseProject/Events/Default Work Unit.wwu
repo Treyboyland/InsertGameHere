@@ -10,7 +10,7 @@
 								<Action Name="" ID="{B6E471AC-C04D-4E40-900F-8FA0076798C3}" ShortID="999331557">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Music Playlist" ID="{ED39083A-E7C4-4852-A7EE-6CEA8840FE65}" WorkUnitID="{504FE070-9DAC-4595-A4C8-B42B985EA281}"/>
+											<ObjectRef Name="Music PlaylistOld" ID="{ED39083A-E7C4-4852-A7EE-6CEA8840FE65}" WorkUnitID="{504FE070-9DAC-4595-A4C8-B42B985EA281}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -22,117 +22,113 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{58C2796E-C26C-E671-D3B2-FCB83E8298A5}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{3BD5674D-DC61-8738-D71A-6F58477B4FB9}">
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<Media>
 				<File Id="48276901" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EnemyDeath-2.wav</ShortName>
-					<CachePath>SFX/EnemyDeath-2_10C4C929.wem</CachePath>
+					<CachePath>SFX/EnemyDeath-2_4DA49122.wem</CachePath>
 				</File>
 				<File Id="92453598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass3.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass3_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass3_C31B574C.wem</CachePath>
 				</File>
 				<File Id="103251704" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp7.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp7_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp7_C31B574C.wem</CachePath>
 				</File>
 				<File Id="132294065" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass2.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass2_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass2_C31B574C.wem</CachePath>
 				</File>
 				<File Id="187710334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp4.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp4_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp4_C31B574C.wem</CachePath>
 				</File>
 				<File Id="247716395" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ItemsNotFound.wav</ShortName>
-					<CachePath>SFX/ItemsNotFound_10C4C929.wem</CachePath>
+					<CachePath>SFX/ItemsNotFound_4DA49122.wem</CachePath>
 				</File>
 				<File Id="274916498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>NewLevel.wav</ShortName>
-					<CachePath>SFX/NewLevel_10C4C929.wem</CachePath>
+					<CachePath>SFX/NewLevel_4DA49122.wem</CachePath>
 				</File>
 				<File Id="300250873" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp6.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp6_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp6_C31B574C.wem</CachePath>
 				</File>
 				<File Id="316856820" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmDrumsB.wav</ShortName>
-					<CachePath>SFX/IGH110BpmDrumsB_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmDrumsB_C31B574C.wem</CachePath>
 				</File>
 				<File Id="361609316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp1.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp1_C31B574C.wem</CachePath>
 				</File>
 				<File Id="383723619" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerHurt.wav</ShortName>
-					<CachePath>SFX/PlayerHurt_10C4C929.wem</CachePath>
+					<CachePath>SFX/PlayerHurt_4DA49122.wem</CachePath>
 				</File>
 				<File Id="417254143" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass8.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass8_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="608676237" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>IGH110BpmDrums1WithSwell.wav</ShortName>
-					<CachePath>SFX/IGH110BpmDrums1WithSwell_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass8_C31B574C.wem</CachePath>
 				</File>
 				<File Id="629740398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp5.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp5_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp5_C31B574C.wem</CachePath>
 				</File>
 				<File Id="680660083" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass4.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass4_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass4_C31B574C.wem</CachePath>
 				</File>
 				<File Id="711720068" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass7.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass7_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass7_C31B574C.wem</CachePath>
 				</File>
 				<File Id="711885076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp8.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp8_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp8_C31B574C.wem</CachePath>
 				</File>
 				<File Id="722084351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CoinPickup.wav</ShortName>
-					<CachePath>SFX/CoinPickup_10C4C929.wem</CachePath>
+					<CachePath>SFX/CoinPickup_4DA49122.wem</CachePath>
 				</File>
 				<File Id="755881394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerShoot.wav</ShortName>
-					<CachePath>SFX/PlayerShoot_10C4C929.wem</CachePath>
+					<CachePath>SFX/PlayerShoot_4DA49122.wem</CachePath>
 				</File>
 				<File Id="801015139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp3.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp3_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp3_C31B574C.wem</CachePath>
 				</File>
 				<File Id="834041014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CartridgePickup.wav</ShortName>
-					<CachePath>SFX/CartridgePickup_10C4C929.wem</CachePath>
+					<CachePath>SFX/CartridgePickup_4DA49122.wem</CachePath>
 				</File>
 				<File Id="864167629" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp2.wav</ShortName>
-					<CachePath>SFX/IGH110BpmArp2_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmArp2_C31B574C.wem</CachePath>
 				</File>
 				<File Id="875214318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass6.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass6_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass6_C31B574C.wem</CachePath>
 				</File>
 				<File Id="899809738" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass1.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass1_C31B574C.wem</CachePath>
 				</File>
 				<File Id="937561067" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass5.wav</ShortName>
-					<CachePath>SFX/IGH110BpmBass5_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmBass5_C31B574C.wem</CachePath>
 				</File>
 				<File Id="953815548" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmDrumsA.wav</ShortName>
-					<CachePath>SFX/IGH110BpmDrumsA_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmDrumsA_C31B574C.wem</CachePath>
 				</File>
 				<File Id="1014985132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmDrums2WithSwell.wav</ShortName>
-					<CachePath>SFX/IGH110BpmDrums2WithSwell_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/IGH110BpmDrums2WithSwell_C31B574C.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -181,7 +177,6 @@
 						<MediaRef Id="316856820"/>
 						<MediaRef Id="361609316"/>
 						<MediaRef Id="417254143"/>
-						<MediaRef Id="608676237"/>
 						<MediaRef Id="629740398"/>
 						<MediaRef Id="680660083"/>
 						<MediaRef Id="711720068"/>
@@ -198,5 +193,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F1178FC1-AC2F-9778-9946-43CB4D3226DE}</FileHash>
+	<FileHash>{4492222F-4EDE-C31D-A661-C4A0FFF784CD}</FileHash>
 </SoundBanksInfo>
