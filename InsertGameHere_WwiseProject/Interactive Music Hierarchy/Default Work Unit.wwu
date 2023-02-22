@@ -26987,13 +26987,9 @@
 									<SegmentRef Name="Just Arp Dry" ID="{CC492CB9-BF3D-40F2-954C-7C2A29AA4D41}"/>
 								</MusicPlaylistItem>
 								<MusicPlaylistItem Name="" ID="{B2DC8F06-44DF-4BEC-9ABD-ABAC84024DA6}" ShortID="228933286">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{45ED8E13-08B5-48DE-A345-9EAC46954104}" ShortID="98089892">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="2"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="PlayMode" Type="int16" Value="3"/>
 											</PropertyList>
@@ -27067,12 +27063,6 @@
 														</Property>
 													</PropertyList>
 													<ChildrenList>
-														<MusicPlaylistItem Name="" ID="{578218C4-7539-41FF-93BE-6625FBFBB5C4}" ShortID="116354695">
-															<PropertyList>
-																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-															</PropertyList>
-															<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
-														</MusicPlaylistItem>
 														<MusicPlaylistItem Name="" ID="{8C67EC7D-84DA-4C61-9F6E-8739E1AC06DA}" ShortID="897095040">
 															<PropertyList>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
@@ -27095,6 +27085,13 @@
 													</ChildrenList>
 												</MusicPlaylistItem>
 												<MusicPlaylistItem Name="" ID="{649C6876-2D06-4654-81C5-D926D21C5D19}" ShortID="503871878">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>0.001</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{C676052C-D3DA-46D1-BAD1-872D7374E7C5}" ShortID="523888523">
 															<PropertyList>
@@ -27119,11 +27116,164 @@
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{7ECDB52F-0641-43B6-9EF5-FCF71CAAFDCF}" ShortID="367802212">
+										<MusicPlaylistItem Name="" ID="{75CCC21A-0CAF-4375-A81D-E3C4EBDDCBE5}" ShortID="965583335">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{7B1A39E1-0285-4193-842F-FF6675404C64}" ShortID="128759601">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="PlayMode" Type="int16" Value="3"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{1FF454C1-2E20-4720-8133-AC453D555BBC}" ShortID="279527617">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>0.001</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{61B751FC-9F8D-4D8E-B1AB-262D421DEB03}" ShortID="808866613">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{D9D0CA71-7B6F-41AE-ADFE-B7E1EECC98F2}" ShortID="365897151">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum ASwell" ID="{19848084-8414-42A1-9225-4D533EC7D92D}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{20170B3B-01CB-43BD-BE90-9DF1173DE85D}" ShortID="846157636">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum A" ID="{920C9676-502A-4A3B-B4A9-6C9B0D0D2A60}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{30ADCAE2-60F3-4FC1-B043-D998D39086F2}" ShortID="740708337">
+																	<PropertyList>
+																		<Property Name="LoopCount" Type="int16" Value="2"/>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum A Lead" ID="{7D16BA01-1413-4EBA-8C36-9D9FFE1FDA5F}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{35FEB33E-C254-4948-A729-791755F76284}" ShortID="670081211">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>0.001</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{7FDB2385-8CD5-47EB-A7FF-DDABCD1F82FE}" ShortID="238989366">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{34364435-1F5B-4E2E-B0F1-D92DCB90E055}" ShortID="142432951">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum BSwell" ID="{F9CA574A-0BC0-47C3-A42F-760101BBAEC3}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{309180A6-7187-4ACC-A2F9-03DF6D83F496}" ShortID="27394685">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum B" ID="{945402DB-1846-4176-9BF1-9DE70A77EEDE}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{7A717D55-3BF0-499B-824D-4D033AACDB97}" ShortID="532028459">
+																	<PropertyList>
+																		<Property Name="LoopCount" Type="int16" Value="2"/>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum B Lead" ID="{6136C80B-B877-440D-AE53-4A2582B16088}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{4AAFE1DA-AF98-4DD8-A6DB-05D44334F82B}" ShortID="224475248">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>99</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{7A0B0471-62E3-46E6-AB88-D3CF4A435829}" ShortID="830775026">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{6FBB2FF3-8014-4736-992C-63C263DAEF13}" ShortID="68034094">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum CSwell" ID="{97435382-9D1E-43BA-8593-E72406766731}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{5930099A-1D2D-4332-9FC3-BA02917548A7}" ShortID="711564866">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum C" ID="{391F8D75-A974-41B0-930D-F0C4B234D173}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{B03932B8-846D-4021-91BC-5D981F0718DC}" ShortID="175651912">
+																	<PropertyList>
+																		<Property Name="LoopCount" Type="int16" Value="2"/>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum C Lead" ID="{5F7AE863-3F2E-4994-B325-EE3688972B97}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{6A3449F7-24E2-4BAB-9356-DA034EA9DC96}" ShortID="1065981131">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>99</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{CD1AE1FB-2A1D-4714-B74C-5410143BF957}" ShortID="343659528">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Just ArpLeadSwell" ID="{FBC4A232-DB69-4C4A-A505-70E40DB7186C}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{0B8F535E-CE4C-42CD-9D98-6C874A51E613}" ShortID="841302944">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum DSwell" ID="{0F7D51FD-AAB8-4AB7-9227-C6CAC24EABFF}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{90021022-5BB5-491C-8D27-9AEA37528AC4}" ShortID="470129278">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum D" ID="{879314AD-1B91-45C3-B414-9D347F483FBD}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{A131D76C-3963-421F-9412-FECC12FA8989}" ShortID="604586627">
+																	<PropertyList>
+																		<Property Name="LoopCount" Type="int16" Value="2"/>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Full Drum D Lead" ID="{0D1A33D7-54DC-45A9-BE34-87E473AB3D00}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
