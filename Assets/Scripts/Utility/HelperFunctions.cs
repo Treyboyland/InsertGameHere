@@ -39,4 +39,26 @@ public static class HelperFunctions
             yield return null;
         }
     }
+
+    public static int Sum(this IEnumerable<int> list)
+    {
+        int total = 0;
+        foreach (var item in list)
+        {
+            total += item;
+        }
+
+        return total;
+    }
+
+    public static float Sum(this IEnumerable<float> list)
+    {
+        float total = 0;
+        foreach (var item in list)
+        {
+            total += item;
+        }
+
+        return total;
+    }
 }

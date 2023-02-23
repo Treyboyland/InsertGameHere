@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Items
+    uniqueID: 200596639
+    locked: 0
   - name: Enemy Particle
     uniqueID: 3112642839
     locked: 0

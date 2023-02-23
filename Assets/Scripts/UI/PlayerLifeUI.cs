@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLifeUI : MonoBehaviour
 {
     [SerializeField]
     GameObject heart;
+
+    [SerializeField]
+    Image heartImage;
+
+    [SerializeField]
+    List<Sprite> lifeSprites;
 
     public bool Active
     {
@@ -13,15 +20,27 @@ public class PlayerLifeUI : MonoBehaviour
         set => heart.SetActive(value);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public int HeartIndex { get; set; } = 0;
+
+    public void SetHeartSprite(int playerLives, int livesPerHeart)
     {
+        int spriteIndex = 0;
 
-    }
+        int lifeStart = HeartIndex * livesPerHeart;
 
-    // Update is called once per frame
-    void Update()
-    {
+        if (playerLives >= lifeStart + livesPerHeart)
+        {
+            spriteIndex = lifeSprites.Count - 1;
+        }
+        else if (playerLives <= lifeStart)
+        {
+            spriteIndex = 0;
+        }
+        else
+        {
+            spriteIndex = playerLives - lifeStart;
+        }
 
+        heartImage.sprite = lifeSprites[spriteIndex];
     }
 }

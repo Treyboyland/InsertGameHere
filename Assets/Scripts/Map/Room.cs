@@ -61,11 +61,6 @@ public class Room : MonoBehaviour
     List<GameObject> spawnedObjects = new List<GameObject>();
     List<GameObject> enemies = new List<GameObject>();
 
-    public const string ENEMY_TAG = "Enemy";
-    public const string OBSTACLE_TAG = "Obstacle";
-
-    bool alreadySpawned = false;
-
     List<Vector2> chosenEnemyPositions = new List<Vector2>();
 
     List<EnemySpawner> createdSpawners = new List<EnemySpawner>();
@@ -102,7 +97,10 @@ public class Room : MonoBehaviour
         return false;
     }
 
-    void DestroyOldStuff()
+    /// <summary>
+    /// Destroys the old stuff in the room
+    /// </summary>
+    public void DestroyOldStuff()
     {
         //TODO: Inefficient
         foreach (var obj in spawnedObjects)
@@ -117,7 +115,6 @@ public class Room : MonoBehaviour
         }
         chosenEnemyPositions.Clear();
         createdSpawners.Clear();
-        alreadySpawned = false;
     }
 
     public void GenerateRoomStuff(EverythingARoomNeedsForSpawn roomData, int challengeRating)

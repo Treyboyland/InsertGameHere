@@ -7,14 +7,19 @@ public class PlayerLivesUI : MonoBehaviour
     [SerializeField]
     ObjectPool lifePool;
 
+    [SerializeField]
+    int livesPerHeart;
+
     List<PlayerLifeUI> lives = new List<PlayerLifeUI>();
 
     public void UpdateLives(Player player)
     {
         //TODO: Loss of max life?
-        if (lives.Count < player.MaxLives)
+        int lifeCount = player.MaxLives / livesPerHeart;
+        lifeCount += player.MaxLives % livesPerHeart != 0 ? 1 : 0;
+        if (lives.Count < lifeCount)
         {
-            while (lives.Count < player.MaxLives)
+            while (lives.Count < lifeCount)
             {
                 var life = lifePool.GetObject().GetComponent<PlayerLifeUI>();
                 life.gameObject.SetActive(true);
@@ -23,9 +28,11 @@ public class PlayerLivesUI : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < player.MaxLives; i++)
+        for (int i = 0; i < lives.Count; i++)
         {
-            lives[i].Active = i < player.CurrentLives;
+            var heart = lives[i];
+            heart.HeartIndex = i;
+            heart.SetHeartSprite(player.CurrentLives, livesPerHeart);
         }
     }
 }

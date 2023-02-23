@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4807b7427dddbae40a9af857dfda4d7a, type: 3}
+  m_Name: HubCabinetDataSO-13
+  m_EditorClassIdentifier: 
+  cabinetData: {fileID: 11400000, guid: 5dabf428397ba31428ec8375e2058874, type: 2}
+  activeSprite: {fileID: 21300000, guid: f83ff950a23e473438c1658e3e192901, type: 3}
+  inactiveCabinetData: {fileID: 11400000, guid: 15f5bde002f815e4f849dda840dac788, type: 2}
+  inactiveSprite: {fileID: 21300000, guid: 7b0f83e3f80172149b93c9dd79fe0f0c, type: 3}

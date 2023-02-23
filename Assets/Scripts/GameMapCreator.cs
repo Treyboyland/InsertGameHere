@@ -140,6 +140,11 @@ public class GameMapCreator : MonoBehaviour
             keyVal.Value.OnSetTheme.Invoke(chosenTheme);
             if (keyVal.Key == mapData.StartingPosition || mapData.DeadEnds.Contains(keyVal.Key))
             {
+                if (keyVal.Key == mapData.StartingPosition)
+                {
+                    keyVal.Value.DestroyOldStuff();
+                }
+
                 continue;
             }
 

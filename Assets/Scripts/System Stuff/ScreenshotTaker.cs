@@ -41,6 +41,7 @@ public class ScreenshotTaker : MonoBehaviour
 
     public void HandleScreenshot(InputAction.CallbackContext context)
     {
+        Debug.LogWarning(gameObject.name + " called");
         if (context.started)
         {
             TakeScreenshot();

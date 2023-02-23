@@ -8,7 +8,7 @@ public class DisableProjectilesOnCollision : MonoBehaviour
     {
         var projectile = other.gameObject.GetComponent<ProjectileWallCollider>();
         var projectileOther = other.gameObject.GetComponent<Projectile>();
-        Debug.LogWarning("Wall Hit");
+        //Debug.LogWarning("Wall Hit");
 
         if (projectile)
         {
