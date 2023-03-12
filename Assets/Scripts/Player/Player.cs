@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     PlayerWeapon weapon;
 
+    [SerializeField]
+    PlayerWeaponSwap swap;
+
     [Header("Directions")]
     [SerializeField]
     DirectionSO up;
@@ -37,6 +40,8 @@ public class Player : MonoBehaviour
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
     public int CurrentLives { get => currentLives; }
     public int MaxLives { get => maxLives; set => maxLives = value; }
+
+    public PlayerWeapon Weapon { get => weapon; set => weapon = value; }
 
     int currentLives;
 
@@ -112,6 +117,22 @@ public class Player : MonoBehaviour
         if (context.started)
         {
             FireWeapon(down);
+        }
+    }
+
+    public void HandleWeaponSwapNext(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            swap.NextWeapon();
+        }
+    }
+
+    public void HandleWeaponSwapPrevious(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            swap.PreviousWeapon();
         }
     }
 

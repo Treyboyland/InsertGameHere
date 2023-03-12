@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Direction-Right
   m_EditorClassIdentifier: 
   directionName: Right
+  vector: {x: 1, y: 0}
+  rotationFromNorth: -90
