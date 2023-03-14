@@ -1,0 +1,17 @@
+{
+    "name": "Rho-Editor",
+    "references": [
+        "GUID:75047dae4fa74cb44af46b078f0a07b2"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
