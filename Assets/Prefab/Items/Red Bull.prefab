@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5328395533377796943}
   - component: {fileID: 5328395533377796936}
   - component: {fileID: 2407040423116561903}
-  - component: {fileID: 5328395533377796938}
+  - component: {fileID: 1128944676}
   m_Layer: 0
   m_Name: Red Bull
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5481296, y: 0.9185773}
   m_EdgeRadius: 0
---- !u!114 &5328395533377796938
+--- !u!114 &1128944676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,10 +121,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5328395533377796939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ff1bb5d01d84bf45b02e4e6789aefe0, type: 3}
+  m_Script: {fileID: 11500000, guid: c3151f48cdd0a604783f8b95514f3040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: d95a4d298cba39c4aa330645261fe261, type: 2}
-  onPickup: {fileID: 11400000, guid: af22621c2c4b3664595fba5dcfeab255, type: 2}
-  onPickupGeneral: {fileID: 0}
-  onAddTime: {fileID: 11400000, guid: 4ee1ca9313660a84091064774ec81c7a, type: 2}
+  Item: {fileID: 11400000, guid: b5597cd04ff1f7d48a345e58fe48fcbd, type: 2}
+  ItemAmount: 1
+  OnPickup: {fileID: 0}

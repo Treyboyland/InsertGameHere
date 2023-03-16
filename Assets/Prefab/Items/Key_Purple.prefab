@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068305369324959591}
-  - component: {fileID: 1068305369324959584}
   - component: {fileID: 1068305369324959585}
   - component: {fileID: 1068305369324959586}
+  - component: {fileID: 2123253080}
   m_Layer: 0
   m_Name: Key_Purple
   m_TagString: Untagged
@@ -34,23 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &1068305369324959584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068305369324959587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465e5439a70f5da47b2dbbd56d03824f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData:
-    Item: {fileID: 11400000, guid: 512e0f52ce009c641b0eca56e25e612e, type: 2}
-    Count: 1
-  onPickup: {fileID: 0}
-  onPickupGeneral: {fileID: 11400000, guid: 87050f7d39a652f47ad393f76ebd9a0d, type: 2}
 --- !u!212 &1068305369324959585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -113,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -129,3 +112,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2123253080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068305369324959587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3151f48cdd0a604783f8b95514f3040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 512e0f52ce009c641b0eca56e25e612e, type: 2}
+  ItemAmount: 1
+  OnPickup: {fileID: 0}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ItemSO", menuName = "Item/Item", order = 0)]
-public class ItemSO : ScriptableObject
+public sealed class ItemSO : ScriptableObject
 {
     [SerializeField]
     string itemName;
@@ -20,9 +20,15 @@ public class ItemSO : ScriptableObject
     [SerializeField]
     bool isKeyItem;
 
-    /// <summary>
-    /// Key items are limited to one per inventory
-    /// </summary>
-    /// <value></value>
     public bool IsKeyItem { get => isKeyItem; }
+    
+    [SerializeField]
+    bool addToInventory = true;
+
+    public bool AddToInventory => addToInventory;
+
+    [SerializeField]
+    ItemEffectSO[] _onPickupEffects;
+
+    public ICollection<IItemEffect> OnPickupEffects => _onPickupEffects;    
 }

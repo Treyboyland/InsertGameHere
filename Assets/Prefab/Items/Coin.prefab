@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3026169408294562964}
-  - component: {fileID: 1526012109434806065}
   - component: {fileID: 3026169408294562963}
   - component: {fileID: 3026169408294562965}
   - component: {fileID: 4577944701839279194}
+  - component: {fileID: 1544618574}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -30,27 +30,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1526012109434806065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3026169408294562962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465e5439a70f5da47b2dbbd56d03824f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData:
-    Item: {fileID: 11400000, guid: 308bdc9cc7ea77948a4285244c7e2e6b, type: 2}
-    Count: 1
-  onPickup: {fileID: 11400000, guid: 9096c67b833b6604bbae535e770d64a7, type: 2}
-  onPickupGeneral: {fileID: 11400000, guid: 87050f7d39a652f47ad393f76ebd9a0d, type: 2}
 --- !u!212 &3026169408294562963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62,6 +46,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -138,3 +123,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1544618574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026169408294562962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3151f48cdd0a604783f8b95514f3040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 308bdc9cc7ea77948a4285244c7e2e6b, type: 2}
+  ItemAmount: 1
+  OnPickup: {fileID: 11400000, guid: 9096c67b833b6604bbae535e770d64a7, type: 2}
