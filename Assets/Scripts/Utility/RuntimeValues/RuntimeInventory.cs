@@ -37,4 +37,9 @@ public class RuntimeInventory : ScriptableObject
     }
 
     public void Clear() => _dict.Clear();
+
+    public int GetItemCount(ItemSO item)
+    {
+        return _dict.ContainsKey(item) ? _dict[item] : 0;
+    }
 }
