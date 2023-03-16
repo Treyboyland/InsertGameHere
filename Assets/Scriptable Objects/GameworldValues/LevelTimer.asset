@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a98d43b240dc684c8b100150d7d02c1, type: 3}
-  m_Name: LeverTimer
+  m_Script: {fileID: 11500000, guid: 170e752475f747b4ca7845f04b63181f, type: 3}
+  m_Name: LevelTimer
   m_EditorClassIdentifier: 
