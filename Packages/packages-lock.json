@@ -185,6 +185,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "unity-dependencies-hunter": {
+      "version": "https://github.com/AlexeyPerov/Unity-Dependencies-Hunter.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "13b13298c3bdb12c36e0b1f78bb8845f942e2ced"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
