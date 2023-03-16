@@ -5,13 +5,6 @@ using System;
 
 public class PlayerInventory : MonoBehaviour
 {
-    [Serializable]
-    public struct InventorySlot
-    {
-        public ItemSO Item;
-        public int Count;
-    }
-
     [SerializeField]
     List<InventorySlot> initialInventory;
 

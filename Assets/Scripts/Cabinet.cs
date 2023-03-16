@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cabinet : MonoBehaviour
 {
     [SerializeField]
-    List<PlayerInventory.InventorySlot> itemsToCheck;
+    List<InventorySlot> itemsToCheck;
 
     [SerializeField]
     GameEvent onCabinetPassed;
