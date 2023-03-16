@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.dbrizov.naughtyattributes": {
-      "version": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "8a8fa5a9659a6d63f196391c71e06c4286c8acd7"
-    },
     "com.unity.2d.animation": {
       "version": "7.0.9",
       "depth": 0,
@@ -184,13 +177,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "unity-dependencies-hunter": {
-      "version": "https://github.com/AlexeyPerov/Unity-Dependencies-Hunter.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "13b13298c3bdb12c36e0b1f78bb8845f942e2ced"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
