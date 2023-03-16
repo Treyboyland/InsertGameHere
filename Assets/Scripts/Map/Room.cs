@@ -8,7 +8,7 @@ using System.Linq;
 public class Room : MonoBehaviour
 {
     [SerializeField]
-    FloatValueSO secondsBeforeSpawn;
+    rho.ConfigFloat secondsBeforeSpawn;
 
     [SerializeField]
     bool isOpen;

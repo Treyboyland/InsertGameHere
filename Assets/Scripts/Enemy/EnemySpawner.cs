@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     EnemyDatabaseSO database;
 
     [SerializeField]
-    FloatValueSO secondsBeforeSpawn;
+    rho.ConfigFloat secondsBeforeSpawn;
 
     [SerializeField]
     ParticleStopOnEnemySpawn spawnParticle;
@@ -80,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
         spawnedEnemyObject.transform.position = transform.position;
         spawnedEnemyObject.CurrentRoom = room.RoomLocation;
 
-        yield return new WaitForSeconds(secondsBeforeSpawn);
+        yield return new WaitForSeconds(secondsBeforeSpawn.Value);
 
         spawnedEnemyObject.gameObject.SetActive(true);
         enemySpawned = true;

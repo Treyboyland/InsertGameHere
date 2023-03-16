@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8364155401077544216}
   m_Father: {fileID: 0}
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: 30ffea5be746a764587537ad8d6571b7, type: 2}
-  secondsBeforeSpawn: {fileID: 11400000, guid: 297a40344af8f6a429d61af0f7277c71, type: 2}
+  secondsBeforeSpawn: {fileID: 11400000, guid: ee1ad3a52f9e91e4aa16b901af32a15e, type: 2}
   spawnParticle: {fileID: 8364155401077544217}
 --- !u!1001 &6168263301621781053
 PrefabInstance:
