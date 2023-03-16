@@ -12,7 +12,7 @@ public class PlayerScoreUI : MonoBehaviour
     ItemSO scoreItem;
 
     [SerializeField]
-    PlayerInventory inventory;
+    RuntimeInventory _inventory;
 
     private void Start()
     {
@@ -21,6 +21,6 @@ public class PlayerScoreUI : MonoBehaviour
 
     public void UpdateScore()
     {
-        textBox.text = "" + inventory.GetItemCount(scoreItem);
+        textBox.text = "" + _inventory.GetItemCount(scoreItem);
     }
 }
