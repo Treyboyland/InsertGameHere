@@ -42,4 +42,6 @@ public class RuntimeInventory : ScriptableObject
     {
         return _dict.ContainsKey(item) ? _dict[item] : 0;
     }
+
+    public bool HasItem(ItemSO item) => _dict.ContainsKey(item);
 }
