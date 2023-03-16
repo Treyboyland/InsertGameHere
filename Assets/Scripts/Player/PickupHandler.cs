@@ -28,7 +28,5 @@ public class PickupHandler : MonoBehaviour
         pickupInfo.OnPickup?.Invoke();
 
         Destroy(other.gameObject);
-        
-        _inventory.AsDictionary().Keys.ToList().ForEach(item => Debug.Log(item.name));
     }
 }
