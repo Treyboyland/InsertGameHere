@@ -11,35 +11,30 @@ public class RuntimeInventory : ScriptableObject
     public IReadOnlyDictionary<ItemSO, int> AsDictionary() => _dict;
 
     public event System.Action Changed;
-
-    private void ChangeItemCount_NoInvoke(ItemSO item, int amount)
-    {
-        var newAmount = Mathf.Max(0, (_dict.ContainsKey(item) ? _dict[item] : 0) + amount);
-
-        if (newAmount > 0 && item.IsKeyItem)
-        {
-            newAmount = 1;
-        }
-
-        _dict[item] = newAmount;
-    }
+    public event System.Action<ItemSO, int> ItemCountChanged;
 
     public void ChangeItemCount(ItemSO item, int amount)
     {
-        ChangeItemCount_NoInvoke(item, amount);
-        Changed?.Invoke();
+        var currentCount = _dict.ContainsKey(item) ? _dict[item] : 0;
+        var itemMax = item.IsKeyItem ? 1 : int.MaxValue;
+        var newCount = Mathf.Clamp(currentCount + amount, 0, itemMax);
+        var fixedAmount = newCount - currentCount;
+
+        if (fixedAmount != 0)
+        {
+            _dict[item] = newCount;
+            ItemCountChanged?.Invoke(item, fixedAmount);
+            Changed?.Invoke();
+        }
     }
 
-    public void ChangeItemCounts(ICollection<KeyValuePair<ItemSO, int>> newItemCounts)
+    public void Clear()
     {
-        newItemCounts.ToList().ForEach(pair => ChangeItemCount_NoInvoke(pair.Key, pair.Value));
+        _dict.Clear();
         Changed?.Invoke();
     }
-
-    public void Clear() => _dict.Clear();
 
     public int GetItemCount(ItemSO item) => _dict.ContainsKey(item) ? _dict[item] : 0;
-
     public bool HasItem(ItemSO item) => _dict.ContainsKey(item);
     public bool HasItems(ItemSO item, int amount) => _dict.ContainsKey(item) && _dict[item] == amount;
 }
