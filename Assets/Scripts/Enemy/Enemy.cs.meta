@@ -3,7 +3,9 @@ guid: caf382b214639ba49b3d4ea7f1876589
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - stats: {instanceID: 0}
+  - _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
