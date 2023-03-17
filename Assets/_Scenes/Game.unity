@@ -971,17 +971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21c81610c6feb748854932f6b1ef1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1772886972 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9015623255759432539, guid: 3819a592561719e4da64ccd057ee7c20, type: 3}
-  m_PrefabInstance: {fileID: 9015623257531265255}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d20c73acad433f4e93db4db8b10a78c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1896218031 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 82864182543364184, guid: 75220875daf609c448ca03f38709c9af, type: 3}
@@ -1391,7 +1380,7 @@ PrefabInstance:
     - target: {fileID: 82864181525909304, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 82864181714534259, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: m_Name
       value: Game UI
@@ -1483,7 +1472,7 @@ PrefabInstance:
     - target: {fileID: 82864182308615042, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
     - target: {fileID: 82864182543364184, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: generator
       value: 
@@ -1596,11 +1585,11 @@ PrefabInstance:
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 

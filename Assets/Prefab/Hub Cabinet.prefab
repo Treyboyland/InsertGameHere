@@ -50,6 +50,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3380861429072149470}
   onPlayerEnter: {fileID: 11400000, guid: 047f6ea2d828dde4f840e6b8a551ebf5, type: 2}
   onPlayerExit: {fileID: 11400000, guid: ee2f0a7ad84dcef4695b44998c1a7827, type: 2}
+  inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
 --- !u!212 &3380861429072149470
 SpriteRenderer:
   m_ObjectHideFlags: 0

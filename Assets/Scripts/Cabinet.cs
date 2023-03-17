@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Cabinet : MonoBehaviour
 {
     [SerializeField]
-    List<PlayerInventory.InventorySlot> itemsToCheck;
+    List<InventorySlot> itemsToCheck;
 
     [SerializeField]
     GameEvent onCabinetPassed;
@@ -16,18 +17,11 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     GameEvent onFailSound;
 
-    bool HasItems(PlayerInventory inventory)
-    {
-        foreach (var slot in itemsToCheck)
-        {
-            if (!inventory.HasItem(slot.Item, slot.Count))
-            {
-                return false;
-            }
-        }
+    [SerializeField]
+    RuntimeGameObject _playerRef;
 
-        return true;
-    }
+    [SerializeField]
+    RuntimeInventory _inventory;
 
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
@@ -36,13 +30,12 @@ public class Cabinet : MonoBehaviour
     /// <param name="other">The other Collider2D involved in this collision.</param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerInventory inventory = other.gameObject.GetComponent<PlayerInventory>();
-        if (!inventory)
+        if (other.gameObject != _playerRef.Value)
         {
             return;
         }
 
-        bool hasItems = HasItems(inventory);
+        bool hasItems = itemsToCheck.All(invSlot => _inventory.HasItems(invSlot.Item, invSlot.Count));
 
         if (hasItems)
         {

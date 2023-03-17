@@ -9,10 +9,7 @@ public class Enemy : MonoBehaviour
     EnemyStatsSO stats;
 
     [SerializeField]
-    GameEventInt onAddToScore;
-
-    [SerializeField]
-    GameEventVector onEnemyDefeated;
+    GameEventEnemyDeath _enemyDeath;
 
     int currentHealth;
 
@@ -39,16 +36,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        if (onEnemyDefeated)
-        {
-            onEnemyDefeated.Value = transform.position;
-            onEnemyDefeated.Invoke();
-        }
-        if (onAddToScore)
-        {
-            onAddToScore.Value = stats.Score;
-            onAddToScore.Invoke();
-        }
+        _enemyDeath.Invoke(new EnemyDeathInfo{
+            LastPosition = transform.position,
+            Score = stats.Score
+        });
 
         gameObject.SetActive(false);
     }

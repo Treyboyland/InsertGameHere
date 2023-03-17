@@ -3,7 +3,12 @@ guid: 611e5de74eb1cff4abe6d73950cc810a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cabinetData: {instanceID: 0}
+  - spriteRenderer: {instanceID: 0}
+  - onPlayerEnter: {instanceID: 0}
+  - onPlayerExit: {instanceID: 0}
+  - inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -11,7 +11,7 @@ public class PlayerMapItemsUI : MonoBehaviour
     GameObject cartridgeUI;
 
     [SerializeField]
-    PlayerInventory inventory;
+    RuntimeInventory inventory;
 
     [SerializeField]
     ItemSO coinItem;

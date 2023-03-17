@@ -5,18 +5,13 @@ using UnityEngine;
 public class PlayerScore : MonoBehaviour
 {
     [SerializeField]
-    PlayerInventory inventory;
+    RuntimeInventory inventory;
 
     [SerializeField]
     ItemSO scoreItem;
-
-    public void AddScore(int score)
+    
+    public void OnDeathEvent(EnemyDeathInfo info)
     {
-        inventory.AddItem(scoreItem, score);
-    }
-
-    public void RemoveScore(int score)
-    {
-        inventory.RemoveItem(scoreItem, score);
+        inventory.ChangeItemCount(scoreItem, info.Score);
     }
 }

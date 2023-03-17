@@ -16,16 +16,12 @@ public class HubCabinet : MonoBehaviour
     [SerializeField]
     GameEvent onPlayerExit;
 
-    static PlayerInventory inventory;
+    [SerializeField] RuntimeInventory inventory;
 
     ItemSO itemDataToUse;
 
     private void Start()
     {
-        if (!inventory)
-        {
-            inventory = GameObject.FindObjectOfType<PlayerInventory>();
-        }
         SetCabinetState();
     }
 

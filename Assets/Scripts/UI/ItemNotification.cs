@@ -23,13 +23,26 @@ public class ItemNotification : MonoBehaviour
     [SerializeField]
     string endTrigger;
 
-    public void StartNotification(ItemSO itemData)
+    Queue<KeyValuePair<ItemSO, int>> _messages = new Queue<KeyValuePair<ItemSO, int>>();
+
+    IEnumerator Start()
     {
-        animator.gameObject.SetActive(false);
-        titleText.text = itemData.ItemName;
-        descriptionText.text = itemData.Description;
-        StopAllCoroutines();
-        StartCoroutine(Animate());
+        while (true)
+        {
+            if (_messages.Count > 0)
+            {
+                var (itemData, amount) = _messages.Dequeue();
+
+                // TODO Change message based off amount
+                titleText.text = itemData.ItemName + " x" + amount;
+                descriptionText.text = itemData.Description;
+                yield return StartCoroutine(Animate());
+            }
+            else
+            {
+                yield return null;
+            }
+        }
     }
 
     IEnumerator Animate()
@@ -38,5 +51,9 @@ public class ItemNotification : MonoBehaviour
         yield return StartCoroutine(animator.WaitForState(waitingState));
         yield return new WaitForSeconds(secondsToWait);
         animator.SetTrigger(endTrigger);
+        animator.gameObject.SetActive(false);
     }
+
+    public void StartNotification(ItemSO itemData, int amount) => 
+        _messages.Enqueue(new KeyValuePair<ItemSO, int>(itemData, amount));
 }
