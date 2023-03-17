@@ -384,7 +384,6 @@ GameObject:
   - component: {fileID: 9015623255759432529}
   - component: {fileID: 9015623255759432540}
   - component: {fileID: 9015623255759432541}
-  - component: {fileID: 9015623255759432539}
   - component: {fileID: 9015623255759432537}
   - component: {fileID: 9015623255759432542}
   - component: {fileID: 9015623255759432530}
@@ -457,20 +456,6 @@ MonoBehaviour:
   body: {fileID: 9015623255759432528}
   thresholdMagnitude: 0.1
   secondsToWait: 0.05
---- !u!114 &9015623255759432539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015623255759432531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d20c73acad433f4e93db4db8b10a78c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialInventory: []
-  inventoryUpdated: {fileID: 11400000, guid: 8c991cacc2010e544817c088feb9d5d0, type: 2}
 --- !u!114 &9015623255759432537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +573,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 9015623255759432539}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
         m_MethodName: ClearInventory
         m_Mode: 1
