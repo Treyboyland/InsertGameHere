@@ -887,7 +887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9015623256328489398}
-  - component: {fileID: 9015623256328489396}
+  - component: {fileID: 2194766707089775926}
   - component: {fileID: 9015623256328489397}
   m_Layer: 6
   m_Name: Add Player Score
@@ -911,7 +911,7 @@ Transform:
   m_Father: {fileID: 9015623255445464822}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9015623256328489396
+--- !u!114 &2194766707089775926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -920,16 +920,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 9015623256328489399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948987b06065b4348b73b6c968596583, type: 3}
+  m_Script: {fileID: 11500000, guid: 77dc9e07253e1ee418a6e54f77b054f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 7543163534175044a89fafbe52102347, type: 2}
+  gameEvent: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9015623256328489397}
         m_TargetAssemblyTypeName: PlayerScore, Assembly-CSharp
-        m_MethodName: AddScore
+        m_MethodName: OnDeathEvent
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1bda7793c8343449a46c4a021648b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 9015623255759432539}
+  inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
   scoreItem: {fileID: 11400000, guid: c7f6393e0807b5b48ab2b6b43573e5dd, type: 2}
 --- !u!1 &9015623256570879340
 GameObject:
