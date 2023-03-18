@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +7,10 @@ public class GameMapCreator : MonoBehaviour
     ObjectPool roomPool;
 
     [SerializeField]
-    MapGenerator generator;
+    MapConfig mapConfig;
+    
+    [SerializeField]
+    rho.RuntimeInt currentLevel;
 
     [SerializeField]
     Vector2 dimensions;
@@ -69,7 +71,7 @@ public class GameMapCreator : MonoBehaviour
     {
         chosenTheme = otherThemes.RandomItem();
         roomPool.DisableAll();
-        mapData = generator.GenerateMap();
+        mapData = mapConfig.GenerateMap(currentLevel.Value);
         specialRoomLocations.Clear();
         roomDictionary.Clear();
         currentMapChallengeRating = mapData.TotalChallengeRating;
