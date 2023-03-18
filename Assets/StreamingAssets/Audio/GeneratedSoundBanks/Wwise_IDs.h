@@ -23,6 +23,21 @@ namespace AK
         static const AkUniqueID PLAYMUSIC = 417627684U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace WEAPON
+        {
+            static const AkUniqueID GROUP = 3893417221U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BUBBLES = 769541046U;
+                static const AkUniqueID WEAPON1 = 1467963118U;
+            } // namespace SWITCH
+        } // namespace WEAPON
+
+    } // namespace SWITCHES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -31,7 +46,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID LEADS = 3065814130U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MELODIES = 2429736717U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -111,41 +111,26 @@
 										<ActiveSource Name="PlayerHurt" ID="{35388397-5AE1-429B-81B1-ADA1735A9C59}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="PlayerShoot" ID="{7C80C7E5-E304-4912-960A-9E3FAEEFB40F}" ShortID="949016413">
+								<Sound Name="PlayerShootBig" ID="{E8E9CCAF-714F-4FE1-8D59-673B183E8B42}" ShortID="93907108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<RandomSequenceContainer Name="PlayerShootSmall" ID="{9C6157DC-97F1-42CE-8D48-ED78E8CC6452}" ShortID="881357616">
 									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{2CACF9DB-0985-4A8B-B37B-B02326AE97F3}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="38"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{7FDC23FE-51D9-4563-B611-43536411E9AC}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="29"/>
-															<Property Name="Min" Type="Real64" Value="-26"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{40B2F5D4-689E-4E79-B58C-B9ACADB920D3}">
+													<Modifier Name="" ID="{7437C008-E0F9-4545-A254-EC46AAFFBE7B}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="454"/>
-															<Property Name="Min" Type="Real64" Value="-480"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+															<Property Name="Min" Type="Real64" Value="-227"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -161,18 +146,140 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="PlayerShoot" ID="{D0C4D1FC-AEA3-45A7-B54E-5E0A1E6721E0}">
-											<Language>SFX</Language>
-											<AudioFile>PlayerShoot.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="755881394"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="PlayerShootBubble (1)" ID="{F371CB74-CCE3-46E5-B564-48B49EA0A56F}" ShortID="615229737">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (1)" ID="{F6ECF038-1D23-4FBE-9ED2-7AB6D81AC120}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (1).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="911090023"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (1)" ID="{F6ECF038-1D23-4FBE-9ED2-7AB6D81AC120}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PlayerShootBubble (2)" ID="{726A889A-D006-4467-A207-BF3F689EAE84}" ShortID="433652157">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (2)" ID="{D4ED231C-7AE4-41E4-AED9-F0BAFA629DF9}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (2).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1062379194"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (2)" ID="{D4ED231C-7AE4-41E4-AED9-F0BAFA629DF9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PlayerShootBubble (3)" ID="{08453445-A252-431F-ADDD-0CD02B93E17F}" ShortID="469797919">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (3)" ID="{7EA01EF3-67A4-402B-B7B8-DFD7DF28DB93}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (3).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="686545495"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (3)" ID="{7EA01EF3-67A4-402B-B7B8-DFD7DF28DB93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PlayerShootBubble (4)" ID="{D0817ABB-E603-4146-851B-342F0E6FB55E}" ShortID="1048478762">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (4)" ID="{1CEC6D5F-5B12-4294-96D6-5F1701A424C7}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (4).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="917440492"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (4)" ID="{1CEC6D5F-5B12-4294-96D6-5F1701A424C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PlayerShootBubble (5)" ID="{8F0A2E24-E051-4D99-B0E8-87A622BE338F}" ShortID="35276620">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (5)" ID="{CF891C63-39AC-4913-B26D-765CB63CEDB0}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (5).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="899356510"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (5)" ID="{CF891C63-39AC-4913-B26D-765CB63CEDB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PlayerShootBubble (6)" ID="{E61F3EC0-F347-4DA9-921F-FB0E29CAF612}" ShortID="1042892892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C74EEA7-4F4D-4802-9DC2-02CF5F4D0167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9509C050-7585-4A11-AEFA-E769148911D6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerShootBubble (6)" ID="{47F5A66C-19B5-4287-873C-9CBC00EC214A}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerShootBubble (6).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="990127101"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerShootBubble (6)" ID="{47F5A66C-19B5-4287-873C-9CBC00EC214A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="PlayerShoot" ID="{D0C4D1FC-AEA3-45A7-B54E-5E0A1E6721E0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Enemy" ID="{9BA7E7D7-0F2D-4C16-BC44-E734121D4385}" ShortID="535832002">

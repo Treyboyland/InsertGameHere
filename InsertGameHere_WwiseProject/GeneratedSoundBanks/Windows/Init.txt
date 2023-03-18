@@ -1,5 +1,8 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2429736717	Melodies			\Default Work Unit\Master Audio Bus\Music\Melodies	
+	3065814130	Leads			\Default Work Unit\Master Audio Bus\Music\Leads	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

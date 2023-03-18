@@ -91,7 +91,7 @@
 								<Action Name="" ID="{FD57CBAD-D2A6-4CD4-9A81-3DBF72A3DD7E}" ShortID="748478968">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="PlayerShoot" ID="{7C80C7E5-E304-4912-960A-9E3FAEEFB40F}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
+											<ObjectRef Name="PlayerShootSmall" ID="{9C6157DC-97F1-42CE-8D48-ED78E8CC6452}" WorkUnitID="{3288B562-27CB-4CE6-A462-7EF14FFFAA4F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

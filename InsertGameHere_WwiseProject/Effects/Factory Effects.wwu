@@ -1734,10 +1734,14 @@
 					<ChildrenList>
 						<Effect Name="_1_Frame_Delay" ID="{B8CCC284-212D-4ADF-B8E4-BC724B40D8BD}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
-								<Property Name="FilterFrequency" Type="Real32" Value="261"/>
+								<Property Name="EnableFeedback" Type="bool" Value="True"/>
+								<Property Name="FilterFrequency" Type="Real32" Value="5093"/>
 								<Property Name="FilterGain" Type="Real32" Value="10.5"/>
-								<Property Name="LeftDelayTime" Type="Real32" Value="0.03"/>
-								<Property Name="RightDelayTime" Type="Real32" Value="0.03"/>
+								<Property Name="LeftDelayTime" Type="Real32" Value="0.55"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-5.6"/>
+								<Property Name="LeftInputType" Type="int32" Value="1"/>
+								<Property Name="RightDelayTime" Type="Real32" Value="0.49"/>
+								<Property Name="RightInputType" Type="int32" Value="3"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="_1_Second_Delay" ID="{5AAB81A5-3444-4DE7-AEB3-2DDBB33D455B}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">

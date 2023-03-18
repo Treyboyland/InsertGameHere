@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0DB55684-84A4-4440-8AA7-19DEE6DDA927}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Music" ID="{0DB55684-84A4-4440-8AA7-19DEE6DDA927}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Weapon" ID="{6CD0AF12-F0B5-44A9-AA14-6B37593A57B2}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Bubbles" ID="{E10F8473-7259-44DC-B29A-914E3E950033}"/>
+						<Switch Name="Weapon1" ID="{60A0A24E-BB6E-4AC4-9143-F4DB7A07B46B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
