@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerRoomSetter : MonoBehaviour
 {
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
 
     [SerializeField]
     RuntimeRoomDictionary roomDictionary;
@@ -24,6 +24,7 @@ public class PlayerRoomSetter : MonoBehaviour
     public void SetPlayerPosition(GameEvent moveEvent)
     {
         //Debug.LogWarning("Should move player");
+        var player = playerRef.Value.GetComponent<Player>();
         Vector2Int playerNewLocation = player.CurrentRoomLocation;
         SpawnLocation newSpawn = SpawnLocation.LEFT;
         if (moveEvent == moveDownEvent)
