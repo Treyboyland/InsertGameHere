@@ -11,7 +11,8 @@ public class CameraMover : MonoBehaviour
     RuntimeRoomDictionary roomDictionary;
 
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
+    Player player { get => playerRef.Value.GetComponent<Player>(); }
 
     [SerializeField]
     float secondsToMove;
