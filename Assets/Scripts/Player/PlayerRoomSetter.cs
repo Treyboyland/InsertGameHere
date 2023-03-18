@@ -8,7 +8,7 @@ public class PlayerRoomSetter : MonoBehaviour
     Player player;
 
     [SerializeField]
-    GameMapCreator mapCreator;
+    RuntimeRoomDictionary roomDictionary;
 
     [SerializeField]
     GameEvent onPlayerPositionUpdated;
@@ -20,12 +20,6 @@ public class PlayerRoomSetter : MonoBehaviour
     GameEvent moveDownEvent, moveUpEvent, moveLeftEvent, moveRightEvent;
 
     enum SpawnLocation { RIGHT, LEFT, TOP, BOTTOM };
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void SetPlayerPosition(GameEvent moveEvent)
     {
@@ -53,7 +47,7 @@ public class PlayerRoomSetter : MonoBehaviour
             playerNewLocation.x++;
         }
 
-        var room = mapCreator.GetRoomAtLocation(playerNewLocation);
+        var room = roomDictionary.GetRoomAtLocation(playerNewLocation);
 
         if (room == null)
         {

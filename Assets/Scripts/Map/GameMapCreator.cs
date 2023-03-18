@@ -52,7 +52,8 @@ public class GameMapCreator : MonoBehaviour
 
     MapData mapData;
 
-    Dictionary<Vector2Int, Room> roomDictionary = new Dictionary<Vector2Int, Room>();
+    [SerializeField]
+    RuntimeRoomDictionary roomDictionary;
 
     RoomThemeSO chosenTheme;
 
@@ -67,7 +68,7 @@ public class GameMapCreator : MonoBehaviour
         GenerateGameMap();
     }
 
-    void Initialize()
+    public void GenerateGameMap()
     {
         chosenTheme = otherThemes.RandomItem();
         roomPool.DisableAll();
@@ -75,11 +76,6 @@ public class GameMapCreator : MonoBehaviour
         specialRoomLocations.Clear();
         roomDictionary.Clear();
         currentMapChallengeRating = mapData.TotalChallengeRating;
-    }
-
-    public void GenerateGameMap()
-    {
-        Initialize();
         for (int x = 0; x < mapData.Map.GetLength(0); x++)
         {
             for (int y = 0; y < mapData.Map.GetLength(1); y++)
@@ -187,14 +183,5 @@ public class GameMapCreator : MonoBehaviour
         {
             roomDictionary[location].OnSetTheme.Invoke(specialRoomTheme);
         }
-    }
-
-    public Room GetRoomAtLocation(Vector2Int location)
-    {
-        if (!roomDictionary.ContainsKey(location))
-        {
-            return null;
-        }
-        return roomDictionary[location];
     }
 }

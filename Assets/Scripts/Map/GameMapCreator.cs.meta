@@ -13,6 +13,7 @@ MonoImporter:
   - cabinetRoom: {instanceID: 0}
   - cartridgeRoom: {instanceID: 0}
   - specialRoomTheme: {instanceID: 0}
+  - roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

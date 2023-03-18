@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
-  mapCreator: {fileID: 1062533286}
+  roomDictionary: {fileID: 0}
   player: {fileID: 1772886971}
   secondsToMove: 0.25
 --- !u!20 &519420031
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1772886971}
-  mapCreator: {fileID: 1062533286}
+  roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
   onPlayerPositionUpdated: {fileID: 11400000, guid: 9a7b97f7ce7f5c146ad02f4798ed0fba, type: 2}
   onNewPlayerMapPosition: {fileID: 11400000, guid: c1ec201ec3ebe6c49ae55bef0c6aee76, type: 2}
   moveDownEvent: {fileID: 11400000, guid: 2c8e34c431dca15489f4f0332290bd8c, type: 2}
@@ -698,6 +698,7 @@ MonoBehaviour:
   otherThemes:
   - {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
   - {fileID: 11400000, guid: 5405840f859e2734a80835ceeefc69f5, type: 2}
+  roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
 --- !u!4 &1062533287
 Transform:
   m_ObjectHideFlags: 0
