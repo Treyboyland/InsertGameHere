@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21c81610c6feb748854932f6b1ef1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLives: 6
+  maxLives: {fileID: 11400000, guid: a37e63b6997547840871ae639e80c853, type: 2}
   spriteRenderer: {fileID: 9015623255759432530}
   playerCollider: {fileID: 9015623255759432543}
   weapon: {fileID: 9015623256570879338}
@@ -439,6 +439,7 @@ MonoBehaviour:
   right: {fileID: 11400000, guid: c155a7df4a7840b42a57acee4a8efb22, type: 2}
   onUpdateLives: {fileID: 11400000, guid: 1ee9c1ad3c903cd4fa7182ff0f762b04, type: 2}
   onPlayerDamaged: {fileID: 11400000, guid: 224d747063bb33947a62e224e9aa6cd2, type: 2}
+  currentLives: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
 --- !u!114 &9015623255759432541
 MonoBehaviour:
   m_ObjectHideFlags: 0

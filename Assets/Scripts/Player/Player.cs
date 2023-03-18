@@ -6,7 +6,10 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    int maxLives;
+    rho.ConfigInt maxLives;
+
+    [SerializeField]
+    rho.RuntimeInt currentLives;
 
     [SerializeField]
     SpriteRenderer spriteRenderer;
@@ -38,12 +41,8 @@ public class Player : MonoBehaviour
     GameEvent onPlayerDamaged;
 
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
-    public int CurrentLives { get => currentLives; }
-    public int MaxLives { get => maxLives; set => maxLives = value; }
 
     public PlayerWeapon Weapon { get => weapon; set => weapon = value; }
-
-    int currentLives;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -51,16 +50,16 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        currentLives = maxLives;
+        currentLives.Value = maxLives.Value;
         onUpdateLives.Invoke();
     }
 
     public void TakeDamage()
     {
-        currentLives--;
+        currentLives.Value--;
         onUpdateLives.Invoke();
         onPlayerDamaged?.Invoke();
-        if (currentLives <= 0)
+        if (currentLives.Value <= 0)
         {
             Die();
         }
@@ -74,7 +73,7 @@ public class Player : MonoBehaviour
 
     public void Revive()
     {
-        currentLives = maxLives;
+        currentLives.Value = maxLives.Value;
         onUpdateLives.Invoke();
         spriteRenderer.enabled = true;
         playerCollider.enabled = true;
@@ -142,7 +141,7 @@ public class Player : MonoBehaviour
     {
         get
         {
-            return !IsImmobilized && currentLives > 0;
+            return !IsImmobilized && currentLives.Value > 0;
         }
     }
 }

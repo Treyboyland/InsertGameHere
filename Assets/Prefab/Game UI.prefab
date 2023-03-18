@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 82864181479051727}
   - component: {fileID: 82864181479051726}
   - component: {fileID: 82864181479051712}
-  - component: {fileID: 82864181479051725}
+  - component: {fileID: 82864180647710202}
   m_Layer: 5
   m_Name: Player Lives
   m_TagString: Untagged
@@ -526,6 +526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePool: {fileID: 82864181479051726}
   livesPerHeart: 2
+  currentLives: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
+  maxLives: {fileID: 11400000, guid: a37e63b6997547840871ae639e80c853, type: 2}
 --- !u!114 &82864181479051726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +566,7 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &82864181479051725
+--- !u!114 &82864180647710202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,20 +575,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 82864181479051714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Script: {fileID: 11500000, guid: 319396418027475418d03f7fe87046a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 1ee9c1ad3c903cd4fa7182ff0f762b04, type: 2}
-  Response:
+  _variable: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
+  _callback:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 82864181479051727}
         m_TargetAssemblyTypeName: PlayerLivesUI, Assembly-CSharp
         m_MethodName: UpdateLives
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
