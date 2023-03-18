@@ -19,7 +19,7 @@ public class GameMapCreator : MonoBehaviour
     Vector2 spacing;
 
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
 
     [SerializeField]
     GameEvent onSetPlayerStartingPosition;
@@ -97,6 +97,7 @@ public class GameMapCreator : MonoBehaviour
                         roomData.IsOpen = true;
                         if (roomData.RoomLocation == mapData.StartingPosition)
                         {
+                            var player = playerRef.Value.GetComponent<Player>();
                             player.transform.position = roomData.CenterPlayerSpawn.transform.position;
                             player.CurrentRoomLocation = roomData.RoomLocation;
                         }
