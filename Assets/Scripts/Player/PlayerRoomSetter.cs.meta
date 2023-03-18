@@ -3,7 +3,15 @@ guid: dbaada83d123fd94c8ac932d7b80c7db
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
+  - onPlayerPositionUpdated: {instanceID: 0}
+  - onNewPlayerMapPosition: {instanceID: 0}
+  - moveDownEvent: {instanceID: 0}
+  - moveUpEvent: {instanceID: 0}
+  - moveLeftEvent: {instanceID: 0}
+  - moveRightEvent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

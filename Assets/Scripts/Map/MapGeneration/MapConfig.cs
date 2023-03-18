@@ -1,87 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Text;
+using UnityEngine;
 
-public class MapGenerator : MonoBehaviour
+[CreateAssetMenu(fileName = "MapConfig", menuName = "Map/Map Config")]
+public class MapConfig : ScriptableObject
 {
-    [SerializeField]
-    Vector2Int dimensions;
+    #region Fields
+    [SerializeField] Vector2Int _dimensions;
+    [SerializeField] public int _numSpecialRooms = 3;
+    #endregion
 
-    public Vector2Int Dimensions { get { return dimensions; } set { dimensions = value; } }
-
-    [SerializeField]
-    int level;
-
-    public int Level { get { return level; } set { level = value; } }
-
-    const int MIN_ROOMS = 4;
-
-    /// <summary>
-    /// Coin, Cartridge, Cabinet
-    /// </summary>
-    public const int NUM_SPECIAL_ROOMS = 3;
-
-    List<Vector2Int> locations;
-
-    public struct MapData
+    #region Methods
+    public MapData GenerateMap(int level)
     {
-        public bool[,] Map;
-        public Vector2Int StartingPosition;
-
-        public List<Vector2Int> DeadEnds;
-
-        public int TotalChallengeRating;
-
-        public int MaxChallengeRatingPerRoom;
-
-        public bool IsWithinBounds(Vector2Int pos)
-        {
-            return pos.x < Map.GetLength(0) && pos.x >= 0 && pos.y < Map.GetLength(1) && pos.y >= 0;
-        }
-
-        public bool HasNeighborUp(Vector2Int pos)
-        {
-            pos.y++;
-            return IsWithinBounds(pos) && Map[pos.x, pos.y];
-        }
-
-        public bool HasNeighborDown(Vector2Int pos)
-        {
-            pos.y--;
-            return IsWithinBounds(pos) && Map[pos.x, pos.y];
-        }
-
-        public bool HasNeighborLeft(Vector2Int pos)
-        {
-            pos.x--;
-            return IsWithinBounds(pos) && Map[pos.x, pos.y];
-        }
-
-        public bool HasNeighborRight(Vector2Int pos)
-        {
-            pos.x++;
-            return IsWithinBounds(pos) && Map[pos.x, pos.y];
-        }
-
-    }
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //GenerateMap();
-    }
-
-    public MapData GenerateMap()
-    {
-        if (dimensions.x * dimensions.y < MIN_ROOMS)
+        if (_dimensions.x * _dimensions.y < _numSpecialRooms)
         {
             Debug.LogError("You need higher dimensions");
             return new MapData { Map = new bool[0, 0], StartingPosition = new Vector2Int(), DeadEnds = new List<Vector2Int>() };
         }
-        bool[,] mapGrid = new bool[dimensions.x, dimensions.y];
+        bool[,] mapGrid = new bool[_dimensions.x, _dimensions.y];
         Queue<Vector2Int> queue = new Queue<Vector2Int>();
         var start = new Vector2Int(mapGrid.GetLength(0) / 2, mapGrid.GetLength(1) / 2);
         mapGrid[start.x, start.y] = true;
@@ -123,9 +61,9 @@ public class MapGenerator : MonoBehaviour
             }
         }
 
-        if (roomsAdded < numRooms || deadends.Count < NUM_SPECIAL_ROOMS)
+        if (roomsAdded < numRooms || deadends.Count < _numSpecialRooms)
         {
-            return GenerateMap();
+            return GenerateMap(level);
         }
 
         Debug.LogWarning(GetRoomLayout(mapGrid));
@@ -201,9 +139,5 @@ public class MapGenerator : MonoBehaviour
 
         return count;
     }
-
-    public void IncreaseLevel()
-    {
-        level++;
-    }
+    #endregion
 }

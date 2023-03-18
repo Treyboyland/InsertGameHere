@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerRoomSetter : MonoBehaviour
 {
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
 
     [SerializeField]
-    GameMapCreator mapCreator;
+    RuntimeRoomDictionary roomDictionary;
 
     [SerializeField]
     GameEvent onPlayerPositionUpdated;
@@ -21,15 +21,10 @@ public class PlayerRoomSetter : MonoBehaviour
 
     enum SpawnLocation { RIGHT, LEFT, TOP, BOTTOM };
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void SetPlayerPosition(GameEvent moveEvent)
     {
         //Debug.LogWarning("Should move player");
+        var player = playerRef.Value.GetComponent<Player>();
         Vector2Int playerNewLocation = player.CurrentRoomLocation;
         SpawnLocation newSpawn = SpawnLocation.LEFT;
         if (moveEvent == moveDownEvent)
@@ -53,7 +48,7 @@ public class PlayerRoomSetter : MonoBehaviour
             playerNewLocation.x++;
         }
 
-        var room = mapCreator.GetRoomAtLocation(playerNewLocation);
+        var room = roomDictionary.GetRoomAtLocation(playerNewLocation);
 
         if (room == null)
         {

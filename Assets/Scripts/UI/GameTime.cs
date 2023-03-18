@@ -24,7 +24,7 @@ public class GameTime : MonoBehaviour
     List<TimeAndLevel> levelSplits;
 
     [SerializeField]
-    MapGenerator generator;
+    rho.RuntimeInt _currentLevel;
 
     [SerializeField]
     TMP_Text textBox;
@@ -78,7 +78,7 @@ public class GameTime : MonoBehaviour
 
     float GetTimeForLevel()
     {
-        int level = generator.Level;
+        int level = _currentLevel.Value;
         for (int i = 0; i < levelSplits.Count; i++)
         {
             if (level < levelSplits[i].Level)

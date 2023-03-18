@@ -8,10 +8,11 @@ public class CameraMover : MonoBehaviour
     Camera mainCamera;
 
     [SerializeField]
-    GameMapCreator mapCreator;
+    RuntimeRoomDictionary roomDictionary;
 
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
+    Player player { get => playerRef.Value.GetComponent<Player>(); }
 
     [SerializeField]
     float secondsToMove;
@@ -19,7 +20,7 @@ public class CameraMover : MonoBehaviour
     public void MoveToPlayerPosition()
     {
         StopAllCoroutines();
-        var room = mapCreator.GetRoomAtLocation(player.CurrentRoomLocation);
+        var room = roomDictionary.GetRoomAtLocation(player.CurrentRoomLocation);
 
         if (room != null)
         {
@@ -30,7 +31,7 @@ public class CameraMover : MonoBehaviour
     public void SetToPlayerPosition()
     {
         StopAllCoroutines();
-        var room = mapCreator.GetRoomAtLocation(player.CurrentRoomLocation);
+        var room = roomDictionary.GetRoomAtLocation(player.CurrentRoomLocation);
 
         if (room != null)
         {

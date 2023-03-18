@@ -10,13 +10,19 @@ public class PlayerLivesUI : MonoBehaviour
     [SerializeField]
     int livesPerHeart;
 
+    [SerializeField]
+    rho.RuntimeInt currentLives;
+
+    [SerializeField]
+    rho.ConfigInt maxLives;
+
     List<PlayerLifeUI> lives = new List<PlayerLifeUI>();
 
-    public void UpdateLives(Player player)
+    public void UpdateLives()
     {
         //TODO: Loss of max life?
-        int lifeCount = player.MaxLives / livesPerHeart;
-        lifeCount += player.MaxLives % livesPerHeart != 0 ? 1 : 0;
+        int lifeCount = maxLives.Value / livesPerHeart;
+        lifeCount += maxLives.Value % livesPerHeart != 0 ? 1 : 0;
         if (lives.Count < lifeCount)
         {
             while (lives.Count < lifeCount)
@@ -32,7 +38,7 @@ public class PlayerLivesUI : MonoBehaviour
         {
             var heart = lives[i];
             heart.HeartIndex = i;
-            heart.SetHeartSprite(player.CurrentLives, livesPerHeart);
+            heart.SetHeartSprite(currentLives.Value, livesPerHeart);
         }
     }
 }

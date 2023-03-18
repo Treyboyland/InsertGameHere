@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +7,10 @@ public class GameMapCreator : MonoBehaviour
     ObjectPool roomPool;
 
     [SerializeField]
-    MapGenerator generator;
+    MapConfig mapConfig;
+    
+    [SerializeField]
+    rho.RuntimeInt currentLevel;
 
     [SerializeField]
     Vector2 dimensions;
@@ -17,7 +19,7 @@ public class GameMapCreator : MonoBehaviour
     Vector2 spacing;
 
     [SerializeField]
-    Player player;
+    RuntimeGameObject playerRef;
 
     [SerializeField]
     GameEvent onSetPlayerStartingPosition;
@@ -48,9 +50,10 @@ public class GameMapCreator : MonoBehaviour
     [SerializeField]
     List<RoomThemeSO> otherThemes;
 
-    MapGenerator.MapData mapData;
+    MapData mapData;
 
-    Dictionary<Vector2Int, Room> roomDictionary = new Dictionary<Vector2Int, Room>();
+    [SerializeField]
+    RuntimeRoomDictionary roomDictionary;
 
     RoomThemeSO chosenTheme;
 
@@ -65,19 +68,14 @@ public class GameMapCreator : MonoBehaviour
         GenerateGameMap();
     }
 
-    void Initialize()
+    public void GenerateGameMap()
     {
         chosenTheme = otherThemes.RandomItem();
         roomPool.DisableAll();
-        mapData = generator.GenerateMap();
+        mapData = mapConfig.GenerateMap(currentLevel.Value);
         specialRoomLocations.Clear();
         roomDictionary.Clear();
         currentMapChallengeRating = mapData.TotalChallengeRating;
-    }
-
-    public void GenerateGameMap()
-    {
-        Initialize();
         for (int x = 0; x < mapData.Map.GetLength(0); x++)
         {
             for (int y = 0; y < mapData.Map.GetLength(1); y++)
@@ -99,6 +97,7 @@ public class GameMapCreator : MonoBehaviour
                         roomData.IsOpen = true;
                         if (roomData.RoomLocation == mapData.StartingPosition)
                         {
+                            var player = playerRef.Value.GetComponent<Player>();
                             player.transform.position = roomData.CenterPlayerSpawn.transform.position;
                             player.CurrentRoomLocation = roomData.RoomLocation;
                         }
@@ -185,14 +184,5 @@ public class GameMapCreator : MonoBehaviour
         {
             roomDictionary[location].OnSetTheme.Invoke(specialRoomTheme);
         }
-    }
-
-    public Room GetRoomAtLocation(Vector2Int location)
-    {
-        if (!roomDictionary.ContainsKey(location))
-        {
-            return null;
-        }
-        return roomDictionary[location];
     }
 }
