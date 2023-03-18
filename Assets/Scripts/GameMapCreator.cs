@@ -48,7 +48,7 @@ public class GameMapCreator : MonoBehaviour
     [SerializeField]
     List<RoomThemeSO> otherThemes;
 
-    MapGenerator.MapData mapData;
+    MapData mapData;
 
     Dictionary<Vector2Int, Room> roomDictionary = new Dictionary<Vector2Int, Room>();
 
