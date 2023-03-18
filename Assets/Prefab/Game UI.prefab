@@ -1300,7 +1300,7 @@ MonoBehaviour:
   levelSplits:
   - Level: 10
     TimeInSeconds: 180
-  generator: {fileID: 0}
+  _currentLevel: {fileID: 11400000, guid: 9e2ba7ff178370c4d8623de78d2e4f67, type: 2}
   textBox: {fileID: 82864182543364186}
 --- !u!114 &4467416090764743626
 MonoBehaviour:
