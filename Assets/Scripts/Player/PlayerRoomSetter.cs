@@ -17,34 +17,33 @@ public class PlayerRoomSetter : MonoBehaviour
     GameEventVectorInt onNewPlayerMapPosition;
 
     [SerializeField]
-    GameEvent moveDownEvent, moveUpEvent, moveLeftEvent, moveRightEvent;
+    GameEvent playerRoomUpdated;
 
     enum SpawnLocation { RIGHT, LEFT, TOP, BOTTOM };
 
-    public void SetPlayerPosition(GameEvent moveEvent)
+    public void MovePlayerUp() => SetPlayerPosition(SpawnLocation.BOTTOM);
+    public void MovePlayerDown() => SetPlayerPosition(SpawnLocation.TOP);
+    public void MovePlayerLeft() => SetPlayerPosition(SpawnLocation.RIGHT);
+    public void MovePlayerRight() => SetPlayerPosition(SpawnLocation.LEFT);
+
+    private void SetPlayerPosition(SpawnLocation newSpawn)
     {
-        //Debug.LogWarning("Should move player");
         var player = playerRef.Value.GetComponent<Player>();
         Vector2Int playerNewLocation = player.CurrentRoomLocation;
-        SpawnLocation newSpawn = SpawnLocation.LEFT;
-        if (moveEvent == moveDownEvent)
+        if (newSpawn == SpawnLocation.TOP)
         {
-            newSpawn = SpawnLocation.TOP;
             playerNewLocation.y--;
         }
-        else if (moveEvent == moveUpEvent)
+        else if (newSpawn == SpawnLocation.BOTTOM)
         {
-            newSpawn = SpawnLocation.BOTTOM;
             playerNewLocation.y++;
         }
-        else if (moveEvent == moveLeftEvent)
+        else if (newSpawn == SpawnLocation.RIGHT)
         {
-            newSpawn = SpawnLocation.RIGHT;
             playerNewLocation.x--;
         }
-        else if (moveEvent == moveRightEvent)
+        else if (newSpawn == SpawnLocation.LEFT)
         {
-            newSpawn = SpawnLocation.LEFT;
             playerNewLocation.x++;
         }
 
@@ -80,5 +79,7 @@ public class PlayerRoomSetter : MonoBehaviour
         Vector3Int pos = new Vector3Int(player.CurrentRoomLocation.x, player.CurrentRoomLocation.y, 0);
         onNewPlayerMapPosition.Value = pos;
         onNewPlayerMapPosition.Invoke();
+
+        playerRoomUpdated.Invoke();
     }
 }

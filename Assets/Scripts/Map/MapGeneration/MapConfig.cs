@@ -66,8 +66,8 @@ public class MapConfig : ScriptableObject
             return GenerateMap(level);
         }
 
-        Debug.LogWarning(GetRoomLayout(mapGrid));
-        Debug.LogWarning("Starting Position: " + start);
+        Debug.Log(GetRoomLayout(mapGrid));
+        Debug.Log("Starting Position: " + start);
 
 
         return new MapData
