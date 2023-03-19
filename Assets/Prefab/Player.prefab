@@ -226,6 +226,171 @@ MonoBehaviour:
     Rotation: 0
   - Offset: {x: 0, y: 0}
     Rotation: 180
+--- !u!1 &7372644677539524276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7372644677539524274}
+  - component: {fileID: 7372644677539524277}
+  - component: {fileID: 7372644676703671563}
+  - component: {fileID: 7372644676703671562}
+  - component: {fileID: 7372644676703671561}
+  - component: {fileID: 7372644676703671560}
+  m_Layer: 0
+  m_Name: Player Room Setter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7372644677539524274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9015623255759432529}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7372644677539524277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbaada83d123fd94c8ac932d7b80c7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 9015623255759432540}
+  roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
+  onPlayerPositionUpdated: {fileID: 11400000, guid: 9a7b97f7ce7f5c146ad02f4798ed0fba, type: 2}
+  onNewPlayerMapPosition: {fileID: 11400000, guid: c1ec201ec3ebe6c49ae55bef0c6aee76, type: 2}
+  playerRoomUpdated: {fileID: 11400000, guid: 9a7b97f7ce7f5c146ad02f4798ed0fba, type: 2}
+--- !u!114 &7372644676703671563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 2c8e34c431dca15489f4f0332290bd8c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7372644677539524277}
+        m_TargetAssemblyTypeName: PlayerRoomSetter, Assembly-CSharp
+        m_MethodName: MovePlayerDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7372644676703671562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 19c9d0d0bb6a0da4fa8e354d435e87cf, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7372644677539524277}
+        m_TargetAssemblyTypeName: PlayerRoomSetter, Assembly-CSharp
+        m_MethodName: MovePlayerUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7372644676703671561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 3554982003f7b2c48a2915e066d97c72, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7372644677539524277}
+        m_TargetAssemblyTypeName: PlayerRoomSetter, Assembly-CSharp
+        m_MethodName: MovePlayerLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7372644676703671560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372644677539524276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f76bb9267c137114d880b1034bf78a6c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7372644677539524277}
+        m_TargetAssemblyTypeName: PlayerRoomSetter, Assembly-CSharp
+        m_MethodName: MovePlayerRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8394714692673031195
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +578,7 @@ Transform:
   m_Children:
   - {fileID: 4557251827134284}
   - {fileID: 9015623255445464822}
+  - {fileID: 7372644677539524274}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -429,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: {fileID: 11400000, guid: a37e63b6997547840871ae639e80c853, type: 2}
+  currentLives: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
   spriteRenderer: {fileID: 9015623255759432530}
   playerCollider: {fileID: 9015623255759432543}
   weapon: {fileID: 9015623256570879338}
@@ -439,7 +606,6 @@ MonoBehaviour:
   right: {fileID: 11400000, guid: c155a7df4a7840b42a57acee4a8efb22, type: 2}
   onUpdateLives: {fileID: 11400000, guid: 1ee9c1ad3c903cd4fa7182ff0f762b04, type: 2}
   onPlayerDamaged: {fileID: 11400000, guid: 224d747063bb33947a62e224e9aa6cd2, type: 2}
-  currentLives: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
 --- !u!114 &9015623255759432541
 MonoBehaviour:
   m_ObjectHideFlags: 0

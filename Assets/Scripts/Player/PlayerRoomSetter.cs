@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerRoomSetter : MonoBehaviour
 {
     [SerializeField]
-    RuntimeGameObject playerRef;
+    Player player;
 
     [SerializeField]
     RuntimeRoomDictionary roomDictionary;
@@ -28,7 +28,6 @@ public class PlayerRoomSetter : MonoBehaviour
 
     private void SetPlayerPosition(SpawnLocation newSpawn)
     {
-        var player = playerRef.Value.GetComponent<Player>();
         Vector2Int playerNewLocation = player.CurrentRoomLocation;
         if (newSpawn == SpawnLocation.TOP)
         {
