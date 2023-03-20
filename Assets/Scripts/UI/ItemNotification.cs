@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class ItemNotification : MonoBehaviour
 {
@@ -17,10 +18,20 @@ public class ItemNotification : MonoBehaviour
     [SerializeField]
     float secondsToWait;
 
-    [SerializeField]
+    [SerializeField, NaughtyAttributes.ValidateInput("IsAnimatorState", "Not a valid state name")]
     string waitingState;
 
-    [SerializeField]
+    private bool IsAnimatorState(string stateName)
+    {
+        #if UNITY_EDITOR
+        var controller = animator.runtimeAnimatorController as UnityEditor.Animations.AnimatorController;
+        return controller.layers.Any(l => l.stateMachine.states.Any(s => s.state.name == stateName));
+        #else
+        return true;
+        #endif
+    }
+
+    [SerializeField, NaughtyAttributes.AnimatorParam("animator")]
     string endTrigger;
 
     Queue<KeyValuePair<ItemSO, int>> _messages = new Queue<KeyValuePair<ItemSO, int>>();
