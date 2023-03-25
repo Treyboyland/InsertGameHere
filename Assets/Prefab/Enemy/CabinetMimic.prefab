@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7395908592330960887}
   - component: {fileID: 1432614514660432805}
   - component: {fileID: 705861998221875796}
+  - component: {fileID: 9174304966878918636}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -148,6 +149,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 7395908592330960887}
   _trigger: StopHiding
+--- !u!114 &9174304966878918636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592330960840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0100e6cad1fb4c46bdcdf1de897d255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _requiredParamterValue: Jump
+  _callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
