@@ -123,7 +123,7 @@ MonoBehaviour:
   _callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7395908592478882739}
+      - m_Target: {fileID: 208457261835110661}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -164,7 +164,19 @@ MonoBehaviour:
   _requiredParamterValue: Jump
   _callback:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 208457261835110661}
+        m_TargetAssemblyTypeName: JumpTowardsGameObject, Assembly-CSharp
+        m_MethodName: ResetJumpFlag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +188,7 @@ GameObject:
   - component: {fileID: 7395908592478882740}
   - component: {fileID: 7395908592478882741}
   - component: {fileID: 7395908592478882742}
-  - component: {fileID: 7395908592478882739}
+  - component: {fileID: 208457261835110661}
   m_Layer: 0
   m_Name: CabinetMimic
   m_TagString: Untagged
@@ -248,7 +260,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5644528, y: 1.8264477}
   m_EdgeRadius: 0
---- !u!114 &7395908592478882739
+--- !u!114 &208457261835110661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,12 +269,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7395908592478882743}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143e844455f18014fae01d53321f8df9, type: 3}
+  m_Script: {fileID: 11500000, guid: ca4d2ed8046827a4fae5c984d9430c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
   _body: {fileID: 7395908592478882741}
-  _speed: 1
+  _animator: {fileID: 7395908592330960887}
+  _jumpTrigger: Jump
+  _speed: 5
+  _interJumpDelay: 0.5
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0
