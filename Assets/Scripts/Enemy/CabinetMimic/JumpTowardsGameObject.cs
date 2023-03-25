@@ -23,10 +23,12 @@ public class JumpTowardsGameObject : MonoBehaviour
                 yield return null;
             }
             // Find Player
-            var targetPosition = _target.Value.transform.position;
+            var targetPosition = (Vector2) _target.Value.transform.position;
             // Start Jump Animation
             _animator.SetTrigger(_jumpTrigger);
             _isJumping = true;
+
+            BroadcastMessage("LookAtTarget", targetPosition, SendMessageOptions.DontRequireReceiver);
 
             while (_isJumping)
             {
