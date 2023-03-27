@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 7395908592330960885}
   - component: {fileID: 7395908592330960886}
   - component: {fileID: 7395908592330960887}
-  - component: {fileID: 1432614514660432805}
+  - component: {fileID: 6239892488265898565}
   - component: {fileID: 705861998221875796}
-  - component: {fileID: 9174304966878918636}
   - component: {fileID: 6730235473307391398}
   m_Layer: 0
   m_Name: Sprite
@@ -83,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.96, y: 1.16}
+  m_Size: {x: 2.08, y: 2.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -109,7 +108,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1432614514660432805
+--- !u!114 &6239892488265898565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,10 +117,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7395908592330960840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af74a6e9d9fd6274681ffb51f075c99e, type: 3}
+  m_Script: {fileID: 11500000, guid: 118acf18e62c45848bff3c495b2d2af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _callback:
+  _onTransformationComplete:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 208457261835110661}
@@ -135,6 +134,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+  _onJumpComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 208457261835110661}
+        m_TargetAssemblyTypeName: JumpTowardsGameObject, Assembly-CSharp
+        m_MethodName: ResetJumpFlag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &705861998221875796
 MonoBehaviour:
@@ -150,34 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 7395908592330960887}
   _trigger: StopHiding
---- !u!114 &9174304966878918636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395908592330960840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0100e6cad1fb4c46bdcdf1de897d255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _requiredParamterValue: Jump
-  _callback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 208457261835110661}
-        m_TargetAssemblyTypeName: JumpTowardsGameObject, Assembly-CSharp
-        m_MethodName: ResetJumpFlag
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6730235473307391398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +189,7 @@ GameObject:
   - component: {fileID: 7395908592478882741}
   - component: {fileID: 7395908592478882742}
   - component: {fileID: 208457261835110661}
+  - component: {fileID: 3303575209837837383}
   m_Layer: 0
   m_Name: CabinetMimic
   m_TagString: Untagged
@@ -292,6 +279,21 @@ MonoBehaviour:
   _jumpTrigger: Jump
   _speed: 5
   _interJumpDelay: 0.5
+--- !u!114 &3303575209837837383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592478882743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c7f4f8851cc894f9cfa9471a185d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
+  _animator: {fileID: 7395908592330960887}
+  _eatingParam: EatingPlayer
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0
