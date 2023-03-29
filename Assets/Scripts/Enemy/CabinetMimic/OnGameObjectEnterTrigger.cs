@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Collider2D))]
 public class OnGameObjectEnterTrigger : MonoBehaviour
 {
     [SerializeField] RuntimeGameObject _target;

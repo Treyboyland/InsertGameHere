@@ -5,8 +5,6 @@ public class JumpTowardsGameObject : MonoBehaviour
 {
     [SerializeField, NaughtyAttributes.Required] RuntimeGameObject _target;
     [SerializeField, NaughtyAttributes.Required] Rigidbody2D _body;
-    [SerializeField] Animator _animator;
-    [SerializeField, NaughtyAttributes.AnimatorParam("_animator", AnimatorControllerParameterType.Trigger)] string _jumpTrigger;
     [SerializeField] float _speed;
     [SerializeField] float _interJumpDelay;
 
@@ -25,7 +23,7 @@ public class JumpTowardsGameObject : MonoBehaviour
             // Find Player
             var targetPosition = (Vector2) _target.Value.transform.position;
             // Start Jump Animation
-            _animator.SetTrigger(_jumpTrigger);
+            BroadcastMessage("Jump", SendMessageOptions.DontRequireReceiver);
             _isJumping = true;
 
             BroadcastMessage("LookAtTarget", targetPosition, SendMessageOptions.DontRequireReceiver);
