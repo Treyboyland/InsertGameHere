@@ -8,8 +8,9 @@ public class CabinetMimicAnimationEventListener : MonoBehaviour
 {
     [SerializeField] UnityEvent _onTransformationComplete;
     [SerializeField] UnityEvent _onJumpComplete;
+    [SerializeField] UnityEvent _onSpitOutAnimComplete;
 
     public void OnTransformationComplete() => _onTransformationComplete.Invoke();
-
     public void OnJumpComplete() => _onJumpComplete.Invoke();
+    public void OnSpitOutAnimComplete() => _onSpitOutAnimComplete.Invoke();
 }
