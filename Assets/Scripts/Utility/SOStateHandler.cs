@@ -27,10 +27,12 @@ public class SOStateHandler<T> : MonoBehaviour where T : ScriptableObject
                 return;
             }
 
-            var onExitCallbacks = _transitionEvents.Where(info => info.Value == _state).Select(info => info.OnExit);
-            var onEnterCallbacks = _transitionEvents.Where(info => info.Value == value).Select(info => info.OnEnter);
+            var onExitCallbacks = _transitionEvents.Where(info => info.Value == _state).Select(info => info.OnExit).ToList();
+            var onEnterCallbacks = _transitionEvents.Where(info => info.Value == value).Select(info => info.OnEnter).ToList();
             _state = value;
-            onExitCallbacks.Union(onEnterCallbacks).ToList().ForEach(callback => callback.Invoke());
+
+            onExitCallbacks.ForEach(callback => callback.Invoke());
+            onEnterCallbacks.ForEach(callback => callback.Invoke());
         }
     }
 
