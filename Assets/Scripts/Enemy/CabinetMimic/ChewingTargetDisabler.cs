@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChewingTargetDisabler : MonoBehaviour
 {
     [SerializeField] CabinetMimicStateInfo _stateInfo;
+    [SerializeField] Transform _pushSource;
 
     void OnEnable()
     {
@@ -13,6 +14,10 @@ public class ChewingTargetDisabler : MonoBehaviour
 
     void OnDisable()
     {
-        _stateInfo.ChewingTarget?.SetActive(true);
+        if (_stateInfo.ChewingTarget != null)
+        {
+            _stateInfo.ChewingTarget.SetActive(true);
+            _stateInfo.ChewingTarget.GetComponent<IPushable>()?.PushAwayFrom((Vector2) _pushSource.position, 10f);
+        }
     }
 }

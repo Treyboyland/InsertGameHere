@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IPushable
 {
     [SerializeField]
     Player player;
@@ -61,5 +61,17 @@ public class PlayerMovement : MonoBehaviour
         }
         movement *= speed * Time.deltaTime;
         body.AddForce(movement, ForceMode2D.Impulse);
+    }
+
+    IEnumerator PushAtFixedUpdate(Vector2 position, float force)
+    {
+        yield return new WaitForFixedUpdate();
+        var difference = body.position - position;
+        body.AddForce(difference * force, ForceMode2D.Impulse);
+    }
+
+    public void PushAwayFrom(Vector2 position, float force)
+    {
+        StartCoroutine(PushAtFixedUpdate(position, force));
     }
 }
