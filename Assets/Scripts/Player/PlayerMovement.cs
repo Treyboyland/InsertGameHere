@@ -32,12 +32,18 @@ public class PlayerMovement : MonoBehaviour, IPushable, IMoveable
         elapsed = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    Queue<Action> _physicsActions = new Queue<Action>();
+
+    void FixedUpdate()
     {
+        while (_physicsActions.Count > 0)
+        {
+            _physicsActions.Dequeue().Invoke();
+        }
+
         if (player.CanPerformAction)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.fixedDeltaTime;
             if (elapsed >= secondsToWait && body.velocity.sqrMagnitude < thresholdMagnitude)
             {
                 body.velocity = new Vector2();
@@ -53,18 +59,8 @@ public class PlayerMovement : MonoBehaviour, IPushable, IMoveable
         {
             elapsed = 0;
         }
-        movement *= speed * Time.deltaTime;
+        movement *= speed * Time.fixedDeltaTime;
         body.AddForce(movement, ForceMode2D.Impulse);
-    }
-
-    Queue<Action> _physicsActions = new Queue<Action>();
-
-    void FixedUpdate()
-    {
-        while (_physicsActions.Count > 0)
-        {
-            _physicsActions.Dequeue().Invoke();
-        }
     }
 
     #region IPushable
