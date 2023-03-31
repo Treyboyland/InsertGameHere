@@ -19,6 +19,7 @@ public class JumpTowardsGameObject : MonoBehaviour
             if (_target.Value == null)
             {
                 yield return null;
+                continue;
             }
             // Find Player
             var targetPosition = (Vector2) _target.Value.transform.position;
