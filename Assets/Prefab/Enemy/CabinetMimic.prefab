@@ -75,6 +75,18 @@ MonoBehaviour:
   _callback:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 296422169}
+        m_TargetAssemblyTypeName: CabinetMimicStateInfo, Assembly-CSharp
+        m_MethodName: SetChewingTarget
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: RuntimeGameObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7395908591240607961}
         m_TargetAssemblyTypeName: CabinetMimicStateMachine, Assembly-CSharp
         m_MethodName: set_State
@@ -97,6 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8144851049603899374}
   - component: {fileID: 2924971481794798456}
+  - component: {fileID: 127101251713528721}
   m_Layer: 0
   m_Name: ChewingBehaviour
   m_TagString: Untagged
@@ -148,6 +161,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &127101251713528721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744768107462871474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba1a8a90c7f04f4b806be6f1dd0c836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateInfo: {fileID: 296422169}
 --- !u!1 &7395908592330960840
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7395908592478882740}
   - component: {fileID: 7395908591240607961}
+  - component: {fileID: 296422169}
   - component: {fileID: 7395908592478882741}
   - component: {fileID: 7395908592478882742}
   - component: {fileID: 208457261835110661}
@@ -536,6 +563,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &296422169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592478882743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3c4d4a4cbc35741bd72a79639575ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &7395908592478882741
 Rigidbody2D:
   serializedVersion: 4
