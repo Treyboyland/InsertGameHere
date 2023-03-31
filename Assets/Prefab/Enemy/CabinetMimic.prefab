@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 7395908592330960887}
   - component: {fileID: 6239892488265898565}
   - component: {fileID: 1566450809305104095}
+  - component: {fileID: 3632214797180290873}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -386,6 +387,18 @@ MonoBehaviour:
   _eatingParam: EatingPlayer
   _jumpTrigger: Jump
   _stopHidingTrigger: StopHiding
+--- !u!114 &3632214797180290873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592330960840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1336a73bc2fd7c45a36a3c6edc12875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,9 +610,9 @@ MonoBehaviour:
   _onLookingLeftChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7395908592330960886}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_flipX
+      - m_Target: {fileID: 3632214797180290873}
+        m_TargetAssemblyTypeName: ScaleFlipper, Assembly-CSharp
+        m_MethodName: FlipX
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
