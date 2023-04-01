@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 9015623255759432538}
   - component: {fileID: 116832974}
   - component: {fileID: 7445780040041536040}
+  - component: {fileID: 2681440186573077221}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1044,6 +1045,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameObjectRef: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
+--- !u!114 &2681440186573077221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015623255759432531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048ecc075e8e7564c9cb5bb34637d337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onDamge:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
+        m_TargetAssemblyTypeName: rho.RuntimeInt, Rho
+        m_MethodName: Reduce
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9015623256328489399
 GameObject:
   m_ObjectHideFlags: 0

@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 8144851049603899374}
   - component: {fileID: 2924971481794798456}
   - component: {fileID: 127101251713528721}
+  - component: {fileID: 2870463199329394456}
   m_Layer: 0
   m_Name: ChewingBehaviour
   m_TagString: Untagged
@@ -177,6 +178,23 @@ MonoBehaviour:
   _pushSource: {fileID: 3434695071517875067}
   _targetSpitFromLocation: {fileID: 2574950812547697471}
   _spitForce: 10
+--- !u!114 &2870463199329394456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744768107462871474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45410efb53c242244b3e42c1c30a3aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateInfo: {fileID: 296422169}
+  _damageInterval: 1
+  _damageAtStart: 0
+  _stopAfterDuration: 0
+  _totalDuration: 0
 --- !u!1 &3138847278690024817
 GameObject:
   m_ObjectHideFlags: 0
