@@ -6,5 +6,6 @@ namespace rho
     public class RuntimeInt : RuntimeValue<int>
     {
         public void Modify(int magnitude) => Value += magnitude;
+        public void Reduce(int magnitude) => Value -= magnitude;
     }
 }
