@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IPushable, IMoveable
 {
     [SerializeField]
     Player player;
@@ -24,13 +25,6 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 currentMovementVector;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void HandleMove(InputAction.CallbackContext context)
     {
         //Debug.LogWarning("Handling");
@@ -38,12 +32,18 @@ public class PlayerMovement : MonoBehaviour
         elapsed = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    Queue<Action> _physicsActions = new Queue<Action>();
+
+    void FixedUpdate()
     {
+        while (_physicsActions.Count > 0)
+        {
+            _physicsActions.Dequeue().Invoke();
+        }
+
         if (player.CanPerformAction)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.fixedDeltaTime;
             if (elapsed >= secondsToWait && body.velocity.sqrMagnitude < thresholdMagnitude)
             {
                 body.velocity = new Vector2();
@@ -59,7 +59,27 @@ public class PlayerMovement : MonoBehaviour
         {
             elapsed = 0;
         }
-        movement *= speed * Time.deltaTime;
+        movement *= speed * Time.fixedDeltaTime;
         body.AddForce(movement, ForceMode2D.Impulse);
     }
+
+    #region IPushable
+    public void Push(Vector2 force)
+    {
+        _physicsActions.Enqueue(() => {
+            body.AddForce(force, ForceMode2D.Impulse);
+        });
+    }
+    #endregion
+
+    #region IMoveable
+
+    public void MoveTo(Vector2 target)
+    {
+        _physicsActions.Enqueue(() => {
+            body.MovePosition(target);
+        });
+    }
+    
+    #endregion
 }

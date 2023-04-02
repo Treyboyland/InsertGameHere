@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48c2de7a6d9b8443b89b8a3c3fe0731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
@@ -167,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd46694e02e05314387b61bff2dad0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
@@ -218,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48c2de7a6d9b8443b89b8a3c3fe0731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
@@ -435,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48c2de7a6d9b8443b89b8a3c3fe0731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
@@ -557,6 +561,7 @@ GameObject:
   - component: {fileID: 9015623255759432538}
   - component: {fileID: 116832974}
   - component: {fileID: 7445780040041536040}
+  - component: {fileID: 2450615126550699597}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1044,6 +1049,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameObjectRef: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
+--- !u!114 &2450615126550699597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015623255759432531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac76703abb1f65458dcb740cc1d38b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
 --- !u!1 &9015623256328489399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5268457bcc420e54997422e40c653b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
   playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}

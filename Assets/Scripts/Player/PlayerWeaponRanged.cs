@@ -8,9 +8,6 @@ public class PlayerWeaponRanged : PlayerWeapon
     ObjectPool pool;
 
     [SerializeField]
-    OwnerTypeSO playerOwner;
-
-    [SerializeField]
     GameEventVector weaponFiredEvent;
 
     public override void HandleFireAction(DirectionSO direction)
@@ -24,7 +21,7 @@ public class PlayerWeaponRanged : PlayerWeapon
         Projectile projectile = obj.GetComponent<Projectile>();
         if (projectile)
         {
-            projectile.Owner = playerOwner;
+            projectile.OwnerSet = _playerSet;
             projectile.transform.position = transform.position;
             projectile.transform.SetParent(null);
             projectile.gameObject.SetActive(true);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField]
     EnemyStatsSO stats;
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         currentHealth = stats.Health;
     }
 
-    public void TakeDamage(int damage)
+    public void Damage(int damage)
     {
         currentHealth -= damage;
 

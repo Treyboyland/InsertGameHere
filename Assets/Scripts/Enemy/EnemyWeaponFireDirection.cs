@@ -29,26 +29,6 @@ public class EnemyWeaponFireDirection : EnemyWeaponFire
 
     void Fire()
     {
-        foreach (var direction in directions)
-        {
-            var obj = bulletPool.GetObject();
-            if (!obj)
-            {
-                return;
-            }
-
-            Projectile projectile = obj.GetComponent<Projectile>();
-            if (!projectile)
-            {
-                return;
-
-            }
-
-            projectile.Owner = enemyOwner;
-            projectile.transform.position = transform.position;
-            projectile.transform.SetParent(null);
-            projectile.gameObject.SetActive(true);
-            projectile.SetDirection(direction.normalized);
-        }
+        directions.ForEach(SpawnProjectle);
     }
 }

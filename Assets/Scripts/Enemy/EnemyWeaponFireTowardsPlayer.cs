@@ -26,25 +26,6 @@ public class EnemyWeaponFireTowardsPlayer : EnemyWeaponFire
 
     void Fire()
     {
-        var obj = bulletPool.GetObject();
-        if (!obj)
-        {
-            return;
-        }
-
-        Projectile projectile = obj.GetComponent<Projectile>();
-        if (!projectile)
-        {
-            return;
-
-        }
-
-        Vector3 direction = (player.transform.position - enemy.transform.position).normalized;
-
-        projectile.Owner = enemyOwner;
-        projectile.transform.position = transform.position;
-        projectile.gameObject.SetActive(true);
-        projectile.transform.SetParent(null);
-        projectile.SetDirection(direction);
+        SpawnProjectle((player.transform.position - enemy.transform.position).normalized);
     }
 }

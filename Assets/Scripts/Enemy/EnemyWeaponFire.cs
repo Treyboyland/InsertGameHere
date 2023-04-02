@@ -8,5 +8,27 @@ public class EnemyWeaponFire : EnemyMove
     protected ObjectPool bulletPool;
 
     [SerializeField]
-    protected OwnerTypeSO enemyOwner;
+    protected rho.RuntimeGameObjectSet _ownerSet;
+
+    protected void SpawnProjectle(Vector2 direction)
+    {
+        var obj = bulletPool.GetObject();
+        if (!obj)
+        {
+            return;
+        }
+
+        Projectile projectile = obj.GetComponent<Projectile>();
+        if (!projectile)
+        {
+            return;
+
+        }
+
+        projectile.OwnerSet = _ownerSet;
+        projectile.transform.position = transform.position;
+        projectile.gameObject.SetActive(true);
+        projectile.transform.SetParent(null);
+        projectile.SetDirection(direction);
+    }
 }

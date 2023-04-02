@@ -8,9 +8,6 @@ public class PlayerWeaponRangedBurst : PlayerWeapon
     ObjectPool pool;
 
     [SerializeField]
-    OwnerTypeSO playerOwner;
-
-    [SerializeField]
     GameEventVector weaponFiredEvent;
 
     [Tooltip("First shot will fire immediately. Last time will act as delay between bursts")]
@@ -38,7 +35,7 @@ public class PlayerWeaponRangedBurst : PlayerWeapon
         Projectile projectile = obj.GetComponent<Projectile>();
         if (projectile)
         {
-            projectile.Owner = playerOwner;
+            projectile.OwnerSet = _playerSet;
             projectile.transform.position = transform.position;
             projectile.transform.SetParent(null);
             projectile.gameObject.SetActive(true);
