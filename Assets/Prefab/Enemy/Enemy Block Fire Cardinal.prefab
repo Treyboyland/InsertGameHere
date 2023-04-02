@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 2230341343974148732}
   - component: {fileID: 2230341343974148728}
   - component: {fileID: 2230341343974148729}
+  - component: {fileID: 7283573052644591114}
   m_Layer: 0
   m_Name: Enemy Block Fire Cardinal
   m_TagString: Untagged
@@ -219,3 +220,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &7283573052644591114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230341343974148733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac76703abb1f65458dcb740cc1d38b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}

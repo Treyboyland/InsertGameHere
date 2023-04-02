@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 674371276183949182}
   - component: {fileID: 674371276183949183}
   - component: {fileID: 674371276183949178}
+  - component: {fileID: 1920733501830780115}
   m_Layer: 0
   m_Name: Enemy Tree
   m_TagString: Untagged
@@ -229,3 +230,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1920733501830780115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674371276183949180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac76703abb1f65458dcb740cc1d38b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}

@@ -5,9 +5,6 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField]
-    OwnerTypeSO owner;
-
-    [SerializeField]
     ProjectileStatsSO stats;
 
     [SerializeField]
@@ -16,15 +13,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     DisableAfterTime disabler;
 
-    public OwnerTypeSO Owner { get => owner; set => owner = value; }
-
-    [Header("Owners")]
-    [SerializeField]
-    OwnerTypeSO playerOwner;
-    [SerializeField]
-    OwnerTypeSO neutralOwner;
-    [SerializeField]
-    OwnerTypeSO enemyOwner;
+    public rho.RuntimeGameObjectSet OwnerSet { get; set; }
 
     [Header("Directions")]
     [SerializeField]
@@ -58,46 +47,14 @@ public class Projectile : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    /// <summary>
-    /// Check that should be run on player-owned projectile
-    /// </summary>
-    /// <param name="other"></param>
-    void PlayerCollisionCheck(Collider2D other)
+    void DamgeIfDamageable(Collider2D other)
     {
-        Enemy enemy = other.gameObject.GetComponent<Enemy>();
+        var damageable = other.gameObject.GetComponent<IDamageable>();
 
-        if (enemy)
+        if (damageable != null)
         {
-            enemy.TakeDamage(stats.Damage);
+            damageable.Damage(stats.Damage);
             DisableIfNotPiercing();
-        }
-    }
-
-    /// <summary>
-    /// Check that should be run on enemy-owned projectile
-    /// </summary>
-    /// <param name="other"></param>
-    void EnemyCollisionCheck(Collider2D other)
-    {
-        Player player = other.gameObject.GetComponent<Player>();
-
-        if (player)
-        {
-            player.TakeDamage();
-            DisableIfNotPiercing();
-        }
-    }
-
-    /// <summary>
-    /// Check that should be run on neutral-owned projectile
-    /// </summary>
-    /// <param name="other"></param>
-    void NeutralCollisionCheck(Collider2D other)
-    {
-        EnemyCollisionCheck(other);
-        if (gameObject.activeInHierarchy)
-        {
-            PlayerCollisionCheck(other);
         }
     }
 
@@ -108,17 +65,9 @@ public class Projectile : MonoBehaviour
     /// <param name="other">The other Collider2D involved in this collision.</param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (owner == playerOwner)
+        if (!OwnerSet.Contains(other.gameObject))
         {
-            PlayerCollisionCheck(other);
-        }
-        else if (owner == neutralOwner)
-        {
-            NeutralCollisionCheck(other);
-        }
-        else if (owner == enemyOwner)
-        {
-            EnemyCollisionCheck(other);
+            DamgeIfDamageable(other);
         }
     }
 

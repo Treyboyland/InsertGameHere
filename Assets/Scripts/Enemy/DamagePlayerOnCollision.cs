@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DamagePlayerOnCollision : MonoBehaviour
 {
+    [SerializeField] int _damageAmount = 1;
+
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
     /// object (2D physics only).
@@ -28,7 +30,7 @@ public class DamagePlayerOnCollision : MonoBehaviour
     {
         if (player)
         {
-            player.TakeDamage();
+            player.Damage(_damageAmount);
         }
     }
 }

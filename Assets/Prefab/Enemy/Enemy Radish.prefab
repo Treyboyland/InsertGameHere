@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5288410813708758342}
   - component: {fileID: 5288410813708758337}
   - component: {fileID: 3357427974313413144}
+  - component: {fileID: 6876450499948523493}
   m_Layer: 0
   m_Name: Enemy Radish
   m_TagString: Enemy
@@ -67,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11a247ddd7203d45866c5a8600f74d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damageAmount: 1
 --- !u!114 &3506891251882951333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +192,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6876450499948523493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288410813708758336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac76703abb1f65458dcb740cc1d38b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}

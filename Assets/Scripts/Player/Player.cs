@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
     [SerializeField]
     rho.ConfigInt maxLives;
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         onUpdateLives.Invoke();
     }
 
-    public void TakeDamage()
+    public void Damage(int amount)
     {
         currentLives.Value--;
         onUpdateLives.Invoke();

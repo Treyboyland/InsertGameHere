@@ -18,20 +18,10 @@ public class PlayerWeaponMultiShot : PlayerWeapon
     ObjectPool pool;
 
     [SerializeField]
-    OwnerTypeSO playerOwner;
-
-    [SerializeField]
     GameEventVector weaponFiredEvent;
 
     [SerializeField]
     List<BulletPosition> positions;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     void CreateProjectile(DirectionSO direction, BulletPosition positionData)
     {
@@ -44,7 +34,7 @@ public class PlayerWeaponMultiShot : PlayerWeapon
         Projectile projectile = obj.GetComponent<Projectile>();
         if (projectile)
         {
-            projectile.Owner = playerOwner;
+            projectile.OwnerSet = _playerSet;
             Quaternion rotation = Quaternion.AngleAxis(positionData.Rotation, Vector3.forward);
 
             Quaternion positionRotation = Quaternion.AngleAxis(direction.RotationFromNorth, Vector3.forward);
