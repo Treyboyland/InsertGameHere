@@ -441,6 +441,7 @@ MonoBehaviour:
   _eatingParam: EatingPlayer
   _jumpTrigger: Jump
   _stopHidingTrigger: StopHiding
+  _damageTrigger: Damage
 --- !u!114 &3632214797180290873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,6 +692,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: f7b9d4cf0f330204fa60cd08f570a6ac, type: 2}
   _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
+  _onDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566450809305104095}
+        m_TargetAssemblyTypeName: CabinetMimicAnimationParamSetter, Assembly-CSharp
+        m_MethodName: Damage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
