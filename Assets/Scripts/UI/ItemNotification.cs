@@ -23,12 +23,12 @@ public class ItemNotification : MonoBehaviour
 
     private bool IsAnimatorState(string stateName)
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         var controller = animator.runtimeAnimatorController as UnityEditor.Animations.AnimatorController;
         return controller.layers.Any(l => l.stateMachine.states.Any(s => s.state.name == stateName));
-        #else
+#else
         return true;
-        #endif
+#endif
     }
 
     [SerializeField, NaughtyAttributes.AnimatorParam("animator")]
@@ -65,6 +65,12 @@ public class ItemNotification : MonoBehaviour
         animator.gameObject.SetActive(false);
     }
 
-    public void StartNotification(ItemSO itemData, int amount) => 
-        _messages.Enqueue(new KeyValuePair<ItemSO, int>(itemData, amount));
+    public void StartNotification(ItemSO itemData, int amount)
+    {
+        if (itemData.ShouldNotifyOnPickup && amount != 0)
+        {
+            _messages.Enqueue(new KeyValuePair<ItemSO, int>(itemData, amount));
+        }
+    }
+
 }

@@ -667,7 +667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8107850756301604410}
-  - component: {fileID: 8107850756301604408}
+  - component: {fileID: 6665890041087516322}
   - component: {fileID: 8107850756301604411}
   m_Layer: 0
   m_Name: Enemy Death Particle
@@ -691,7 +691,7 @@ Transform:
   m_Father: {fileID: 8107850755907782065}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8107850756301604408
+--- !u!114 &6665890041087516322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -700,10 +700,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8107850756301604413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1021c4bc1cacde147ade2e64b59d7af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 77dc9e07253e1ee418a6e54f77b054f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
+  gameEvent: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -894,7 +894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8107850756967158390}
-  - component: {fileID: 8107850756967158388}
+  - component: {fileID: 1589100973583092427}
   - component: {fileID: 8107850756967158389}
   m_Layer: 0
   m_Name: Enemy Defeated
@@ -918,7 +918,7 @@ Transform:
   m_Father: {fileID: 8107850755830187074}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8107850756967158388
+--- !u!114 &1589100973583092427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,10 +927,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8107850756967158393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1021c4bc1cacde147ade2e64b59d7af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 77dc9e07253e1ee418a6e54f77b054f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
+  gameEvent: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:

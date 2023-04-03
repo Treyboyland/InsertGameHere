@@ -71,6 +71,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8007011350440351940, guid: eca51367a02233f48b78f8d66418b8a2, type: 3}
   numInitial: 3
+--- !u!1 &4856236127219912052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7238653927306774003}
+  - component: {fileID: 5796746641789442308}
+  m_Layer: 6
+  m_Name: New Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7238653927306774003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856236127219912052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9015623255445464822}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5796746641789442308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856236127219912052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 12db31de43785664b9b8c8019595f987, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
+        m_TargetAssemblyTypeName: RuntimeInventory, Assembly-CSharp
+        m_MethodName: ClearItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 308bdc9cc7ea77948a4285244c7e2e6b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ItemSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
+        m_TargetAssemblyTypeName: RuntimeInventory, Assembly-CSharp
+        m_MethodName: ClearItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8bd5ea00b1a289d4a8953a8ef139ce91, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ItemSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5031009505608608564
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
-  playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
   positions:
   - Offset: {x: -0.2, y: 0}
@@ -170,7 +241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
-  playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
   shotTimes:
   - 0.1
@@ -222,7 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
-  playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
   positions:
   - Offset: {x: 0, y: 0}
@@ -440,7 +509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
-  playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}
   positions:
   - Offset: {x: 0, y: 0}
@@ -479,6 +547,7 @@ Transform:
   m_Children:
   - {fileID: 9015623255565483061}
   - {fileID: 9015623256328489398}
+  - {fileID: 7238653927306774003}
   m_Father: {fileID: 9015623255759432529}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1183,5 +1252,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
   pool: {fileID: 7379493198524624952}
-  playerOwner: {fileID: 11400000, guid: 72d66b6361c1c3c48aebe2023749583f, type: 2}
   weaponFiredEvent: {fileID: 11400000, guid: 927640d73a13edb4f950af202a8e7d17, type: 2}

@@ -7,7 +7,7 @@ using System.Linq;
 public class RuntimeInventory : ScriptableObject
 {
     Dictionary<ItemSO, int> _dict = new Dictionary<ItemSO, int>();
-    
+
     public IReadOnlyDictionary<ItemSO, int> AsDictionary() => _dict;
 
     public event System.Action Changed;
@@ -28,10 +28,39 @@ public class RuntimeInventory : ScriptableObject
         }
     }
 
+    public void SetItemCount(ItemSO item, int amount)
+    {
+        var currentCount = _dict.ContainsKey(item) ? _dict[item] : 0;
+        var itemMax = item.IsKeyItem ? 1 : int.MaxValue;
+        var newCount = Mathf.Clamp(amount, 0, itemMax);
+
+        if(newCount == 0 && currentCount != 0)
+        {
+            _dict.Remove(item);
+            ItemCountChanged?.Invoke(item, newCount);
+            Changed?.Invoke();
+        }
+        else if (currentCount != newCount)
+        {
+            _dict[item] = newCount;
+            ItemCountChanged?.Invoke(item, newCount);
+            Changed?.Invoke();
+        }
+    }
+
     public void Clear()
     {
         _dict.Clear();
         Changed?.Invoke();
+    }
+
+    /// <summary>
+    /// Unity editor doesn't like to show multi-param methods
+    /// </summary>
+    /// <param name="item"></param>
+    public void ClearItem(ItemSO item)
+    {
+        SetItemCount(item, 0);
     }
 
     public int GetItemCount(ItemSO item) => _dict.ContainsKey(item) ? _dict[item] : 0;

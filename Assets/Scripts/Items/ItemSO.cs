@@ -21,14 +21,20 @@ public sealed class ItemSO : ScriptableObject
     bool isKeyItem;
 
     public bool IsKeyItem { get => isKeyItem; }
-    
+
     [SerializeField]
     bool addToInventory = true;
 
     public bool AddToInventory => addToInventory;
 
+    [Tooltip("True if the item notification should come up when picked up")]
+    [SerializeField]
+    bool shouldNotifyOnPickup;
+
+    public bool ShouldNotifyOnPickup { get => shouldNotifyOnPickup; }
+
     [SerializeField]
     ItemEffectSO[] _onPickupEffects;
 
-    public ICollection<IItemEffect> OnPickupEffects => _onPickupEffects;    
+    public ICollection<IItemEffect> OnPickupEffects => _onPickupEffects;
 }

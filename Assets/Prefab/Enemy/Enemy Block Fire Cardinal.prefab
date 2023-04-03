@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2230341343974148731}
   bulletPool: {fileID: 2230341343308607751}
-  enemyOwner: {fileID: 11400000, guid: d5fc2bb9062dea44ba5329f4d79c8087, type: 2}
+  _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   directions:
   - {x: 1, y: 0}
   - {x: -1, y: 0}

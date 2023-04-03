@@ -60,4 +60,9 @@ public class ObjectPool : MonoBehaviour
         obj.transform.position = position;
         obj.gameObject.SetActive(true);
     }
+
+    public void SpawnAtPosition(EnemyDeathInfo info)
+    {
+        SpawnAtPosition(info.LastPosition);
+    }
 }
