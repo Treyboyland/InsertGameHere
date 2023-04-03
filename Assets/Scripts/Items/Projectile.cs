@@ -65,7 +65,7 @@ public class Projectile : MonoBehaviour
     /// <param name="other">The other Collider2D involved in this collision.</param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!OwnerSet.Contains(other.gameObject))
+        if (OwnerSet != null && !OwnerSet.Contains(other.gameObject))
         {
             DamgeIfDamageable(other);
         }

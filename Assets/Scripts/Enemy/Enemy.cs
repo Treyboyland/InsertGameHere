@@ -15,6 +15,10 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public UnityEvent OnEnemySpawned;
 
+    public int CurrentHealth { get => currentHealth; }
+
+    public bool IsDefeated { get; protected set; } = false;
+
     public Vector2Int CurrentRoom { get; set; }
     public EnemyStatsSO Stats { get => stats; }
 
@@ -22,6 +26,14 @@ public class Enemy : MonoBehaviour, IDamageable
     void Start()
     {
         currentHealth = stats.Health;
+    }
+
+    private void OnEnable()
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            IsDefeated = false;
+        }
     }
 
     public void Damage(int damage)
@@ -36,7 +48,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
     void Die()
     {
-        _enemyDeath.Invoke(new EnemyDeathInfo{
+        IsDefeated = true;
+        _enemyDeath.Invoke(new EnemyDeathInfo
+        {
             LastPosition = transform.position,
             Score = stats.Score
         });

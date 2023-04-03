@@ -35,7 +35,7 @@ public class Cabinet : MonoBehaviour
             return;
         }
 
-        bool hasItems = itemsToCheck.All(invSlot => _inventory.HasItems(invSlot.Item, invSlot.Count));
+        bool hasItems = HasNeededItems();
 
         if (hasItems)
         {
@@ -46,5 +46,11 @@ public class Cabinet : MonoBehaviour
         {
             onFailSound?.Invoke();
         }
+    }
+
+
+    public bool HasNeededItems()
+    {
+        return itemsToCheck.All(invSlot => _inventory.HasItems(invSlot.Item, invSlot.Count));
     }
 }
