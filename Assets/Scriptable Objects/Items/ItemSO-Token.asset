@@ -15,3 +15,6 @@ MonoBehaviour:
   itemName: Token
   description: The original microtransaction
   isKeyItem: 1
+  addToInventory: 1
+  shouldNotifyOnPickup: 1
+  _onPickupEffects: []
