@@ -16,3 +16,4 @@ MonoBehaviour:
   activeColor: {r: 1, g: 1, b: 1, a: 1}
   discoveredColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
   visitedColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  specialRoomColor: {r: 1, g: 0, b: 1, a: 1}

@@ -17,16 +17,19 @@ public class GameMapPieceUIDataSO : ScriptableObject
     [SerializeField]
     Color visitedColor;
 
+    [SerializeField]
+    Color specialRoomColor;
+
     /// <summary>
     /// Not part of the current map; placeholder
     /// </summary>
     /// <value></value>
-    public Color InactiveColor { get => inactiveColor;  }
+    public Color InactiveColor { get => inactiveColor; }
     /// <summary>
     /// Player's current room
     /// </summary>
     /// <value></value>
-    public Color ActiveColor { get => activeColor;  }
+    public Color ActiveColor { get => activeColor; }
     /// <summary>
     /// Player has discovered room, but not visited the room
     /// </summary>
@@ -36,5 +39,10 @@ public class GameMapPieceUIDataSO : ScriptableObject
     /// Player has visited this room
     /// </summary>
     /// <value></value>
-    public Color VisitedColor { get => visitedColor;  }
+    public Color VisitedColor { get => visitedColor; }
+    /// <summary>
+    /// Coin cabinet, cartridge room
+    /// </summary>
+    /// <value></value>
+    public Color SpecialRoomColor { get => specialRoomColor; }
 }

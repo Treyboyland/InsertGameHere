@@ -65,10 +65,13 @@ public class GameMapCreator : MonoBehaviour
     int currentMapChallengeRating;
 
     public MapData MapData { get => mapData; }
+    public List<Vector2Int> SpecialRoomLocations { get => specialRoomLocations; }
 
     // Start is called before the first frame update
     void Start()
     {
+        //TODO: Map Generation has StackOverflow at level 14
+        currentLevel.Value = 0;
         AddRandomRooms();
         GenerateGameMap();
     }

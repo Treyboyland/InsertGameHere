@@ -46,7 +46,7 @@ public class GameMapUI : MonoBehaviour
         canvas.gameObject.SetActive(false);
     }
 
-    void DiscoverAll()
+    public void DiscoverAll()
     {
         foreach (var piece in currentPieces)
         {
@@ -141,6 +141,11 @@ public class GameMapUI : MonoBehaviour
                 currentPieces.Add(piece);
                 piece.SetColors(data.StartingPosition);
             }
+        }
+
+        foreach (var roomLocation in mapCreator.SpecialRoomLocations)
+        {
+            rooms[roomLocation.x, roomLocation.y].IsSpecial = true;
         }
 
         DiscoverAdjacent(data.StartingPosition);

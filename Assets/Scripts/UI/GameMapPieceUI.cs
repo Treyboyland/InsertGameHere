@@ -24,12 +24,15 @@ public class GameMapPieceUI : MonoBehaviour
 
     public Vector2Int CurrentPosition { get; set; }
 
+    public bool IsSpecial { get; set; }
+
     public void ResetData()
     {
         IsActiveRoom = false;
         IsDiscovered = false;
         isVisited = false;
         CurrentPosition = Vector2Int.zero;
+        IsSpecial = false;
     }
 
     public void SetColors(Vector2Int currentPos)
@@ -45,7 +48,14 @@ public class GameMapPieceUI : MonoBehaviour
         }
         else if (IsDiscovered)
         {
-            image.color = isVisited ? colorData.VisitedColor : colorData.DiscoveredColor;
+            if (IsSpecial)
+            {
+                image.color = colorData.SpecialRoomColor;
+            }
+            else
+            {
+                image.color = isVisited ? colorData.VisitedColor : colorData.DiscoveredColor;
+            }
         }
         else
         {
