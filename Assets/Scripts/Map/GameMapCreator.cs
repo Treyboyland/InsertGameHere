@@ -8,7 +8,7 @@ public class GameMapCreator : MonoBehaviour
 
     [SerializeField]
     MapConfig mapConfig;
-    
+
     [SerializeField]
     rho.RuntimeInt currentLevel;
 
@@ -23,6 +23,9 @@ public class GameMapCreator : MonoBehaviour
 
     [SerializeField]
     GameEvent onSetPlayerStartingPosition;
+
+    [SerializeField]
+    GameEvent onGenerationComplete;
 
     [Header("Rooms")]
 
@@ -61,9 +64,14 @@ public class GameMapCreator : MonoBehaviour
 
     int currentMapChallengeRating;
 
+    public MapData MapData { get => mapData; }
+    public List<Vector2Int> SpecialRoomLocations { get => specialRoomLocations; }
+
     // Start is called before the first frame update
     void Start()
     {
+        //TODO: Map Generation has StackOverflow at level 14
+        currentLevel.Value = 0;
         AddRandomRooms();
         GenerateGameMap();
     }
@@ -113,6 +121,7 @@ public class GameMapCreator : MonoBehaviour
         CreateGeneralRooms();
         SetThemeForSpecialRooms();
 
+        onGenerationComplete.Invoke();
         onSetPlayerStartingPosition.Invoke();
 
         // player.transform.position = new Vector3(mapData.StartingPosition.x * dimensions.x + spacing.x * mapData.StartingPosition.x,
