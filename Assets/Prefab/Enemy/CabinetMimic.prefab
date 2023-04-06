@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stateInfo: {fileID: 296422169}
-  _damageInterval: 1
-  _damageAtStart: 0
+  _damageInterval: 0.75
+  _damageAtStart: 1
   _stopAfterDuration: 0
   _totalDuration: 0
   _damageAmount: 1
