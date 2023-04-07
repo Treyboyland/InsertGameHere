@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 674371276183949178}
   - component: {fileID: 1920733501830780115}
   - component: {fileID: 1445897820385078690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
