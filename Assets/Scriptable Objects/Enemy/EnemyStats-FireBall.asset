@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750fa6f271822364f8090340d8d4dc9d, type: 3}
-  m_Name: _EnemyDatabase-Test
+  m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
+  m_Name: EnemyStats-FireBall
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 8098535048861308355, guid: 0f7b4afacfd9aa64e84abfd8939f0694, type: 3}
+  health: 40
+  speed: 3
+  distanceFromPlayer: 0
+  secondsBetweenMove: 0
+  fireRate: 0
+  challengeRating: 1
+  score: 200
