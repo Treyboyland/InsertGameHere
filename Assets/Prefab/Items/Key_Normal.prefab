@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1068305369324959586}
   - component: {fileID: 2123253080}
   m_Layer: 0
-  m_Name: Key_Purple
+  m_Name: Key_Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1de63721e4a54e4790015d407c28fac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e2657580387dd24f8cd100f5eca6d33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,6 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3151f48cdd0a604783f8b95514f3040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 512e0f52ce009c641b0eca56e25e612e, type: 2}
+  Item: {fileID: 11400000, guid: 3dc9e6126f546b3409c5fd4b62a064e0, type: 2}
   ItemAmount: 1
-  OnPickup: {fileID: 11400000, guid: 89c6c89b4743b474088921894d8c2663, type: 2}
+  OnPickup: {fileID: 11400000, guid: 227de2026aced684a904cc25cbedbeeb, type: 2}

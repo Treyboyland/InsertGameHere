@@ -17,5 +17,5 @@ MonoBehaviour:
   distanceFromPlayer: 0
   secondsBetweenMove: 0
   fireRate: 0
-  challengeRating: 1
+  challengeRating: 2
   score: 200
