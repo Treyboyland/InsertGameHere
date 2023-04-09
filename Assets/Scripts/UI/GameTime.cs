@@ -27,14 +27,16 @@ public class GameTime : MonoBehaviour
     rho.RuntimeInt _currentLevel;
 
     [SerializeField]
-    TMP_Text textBox;
+    rho.RuntimeFloat elapsed;
 
-    float elapsed;
+    [SerializeField]
+    TMP_Text textBox;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        elapsed.Value = 0;
         levelSplits.Sort((a, b) => a.Level.CompareTo(b.Level));
     }
 
@@ -44,14 +46,14 @@ public class GameTime : MonoBehaviour
     private void Update()
     {
         //TODO: Pausing?
-        elapsed += Time.deltaTime;
+        elapsed.Value += Time.deltaTime;
         UpdateTime();
     }
 
     void UpdateTime()
     {
         float maxTime = GetTimeForLevel();
-        float remaining = maxTime - elapsed;
+        float remaining = maxTime - elapsed.Value;
         if (remaining < 0)
         {
             remaining = 0;
@@ -92,13 +94,13 @@ public class GameTime : MonoBehaviour
 
     public void ResetTime()
     {
-        elapsed = elapsed < 0 ? elapsed : 0;
+        elapsed.Value = elapsed.Value < 0 ? elapsed.Value : 0;
         UpdateTime();
     }
 
     public void AddTime(float timeToAdd)
     {
-        elapsed -= timeToAdd;
+        elapsed.Value -= timeToAdd;
         UpdateTime();
     }
 }

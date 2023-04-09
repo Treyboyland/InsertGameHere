@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798685992}
-  - component: {fileID: 798685993}
+  - component: {fileID: 2548547280751326914}
   - component: {fileID: 798685994}
   m_Layer: 0
   m_Name: Enemy Drop Listener
@@ -142,7 +142,7 @@ Transform:
   m_Father: {fileID: 269796700}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &798685993
+--- !u!114 &2548547280751326914
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,10 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 798685991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1021c4bc1cacde147ade2e64b59d7af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 77dc9e07253e1ee418a6e54f77b054f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 0e26d056e4ac3814f8a33ba87b51370e, type: 2}
+  gameEvent: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -184,6 +184,160 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table: {fileID: 11400000, guid: f9d4d5f29f340594981275186b22fd04, type: 2}
   dropProbability: 0.5
+--- !u!1 &3125660679235041399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670268223493041751}
+  - component: {fileID: 5393349992415672402}
+  - component: {fileID: 5498814553952555835}
+  m_Layer: 0
+  m_Name: Key Red Pickup Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &670268223493041751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3125660679235041399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8107850755830187074}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5393349992415672402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3125660679235041399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7bf419a5cbea4b741922bdad2c80943d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5498814553952555835}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5498814553952555835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3125660679235041399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
+--- !u!1 &6527568500855146813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7266928273916806801}
+  - component: {fileID: 671836426103946845}
+  - component: {fileID: 3127461270590495687}
+  m_Layer: 0
+  m_Name: Key Normal Pickup Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7266928273916806801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527568500855146813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8107850755830187074}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &671836426103946845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527568500855146813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 227de2026aced684a904cc25cbedbeeb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3127461270590495687}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3127461270590495687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527568500855146813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
 --- !u!1 &8107850755467071154
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +575,9 @@ Transform:
   - {fileID: 8107850756288883205}
   - {fileID: 8107850756967158390}
   - {fileID: 238149619}
+  - {fileID: 7266928273916806801}
+  - {fileID: 2560269889317102983}
+  - {fileID: 670268223493041751}
   m_Father: {fileID: 8107850755673963805}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1087,3 +1244,80 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a67fdb62cc08d584c966c850bb9e435f, type: 2}
+--- !u!1 &8379300481873849959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2560269889317102983}
+  - component: {fileID: 9197422158569307580}
+  - component: {fileID: 4499121142568402755}
+  m_Layer: 0
+  m_Name: Key Purple Pickup Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2560269889317102983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379300481873849959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8107850755830187074}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9197422158569307580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379300481873849959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 89c6c89b4743b474088921894d8c2663, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4499121142568402755}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4499121142568402755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379300481873849959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
