@@ -27,6 +27,23 @@ public static class HelperFunctions
     }
 
     /// <summary>
+    /// Creates a shallow copy of the given items
+    /// </summary>
+    /// <param name="list"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static List<T> CloneList<T>(this IEnumerable<T> list)
+    {
+        List<T> temp = new List<T>();
+        foreach(var item in list)
+        {
+            temp.Add(item);
+        }
+
+        return temp;
+    }
+
+    /// <summary>
     /// Waits for the given state. Assumes on the 0th layer
     /// </summary>
     /// <param name="animator"></param>
