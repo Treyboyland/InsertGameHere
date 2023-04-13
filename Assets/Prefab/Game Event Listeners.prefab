@@ -414,7 +414,7 @@ MonoBehaviour:
   eventToPost:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 336a4404e1bde784393dae43ac100f4a, type: 2}
 --- !u!1 &7847662883821342245
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   table: {fileID: 11400000, guid: e2932c5925debcb41a10ea9acf6c1c19, type: 2}
-  dropProbability: 0.5
+  dropProbability: 1
 --- !u!1 &8107850755467071154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,4 +1662,4 @@ MonoBehaviour:
   eventToPost:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ae7db72736e2ee646a25c5e96c0e7bde, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: db9fde401cec07d4888d6476623be3e2, type: 2}
