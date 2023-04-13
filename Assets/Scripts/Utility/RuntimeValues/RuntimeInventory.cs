@@ -65,5 +65,5 @@ public class RuntimeInventory : ScriptableObject
 
     public int GetItemCount(ItemSO item) => _dict.ContainsKey(item) ? _dict[item] : 0;
     public bool HasItem(ItemSO item) => _dict.ContainsKey(item);
-    public bool HasItems(ItemSO item, int amount) => _dict.ContainsKey(item) && _dict[item] == amount;
+    public bool HasItems(ItemSO item, int amount) => _dict.ContainsKey(item) && _dict[item] >= amount;
 }
