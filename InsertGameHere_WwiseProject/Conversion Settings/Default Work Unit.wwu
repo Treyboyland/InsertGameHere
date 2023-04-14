@@ -43,7 +43,7 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{3FA781A0-2C33-45DE-8DBE-46051D358409}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{9D9C61CB-DE74-4105-A45D-42336B9D76F6}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{595A1E47-58C5-48EE-9B01-0AADCFAB438B}" PluginName="Vorbis" CompanyID="0" PluginID="4">

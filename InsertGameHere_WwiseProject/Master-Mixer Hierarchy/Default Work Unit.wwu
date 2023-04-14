@@ -11,17 +11,62 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{808A186F-E404-4F25-99CC-A6777D4500FE}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Peak Limiter (Custom)" ID="{D5C49C13-70A4-4B05-BB70-50928C291E1E}" ShortID="656118801" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<PropertyList>
+												<Property Name="Ratio" Type="Real32" Value="2"/>
+												<Property Name="Threshold" Type="Real32" Value="-5.6"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
-								<Bus Name="Leads" ID="{12C37E11-512C-4CCF-9104-1CE4D5F4E2DA}">
+								<Bus Name="Bass" ID="{D4114674-8B95-48F5-98D0-64F4B4BAC727}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 								</Bus>
-								<Bus Name="Melodies" ID="{4D9C75F9-0CBB-44A3-9592-1CD3948CD899}"/>
+								<Bus Name="Drums" ID="{DAFB0BBC-BED0-4D2D-8BB8-8285C6F4AE35}"/>
+								<Bus Name="Synths" ID="{0D7BA59E-E471-4C19-850F-93769FA66FF4}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Peak Limiter (Custom)" ID="{C83DDB18-3892-4960-8C6D-41D86723B178}" ShortID="984456141" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0.3"/>
+														<Property Name="Threshold" Type="Real32" Value="-8.6"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Bus Name="Arps" ID="{79A1C338-6DDC-4F0F-B5C6-3D0F4ADC5041}"/>
+										<Bus Name="Leads" ID="{12C37E11-512C-4CCF-9104-1CE4D5F4E2DA}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Melodies" ID="{4D9C75F9-0CBB-44A3-9592-1CD3948CD899}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Cut_3dB_10KHz" ID="{83EAB3EA-A43D-470F-A183-7F02DAA44A4D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

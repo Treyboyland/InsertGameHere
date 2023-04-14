@@ -9,20 +9,49 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{25E3C6AA-5E69-BBC0-6C82-7FB3220A3754}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AFC24F0E-5E8E-87BE-BEB0-37AA742DA5FA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="656118801" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="984456141" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="1182561210" Name="Cut_3dB_10KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="2429736717" Name="Melodies"/>
+				<Bus Id="382188844" Name="Synths">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="984456141"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1291433344" Name="Bass"/>
+				<Bus Id="2429736717" Name="Melodies">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1182561210"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="2726606664" Name="Drums"/>
 				<Bus Id="3065814130" Name="Leads"/>
+				<Bus Id="3333809515" Name="Arps"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
-				<Bus Id="3991942870" Name="Music"/>
+				<Bus Id="3991942870" Name="Music">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="656118801"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<SwitchGroups>
 				<SwitchGroup Id="3893417221" Name="Weapon">
@@ -33,7 +62,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{843DAD35-69F7-6D67-C924-00D2039F4421}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{5211F50A-AE92-5F66-824D-991B9A3954F9}">
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<Media>
@@ -537,5 +566,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD7A6F40-56BA-256C-44C9-B5F2D4ADB70A}</FileHash>
+	<FileHash>{F01F65F3-89F2-660A-F2FF-4D9F0B2BA1F1}</FileHash>
 </SoundBanksInfo>
