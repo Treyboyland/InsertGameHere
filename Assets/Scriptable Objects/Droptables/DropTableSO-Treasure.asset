@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e20116f001b04a045b06394ad616ae7c, type: 3}
-  m_Name: DropTableSO-Redbull
+  m_Name: DropTableSO-Treasure
   m_EditorClassIdentifier: 
   itemWeight:
-  - Item: {fileID: 5328395533377796939, guid: 2a97ccec8492b0e4ab490e7364057e45, type: 3}
+  - Item: {fileID: 4429351167859713833, guid: e9bff3115d9f1ce4fb0fd155c214c347, type: 3}
     Weight: 100
-  - Item: {fileID: 1068305369324959587, guid: 705d1ad68b07ad844bc82387d59ecd94, type: 3}
-    Weight: 100
-  - Item: {fileID: 1895061887900878663, guid: ded277e30bccc2f48b4194ff62f928d9, type: 3}
-    Weight: 50

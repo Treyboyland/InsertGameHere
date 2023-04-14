@@ -126,4 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: b5597cd04ff1f7d48a345e58fe48fcbd, type: 2}
   ItemAmount: 1
-  OnPickup: {fileID: 0}
+  OnPickup: {fileID: 11400000, guid: af22621c2c4b3664595fba5dcfeab255, type: 2}

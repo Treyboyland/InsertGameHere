@@ -65,6 +65,10 @@ public class Room : MonoBehaviour
 
     List<EnemySpawner> createdSpawners = new List<EnemySpawner>();
 
+    EverythingARoomNeedsForSpawn everything;
+
+    int rating;
+
     private void Awake()
     {
         OnSetTheme.AddListener(newTheme => currentTheme = newTheme);
@@ -115,10 +119,13 @@ public class Room : MonoBehaviour
         }
         chosenEnemyPositions.Clear();
         createdSpawners.Clear();
+        spawnedObjects.Clear();
     }
 
     public void GenerateRoomStuff(EverythingARoomNeedsForSpawn roomData, int challengeRating)
     {
+        everything = roomData;
+        rating = challengeRating;
         DestroyOldStuff();
 
         foreach (var spawn in roomData.Spawns)
@@ -142,9 +149,8 @@ public class Room : MonoBehaviour
             var possibleConfigs = roomData.EnemySpawnLocations.Where(x => x.Count <= challengeRating).ToList();
             if (possibleConfigs.Count > 0)
             {
-                int chosenIndex = Random.Range(0, possibleConfigs.Count);
-
-                chosenEnemyPositions = possibleConfigs[chosenIndex];
+                int chosenIndex = UnityEngine.Random.Range(0, possibleConfigs.Count);
+                chosenEnemyPositions = possibleConfigs[chosenIndex].CloneList(); //Normal set here results in data loss on clear
                 CreateEnemySpawners(challengeRating);
             }
         }
@@ -154,6 +160,7 @@ public class Room : MonoBehaviour
     {
         if (chosenEnemyPositions.Count == 0)
         {
+            Debug.LogWarning("No enemy positions found for room " + roomLocation +". Challenge Rating: " + challengeRating);
             return;
         }
         List<int> ratingsPerSpawner = new List<int>(chosenEnemyPositions.Count);
