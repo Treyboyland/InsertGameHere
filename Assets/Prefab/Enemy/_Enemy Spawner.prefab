@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b242deed066de184d9ad8a8ad07319da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 5f5126baebf5ded4180a35a366270598, type: 2}
+  database: {fileID: 11400000, guid: 30ffea5be746a764587537ad8d6571b7, type: 2}
   secondsBeforeSpawn: {fileID: 11400000, guid: ee1ad3a52f9e91e4aa16b901af32a15e, type: 2}
   spawnParticle: {fileID: 8364155401077544217}
 --- !u!1001 &6168263301621781053
