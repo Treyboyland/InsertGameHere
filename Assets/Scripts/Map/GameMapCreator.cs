@@ -108,6 +108,7 @@ public class GameMapCreator : MonoBehaviour
                             var player = playerRef.Value.GetComponent<Player>();
                             player.transform.position = roomData.CenterPlayerSpawn.transform.position;
                             player.CurrentRoomLocation = roomData.RoomLocation;
+                           
                         }
                         roomDictionary.Add(roomData.RoomLocation, roomData);
                     }
@@ -146,6 +147,7 @@ public class GameMapCreator : MonoBehaviour
         {
             //TODO: Should we restrict to the used special rooms?
             keyVal.Value.OnSetTheme.Invoke(chosenTheme);
+            playerRef.Value.GetComponent<Player>().SpriteController.FootstepMaterial = keyVal.Value.CurrentTheme.FloorType;
             if (keyVal.Key == mapData.StartingPosition || mapData.DeadEnds.Contains(keyVal.Key))
             {
                 if (keyVal.Key == mapData.StartingPosition)

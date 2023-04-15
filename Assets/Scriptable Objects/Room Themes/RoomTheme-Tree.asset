@@ -15,3 +15,9 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: b6ecdf1cd16aadb40ad49a8e5bbdf73d, type: 3}
   wall: {fileID: 21300000, guid: 6a3b4f852c3855442a4ad10ea0aed1b2, type: 3}
   obstacle: {fileID: 21300000, guid: d7a48aa7753fae042973002076c8b870, type: 3}
+  floorType:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c61d9d224af41754e8d8385329e47175, type: 2}

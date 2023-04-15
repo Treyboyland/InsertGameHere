@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="110">
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Switches\Music.wwu" DateLow="1679187500" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\States\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1676667967" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Queries\Factory Queries.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1679187498" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1679187498" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\InsertGameHere_WwiseProject.wproj" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\InsertGameHere_WwiseProject.rboyl.wsettings" DateLow="1678809922" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Events\Default Work Unit.wwu" DateLow="1679187498" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Effects\Factory Effects.wwu" DateLow="1679187498" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1677121067" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1676664403" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1676659696" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1679187498" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Switches\SFX.wwu" DateLow="1681586251" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Switches\Music.wwu" DateLow="1681424180" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\States\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Queries\Factory Queries.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1678398563" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1681569075" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1681569075" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\InsertGameHere_WwiseProject.wproj" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\InsertGameHere_WwiseProject.rboyl.wsettings" DateLow="1681586299" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Events\Default Work Unit.wwu" DateLow="1681584706" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Effects\Factory Effects.wwu" DateLow="1681569074" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1681569074" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1678398559" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Users\rboyl\Documents\Unity Projects\InsertGameHere\InsertGameHere_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1681586251" DateHigh="0"/>
 </ValidationCache>

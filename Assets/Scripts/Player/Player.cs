@@ -23,6 +23,9 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField]
     PlayerWeaponSwap swap;
 
+    [SerializeField]
+    PlayerSpriteController spriteController;
+
     [Header("Directions")]
     [SerializeField]
     DirectionSO up;
@@ -149,4 +152,6 @@ public class Player : MonoBehaviour, IDamageable
             return !IsImmobilized && currentLives.Value > 0;
         }
     }
+
+    public PlayerSpriteController SpriteController { get => spriteController; }
 }

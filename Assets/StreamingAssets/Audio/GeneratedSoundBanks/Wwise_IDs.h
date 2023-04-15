@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID ENEMYDEATH_2 = 2438804636U;
         static const AkUniqueID ITEMSNOTFOUND = 3875358038U;
         static const AkUniqueID NEWLEVEL = 668664389U;
+        static const AkUniqueID PLAYERFOOTSTEP = 3542290436U;
         static const AkUniqueID PLAYERHURT = 3537581393U;
         static const AkUniqueID PLAYERSHOOT = 2538918815U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
@@ -32,6 +33,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
                 static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID SAND = 803837735U;
