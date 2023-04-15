@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 7395908592478882742}
   - component: {fileID: 208457261835110661}
   - component: {fileID: -2968682768567674872}
+  - component: {fileID: 688026437}
   m_Layer: 0
   m_Name: CabinetMimic
   m_TagString: Untagged
@@ -724,6 +725,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 688026437}
+        m_TargetAssemblyTypeName: TransitionIfInState, Assembly-CSharp
+        m_MethodName: Transition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
@@ -804,6 +817,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+--- !u!114 &688026437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592478882743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c092796df62f746d6b875619cbf4943e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentStateCondition: {fileID: 11400000, guid: 6f40cf5d68e6db249a534c54effc2395, type: 2}
+  _transitionState: {fileID: 11400000, guid: 94b3f1bbf5d0cb74cb84ffe2e1451d43, type: 2}
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0
