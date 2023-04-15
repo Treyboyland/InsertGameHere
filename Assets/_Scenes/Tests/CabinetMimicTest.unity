@@ -420,11 +420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7395908592478882740, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.51
       objectReference: {fileID: 0}
     - target: {fileID: 7395908592478882740, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 7395908592478882740, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -461,10 +461,6 @@ PrefabInstance:
     - target: {fileID: 7395908592478882743, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
       propertyPath: m_Name
       value: CabinetMimic
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395908592478882743, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e05dd310e2777546b95de00bedaf5ec, type: 3}
