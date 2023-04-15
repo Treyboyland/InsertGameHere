@@ -11,6 +11,9 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField]
     GameEventEnemyDeath _enemyDeath;
 
+    [SerializeField]
+    UnityEvent _onDamage;
+
     int currentHealth;
 
     public UnityEvent OnEnemySpawned;
@@ -39,6 +42,8 @@ public class Enemy : MonoBehaviour, IDamageable
     public void Damage(int damage)
     {
         currentHealth -= damage;
+
+        _onDamage.Invoke();
 
         if (currentHealth <= 0)
         {

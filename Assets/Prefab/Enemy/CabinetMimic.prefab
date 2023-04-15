@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 6239892488265898565}
   - component: {fileID: 1566450809305104095}
   - component: {fileID: 3632214797180290873}
+  - component: {fileID: 16252027}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -316,7 +317,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: edeeea4db3679c842997b8cf704d52f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -441,6 +442,7 @@ MonoBehaviour:
   _eatingParam: EatingPlayer
   _jumpTrigger: Jump
   _stopHidingTrigger: StopHiding
+  _damageTrigger: Damage
 --- !u!114 &3632214797180290873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +455,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1336a73bc2fd7c45a36a3c6edc12875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &16252027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592330960840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f2d2ebe87f64d4f99d29ddb3f36887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 7395908592330960886}
+  _flashAmount: 0
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashAmountParam: _FlashAmount
+  _flashColorParam: _FlashColor
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +488,7 @@ GameObject:
   - component: {fileID: 7395908592478882742}
   - component: {fileID: 208457261835110661}
   - component: {fileID: -2968682768567674872}
+  - component: {fileID: 688026437}
   m_Layer: 0
   m_Name: CabinetMimic
   m_TagString: Untagged
@@ -691,6 +711,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: f7b9d4cf0f330204fa60cd08f570a6ac, type: 2}
   _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
+  _onDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566450809305104095}
+        m_TargetAssemblyTypeName: CabinetMimicAnimationParamSetter, Assembly-CSharp
+        m_MethodName: Damage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 688026437}
+        m_TargetAssemblyTypeName: TransitionIfInState, Assembly-CSharp
+        m_MethodName: Transition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
@@ -771,6 +818,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+--- !u!114 &688026437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592478882743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c092796df62f746d6b875619cbf4943e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentStateCondition: {fileID: 11400000, guid: 6f40cf5d68e6db249a534c54effc2395, type: 2}
+  _transitionState: {fileID: 11400000, guid: 94b3f1bbf5d0cb74cb84ffe2e1451d43, type: 2}
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0
