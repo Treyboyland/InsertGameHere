@@ -60,6 +60,17 @@
 						<Switch Id="1467963118" Name="Weapon1"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3964766495" Name="Floor_Material">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="2412606308" Name="Carpet"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="2654748154" Name="Water"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{5211F50A-AE92-5F66-824D-991B9A3954F9}">
@@ -566,5 +577,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F01F65F3-89F2-660A-F2FF-4D9F0B2BA1F1}</FileHash>
+	<FileHash>{5FE328A0-9BEE-FB5F-B7CB-D815C7EE92DF}</FileHash>
 </SoundBanksInfo>

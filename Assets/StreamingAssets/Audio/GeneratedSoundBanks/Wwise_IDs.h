@@ -25,6 +25,22 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FLOOR_MATERIAL
+        {
+            static const AkUniqueID GROUP = 3964766495U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID GRAVEL = 2185786256U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID SAND = 803837735U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WATER = 2654748154U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FLOOR_MATERIAL
+
         namespace WEAPON
         {
             static const AkUniqueID GROUP = 3893417221U;
