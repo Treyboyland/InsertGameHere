@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 6239892488265898565}
   - component: {fileID: 1566450809305104095}
   - component: {fileID: 3632214797180290873}
+  - component: {fileID: 16252027}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -316,7 +317,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: edeeea4db3679c842997b8cf704d52f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -454,6 +455,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1336a73bc2fd7c45a36a3c6edc12875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &16252027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592330960840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f2d2ebe87f64d4f99d29ddb3f36887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flashAmount: 0
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashAmountParam: _FlashAmount
+  _flashColorParam: _FlashColor
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
