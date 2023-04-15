@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750fa6f271822364f8090340d8d4dc9d, type: 3}
-  m_Name: _EnemyDatabase-Test
+  m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
+  m_Name: EnemyStats-HandOfBlue
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 8133934327213667102, guid: 45452d0c081f8fe4ba843cff8ffc0c95, type: 3}
+  health: 30
+  speed: 0
+  distanceFromPlayer: 0
+  secondsBetweenMove: 0
+  fireRate: 1
+  challengeRating: 2
+  score: 150

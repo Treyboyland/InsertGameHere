@@ -40,6 +40,9 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField]
     GameEvent onPlayerDamaged;
 
+    [SerializeField]
+    GameEventDirectionSO onWeaponFired;
+
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
 
     public PlayerWeapon Weapon { get => weapon; set => weapon = value; }
@@ -83,6 +86,8 @@ public class Player : MonoBehaviour, IDamageable
     {
         if (weapon && CanPerformAction)
         {
+            onWeaponFired.Value = direction;
+            onWeaponFired.Invoke();
             weapon.HandleFireAction(direction);
         }
     }
