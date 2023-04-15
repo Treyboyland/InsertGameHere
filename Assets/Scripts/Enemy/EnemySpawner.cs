@@ -45,6 +45,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy(Room room)
     {
+        //Debug.LogWarning("Spawned Enemy at (" + room.RoomLocation + "):" + (spawnedEnemyObject != null));
         if (prefabSelected != null && !spawnedEnemyObject)
         {
             StartCoroutine(BeginSpawning(room));

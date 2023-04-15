@@ -46,10 +46,14 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ARPS = 3333809515U;
+        static const AkUniqueID BASS = 1291433344U;
+        static const AkUniqueID DRUMS = 2726606664U;
         static const AkUniqueID LEADS = 3065814130U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MELODIES = 2429736717U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SYNTHS = 382188844U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

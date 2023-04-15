@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Add15SecondsToTimer
   m_EditorClassIdentifier: 
   _value: {fileID: 11400000, guid: 30709f8d629772640b0a67abe8808e60, type: 2}
-  _amount: 15
+  _amount: -15
