@@ -10,6 +10,9 @@ public class PlayerSpriteController : MonoBehaviour
     [SerializeField]
     Rigidbody2D body;
 
+    [SerializeField]
+    float maxNormal;
+
     const string UP = "Up";
     const string DOWN = "Down";
     const string LEFT = "Left";
@@ -23,7 +26,9 @@ public class PlayerSpriteController : MonoBehaviour
 
     void SetParameters()
     {
-        if (body.velocity == Vector2.zero)
+        bool stopped = body.velocity == Vector2.zero;
+        animator.SetBool("Idle", stopped);
+        if (stopped)
         {
             return;
         }
@@ -39,6 +44,11 @@ public class PlayerSpriteController : MonoBehaviour
         {
             positive = body.velocity.x >= 0;
         }
+
+        float xSpeed = Mathf.Abs(body.velocity.x);
+        float ySpeed = Mathf.Abs(body.velocity.y);
+
+        animator.speed = vertGreater ? ySpeed / maxNormal : xSpeed / maxNormal;
 
         animator.SetBool(UP, vertGreater && positive);
         animator.SetBool(DOWN, vertGreater && !positive);
