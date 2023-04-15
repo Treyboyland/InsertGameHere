@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9020E063-A76A-40E7-BB78-9F1793DB9CB6}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="SFX" ID="{9020E063-A76A-40E7-BB78-9F1793DB9CB6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Floor_Material" ID="{6DC9A20B-F0A7-488F-97D6-6FB04C84364C}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{1E94D1EB-890D-48DE-995A-B85ADD5E8AE1}"/>
+						<Switch Name="Sand" ID="{8B1EFEA9-3E97-4C5F-9C00-AB727744B727}"/>
+						<Switch Name="Carpet" ID="{AA6CB54D-FE41-4BB9-8647-19E97ADB0950}"/>
+						<Switch Name="Gravel" ID="{CC3EBF28-FFF1-4AD6-8AB0-C62C640E65FF}"/>
+						<Switch Name="Water" ID="{FD3817EE-453A-495E-AF57-E8E6D880EC7E}"/>
+						<Switch Name="Metal" ID="{67F215C5-94C4-4428-96AB-8C0C50E9F282}"/>
+						<Switch Name="Wood" ID="{ACACCB8B-0EDE-471F-9815-2B18B0E470EA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
