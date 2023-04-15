@@ -77,6 +77,8 @@ GameObject:
   - component: {fileID: 674371276183949183}
   - component: {fileID: 674371276183949178}
   - component: {fileID: 1920733501830780115}
+  - component: {fileID: 1445897820385078690}
+  - component: {fileID: 146030003}
   m_Layer: 9
   m_Name: Enemy Tree
   m_TagString: Untagged
@@ -114,6 +116,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 1116332b33506af49ad3fb16ed348965, type: 2}
   _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
+  _onDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1445897820385078690}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Damage
+          m_BoolArgument: 0
+        m_CallState: 2
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
@@ -151,7 +168,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: edeeea4db3679c842997b8cf704d52f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -243,3 +260,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+--- !u!95 &1445897820385078690
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674371276183949180}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69eab1ddb147c4144953ca54765fbe3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &146030003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674371276183949180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f2d2ebe87f64d4f99d29ddb3f36887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 674371276183949182}
+  _flashAmount: 0
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashAmountParam: _FlashAmount
+  _flashColorParam: _FlashColor

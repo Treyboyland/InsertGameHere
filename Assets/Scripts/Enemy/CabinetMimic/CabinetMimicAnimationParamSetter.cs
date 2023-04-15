@@ -17,4 +17,8 @@ public class CabinetMimicAnimationParamSetter : MonoBehaviour
     [SerializeField, NaughtyAttributes.AnimatorParam("_animator", AnimatorControllerParameterType.Trigger)] 
     string _stopHidingTrigger;
     public void StopHiding() => _animator.SetTrigger(_stopHidingTrigger);
+
+    [SerializeField, NaughtyAttributes.AnimatorParam("_animator", AnimatorControllerParameterType.Trigger)] 
+    string _damageTrigger;
+    public void Damage() => _animator.SetTrigger(_damageTrigger);
 }
