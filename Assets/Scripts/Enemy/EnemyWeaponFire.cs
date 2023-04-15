@@ -31,4 +31,26 @@ public class EnemyWeaponFire : EnemyMove
         projectile.transform.SetParent(null);
         projectile.SetDirection(direction);
     }
+
+    protected void SpawnProjectle(DirectionSO direction)
+    {
+        var obj = bulletPool.GetObject();
+        if (!obj)
+        {
+            return;
+        }
+
+        Projectile projectile = obj.GetComponent<Projectile>();
+        if (!projectile)
+        {
+            return;
+
+        }
+
+        projectile.OwnerSet = _ownerSet;
+        projectile.transform.position = transform.position;
+        projectile.gameObject.SetActive(true);
+        projectile.transform.SetParent(null);
+        projectile.SetDirection(direction);
+    }
 }

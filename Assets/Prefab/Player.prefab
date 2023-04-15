@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 116832974}
   - component: {fileID: 7445780040041536040}
   - component: {fileID: 2450615126550699597}
+  - component: {fileID: 1064818654709870144}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -674,12 +675,14 @@ MonoBehaviour:
   playerCollider: {fileID: 9015623255759432543}
   weapon: {fileID: 9015623256570879338}
   swap: {fileID: 2747396389360111935}
+  spriteController: {fileID: 9015623255759432537}
   up: {fileID: 11400000, guid: fbe6bdcd191c7d84f89f3e8beada6e46, type: 2}
   down: {fileID: 11400000, guid: dea4e1d9b3100ac408a6cb6c2bedacb8, type: 2}
   left: {fileID: 11400000, guid: 451feecf381cf7c4fbc4fe88c8ba60a5, type: 2}
   right: {fileID: 11400000, guid: c155a7df4a7840b42a57acee4a8efb22, type: 2}
   onUpdateLives: {fileID: 11400000, guid: 1ee9c1ad3c903cd4fa7182ff0f762b04, type: 2}
   onPlayerDamaged: {fileID: 11400000, guid: 224d747063bb33947a62e224e9aa6cd2, type: 2}
+  onWeaponFired: {fileID: 11400000, guid: 39ffc046314c3fb4889ba9d45c81ada3, type: 2}
 --- !u!114 &9015623255759432541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +715,16 @@ MonoBehaviour:
   animator: {fileID: 9015623255759432538}
   body: {fileID: 9015623255759432528}
   maxNormal: 3
+  footstepMaterial:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b9b99540ef477144abcd12f77f3ac10e, type: 2}
+  footstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e065aaf4d74dfa342a7ccc564ee8c889, type: 2}
 --- !u!114 &9015623255759432542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,6 +1161,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: 2fca11d4a6dae9444b1834279c63da69, type: 2}
+--- !u!114 &1064818654709870144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015623255759432531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10baf7160f86582419f5265f8ea68276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &9015623256328489399
 GameObject:
   m_ObjectHideFlags: 0

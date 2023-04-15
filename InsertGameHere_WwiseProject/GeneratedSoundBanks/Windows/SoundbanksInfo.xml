@@ -74,10 +74,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{5211F50A-AE92-5F66-824D-991B9A3954F9}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{61E9611D-13CA-C17C-5F2B-14D46313B3D3}">
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<Media>
+				<File Id="38239971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(2).wav</ShortName>
+					<CachePath>SFX/Wood(2)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="44959875" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmDrumsD.wav</ShortName>
 					<CachePath>SFX/IGH110BpmDrumsD_C31B574C.wem</CachePath>
@@ -89,6 +93,10 @@
 				<File Id="92453598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass3.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass3_C31B574C.wem</CachePath>
+				</File>
+				<File Id="93434600" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(9).wav</ShortName>
+					<CachePath>SFX/Stone(9)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="97882219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead16.wav</ShortName>
@@ -114,21 +122,57 @@
 					<ShortName>IGH110BpmBass2.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass2_C31B574C.wem</CachePath>
 				</File>
+				<File Id="133521531" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(24).wav</ShortName>
+					<CachePath>SFX/Water(24)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="170484613" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass17.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass17_C31B574C.wem</CachePath>
+				</File>
+				<File Id="186088037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(4).wav</ShortName>
+					<CachePath>SFX/Carpet(4)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="187710334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp4.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp4_C31B574C.wem</CachePath>
 				</File>
+				<File Id="200105940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(68).wav</ShortName>
+					<CachePath>SFX/Metal(68)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="205292792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(3).wav</ShortName>
+					<CachePath>SFX/Carpet(3)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="205946540" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(50).wav</ShortName>
+					<CachePath>SFX/Gravel 1(50)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="207280285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(58).wav</ShortName>
+					<CachePath>SFX/Gravel 1(58)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="209974293" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody4.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody4_C31B574C.wem</CachePath>
 				</File>
+				<File Id="227727918" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(7).wav</ShortName>
+					<CachePath>SFX/Wood(7)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="241200504" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(11).wav</ShortName>
+					<CachePath>SFX/Carpet(11)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="247716395" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ItemsNotFound.wav</ShortName>
 					<CachePath>SFX/ItemsNotFound_4DA49122.wem</CachePath>
+				</File>
+				<File Id="249708280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(71).wav</ShortName>
+					<CachePath>SFX/Metal(71)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="253672871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp10.wav</ShortName>
@@ -138,9 +182,21 @@
 					<ShortName>IGH110BpmLead6.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead6_C31B574C.wem</CachePath>
 				</File>
+				<File Id="255015928" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(20).wav</ShortName>
+					<CachePath>SFX/Water(20)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="258343778" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(22).wav</ShortName>
+					<CachePath>SFX/Water(22)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="262298633" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody2.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody2_C31B574C.wem</CachePath>
+				</File>
+				<File Id="266193093" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(52).wav</ShortName>
+					<CachePath>SFX/Gravel 1(52)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="274916498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>NewLevel.wav</ShortName>
@@ -149,6 +205,14 @@
 				<File Id="275600645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass11.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass11_C31B574C.wem</CachePath>
+				</File>
+				<File Id="277568180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(73).wav</ShortName>
+					<CachePath>SFX/Metal(73)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="287737460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(11).wav</ShortName>
+					<CachePath>SFX/Wood(11)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="300250873" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp6.wav</ShortName>
@@ -162,6 +226,10 @@
 					<ShortName>IGH110BpmDrumsB.wav</ShortName>
 					<CachePath>SFX/IGH110BpmDrumsB_C31B574C.wem</CachePath>
 				</File>
+				<File Id="327716894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(19).wav</ShortName>
+					<CachePath>SFX/Water(19)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="330949148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody14.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody14_C31B574C.wem</CachePath>
@@ -174,6 +242,10 @@
 					<ShortName>IGH110BpmMelody10.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody10_C31B574C.wem</CachePath>
 				</File>
+				<File Id="353815293" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(4).wav</ShortName>
+					<CachePath>SFX/Wood(4)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="357209519" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp16.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp16_C31B574C.wem</CachePath>
@@ -181,6 +253,14 @@
 				<File Id="361609316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp1.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp1_C31B574C.wem</CachePath>
+				</File>
+				<File Id="368809228" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone.wav</ShortName>
+					<CachePath>SFX/Stone_4DA49122.wem</CachePath>
+				</File>
+				<File Id="370251701" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(10).wav</ShortName>
+					<CachePath>SFX/Sand(10)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="373961128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody13.wav</ShortName>
@@ -190,9 +270,21 @@
 					<ShortName>IGH110BpmBass16.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass16_C31B574C.wem</CachePath>
 				</File>
+				<File Id="379655507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(55).wav</ShortName>
+					<CachePath>SFX/Gravel 1(55)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="383723619" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerHurt.wav</ShortName>
 					<CachePath>SFX/PlayerHurt_4DA49122.wem</CachePath>
+				</File>
+				<File Id="387887355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(10).wav</ShortName>
+					<CachePath>SFX/Stone(10)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="406067261" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet.wav</ShortName>
+					<CachePath>SFX/Carpet_4DA49122.wem</CachePath>
 				</File>
 				<File Id="412380656" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody9.wav</ShortName>
@@ -201,6 +293,14 @@
 				<File Id="417254143" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass8.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass8_C31B574C.wem</CachePath>
+				</File>
+				<File Id="418006905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(12).wav</ShortName>
+					<CachePath>SFX/Stone(12)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="422183132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(2).wav</ShortName>
+					<CachePath>SFX/Stone(2)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="447108140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody11.wav</ShortName>
@@ -226,9 +326,25 @@
 					<ShortName>IGH110BpmDrumsC.wav</ShortName>
 					<CachePath>SFX/IGH110BpmDrumsC_C31B574C.wem</CachePath>
 				</File>
+				<File Id="488985615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(5).wav</ShortName>
+					<CachePath>SFX/Carpet(5)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="494889716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead2.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead2_C31B574C.wem</CachePath>
+				</File>
+				<File Id="498662964" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(9).wav</ShortName>
+					<CachePath>SFX/Sand(9)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="503651546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(16).wav</ShortName>
+					<CachePath>SFX/Water(16)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="505112752" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(17).wav</ShortName>
+					<CachePath>SFX/Water(17)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="519005892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass9.wav</ShortName>
@@ -238,17 +354,85 @@
 					<ShortName>IGH110BpmBass14.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass14_C31B574C.wem</CachePath>
 				</File>
+				<File Id="561717615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(3).wav</ShortName>
+					<CachePath>SFX/Sand(3)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="562862751" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(18).wav</ShortName>
+					<CachePath>SFX/Water(18)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="566672505" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(10).wav</ShortName>
+					<CachePath>SFX/Carpet(10)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="571304783" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(63).wav</ShortName>
+					<CachePath>SFX/Metal(63)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="586897659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(54).wav</ShortName>
+					<CachePath>SFX/Gravel 1(54)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="601244503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(69).wav</ShortName>
+					<CachePath>SFX/Metal(69)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="601965773" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(13).wav</ShortName>
+					<CachePath>SFX/Water(13)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="614411080" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead1.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead1_C31B574C.wem</CachePath>
+				</File>
+				<File Id="614910063" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(49).wav</ShortName>
+					<CachePath>SFX/Gravel 1(49)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="617399973" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmCymbalSwell.wav</ShortName>
 					<CachePath>SFX/IGH110BpmCymbalSwell_C31B574C.wem</CachePath>
 				</File>
+				<File Id="625316434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(12).wav</ShortName>
+					<CachePath>SFX/Carpet(12)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="629740398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp5.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp5_C31B574C.wem</CachePath>
+				</File>
+				<File Id="637074012" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(60).wav</ShortName>
+					<CachePath>SFX/Gravel 1(60)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="637178878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(12).wav</ShortName>
+					<CachePath>SFX/Wood(12)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="638059398" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(9).wav</ShortName>
+					<CachePath>SFX/Wood(9)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="641998097" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(51).wav</ShortName>
+					<CachePath>SFX/Gravel 1(51)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="645292240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(7).wav</ShortName>
+					<CachePath>SFX/Carpet(7)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="652927714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(64).wav</ShortName>
+					<CachePath>SFX/Metal(64)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="655539234" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(4).wav</ShortName>
+					<CachePath>SFX/Stone(4)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="656701730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(57).wav</ShortName>
+					<CachePath>SFX/Gravel 1(57)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="663060045" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead8.wav</ShortName>
@@ -261,6 +445,14 @@
 				<File Id="680660083" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass4.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass4_C31B574C.wem</CachePath>
+				</File>
+				<File Id="680754877" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(62).wav</ShortName>
+					<CachePath>SFX/Metal(62)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="681500882" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(2).wav</ShortName>
+					<CachePath>SFX/Carpet(2)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="684504182" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead13.wav</ShortName>
@@ -278,6 +470,14 @@
 					<ShortName>IGH110BpmLead12.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead12_C31B574C.wem</CachePath>
 				</File>
+				<File Id="691382172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(10).wav</ShortName>
+					<CachePath>SFX/Wood(10)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="701283225" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(8).wav</ShortName>
+					<CachePath>SFX/Wood(8)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="711720068" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass7.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass7_C31B574C.wem</CachePath>
@@ -290,9 +490,41 @@
 					<ShortName>CoinPickup.wav</ShortName>
 					<CachePath>SFX/CoinPickup_4DA49122.wem</CachePath>
 				</File>
+				<File Id="737377999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(12).wav</ShortName>
+					<CachePath>SFX/Sand(12)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="743271685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(65).wav</ShortName>
+					<CachePath>SFX/Metal(65)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="749608882" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(72).wav</ShortName>
+					<CachePath>SFX/Metal(72)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="785805905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(4).wav</ShortName>
+					<CachePath>SFX/Sand(4)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="786939899" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(3).wav</ShortName>
+					<CachePath>SFX/Stone(3)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="786959013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(8).wav</ShortName>
+					<CachePath>SFX/Carpet(8)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="792810566" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(6).wav</ShortName>
+					<CachePath>SFX/Sand(6)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="797710820" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead18.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead18_C31B574C.wem</CachePath>
+				</File>
+				<File Id="800319748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(59).wav</ShortName>
+					<CachePath>SFX/Gravel 1(59)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="801015139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp3.wav</ShortName>
@@ -310,13 +542,37 @@
 					<ShortName>IGH110BpmLead5.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead5_C31B574C.wem</CachePath>
 				</File>
+				<File Id="807940044" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand.wav</ShortName>
+					<CachePath>SFX/Sand_4DA49122.wem</CachePath>
+				</File>
+				<File Id="824591945" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(5).wav</ShortName>
+					<CachePath>SFX/Sand(5)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="834041014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CartridgePickup.wav</ShortName>
 					<CachePath>SFX/CartridgePickup_4DA49122.wem</CachePath>
 				</File>
+				<File Id="847292030" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(23).wav</ShortName>
+					<CachePath>SFX/Water(23)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="848531516" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(5).wav</ShortName>
+					<CachePath>SFX/Stone(5)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="852568990" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(5).wav</ShortName>
+					<CachePath>SFX/Wood(5)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="858712585" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody18.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody18_C31B574C.wem</CachePath>
+				</File>
+				<File Id="859064045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(11).wav</ShortName>
+					<CachePath>SFX/Sand(11)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="864167629" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp2.wav</ShortName>
@@ -334,6 +590,10 @@
 					<ShortName>IGH110BpmLead11.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead11_C31B574C.wem</CachePath>
 				</File>
+				<File Id="888526474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(6).wav</ShortName>
+					<CachePath>SFX/Stone(6)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="889689821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp14.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp14_C31B574C.wem</CachePath>
@@ -341,6 +601,14 @@
 				<File Id="894708094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead17.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead17_C31B574C.wem</CachePath>
+				</File>
+				<File Id="897713397" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(67).wav</ShortName>
+					<CachePath>SFX/Metal(67)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="899273787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(70).wav</ShortName>
+					<CachePath>SFX/Metal(70)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="899356510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerShootBubble (5).wav</ShortName>
@@ -362,9 +630,21 @@
 					<ShortName>IGH110BpmArp1Dry.wav</ShortName>
 					<CachePath>SFX/IGH110BpmArp1Dry_C31B574C.wem</CachePath>
 				</File>
+				<File Id="928810211" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(21).wav</ShortName>
+					<CachePath>SFX/Water(21)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="937561067" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass5.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass5_C31B574C.wem</CachePath>
+				</File>
+				<File Id="940963493" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(15).wav</ShortName>
+					<CachePath>SFX/Water(15)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="945952921" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(8).wav</ShortName>
+					<CachePath>SFX/Sand(8)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="949363294" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmArp15.wav</ShortName>
@@ -390,6 +670,22 @@
 					<ShortName>IGH110BpmLead15.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead15_C31B574C.wem</CachePath>
 				</File>
+				<File Id="957633383" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(53).wav</ShortName>
+					<CachePath>SFX/Gravel 1(53)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="965019082" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(11).wav</ShortName>
+					<CachePath>SFX/Stone(11)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="971946241" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood.wav</ShortName>
+					<CachePath>SFX/Wood_4DA49122.wem</CachePath>
+				</File>
+				<File Id="988191107" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water(14).wav</ShortName>
+					<CachePath>SFX/Water(14)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="990127101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerShootBubble (6).wav</ShortName>
 					<CachePath>SFX/PlayerShootBubble (6)_4DA49122.wem</CachePath>
@@ -406,6 +702,10 @@
 					<ShortName>IGH110BpmLead14.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead14_C31B574C.wem</CachePath>
 				</File>
+				<File Id="1005830045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(7).wav</ShortName>
+					<CachePath>SFX/Sand(7)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="1016840397" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody6.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody6_C31B574C.wem</CachePath>
@@ -413,6 +713,10 @@
 				<File Id="1020737383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody5.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody5_C31B574C.wem</CachePath>
+				</File>
+				<File Id="1021605968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(6).wav</ShortName>
+					<CachePath>SFX/Carpet(6)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="1022716805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody15.wav</ShortName>
@@ -422,9 +726,21 @@
 					<ShortName>IGH110BpmBass10.wav</ShortName>
 					<CachePath>SFX/IGH110BpmBass10_C31B574C.wem</CachePath>
 				</File>
+				<File Id="1035093997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(8).wav</ShortName>
+					<CachePath>SFX/Stone(8)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="1039211862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Carpet(9).wav</ShortName>
+					<CachePath>SFX/Carpet(9)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="1044190178" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmMelody17.wav</ShortName>
 					<CachePath>SFX/IGH110BpmMelody17_C31B574C.wem</CachePath>
+				</File>
+				<File Id="1046102428" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sand(2).wav</ShortName>
+					<CachePath>SFX/Sand(2)_4DA49122.wem</CachePath>
 				</File>
 				<File Id="1047183437" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmBass18.wav</ShortName>
@@ -434,13 +750,33 @@
 					<ShortName>IGH110BpmLead7.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead7_C31B574C.wem</CachePath>
 				</File>
+				<File Id="1055780895" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(3).wav</ShortName>
+					<CachePath>SFX/Wood(3)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="1056034911" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone(7).wav</ShortName>
+					<CachePath>SFX/Stone(7)_4DA49122.wem</CachePath>
+				</File>
+				<File Id="1056646948" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood(6).wav</ShortName>
+					<CachePath>SFX/Wood(6)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="1062379194" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerShootBubble (2).wav</ShortName>
 					<CachePath>SFX/PlayerShootBubble (2)_4DA49122.wem</CachePath>
 				</File>
+				<File Id="1064287160" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal(66).wav</ShortName>
+					<CachePath>SFX/Metal(66)_4DA49122.wem</CachePath>
+				</File>
 				<File Id="1068307517" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IGH110BpmLead3.wav</ShortName>
 					<CachePath>SFX/IGH110BpmLead3_C31B574C.wem</CachePath>
+				</File>
+				<File Id="1070300560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1(56).wav</ShortName>
+					<CachePath>SFX/Gravel 1(56)_4DA49122.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -468,6 +804,146 @@
 					<MediaRefs>
 						<MediaRef Id="274916498"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3542290436" Name="PlayerFootstep" DurationType="OneShot" DurationMin="0.13942379" DurationMax="0.39139688">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="370251701"/>
+								<MediaRef Id="498662964"/>
+								<MediaRef Id="561717615"/>
+								<MediaRef Id="737377999"/>
+								<MediaRef Id="785805905"/>
+								<MediaRef Id="792810566"/>
+								<MediaRef Id="807940044"/>
+								<MediaRef Id="824591945"/>
+								<MediaRef Id="859064045"/>
+								<MediaRef Id="945952921"/>
+								<MediaRef Id="1005830045"/>
+								<MediaRef Id="1046102428"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="2185786256" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="205946540"/>
+								<MediaRef Id="207280285"/>
+								<MediaRef Id="266193093"/>
+								<MediaRef Id="379655507"/>
+								<MediaRef Id="586897659"/>
+								<MediaRef Id="614910063"/>
+								<MediaRef Id="637074012"/>
+								<MediaRef Id="641998097"/>
+								<MediaRef Id="656701730"/>
+								<MediaRef Id="800319748"/>
+								<MediaRef Id="957633383"/>
+								<MediaRef Id="1070300560"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="2412606308"/>
+							<MediaRefs>
+								<MediaRef Id="186088037"/>
+								<MediaRef Id="205292792"/>
+								<MediaRef Id="241200504"/>
+								<MediaRef Id="406067261"/>
+								<MediaRef Id="488985615"/>
+								<MediaRef Id="566672505"/>
+								<MediaRef Id="625316434"/>
+								<MediaRef Id="645292240"/>
+								<MediaRef Id="681500882"/>
+								<MediaRef Id="786959013"/>
+								<MediaRef Id="1021605968"/>
+								<MediaRef Id="1039211862"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="38239971"/>
+								<MediaRef Id="227727918"/>
+								<MediaRef Id="287737460"/>
+								<MediaRef Id="353815293"/>
+								<MediaRef Id="637178878"/>
+								<MediaRef Id="638059398"/>
+								<MediaRef Id="691382172"/>
+								<MediaRef Id="701283225"/>
+								<MediaRef Id="852568990"/>
+								<MediaRef Id="971946241"/>
+								<MediaRef Id="1055780895"/>
+								<MediaRef Id="1056646948"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="803837735"/>
+							<MediaRefs>
+								<MediaRef Id="370251701"/>
+								<MediaRef Id="498662964"/>
+								<MediaRef Id="561717615"/>
+								<MediaRef Id="737377999"/>
+								<MediaRef Id="785805905"/>
+								<MediaRef Id="792810566"/>
+								<MediaRef Id="807940044"/>
+								<MediaRef Id="824591945"/>
+								<MediaRef Id="859064045"/>
+								<MediaRef Id="945952921"/>
+								<MediaRef Id="1005830045"/>
+								<MediaRef Id="1046102428"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="200105940"/>
+								<MediaRef Id="249708280"/>
+								<MediaRef Id="277568180"/>
+								<MediaRef Id="571304783"/>
+								<MediaRef Id="601244503"/>
+								<MediaRef Id="652927714"/>
+								<MediaRef Id="680754877"/>
+								<MediaRef Id="743271685"/>
+								<MediaRef Id="749608882"/>
+								<MediaRef Id="897713397"/>
+								<MediaRef Id="899273787"/>
+								<MediaRef Id="1064287160"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="1216965916"/>
+							<MediaRefs>
+								<MediaRef Id="93434600"/>
+								<MediaRef Id="368809228"/>
+								<MediaRef Id="387887355"/>
+								<MediaRef Id="418006905"/>
+								<MediaRef Id="422183132"/>
+								<MediaRef Id="655539234"/>
+								<MediaRef Id="786939899"/>
+								<MediaRef Id="848531516"/>
+								<MediaRef Id="888526474"/>
+								<MediaRef Id="965019082"/>
+								<MediaRef Id="1035093997"/>
+								<MediaRef Id="1056034911"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3964766495" Id="2654748154"/>
+							<MediaRefs>
+								<MediaRef Id="133521531"/>
+								<MediaRef Id="255015928"/>
+								<MediaRef Id="258343778"/>
+								<MediaRef Id="327716894"/>
+								<MediaRef Id="503651546"/>
+								<MediaRef Id="505112752"/>
+								<MediaRef Id="562862751"/>
+								<MediaRef Id="601965773"/>
+								<MediaRef Id="847292030"/>
+								<MediaRef Id="928810211"/>
+								<MediaRef Id="940963493"/>
+								<MediaRef Id="988191107"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3537581393" Name="PlayerHurt" DurationType="OneShot" DurationMin="0.23707484" DurationMax="0.23707484">
 					<MediaRefs>
@@ -575,8 +1051,20 @@
 						<Switch Id="1467963118" Name="Weapon1"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3964766495" Name="Floor_Material">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="2412606308" Name="Carpet"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="2654748154" Name="Water"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FC70EA1A-F344-0E5B-E764-DF8BEB81C46F}</FileHash>
+	<FileHash>{7CC24EBA-7F6F-DFA3-1BFF-65D862B7FECB}</FileHash>
 </SoundBanksInfo>

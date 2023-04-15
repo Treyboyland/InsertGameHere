@@ -15,3 +15,4 @@ MonoBehaviour:
   directionName: Down
   vector: {x: 0, y: -1}
   rotationFromNorth: 180
+  opposite: {fileID: 11400000, guid: fbe6bdcd191c7d84f89f3e8beada6e46, type: 2}

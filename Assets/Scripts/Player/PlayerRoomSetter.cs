@@ -57,6 +57,7 @@ public class PlayerRoomSetter : MonoBehaviour
         //Flip on entrance to other room
 
         player.CurrentRoomLocation = playerNewLocation;
+        player.SpriteController.FootstepMaterial = room.CurrentTheme.FloorType;
 
         switch (newSpawn)
         {

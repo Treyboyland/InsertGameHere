@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using AK.Wwise;
 using UnityEngine;
 
 public class PlayerSpriteController : MonoBehaviour
@@ -13,10 +14,27 @@ public class PlayerSpriteController : MonoBehaviour
     [SerializeField]
     float maxNormal;
 
-    const string UP = "Up";
-    const string DOWN = "Down";
-    const string LEFT = "Left";
-    const string RIGHT = "Right";
+    [SerializeField]
+    AK.Wwise.Switch footstepMaterial;
+
+    [SerializeField]
+    AK.Wwise.Event footstepEvent;
+
+    public const string UP = "Up";
+    public const string DOWN = "Down";
+    public const string LEFT = "Left";
+    public const string RIGHT = "Right";
+
+    public Animator Animator { get => animator; }
+    public Switch FootstepMaterial
+    {
+        get => footstepMaterial;
+        set
+        {
+            footstepMaterial = value;
+            footstepMaterial.SetValue(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,6 +48,7 @@ public class PlayerSpriteController : MonoBehaviour
         animator.SetBool("Idle", stopped);
         if (stopped)
         {
+            //footstepEvent.Stop(gameObject);
             return;
         }
 
@@ -54,5 +73,10 @@ public class PlayerSpriteController : MonoBehaviour
         animator.SetBool(DOWN, vertGreater && !positive);
         animator.SetBool(LEFT, !vertGreater && !positive);
         animator.SetBool(RIGHT, !vertGreater && positive);
+    }
+
+    public void FireFootstepEvent()
+    {
+        footstepEvent.Post(gameObject);
     }
 }

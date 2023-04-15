@@ -57,6 +57,7 @@ public class Room : MonoBehaviour
     public bool CanRightOpen { get; set; } = false;
     public bool CanUpOpen { get; set; } = false;
     public bool CanDownOpen { get; set; } = false;
+    public RoomThemeSO CurrentTheme { get => currentTheme;}
 
     List<GameObject> spawnedObjects = new List<GameObject>();
     List<GameObject> enemies = new List<GameObject>();

@@ -23,6 +23,9 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField]
     PlayerWeaponSwap swap;
 
+    [SerializeField]
+    PlayerSpriteController spriteController;
+
     [Header("Directions")]
     [SerializeField]
     DirectionSO up;
@@ -39,6 +42,9 @@ public class Player : MonoBehaviour, IDamageable
 
     [SerializeField]
     GameEvent onPlayerDamaged;
+
+    [SerializeField]
+    GameEventDirectionSO onWeaponFired;
 
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
 
@@ -83,6 +89,8 @@ public class Player : MonoBehaviour, IDamageable
     {
         if (weapon && CanPerformAction)
         {
+            onWeaponFired.Value = direction;
+            onWeaponFired.Invoke();
             weapon.HandleFireAction(direction);
         }
     }
@@ -144,4 +152,6 @@ public class Player : MonoBehaviour, IDamageable
             return !IsImmobilized && currentLives.Value > 0;
         }
     }
+
+    public PlayerSpriteController SpriteController { get => spriteController; }
 }
