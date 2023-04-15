@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directionName: Up
   vector: {x: 0, y: 1}
+  rotationFromNorth: 0
+  opposite: {fileID: 11400000, guid: dea4e1d9b3100ac408a6cb6c2bedacb8, type: 2}

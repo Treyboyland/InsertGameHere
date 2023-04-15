@@ -13,10 +13,12 @@ public class PlayerSpriteController : MonoBehaviour
     [SerializeField]
     float maxNormal;
 
-    const string UP = "Up";
-    const string DOWN = "Down";
-    const string LEFT = "Left";
-    const string RIGHT = "Right";
+    public const string UP = "Up";
+    public const string DOWN = "Down";
+    public const string LEFT = "Left";
+    public const string RIGHT = "Right";
+
+    public Animator Animator { get => animator; }
 
     // Update is called once per frame
     void Update()

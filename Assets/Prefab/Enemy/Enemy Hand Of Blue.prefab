@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 8489869796657708030}
   - component: {fileID: 5424238471661238282}
   - component: {fileID: 974119454133065497}
+  - component: {fileID: -7151811168886779444}
+  - component: {fileID: -6656616388334208078}
   m_Layer: 0
   m_Name: Enemy Hand Of Blue
   m_TagString: Untagged
@@ -174,6 +176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: f3cfb0f9bb1c87249a87ddbefd03e659, type: 2}
   _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
+  _onDamage:
+    m_PersistentCalls:
+      m_Calls: []
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
@@ -243,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 8133934327213667102}
   roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
+  animator: {fileID: -6656616388334208078}
 --- !u!61 &5424238471661238282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -282,3 +288,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+--- !u!114 &-7151811168886779444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936197274876157090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f2d2ebe87f64d4f99d29ddb3f36887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 2131251085554108524}
+  _flashAmount: 0
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashAmountParam: _FlashAmount
+  _flashColorParam: _FlashColor
+  _tintParam: _Tint
+--- !u!95 &-6656616388334208078
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936197274876157090}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8c82306df7148145801cd775866745d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

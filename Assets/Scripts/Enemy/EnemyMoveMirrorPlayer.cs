@@ -7,6 +7,11 @@ public class EnemyMoveMirrorPlayer : EnemyMove
     [SerializeField]
     RuntimeRoomDictionary roomDictionary;
 
+    [SerializeField]
+    Animator animator;
+
+    static PlayerSpriteController playerAnimator;
+
     /// <summary>
     /// Update is called every frame, if the MonoBehaviour is enabled.
     /// </summary>
@@ -15,6 +20,14 @@ public class EnemyMoveMirrorPlayer : EnemyMove
         if (ShouldPerformAction())
         {
             Move();
+        }
+    }
+
+    void GetPlayerAnimator()
+    {
+        if (!playerAnimator)
+        {
+            playerAnimator = player.GetComponent<PlayerSpriteController>();
         }
     }
 
@@ -28,6 +41,51 @@ public class EnemyMoveMirrorPlayer : EnemyMove
             distance.y *= -1;
 
             transform.position = room.transform.position + distance;
+
+            SetDirection();
+        }
+    }
+
+    void SetDirection()
+    {
+        GetPlayerAnimator();
+        if (!playerAnimator || !animator)
+        {
+            Debug.LogWarning(playerAnimator + " " + animator);
+            return;
+        }
+
+        bool up = playerAnimator.Animator.GetBool(PlayerSpriteController.UP);
+        bool down = playerAnimator.Animator.GetBool(PlayerSpriteController.DOWN);
+        bool left = playerAnimator.Animator.GetBool(PlayerSpriteController.LEFT);
+        bool right = playerAnimator.Animator.GetBool(PlayerSpriteController.RIGHT);
+        if (up)
+        {
+            animator.SetBool(PlayerSpriteController.UP, !up);
+            animator.SetBool(PlayerSpriteController.DOWN, false);
+            animator.SetBool(PlayerSpriteController.LEFT, false);
+            animator.SetBool(PlayerSpriteController.RIGHT, false);
+        }
+        else if (down)
+        {
+            animator.SetBool(PlayerSpriteController.UP, false);
+            animator.SetBool(PlayerSpriteController.DOWN, !down);
+            animator.SetBool(PlayerSpriteController.LEFT, false);
+            animator.SetBool(PlayerSpriteController.RIGHT, false);
+        }
+        else if (left)
+        {
+            animator.SetBool(PlayerSpriteController.UP, false);
+            animator.SetBool(PlayerSpriteController.DOWN, false);
+            animator.SetBool(PlayerSpriteController.LEFT, !left);
+            animator.SetBool(PlayerSpriteController.RIGHT, false);
+        }
+        else if (right)
+        {
+            animator.SetBool(PlayerSpriteController.UP, false);
+            animator.SetBool(PlayerSpriteController.DOWN, false);
+            animator.SetBool(PlayerSpriteController.LEFT, false);
+            animator.SetBool(PlayerSpriteController.RIGHT, !right);
         }
     }
 }
