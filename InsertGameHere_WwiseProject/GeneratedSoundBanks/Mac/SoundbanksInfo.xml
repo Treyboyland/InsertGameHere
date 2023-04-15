@@ -69,6 +69,7 @@
 						<Switch Id="2412606308" Name="Carpet"/>
 						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="2654748154" Name="Water"/>
+						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -577,5 +578,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EB035C9B-67B8-5370-B155-1951C74FE040}</FileHash>
+	<FileHash>{1136B9A3-E79F-9938-B09B-AFBD1C2E6C49}</FileHash>
 </SoundBanksInfo>
