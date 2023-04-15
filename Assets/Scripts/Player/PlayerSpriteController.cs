@@ -20,6 +20,8 @@ public class PlayerSpriteController : MonoBehaviour
     [SerializeField]
     AK.Wwise.Event footstepEvent;
 
+    public readonly List<string> DirectionTriggers = new List<string>() { UP, DOWN, LEFT, RIGHT };
+
     public const string UP = "Up";
     public const string DOWN = "Down";
     public const string LEFT = "Left";
@@ -78,5 +80,18 @@ public class PlayerSpriteController : MonoBehaviour
     public void FireFootstepEvent()
     {
         footstepEvent.Post(gameObject);
+    }
+
+    public string GetDirection()
+    {
+        foreach (var direction in DirectionTriggers)
+        {
+            if (animator.GetBool(direction))
+            {
+                return direction;
+            }
+        }
+
+        return string.Empty;
     }
 }
