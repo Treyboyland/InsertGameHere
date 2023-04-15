@@ -4,9 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - mainCamera: {instanceID: 0}
   - roomDictionary: {fileID: 11400000, guid: df5ebeab2307edf44b0c38d80b2cf9c6, type: 2}
-  - player: {instanceID: 0}
+  - playerRef: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
