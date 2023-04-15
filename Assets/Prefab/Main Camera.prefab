@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ApplyAfter: 2
   m_ChannelMask: 1
-  m_Gain: 1
+  m_Gain: 2
   m_Use2DDistance: 1
   m_UseCameraSpace: 1
   m_ReactionSettings:
