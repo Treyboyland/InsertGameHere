@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f2d2ebe87f64d4f99d29ddb3f36887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 674371276183949182}
   _flashAmount: 0
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
   _flashAmountParam: _FlashAmount
