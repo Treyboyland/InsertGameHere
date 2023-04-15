@@ -5,9 +5,6 @@ using UnityEngine;
 public class CameraMover : MonoBehaviour
 {
     [SerializeField]
-    Camera mainCamera;
-
-    [SerializeField]
     RuntimeRoomDictionary roomDictionary;
 
     [SerializeField]
@@ -36,8 +33,8 @@ public class CameraMover : MonoBehaviour
         if (room != null)
         {
             var pos = room.CenterPlayerSpawn.transform.position;
-            pos.z = mainCamera.transform.position.z;
-            mainCamera.transform.position = pos;
+            pos.z = transform.position.z;
+            transform.position = pos;
         }
     }
 
@@ -45,16 +42,16 @@ public class CameraMover : MonoBehaviour
     IEnumerator MoveToLocationOverTime(Vector3 position)
     {
         float elapsed = 0;
-        var start = mainCamera.transform.position;
+        var start = transform.position;
         position.z = start.z;
 
         while (elapsed < secondsToMove)
         {
             elapsed += Time.deltaTime;
-            mainCamera.transform.position = Vector3.Lerp(start, position, elapsed / secondsToMove);
+            transform.position = Vector3.Lerp(start, position, elapsed / secondsToMove);
             yield return null;
         }
 
-        mainCamera.transform.position = position;
+        transform.position = position;
     }
 }
