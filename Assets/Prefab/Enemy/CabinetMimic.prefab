@@ -88,15 +88,16 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7395908591240607961}
-        m_TargetAssemblyTypeName: CabinetMimicStateMachine, Assembly-CSharp
-        m_MethodName: set_State
-        m_Mode: 2
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: b573aa46c8940864791c2863c993afd2, type: 2}
-          m_ObjectArgumentAssemblyTypeName: CabinetMimicState, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: EatPlayer
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2744768107462871474
@@ -151,15 +152,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7395908591240607961}
-        m_TargetAssemblyTypeName: SOStateHandler`1[[CabinetMimicState, Assembly-CSharp
-        m_MethodName: set_State
-        m_Mode: 2
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a242dfa439e4cf4429729934658f4300, type: 2}
-          m_ObjectArgumentAssemblyTypeName: CabinetMimicState, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ChewingComplete
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &127101251713528721
@@ -385,15 +387,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7395908591240607961}
-        m_TargetAssemblyTypeName: CabinetMimicStateMachine, Assembly-CSharp
-        m_MethodName: set_State
-        m_Mode: 2
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d1611a7de4b28de49a098ccb34a008f8, type: 2}
-          m_ObjectArgumentAssemblyTypeName: CabinetMimicState, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TransformationComplete
           m_BoolArgument: 0
         m_CallState: 2
   _onJumpComplete:
@@ -415,15 +418,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7395908591240607961}
-        m_TargetAssemblyTypeName: SOStateHandler`1[[CabinetMimicState, Assembly-CSharp
-        m_MethodName: set_State
-        m_Mode: 2
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d1611a7de4b28de49a098ccb34a008f8, type: 2}
-          m_ObjectArgumentAssemblyTypeName: CabinetMimicState, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: SpitComplete
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1566450809305104095
@@ -472,6 +476,7 @@ MonoBehaviour:
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
   _flashAmountParam: _FlashAmount
   _flashColorParam: _FlashColor
+  _tintParam: _Tint
 --- !u!1 &7395908592478882743
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,14 +486,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7395908592478882740}
-  - component: {fileID: 7395908591240607961}
   - component: {fileID: 296422169}
   - component: {fileID: 7408907490524399289}
   - component: {fileID: 7395908592478882741}
   - component: {fileID: 7395908592478882742}
   - component: {fileID: 208457261835110661}
   - component: {fileID: -2968682768567674872}
-  - component: {fileID: 688026437}
+  - component: {fileID: 7395908591240607961}
+  - component: {fileID: 7395908591240607962}
   m_Layer: 0
   m_Name: CabinetMimic
   m_TagString: Untagged
@@ -515,161 +520,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7395908591240607961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395908592478882743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c95e93f684636d4dbbb7f48873cdf1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _initialValue: {fileID: 11400000, guid: 6f40cf5d68e6db249a534c54effc2395, type: 2}
-  _transitionEvents:
-  - Value: {fileID: 11400000, guid: 94b3f1bbf5d0cb74cb84ffe2e1451d43, type: 2}
-    OnEnter:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1566450809305104095}
-          m_TargetAssemblyTypeName: CabinetMimicAnimationParamSetter, Assembly-CSharp
-          m_MethodName: StopHiding
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnExit:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8794373178376428315}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - Value: {fileID: 11400000, guid: d1611a7de4b28de49a098ccb34a008f8, type: 2}
-    OnEnter:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 208457261835110661}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1397603787452032977}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-    OnExit:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1397603787452032977}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - Value: {fileID: 11400000, guid: b573aa46c8940864791c2863c993afd2, type: 2}
-    OnEnter:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1566450809305104095}
-          m_TargetAssemblyTypeName: CabinetMimicAnimationParamSetter, Assembly-CSharp
-          m_MethodName: SetEatingPlayerFlag
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 208457261835110661}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2744768107462871474}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-    OnExit:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1566450809305104095}
-          m_TargetAssemblyTypeName: CabinetMimicAnimationParamSetter, Assembly-CSharp
-          m_MethodName: SetEatingPlayerFlag
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2744768107462871474}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &296422169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,16 +576,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 688026437}
-        m_TargetAssemblyTypeName: TransitionIfInState, Assembly-CSharp
-        m_MethodName: Transition
-        m_Mode: 1
+      - m_Target: {fileID: 7395908591240607961}
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Damaged
           m_BoolArgument: 0
         m_CallState: 2
   OnEnemySpawned:
@@ -818,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
---- !u!114 &688026437
+--- !u!114 &7395908591240607961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -827,11 +678,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 7395908592478882743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c092796df62f746d6b875619cbf4943e, type: 3}
+  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStateCondition: {fileID: 11400000, guid: 6f40cf5d68e6db249a534c54effc2395, type: 2}
-  _transitionState: {fileID: 11400000, guid: 94b3f1bbf5d0cb74cb84ffe2e1451d43, type: 2}
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 33f59ff78525d1544a4ecd49639f9e02, type: 2}
+--- !u!114 &7395908591240607962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395908592478882743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"TransformationTriggerObj","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"TrackingBehaviour","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.MonoBehaviour,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpriteAnimator","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
+      UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"EatPlayerTriggerObj","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"ChewingBehaviourObj","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 8794373178376428315}
+    - {fileID: 208457261835110661}
+    - {fileID: 7395908592330960887}
+    - {fileID: 1397603787452032977}
+    - {fileID: 2744768107462871474}
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,14 +776,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7395908591240607961}
-        m_TargetAssemblyTypeName: CabinetMimicStateMachine, Assembly-CSharp
-        m_MethodName: set_State
-        m_Mode: 2
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 94b3f1bbf5d0cb74cb84ffe2e1451d43, type: 2}
-          m_ObjectArgumentAssemblyTypeName: CabinetMimicState, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PlayerEntered
           m_BoolArgument: 0
         m_CallState: 2
