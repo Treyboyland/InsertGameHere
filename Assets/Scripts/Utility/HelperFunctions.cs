@@ -35,7 +35,7 @@ public static class HelperFunctions
     public static List<T> CloneList<T>(this IEnumerable<T> list)
     {
         List<T> temp = new List<T>();
-        foreach(var item in list)
+        foreach (var item in list)
         {
             temp.Add(item);
         }
@@ -77,5 +77,16 @@ public static class HelperFunctions
         }
 
         return total;
+    }
+
+    /// <summary>
+    /// Returns a number between the given vector's
+    /// x (inclusive) and y (exclusive)
+    /// </summary>
+    /// <param name="vector"></param>
+    /// <returns></returns>
+    public static int RandomInt(this Vector2Int vector)
+    {
+        return Random.Range(vector.x, vector.y);
     }
 }

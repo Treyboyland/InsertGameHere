@@ -57,7 +57,7 @@ public class Room : MonoBehaviour
     public bool CanRightOpen { get; set; } = false;
     public bool CanUpOpen { get; set; } = false;
     public bool CanDownOpen { get; set; } = false;
-    public RoomThemeSO CurrentTheme { get => currentTheme;}
+    public RoomThemeSO CurrentTheme { get => currentTheme; }
 
     List<GameObject> spawnedObjects = new List<GameObject>();
     List<GameObject> enemies = new List<GameObject>();
@@ -118,9 +118,15 @@ public class Room : MonoBehaviour
             obj.DestroySpawnedEnemy();
             Destroy(obj.gameObject);
         }
+
+        foreach (var obj in enemies)
+        {
+            Destroy(obj.gameObject);
+        }
         chosenEnemyPositions.Clear();
         createdSpawners.Clear();
         spawnedObjects.Clear();
+        enemies.Clear();
     }
 
     public void GenerateRoomStuff(EverythingARoomNeedsForSpawn roomData, int challengeRating)
@@ -161,7 +167,7 @@ public class Room : MonoBehaviour
     {
         if (chosenEnemyPositions.Count == 0)
         {
-            Debug.LogWarning("No enemy positions found for room " + roomLocation +". Challenge Rating: " + challengeRating);
+            Debug.LogWarning("No enemy positions found for room " + roomLocation + ". Challenge Rating: " + challengeRating);
             return;
         }
         List<int> ratingsPerSpawner = new List<int>(chosenEnemyPositions.Count);
@@ -218,5 +224,10 @@ public class Room : MonoBehaviour
         {
             spawner.StopEnemySpawn();
         }
+    }
+
+    public void AddEnemy(Enemy enemy)
+    {
+        enemies.Add(enemy.gameObject);
     }
 }

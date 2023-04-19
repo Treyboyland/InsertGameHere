@@ -9,7 +9,7 @@ public abstract class EnemyMove : MonoBehaviour
 
     protected static Player player;
 
-    protected virtual bool ShouldPerformAction()
+    public virtual bool ShouldPerformAction()
     {
         if (player == null)
         {
