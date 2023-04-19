@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
-  m_Name: EnemyStats-Radish-Speed
+  m_Name: EnemyStats-GermLarge
   m_EditorClassIdentifier: 
-  health: 20
-  speed: 10
+  health: 60
+  speed: 0.5
   distanceFromPlayer: 0
-  secondsBetweenMove: 1
+  secondsBetweenMove: 5
   fireRate: 0
-  challengeRating: 2
-  score: 150
+  challengeRating: 4
+  score: 300
