@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="CoinPickup" ID="{45702E1F-D99E-409A-A08A-9F0545FBF2DF}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerShoot" ID="{AF274234-D15A-43F8-960C-A63D38ED42DF}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerFootstep" ID="{0ADB5E00-D49F-4544-A556-EA80F3ED18C9}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerHurt" ID="{C7DF5884-18BF-4617-94E5-20347D2F95C5}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="NewLevel" ID="{DA7DCB0B-7792-4E2F-8306-BD899F4C4213}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="CartridgePickup" ID="{84CF5AB4-E596-4F15-AC41-05F384F1A104}" WorkUnitID="{8C725ECE-0880-4E33-A346-D8651677EB27}" Origin="Manual" Filter="7"/>

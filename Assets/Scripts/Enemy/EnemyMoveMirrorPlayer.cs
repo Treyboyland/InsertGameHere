@@ -61,15 +61,15 @@ public class EnemyMoveMirrorPlayer : EnemyMove
         bool right = playerAnimator.Animator.GetBool(PlayerSpriteController.RIGHT);
         if (up)
         {
-            animator.SetBool(PlayerSpriteController.UP, !up);
-            animator.SetBool(PlayerSpriteController.DOWN, false);
+            animator.SetBool(PlayerSpriteController.UP, false);
+            animator.SetBool(PlayerSpriteController.DOWN, true);
             animator.SetBool(PlayerSpriteController.LEFT, false);
             animator.SetBool(PlayerSpriteController.RIGHT, false);
         }
         else if (down)
         {
-            animator.SetBool(PlayerSpriteController.UP, false);
-            animator.SetBool(PlayerSpriteController.DOWN, !down);
+            animator.SetBool(PlayerSpriteController.UP, true);
+            animator.SetBool(PlayerSpriteController.DOWN, false);
             animator.SetBool(PlayerSpriteController.LEFT, false);
             animator.SetBool(PlayerSpriteController.RIGHT, false);
         }
@@ -77,15 +77,15 @@ public class EnemyMoveMirrorPlayer : EnemyMove
         {
             animator.SetBool(PlayerSpriteController.UP, false);
             animator.SetBool(PlayerSpriteController.DOWN, false);
-            animator.SetBool(PlayerSpriteController.LEFT, !left);
-            animator.SetBool(PlayerSpriteController.RIGHT, false);
+            animator.SetBool(PlayerSpriteController.LEFT, false);
+            animator.SetBool(PlayerSpriteController.RIGHT, true);
         }
         else if (right)
         {
             animator.SetBool(PlayerSpriteController.UP, false);
             animator.SetBool(PlayerSpriteController.DOWN, false);
-            animator.SetBool(PlayerSpriteController.LEFT, false);
-            animator.SetBool(PlayerSpriteController.RIGHT, !right);
+            animator.SetBool(PlayerSpriteController.LEFT, true);
+            animator.SetBool(PlayerSpriteController.RIGHT, false);
         }
     }
 }

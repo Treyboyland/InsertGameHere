@@ -18,9 +18,14 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public UnityEvent OnEnemySpawned;
 
+    [Tooltip("Fired when this specific enemy dies")]
+    public UnityEvent<Vector3> OnSpecificEnemyDeath;
+
     public int CurrentHealth { get => currentHealth; }
 
     public bool IsDefeated { get; protected set; } = false;
+
+    public bool IsFused { get; set; } = false;
 
     public Vector2Int CurrentRoom { get; set; }
     public EnemyStatsSO Stats { get => stats; }
@@ -54,6 +59,7 @@ public class Enemy : MonoBehaviour, IDamageable
     void Die()
     {
         IsDefeated = true;
+        OnSpecificEnemyDeath.Invoke(transform.position);
         _enemyDeath.Invoke(new EnemyDeathInfo
         {
             LastPosition = transform.position,

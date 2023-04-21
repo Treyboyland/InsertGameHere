@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5081169140894112390
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234675294483935314, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 76c15eaa1457a474daf8ba9e867b30c1, type: 2}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6510575618374895897}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DecrementFusionCount
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: EnemyFusionLimit, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: OnSpecificEnemyDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566700225097253664, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+      propertyPath: m_Name
+      value: Enemy Germ Large Fusion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+--- !u!114 &307253566920754089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+  m_PrefabInstance: {fileID: 5081169140894112390}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3486058923352775078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf382b214639ba49b3d4ea7f1876589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3486058923352775078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8566700225097253664, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+  m_PrefabInstance: {fileID: 5081169140894112390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6510575618374895897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3486058923352775078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037beaa2cb5fb0541bbc190ec50cc6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 307253566920754089}
