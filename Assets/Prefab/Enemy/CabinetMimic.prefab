@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 7395908592330960887}
   - component: {fileID: 6239892488265898565}
   - component: {fileID: 1566450809305104095}
-  - component: {fileID: 3632214797180290873}
   - component: {fileID: 16252027}
   m_Layer: 0
   m_Name: Sprite
@@ -262,16 +261,17 @@ MonoBehaviour:
   _onJumpComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208457261835110661}
-        m_TargetAssemblyTypeName: JumpTowardsGameObject, Assembly-CSharp
-        m_MethodName: ResetJumpFlag
-        m_Mode: 1
+      - m_Target: {fileID: 7395908591240607961}
+        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
+          Unity.VisualScripting.State
+        m_MethodName: TriggerUnityEvent
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Landed
           m_BoolArgument: 0
         m_CallState: 2
   _onSpitOutAnimComplete:
@@ -307,18 +307,6 @@ MonoBehaviour:
   _jumpTrigger: Jump
   _stopHidingTrigger: StopHiding
   _damageTrigger: Damage
---- !u!114 &3632214797180290873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395908592330960840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1336a73bc2fd7c45a36a3c6edc12875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &16252027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,7 +338,6 @@ GameObject:
   - component: {fileID: 7408907490524399289}
   - component: {fileID: 7395908592478882741}
   - component: {fileID: 7395908592478882742}
-  - component: {fileID: 208457261835110661}
   - component: {fileID: -2968682768567674872}
   - component: {fileID: 7395908591240607961}
   - component: {fileID: 7395908591240607962}
@@ -393,19 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onLookingLeftChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3632214797180290873}
-        m_TargetAssemblyTypeName: ScaleFlipper, Assembly-CSharp
-        m_MethodName: FlipX
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &7408907490524399289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,23 +473,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5644528, y: 1.8264477}
   m_EdgeRadius: 0
---- !u!114 &208457261835110661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395908592478882743}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca4d2ed8046827a4fae5c984d9430c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
-  _body: {fileID: 7395908592478882741}
-  _speed: 5
-  _interJumpDelay: 0.5
-  _stateInfo: {fileID: 296422169}
 --- !u!114 &-2968682768567674872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,17 +515,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"TrackingBehaviour","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.MonoBehaviour,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpriteAnimator","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
-      UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"TransformationTrigger","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Collider2D,
-      UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"PlayerRef","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"RuntimeGameObject,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"EatPlayerTrigger","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Collider2D,
-      UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"MimicStateInfo","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"CabinetMimicStateInfo,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpitOutLocation","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpitPushSource","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"SpriteAnimator","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
+      UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"TransformationTrigger","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Collider2D,
+      UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"PlayerRef","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"RuntimeGameObject,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"EatPlayerTrigger","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Collider2D,
+      UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"MimicStateInfo","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"CabinetMimicStateInfo,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpitOutLocation","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpitPushSource","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SpriteTransform","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 208457261835110661}
     - {fileID: 7395908592330960887}
     - {fileID: 8836152473784409634}
     - {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
@@ -575,6 +532,7 @@ MonoBehaviour:
     - {fileID: 296422169}
     - {fileID: 2574950812547697471}
     - {fileID: 3434695071517875067}
+    - {fileID: 7395908592330960885}
 --- !u!1 &8794373178376428315
 GameObject:
   m_ObjectHideFlags: 0

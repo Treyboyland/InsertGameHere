@@ -5,8 +5,8 @@ public class JumpTowardsGameObject : MonoBehaviour
 {
     [SerializeField, NaughtyAttributes.Required] RuntimeGameObject _target;
     [SerializeField, NaughtyAttributes.Required] Rigidbody2D _body;
-    [SerializeField] float _speed;
-    [SerializeField] float _interJumpDelay;
+    [SerializeField] float _speed = 5;
+    [SerializeField] float _interJumpDelay = 0.5f;
     [SerializeField] CabinetMimicStateInfo _stateInfo;
 
     bool _isJumping = false;
@@ -27,8 +27,6 @@ public class JumpTowardsGameObject : MonoBehaviour
             // Start Jump Animation
             BroadcastMessage("Jump", SendMessageOptions.DontRequireReceiver);
             _isJumping = true;
-
-            _stateInfo.LookingLeft = targetPosition.x < transform.position.x;
 
             while (_isJumping)
             {
