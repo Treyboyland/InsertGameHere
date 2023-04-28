@@ -33,6 +33,10 @@ public class EnemyStatsSO : ScriptableObject
     [SerializeField]
     int score;
 
+    [Tooltip("Room that this enemy can spawn in")]
+    [SerializeField]
+    RoomThemeSO roomTheme;
+
     public int Health { get => health; }
     public float Speed { get => speed; }
     public float SecondsBetweenMove { get => secondsBetweenMove; }
@@ -40,4 +44,5 @@ public class EnemyStatsSO : ScriptableObject
     public float DistanceFromPlayer { get => distanceFromPlayer; }
     public float FireRate { get => fireRate; }
     public int Score { get => score; }
+    public RoomThemeSO RoomTheme { get => roomTheme; }
 }

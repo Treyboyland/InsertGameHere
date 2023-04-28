@@ -3,7 +3,11 @@ guid: b242deed066de184d9ad8a8ad07319da
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - database: {instanceID: 0}
+  - secondsBeforeSpawn: {instanceID: 0}
+  - spawnParticle: {instanceID: 0}
+  - anyTheme: {fileID: 11400000, guid: 70f17161e1772c24cbe6df89e6180504, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

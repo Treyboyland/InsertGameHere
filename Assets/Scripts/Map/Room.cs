@@ -190,6 +190,7 @@ public class Room : MonoBehaviour
             int rating = ratingsPerSpawner[i];
             Vector2 pos = chosenEnemyPositions[i];
             var spawner = Instantiate(enemySpawner, transform);
+            spawner.CurrentTheme = currentTheme;
             spawner.transform.localPosition = pos;
             spawner.SelectEnemy(rating);
             createdSpawners.Add(spawner);

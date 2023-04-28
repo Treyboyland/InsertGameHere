@@ -51,7 +51,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: e7a29eb1dfaf246409bcbe2e3ef8c0d8, type: 2}
   _enemyDeath: {fileID: 11400000, guid: fad3d7dd1d3bad045b0df0cb7c0cfa49, type: 2}
+  _onDamage:
+    m_PersistentCalls:
+      m_Calls: []
   OnEnemySpawned:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpecificEnemyDeath:
     m_PersistentCalls:
       m_Calls: []
 --- !u!212 &3571941470917544949
@@ -92,8 +98,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 861158101
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b771f5afe37d6d4d859f2b0a95ee40c, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
