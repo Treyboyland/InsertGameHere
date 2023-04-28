@@ -48,6 +48,7 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: 30ffea5be746a764587537ad8d6571b7, type: 2}
   secondsBeforeSpawn: {fileID: 11400000, guid: ee1ad3a52f9e91e4aa16b901af32a15e, type: 2}
   spawnParticle: {fileID: 8364155401077544217}
+  anyTheme: {fileID: 11400000, guid: 70f17161e1772c24cbe6df89e6180504, type: 2}
 --- !u!1001 &6168263301621781053
 PrefabInstance:
   m_ObjectHideFlags: 0

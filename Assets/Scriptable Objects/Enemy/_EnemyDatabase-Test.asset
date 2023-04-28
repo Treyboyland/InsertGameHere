@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: _EnemyDatabase-Test
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 4809955540063164719, guid: 6481c362c530ffe449ccaecc710853d5, type: 3}
+  - {fileID: 2546388247397296446, guid: f3f22a7e77470f64fb36db86301900c1, type: 3}

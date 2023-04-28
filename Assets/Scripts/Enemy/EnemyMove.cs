@@ -22,6 +22,4 @@ public abstract class EnemyMove : MonoBehaviour
 
         return player.CurrentRoomLocation == enemy.CurrentRoom;
     }
-
-
 }

@@ -20,6 +20,14 @@ public class DirectionSO : ScriptableObject
     [SerializeField]
     DirectionSO opposite;
 
+    [Tooltip("90 degrees left of this direction")]
+    [SerializeField]
+    DirectionSO left;
+
+    [Tooltip("90 degrees right of this direction")]
+    [SerializeField]
+    DirectionSO right;
+
     public Vector2 NormalizedVector
     {
         get
@@ -30,4 +38,6 @@ public class DirectionSO : ScriptableObject
 
     public float RotationFromNorth { get => rotationFromNorth; }
     public DirectionSO Opposite { get => opposite; }
+    public DirectionSO Left { get => left; }
+    public DirectionSO Right { get => right; }
 }

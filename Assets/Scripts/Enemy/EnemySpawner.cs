@@ -14,11 +14,16 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     ParticleStopOnEnemySpawn spawnParticle;
 
+    [SerializeField]
+    RoomThemeSO anyTheme;
+
     bool enemySpawned = false;
 
     Enemy prefabSelected = null;
 
     Enemy spawnedEnemyObject = null;
+
+    public RoomThemeSO CurrentTheme { get; set; }
 
     /// <summary>
     /// Will attempt to spawn an enemy with the given challenge rating
@@ -26,21 +31,39 @@ public class EnemySpawner : MonoBehaviour
     /// <param name="challengeRating"></param>
     public void SelectEnemy(int challengeRating)
     {
-        var potentialEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating == challengeRating).ToList();
+        var potentialEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating == challengeRating &&
+            x.Stats.RoomTheme == CurrentTheme).ToList();
+
 
         if (potentialEnemies.Count == 0)
         {
-            potentialEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating <= challengeRating).ToList();
+            potentialEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating <= challengeRating &&
+                x.Stats.RoomTheme == CurrentTheme).ToList();
         }
 
-        if (potentialEnemies.Count == 0)
+        if (potentialEnemies.Count != 0)
         {
+            int index = Random.Range(0, potentialEnemies.Count);
+            prefabSelected = potentialEnemies[index];
             return;
         }
 
-        int index = Random.Range(0, potentialEnemies.Count);
+        var additionalEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating == challengeRating &&
+            x.Stats.RoomTheme == anyTheme).ToList();
 
-        prefabSelected = potentialEnemies[index];
+        if (additionalEnemies.Count == 0)
+        {
+            additionalEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating <= challengeRating &&
+                x.Stats.RoomTheme == anyTheme).ToList();
+        }
+
+        potentialEnemies.AddRange(additionalEnemies);
+
+        if (potentialEnemies.Count != 0)
+        {
+            int index = Random.Range(0, potentialEnemies.Count);
+            prefabSelected = potentialEnemies[index];
+        }
     }
 
     public void SpawnEnemy(Room room)

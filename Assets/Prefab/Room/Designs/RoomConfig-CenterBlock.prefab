@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6484371554984492314}
   - component: {fileID: 353149584709295197}
   - component: {fileID: 1005825119425984663}
+  - component: {fileID: 5083950214853702759}
   m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
@@ -30,6 +31,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5350163484769109852}
   m_RootOrder: 0
@@ -60,6 +62,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -138,6 +141,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0050e2add11ee2d45889af9cb8a45807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5083950214853702759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5709103373809821059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd1b53e3815ccd44b58ca4a333763e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollider2D: {fileID: 353149584709295197}
+  sprite: {fileID: 6484371554984492314}
 --- !u!1 &5793631894607267089
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +181,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1818621113364854594}
   m_Father: {fileID: 6967505523095003684}
@@ -196,6 +214,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5350163484769109852}
   m_Father: {fileID: 0}

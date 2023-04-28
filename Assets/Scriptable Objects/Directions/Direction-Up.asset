@@ -16,3 +16,5 @@ MonoBehaviour:
   vector: {x: 0, y: 1}
   rotationFromNorth: 0
   opposite: {fileID: 11400000, guid: dea4e1d9b3100ac408a6cb6c2bedacb8, type: 2}
+  left: {fileID: 11400000, guid: 451feecf381cf7c4fbc4fe88c8ba60a5, type: 2}
+  right: {fileID: 11400000, guid: c155a7df4a7840b42a57acee4a8efb22, type: 2}

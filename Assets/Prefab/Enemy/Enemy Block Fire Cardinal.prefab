@@ -137,6 +137,9 @@ MonoBehaviour:
   OnEnemySpawned:
     m_PersistentCalls:
       m_Calls: []
+  OnSpecificEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &2230341343974148732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -175,8 +178,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 861158101
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dfb68069b2704204083c398a9cb64797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

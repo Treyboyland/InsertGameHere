@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8384011963286419534}
   - component: {fileID: 1173766373520908957}
   - component: {fileID: 329564723382115338}
+  - component: {fileID: 2328301086253540416}
   m_Layer: 9
   m_Name: Enemy Germ Small
   m_TagString: Untagged
@@ -130,8 +131,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 861158101
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -971857916, guid: f6aff89233b74b64daaf8710c647dd61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,3 +202,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2328301086253540416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4070121772630747008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11a247ddd7203d45866c5a8600f74d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageAmount: 1
