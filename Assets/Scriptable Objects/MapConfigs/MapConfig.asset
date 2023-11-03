@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MapConfig
   m_EditorClassIdentifier: 
   _dimensions: {x: 7, y: 9}
-  _minRooms: 4
   _numSpecialRooms: 3
+  maxAttempts: 200
