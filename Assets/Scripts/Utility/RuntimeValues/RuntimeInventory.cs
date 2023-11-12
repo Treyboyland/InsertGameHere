@@ -28,6 +28,11 @@ public class RuntimeInventory : ScriptableObject
         }
     }
 
+    public void AddItem(ItemSO item)
+    {
+        ChangeItemCount(item, 1);
+    }
+
     public void SetItemCount(ItemSO item, int amount)
     {
         var currentCount = _dict.ContainsKey(item) ? _dict[item] : 0;

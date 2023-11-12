@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e76139260615334c814ba6f1af8fbf9, type: 3}
-  m_Name: MapConfig
+  m_Script: {fileID: 11500000, guid: 61ab08148c413b94086506fb0f512458, type: 3}
+  m_Name: On Player Death
   m_EditorClassIdentifier: 
-  _dimensions: {x: 7, y: 9}
-  _numSpecialRooms: 3
-  maxAttempts: 200
-  maxNumRooms: 30

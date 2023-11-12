@@ -44,6 +44,9 @@ public class Player : MonoBehaviour, IDamageable
     GameEvent onPlayerDamaged;
 
     [SerializeField]
+    GameEvent onPlayerDeath;
+
+    [SerializeField]
     GameEventDirectionSO onWeaponFired;
 
     public Vector2Int CurrentRoomLocation { get; set; } = new Vector2Int();
@@ -73,6 +76,7 @@ public class Player : MonoBehaviour, IDamageable
 
     void Die()
     {
+        onPlayerDeath.Invoke();
         spriteRenderer.enabled = false;
         playerCollider.enabled = false;
     }

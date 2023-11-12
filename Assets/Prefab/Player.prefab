@@ -5644,6 +5644,7 @@ MonoBehaviour:
   right: {fileID: 11400000, guid: c155a7df4a7840b42a57acee4a8efb22, type: 2}
   onUpdateLives: {fileID: 11400000, guid: 1ee9c1ad3c903cd4fa7182ff0f762b04, type: 2}
   onPlayerDamaged: {fileID: 11400000, guid: 224d747063bb33947a62e224e9aa6cd2, type: 2}
+  onPlayerDeath: {fileID: 11400000, guid: 71b5fee5f1d898f4684da345f0fbdc53, type: 2}
   onWeaponFired: {fileID: 11400000, guid: 39ffc046314c3fb4889ba9d45c81ada3, type: 2}
 --- !u!114 &9015623255759432541
 MonoBehaviour:
