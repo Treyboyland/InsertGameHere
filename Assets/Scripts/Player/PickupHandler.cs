@@ -17,14 +17,17 @@ public class PickupHandler : MonoBehaviour
         }
 
         // Apply Effects for each item picked up
-        pickupInfo.Item.OnPickupEffects.ToList().ForEach(effect => effect.Apply());
+        if (pickupInfo.Item.OnPickupEffects != null)
+        {
+            pickupInfo.Item.OnPickupEffects.ToList().ForEach(effect => effect.Apply());
+        }
 
         // Add to inventory each item that should be added
         if (pickupInfo.Item.AddToInventory)
         {
             _inventory.ChangeItemCount(pickupInfo.Item, pickupInfo.ItemAmount);
         }
-        
+
         pickupInfo.OnPickup?.Invoke();
 
         Destroy(other.gameObject);

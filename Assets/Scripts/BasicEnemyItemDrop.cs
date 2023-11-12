@@ -25,9 +25,15 @@ public class BasicEnemyItemDrop : MonoBehaviour
         }
 
         var itemToSpawn = table.GetGameObject();
-        var spawnedObject = Instantiate(itemToSpawn);
-        spawnedObject.transform.position = pos;
-        //TODO: Pool this? Probably also handle reset
-        spawnedObject.SetActive(true);
+        if (ItemSpawner.Instance)
+        {
+            var spawnedObject = ItemSpawner.Instance.SpawnItem(itemToSpawn);
+            spawnedObject.transform.position = pos;
+            spawnedObject.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Need an item spawner prefab in scene");
+        }
     }
 }
