@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public bool IsFused { get; set; } = false;
 
+    public bool IsInvincible { get; set; } = false;
+
     public Vector2Int CurrentRoom { get; set; }
     public EnemyStatsSO Stats { get => stats; }
 
@@ -46,13 +48,16 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void Damage(int damage)
     {
-        currentHealth -= damage;
-
-        _onDamage.Invoke();
-
-        if (currentHealth <= 0)
+        if (!IsInvincible)
         {
-            Die();
+            currentHealth -= damage;
+
+            _onDamage.Invoke();
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 
