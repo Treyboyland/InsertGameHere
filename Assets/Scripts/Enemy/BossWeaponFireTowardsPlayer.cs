@@ -6,6 +6,8 @@ public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
 {
     [SerializeField] private float secondsBetweenShots;
 
+    Coroutine continuousFireRoutine;
+
     private void OnEnable()
     {
         if (player == null)
@@ -34,6 +36,32 @@ public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
         {
             Fire();
             yield return new WaitForSeconds(secondsBetweenShots);
+        }
+    }
+
+    public void StartContinuousFire()
+    {
+        if (continuousFireRoutine == null)
+        {
+            continuousFireRoutine = StartCoroutine(ContinousFire());
+        }
+    }
+
+    public void StopContinuousFire()
+    {
+        if (continuousFireRoutine != null)
+        {
+            StopCoroutine(continuousFireRoutine);
+            continuousFireRoutine = null;
+        }
+    }
+
+    IEnumerator ContinousFire()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(secondsBetweenShots);
+            Fire();
         }
     }
 }

@@ -14,6 +14,11 @@ public class EnemyBossBrain : MonoBehaviour
     BossWeaponFireTowardsPlayer retaliationFire;
 
     [SerializeField]
+    BossWeaponFireTowardsPlayer continuousFire;
+
+    [SerializeField] BossWeaponFireTowardsPlayer vulnerableFire;
+
+    [SerializeField]
     int numShotsOfRetaliation;
 
     [SerializeField]
@@ -28,6 +33,8 @@ public class EnemyBossBrain : MonoBehaviour
         {
             bossSwitch.OnSwitchTurnedOn.AddListener(Retaliate);
         }
+
+        continuousFire.StartContinuousFire();
     }
 
     void Retaliate()
@@ -63,9 +70,13 @@ public class EnemyBossBrain : MonoBehaviour
 
     IEnumerator PlayerAttackChance()
     {
+        continuousFire.StopContinuousFire();
+        vulnerableFire.StartContinuousFire();
         enemy.IsInvincible = false;
         yield return new WaitForSeconds(secondsVulnerable);
         enemy.IsInvincible = true;
         TurnSwitchesOff();
+        continuousFire.StartContinuousFire();
+        vulnerableFire.StopContinuousFire();
     }
 }
