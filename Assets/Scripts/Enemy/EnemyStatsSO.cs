@@ -9,6 +9,10 @@ public class EnemyStatsSO : ScriptableObject
     [SerializeField]
     int health;
 
+    [Tooltip("Number of phases that this enemy has")]
+    [SerializeField]
+    int numPhases;
+
     [Tooltip("How fast the enemy moves")]
     [SerializeField]
     float speed;
@@ -45,4 +49,15 @@ public class EnemyStatsSO : ScriptableObject
     public float FireRate { get => fireRate; }
     public int Score { get => score; }
     public RoomThemeSO RoomTheme { get => roomTheme; }
+    public int NumPhases { get => numPhases; }
+
+    public float GetPhasePercentage(int phase)
+    {
+        if (phase >= numPhases)
+        {
+            return 1;
+        }
+
+        return (1.0f * phase) / numPhases;
+    }
 }

@@ -23,6 +23,24 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public int CurrentHealth { get => currentHealth; }
 
+    public float HealthPercentage { get => (1.0f * currentHealth) / stats.Health; }
+
+     public int CurrentPhase
+    {
+        get
+        {
+            float healthPercentage = HealthPercentage;
+            int phase = 0;
+
+            while (stats.GetPhasePercentage(phase) < healthPercentage)
+            {
+                phase++;
+            }
+
+            return stats.NumPhases - phase;
+        }
+    }
+
     public bool IsDefeated { get; protected set; } = false;
 
     public bool IsFused { get; set; } = false;
@@ -32,8 +50,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public Vector2Int CurrentRoom { get; set; }
     public EnemyStatsSO Stats { get => stats; }
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         currentHealth = stats.Health;
     }
@@ -43,6 +60,7 @@ public class Enemy : MonoBehaviour, IDamageable
         if (gameObject.activeInHierarchy)
         {
             IsDefeated = false;
+            currentHealth = stats.Health;
         }
     }
 
