@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6637956189026628486}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8565297398941369666
 MonoBehaviour:
@@ -76,7 +76,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6637956189026628486}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8336133806489171032
 MonoBehaviour:
@@ -94,6 +94,60 @@ MonoBehaviour:
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 0.5
+  fireAngles:
+  - 0
+--- !u!1 &5044325770182289305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6423428623117869352}
+  - component: {fileID: 510972692382860576}
+  m_Layer: 9
+  m_Name: NormalShot Phase 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6423428623117869352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5044325770182289305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6637956189026628486}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &510972692382860576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5044325770182289305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61aad68609ec90b40befcf771f4d04a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6637956189026628491}
+  bulletPool: {fileID: 8565297398941369666}
+  _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+  secondsBetweenShots: 1
+  fireAngles:
+  - 0
+  - -5
+  - 5
 --- !u!1 &6637956189026628484
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +159,7 @@ GameObject:
   - component: {fileID: 6637956189026628486}
   - component: {fileID: 1912809287423353719}
   - component: {fileID: 6637956189026628491}
+  - component: {fileID: 5141432982719796429}
   - component: {fileID: 7228500878463547297}
   - component: {fileID: 6637956189026628487}
   - component: {fileID: 6637956189026628488}
@@ -130,6 +185,7 @@ Transform:
   m_Children:
   - {fileID: 6997655856476781402}
   - {fileID: 6338335676158612660}
+  - {fileID: 6423428623117869352}
   - {fileID: 3166016421820294031}
   - {fileID: 1701266304970608419}
   m_Father: {fileID: 0}
@@ -177,6 +233,28 @@ MonoBehaviour:
   OnSpecificEnemyDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5141432982719796429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637956189026628484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62364f5e22e595c4dac68d184c034958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6637956189026628491}
+  enemySprite: {fileID: 6637956189026628487}
+  phaseSprites:
+  - {fileID: 21300000, guid: dcf9cd9ed4c578b4ea58a0007dfe41b2, type: 3}
+  - {fileID: 21300000, guid: 5bc95a8eb801b7d41b8fd7f927966e3f, type: 3}
+  - {fileID: 21300000, guid: 70659f1603bc10541a0c2254686495cc, type: 3}
+  - {fileID: 21300000, guid: 0623e1107b7f422468cb791e450b6039, type: 3}
+  - {fileID: 21300000, guid: b9cf0da522af68d459d952df7f5503a3, type: 3}
+  - {fileID: 21300000, guid: 475a978a7bc592649bbf703c921462b5, type: 3}
+  - {fileID: 21300000, guid: 779e9617ca3aede46a7f20d571c953d8, type: 3}
 --- !u!114 &7228500878463547297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,6 +415,8 @@ MonoBehaviour:
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 0.3
+  fireAngles:
+  - 0
 --- !u!1 &8895539374816662167
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,3 +465,5 @@ MonoBehaviour:
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 1
+  fireAngles:
+  - 0

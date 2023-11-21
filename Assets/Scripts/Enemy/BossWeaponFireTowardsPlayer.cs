@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
 {
     [SerializeField] private float secondsBetweenShots;
+    [SerializeField] private List<float> fireAngles;
 
     Coroutine continuousFireRoutine;
 
@@ -22,7 +23,12 @@ public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
         {
             player = FindObjectOfType<Player>();
         }
-        SpawnProjectle((player.transform.position - enemy.transform.position).normalized);
+        var vector = (player.transform.position - enemy.transform.position).normalized;
+        foreach (var angle in fireAngles)
+        {
+            var fireVector = Quaternion.AngleAxis(angle, Vector3.forward) * vector;
+            SpawnProjectle(fireVector);
+        }
     }
 
     public void BurstFire(int numToFire)

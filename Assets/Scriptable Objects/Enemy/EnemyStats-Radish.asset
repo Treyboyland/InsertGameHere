@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EnemyStats-Radish
   m_EditorClassIdentifier: 
   health: 10
+  numPhases: 1
   speed: 15
   distanceFromPlayer: 0
   secondsBetweenMove: 2

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EnemyStats-GermSmall
   m_EditorClassIdentifier: 
   health: 10
+  numPhases: 1
   speed: 4
   distanceFromPlayer: 0
   secondsBetweenMove: 0
