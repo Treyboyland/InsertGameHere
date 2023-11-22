@@ -27,7 +27,7 @@ public class EnemyWeaponFireDirection : EnemyWeaponFire
         }
     }
 
-    void Fire()
+    public override void Fire()
     {
         directions.ForEach(SpawnProjectle);
     }

@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6637956189026628486}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8565297398941369666
 MonoBehaviour:
@@ -76,7 +76,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6637956189026628486}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8336133806489171032
 MonoBehaviour:
@@ -96,6 +96,52 @@ MonoBehaviour:
   secondsBetweenShots: 0.5
   fireAngles:
   - 0
+--- !u!1 &3144341959848370477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7710974516599384386}
+  - component: {fileID: 6445468578525590223}
+  m_Layer: 9
+  m_Name: SlowShotPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7710974516599384386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144341959848370477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6637956189026628486}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6445468578525590223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144341959848370477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ce9b908f73bb049bb8a04938db2559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8007011350440351940, guid: e2cab4f16c7d3054ba0e786b877860f7, type: 3}
+  numInitial: 10
 --- !u!1 &5044325770182289305
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,8 +232,10 @@ Transform:
   - {fileID: 6997655856476781402}
   - {fileID: 6338335676158612660}
   - {fileID: 6423428623117869352}
+  - {fileID: 5270919718651920411}
   - {fileID: 3166016421820294031}
   - {fileID: 1701266304970608419}
+  - {fileID: 7710974516599384386}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -204,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  phaseFire: {fileID: 5198187230180514846}
   secondsVulnerable: 5
   retaliationFire: {fileID: 1859258330537030430}
   continuousFire: {fileID: 5576495325907543525}
@@ -467,3 +516,77 @@ MonoBehaviour:
   secondsBetweenShots: 1
   fireAngles:
   - 0
+--- !u!1 &9191562264415053845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5270919718651920411}
+  - component: {fileID: 5198187230180514846}
+  - component: {fileID: 4001950536122344331}
+  m_Layer: 9
+  m_Name: PhaseRetaliation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5270919718651920411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191562264415053845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6637956189026628486}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5198187230180514846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191562264415053845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e37dc39ef05cf14683c3a01e4a8953e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6637956189026628491}
+  weapon: {fileID: 4001950536122344331}
+  fireOnFirstPhase: 0
+  OnPhaseFire:
+    m_PersistentCalls:
+      m_Calls: []
+  secondsToFire: 6
+--- !u!114 &4001950536122344331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191562264415053845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f18cab2390537c4cb66cd2b2965303c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6637956189026628491}
+  bulletPool: {fileID: 6445468578525590223}
+  _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
+  degreesPerSecond: 75
+  secondsBetweenBullets: 0.5
+  fireAngles:
+  - 0
+  - 90
+  - 180
+  - 270

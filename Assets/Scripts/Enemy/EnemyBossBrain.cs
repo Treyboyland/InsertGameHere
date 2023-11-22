@@ -8,6 +8,9 @@ public class EnemyBossBrain : MonoBehaviour
     Enemy enemy;
 
     [SerializeField]
+    EnemyFireOnPhase phaseFire;
+
+    [SerializeField]
     float secondsVulnerable;
 
     [SerializeField]
@@ -35,6 +38,7 @@ public class EnemyBossBrain : MonoBehaviour
         }
 
         continuousFire.StartContinuousFire();
+        phaseFire.OnPhaseFire.AddListener((unused) => StopAndGoBackToNormal());
     }
 
     void Retaliate()
@@ -68,15 +72,26 @@ public class EnemyBossBrain : MonoBehaviour
         }
     }
 
+    void StopAndGoBackToNormal()
+    {
+        StopAllCoroutines();
+        BackToNormal();
+    }
+
+    void BackToNormal()
+    {
+        enemy.IsInvincible = true;
+        TurnSwitchesOff();
+        continuousFire.StartContinuousFire();
+        vulnerableFire.StopContinuousFire();
+    }
+
     IEnumerator PlayerAttackChance()
     {
         continuousFire.StopContinuousFire();
         vulnerableFire.StartContinuousFire();
         enemy.IsInvincible = false;
         yield return new WaitForSeconds(secondsVulnerable);
-        enemy.IsInvincible = true;
-        TurnSwitchesOff();
-        continuousFire.StartContinuousFire();
-        vulnerableFire.StopContinuousFire();
+        BackToNormal();
     }
 }
