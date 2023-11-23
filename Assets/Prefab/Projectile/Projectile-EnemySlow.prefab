@@ -58,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 6177391645608693874, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
       propertyPath: stats
       value: 
-      objectReference: {fileID: 11400000, guid: 6c5ce97b9f22fbf4c9306823cc7cc89b, type: 2}
+      objectReference: {fileID: 11400000, guid: 67a555032c3327e4589486175c10bc05, type: 2}
     - target: {fileID: 6177391645608693886, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6177391645608693887, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
       propertyPath: m_Name
-      value: Projectile-EnemyNormal
+      value: Projectile-EnemySlow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}

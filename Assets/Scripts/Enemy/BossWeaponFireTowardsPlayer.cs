@@ -17,7 +17,7 @@ public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
         }
     }
 
-    public void Fire()
+    public override void Fire()
     {
         if (player == null)
         {

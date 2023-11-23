@@ -71,6 +71,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6177391645608693886, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177391645608693886, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1225411477
+      objectReference: {fileID: 0}
     - target: {fileID: 6177391645608693887, guid: 5cc6dbac07b35594bac1fae904b17968, type: 3}
       propertyPath: m_Name
       value: Projectile-EnemyFast

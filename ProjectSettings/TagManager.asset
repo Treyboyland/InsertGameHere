@@ -52,6 +52,9 @@ TagManager:
   - name: Enemy Particle
     uniqueID: 3112642839
     locked: 0
+  - name: Enemy Projectile
+    uniqueID: 3069555819
+    locked: 0
   - name: Player
     uniqueID: 1888620955
     locked: 0

@@ -20,4 +20,4 @@ MonoBehaviour:
   fireRate: 0
   challengeRating: 2
   score: 200
-  roomTheme: {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
+  roomTheme: {fileID: 11400000, guid: 0caab34d97e98f144815fec9175a5b44, type: 2}

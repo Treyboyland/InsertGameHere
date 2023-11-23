@@ -53,4 +53,9 @@ public class EnemyWeaponFire : EnemyMove
         projectile.transform.SetParent(null);
         projectile.SetDirection(direction);
     }
+
+    public virtual void Fire()
+    {
+        //intentionally blank
+    }
 }
