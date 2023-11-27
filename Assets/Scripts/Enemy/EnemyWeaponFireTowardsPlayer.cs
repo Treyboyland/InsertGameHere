@@ -8,7 +8,7 @@ public class EnemyWeaponFireTowardsPlayer : EnemyWeaponFire
 
     private void Update()
     {
-        if (ShouldPerformAction())
+        if (!manualFire && ShouldPerformAction())
         {
             FireAction();
         }
@@ -24,7 +24,7 @@ public class EnemyWeaponFireTowardsPlayer : EnemyWeaponFire
         }
     }
 
-    void Fire()
+    public override void Fire()
     {
         SpawnProjectle((player.transform.position - enemy.transform.position).normalized);
     }

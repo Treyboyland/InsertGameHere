@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb01866bc4d4aa479b76d27d20d2ee1, type: 3}
+  m_Name: RoomTheme-Void
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: 0671deb7a02f17549b321162fb2add71, type: 3}
+  wall: {fileID: 21300000, guid: c025e87425b533946a99db60ba3467d9, type: 3}
+  obstacle: {fileID: 21300000, guid: 6aad4baac36bee54aa3027967865d2dc, type: 3}
+  door: {fileID: 21300000, guid: 6aad4baac36bee54aa3027967865d2dc, type: 3}
+  floorType:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c61d9d224af41754e8d8385329e47175, type: 2}

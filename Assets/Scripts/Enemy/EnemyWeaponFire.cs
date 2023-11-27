@@ -5,6 +5,9 @@ using UnityEngine;
 public class EnemyWeaponFire : EnemyMove
 {
     [SerializeField]
+    protected bool manualFire;
+
+    [SerializeField]
     protected ObjectPool bulletPool;
 
     [SerializeField]

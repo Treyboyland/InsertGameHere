@@ -13,6 +13,9 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     DisableAfterTime disabler;
 
+    [SerializeField]
+    bool shouldRotate;
+
     public rho.RuntimeGameObjectSet OwnerSet { get; set; }
 
     [Header("Directions")]
@@ -103,5 +106,10 @@ public class Projectile : MonoBehaviour
     {
         direction *= stats.Speed;
         body.velocity = direction;
+
+        if (shouldRotate)
+        {
+            transform.rotation = Quaternion.identity * Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.up, direction), Vector3.forward);
+        }
     }
 }

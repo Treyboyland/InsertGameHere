@@ -16,10 +16,14 @@ public class RoomThemeSO : ScriptableObject
     Sprite obstacle;
 
     [SerializeField]
+    Sprite door;
+
+    [SerializeField]
     AK.Wwise.Switch floorType;
 
     public Sprite Background { get => background; }
     public Sprite Wall { get => wall; }
     public Sprite Obstacle { get => obstacle; }
-    public Switch FloorType { get => floorType;}
+    public Sprite Door { get => door; }
+    public Switch FloorType { get => floorType; }
 }

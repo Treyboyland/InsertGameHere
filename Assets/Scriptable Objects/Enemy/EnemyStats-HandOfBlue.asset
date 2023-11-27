@@ -19,5 +19,5 @@ MonoBehaviour:
   secondsBetweenMove: 0
   fireRate: 1
   challengeRating: 2
-  score: 150
+  score: 300
   roomTheme: {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}

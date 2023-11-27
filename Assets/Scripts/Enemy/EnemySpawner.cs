@@ -31,9 +31,9 @@ public class EnemySpawner : MonoBehaviour
     /// <param name="challengeRating"></param>
     public void SelectEnemy(int challengeRating)
     {
+        //Roll for monsters in theme
         var potentialEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating == challengeRating &&
             x.Stats.RoomTheme == CurrentTheme).ToList();
-
 
         if (potentialEnemies.Count == 0)
         {
@@ -48,6 +48,7 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
+        //Roll from miscelaneous monsters
         var additionalEnemies = database.Enemies.Where(x => x.Stats.ChallengeRating == challengeRating &&
             x.Stats.RoomTheme == anyTheme).ToList();
 
@@ -63,6 +64,16 @@ public class EnemySpawner : MonoBehaviour
         {
             int index = Random.Range(0, potentialEnemies.Count);
             prefabSelected = potentialEnemies[index];
+        }
+        else if (database.Enemies != null && database.Enemies.Count != 0)
+        {
+            //Roll from all enemies in game
+            int index = Random.Range(0, database.Enemies.Count);
+            prefabSelected = database.Enemies[index];
+        }
+        else
+        {
+            prefabSelected = null;
         }
     }
 
