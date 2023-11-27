@@ -14,6 +14,9 @@ public class ThemeObjectComparator : ScriptableObject
     [SerializeField]
     ThemeObjectTypeSO obstacleType;
 
+    [SerializeField]
+    ThemeObjectTypeSO doorType;
+
     public bool IsWall(ThemeObjectTypeSO theme)
     {
         return theme == wallType;
@@ -27,5 +30,10 @@ public class ThemeObjectComparator : ScriptableObject
     public bool IsObstacle(ThemeObjectTypeSO theme)
     {
         return theme == obstacleType;
+    }
+
+    public bool IsDoor(ThemeObjectTypeSO theme)
+    {
+        return theme == doorType;
     }
 }

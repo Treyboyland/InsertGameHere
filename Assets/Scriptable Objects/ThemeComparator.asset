@@ -15,3 +15,4 @@ MonoBehaviour:
   wallType: {fileID: 11400000, guid: 29944140d3f922640a386cc0715a1aec, type: 2}
   backgroundType: {fileID: 11400000, guid: 5e151ed7c7f4560479f45a0f710b6a6f, type: 2}
   obstacleType: {fileID: 11400000, guid: abfa9902b10483840a13a01f82a6e49c, type: 2}
+  doorType: {fileID: 11400000, guid: 7ae21d390a16e5a499521ab0312f6ee2, type: 2}

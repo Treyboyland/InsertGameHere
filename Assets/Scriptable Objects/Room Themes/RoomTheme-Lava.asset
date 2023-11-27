@@ -15,6 +15,7 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: ba2da0e57572c1a4fa076e1330958ac0, type: 3}
   wall: {fileID: 21300000, guid: 0603af6899fe30744a2a69cbe2284e0b, type: 3}
   obstacle: {fileID: 21300000, guid: 1c5c8ec30b2b6f94a94bc059132ed555, type: 3}
+  door: {fileID: 21300000, guid: 1c5c8ec30b2b6f94a94bc059132ed555, type: 3}
   floorType:
     idInternal: 0
     valueGuidInternal: 

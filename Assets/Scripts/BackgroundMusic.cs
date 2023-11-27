@@ -23,6 +23,9 @@ public class BackgroundMusic : MonoBehaviour
 
     private void Start()
     {
-        backgroundMusicStartEvent.Post(gameObject);
+        if (this == _instance)
+        {
+            backgroundMusicStartEvent.Post(gameObject);
+        }
     }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
   m_Name: EnemyStats-CabinetMimic
   m_EditorClassIdentifier: 
-  health: 30
+  health: 60
   numPhases: 1
   speed: 0
   distanceFromPlayer: 0
   secondsBetweenMove: 0
   fireRate: 0
   challengeRating: 1
-  score: 100
+  score: 500
   roomTheme: {fileID: 11400000, guid: 70f17161e1772c24cbe6df89e6180504, type: 2}

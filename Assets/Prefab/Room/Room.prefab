@@ -249,7 +249,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 15.47, y: 7.86}
+  m_Size: {x: 15.5, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -441,13 +441,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Down Left
       objectReference: {fileID: 0}
+    - target: {fileID: 2220516653612835144, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 6.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -7.25
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -503,13 +519,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Up Left
       objectReference: {fileID: 0}
+    - target: {fileID: 2220516653612835144, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 6.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -7.25
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -902,13 +934,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Down Right
       objectReference: {fileID: 0}
+    - target: {fileID: 2220516653612835144, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 6.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5
+      value: 7.25
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -964,13 +1012,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Up Right
       objectReference: {fileID: 0}
+    - target: {fileID: 2220516653612835144, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Size.y
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885106103936696335, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 6.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5
+      value: 7.25
       objectReference: {fileID: 0}
     - target: {fileID: 6778141700930071312, guid: 20a1ea8bc244874428280a997182bebd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1233,6 +1297,10 @@ PrefabInstance:
       propertyPath: triggerForDoor
       value: 
       objectReference: {fileID: 7214084510416287934}
+    - target: {fileID: 7305451922721637565, guid: 533c0cdfd081b604f9a33a1904d884c7, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9490196
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 533c0cdfd081b604f9a33a1904d884c7, type: 3}
 --- !u!4 &5058060855129305030 stripped

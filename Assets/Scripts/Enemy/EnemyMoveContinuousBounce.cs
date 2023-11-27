@@ -7,15 +7,20 @@ public class EnemyMoveContinuousBounce : EnemyMove
     [SerializeField]
     Rigidbody2D body;
 
+    [SerializeField]
+    bool shouldCycle;
+
     Vector2 storedVelocity;
 
+    float elapsed = 0;
 
     // Update is called once per frame
     void Update()
     {
+        elapsed += Time.deltaTime;
         if (ShouldPerformAction())
         {
-            body.velocity = storedVelocity;
+            body.velocity = CalculateVelocity();
         }
         else
         {
@@ -23,8 +28,22 @@ public class EnemyMoveContinuousBounce : EnemyMove
         }
     }
 
+    Vector2 CalculateVelocity()
+    {
+        if (!shouldCycle)
+        {
+            return storedVelocity;
+        }
+
+        float timeCycled = 2 * Mathf.PI * (elapsed / enemy.Stats.SecondsBetweenMove);
+        float multiple = Mathf.Abs(Mathf.Cos(timeCycled));
+
+        return storedVelocity * multiple;
+    }
+
     private void OnEnable()
     {
+        elapsed = 0;
         float randomDirection = Random.Range(0.0f, 360f);
         float x = Mathf.Cos(randomDirection) * enemy.Stats.Speed;
         float y = Mathf.Sin(randomDirection) * enemy.Stats.Speed;
@@ -62,6 +81,6 @@ public class EnemyMoveContinuousBounce : EnemyMove
             storedVelocity.y *= -1;
         }
 
-        body.velocity = ShouldPerformAction() ? storedVelocity : Vector2.zero;
+        body.velocity = ShouldPerformAction() ? CalculateVelocity() : Vector2.zero;
     }
 }

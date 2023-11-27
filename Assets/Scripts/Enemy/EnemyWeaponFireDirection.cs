@@ -11,7 +11,7 @@ public class EnemyWeaponFireDirection : EnemyWeaponFire
 
     private void Update()
     {
-        if (ShouldPerformAction())
+        if (!manualFire && ShouldPerformAction())
         {
             FireAction();
         }

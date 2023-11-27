@@ -44,5 +44,9 @@ public class RoomThemeSetter : MonoBehaviour
         {
             spriteRenderer.sprite = themeData.Wall;
         }
+        else if (comparator.IsDoor(objectType))
+        {
+            spriteRenderer.sprite = themeData.Door;
+        }
     }
 }
