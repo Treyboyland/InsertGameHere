@@ -7,6 +7,8 @@ public class EnemyWeaponFireDirection : EnemyWeaponFire
     [SerializeField]
     List<Vector2> directions;
 
+    public List<Vector2> Directions { get => directions; set => directions = value; }
+
     float elapsed = 0;
 
     private void Update()

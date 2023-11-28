@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
-  m_Name: EnemyStats-FireElemental
+  m_Name: EnemyStats-Crab
   m_EditorClassIdentifier: 
-  health: 40
-  numPhases: 2
-  speed: 4
+  health: 25
+  numPhases: 1
+  speed: 3
   distanceFromPlayer: 0
-  secondsBetweenMove: 3
-  fireRate: 2
-  challengeRating: 4
-  score: 400
-  roomTheme: {fileID: 11400000, guid: 0caab34d97e98f144815fec9175a5b44, type: 2}
+  secondsBetweenMove: 1
+  fireRate: 1.25
+  challengeRating: 1
+  score: 150
+  roomTheme: {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
