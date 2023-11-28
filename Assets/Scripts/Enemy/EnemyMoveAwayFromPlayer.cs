@@ -32,5 +32,9 @@ public class EnemyMoveAwayFromPlayer : EnemyMove
             direction *= enemy.Stats.Speed;
             body.AddForce(direction, ForceMode2D.Impulse);
         }
+        else
+        {
+            body.velocity = Vector2.zero;
+        }
     }
 }

@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMoveContinuousBounce : EnemyMove
+public class EnemyMoveDirectionalBounce : EnemyMove
 {
     [SerializeField]
     Rigidbody2D body;
 
     [SerializeField]
     bool shouldCycle;
+
+    [SerializeField]
+    List<Vector2> potentialDirections;
 
     Vector2 storedVelocity;
 
@@ -44,11 +47,8 @@ public class EnemyMoveContinuousBounce : EnemyMove
     private void OnEnable()
     {
         elapsed = 0;
-        float randomDirection = Random.Range(0.0f, 360f);
-        float x = Mathf.Cos(randomDirection) * enemy.Stats.Speed;
-        float y = Mathf.Sin(randomDirection) * enemy.Stats.Speed;
-
-        storedVelocity = new Vector2(x, y);
+        int chosenIndex = Random.Range(0, potentialDirections.Count);
+        storedVelocity = potentialDirections[chosenIndex].normalized * enemy.Stats.Speed;
     }
 
     private void OnCollisionEnter2D(Collision2D other)

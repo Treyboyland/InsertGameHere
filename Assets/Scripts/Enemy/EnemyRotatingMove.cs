@@ -69,10 +69,15 @@ public class EnemyRotatingMove : EnemyMove
     {
         //Not sure if this should collide with everything
         var hit = Physics2D.Raycast(transform.position, currentDirection.NormalizedVector, raycastDistance, LayerMask.GetMask("Wall", "Door", "EnemyBlocker"));
-        if (hit && elapsed > enemy.Stats.SecondsBetweenMove)
+        if (hit && hit.collider.gameObject != currentCollision && elapsed > enemy.Stats.SecondsBetweenMove)
         {
+            currentCollision = hit.collider.gameObject;
             elapsed = 0;
             RotateDirection();
+        }
+        else if (!hit)
+        {
+            currentCollision = null;
         }
     }
 

@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CrabUp
+  m_Controller: {fileID: 9100000, guid: 86313d6b885d37d409e4d7636a0ba501, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ad02318d7f4f81a4b91c32ae99e06ade, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2e631a8b45470524c8898b96183556ec, type: 2}
