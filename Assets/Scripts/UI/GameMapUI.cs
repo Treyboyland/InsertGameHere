@@ -68,7 +68,7 @@ public class GameMapUI : MonoBehaviour
     {
         if (mapCreator == null)
         {
-            mapCreator = GameObject.FindObjectOfType<GameMapCreator>();
+            mapCreator = FindObjectOfType<GameMapCreator>();
         }
     }
 

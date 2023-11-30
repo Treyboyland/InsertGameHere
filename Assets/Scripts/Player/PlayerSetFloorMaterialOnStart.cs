@@ -12,7 +12,7 @@ public class PlayerSetFloorMaterialOnStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindObjectOfType<Player>();
+        player = FindObjectOfType<Player>();
         if(player)
         {
             player.SpriteController.FootstepMaterial = value;

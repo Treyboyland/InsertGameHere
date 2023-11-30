@@ -162,7 +162,7 @@ public class GameMapCreator : MonoBehaviour
 
             if (currentMapChallengeRating > 0)
             {
-                challengeRating = UnityEngine.Random.Range(1, mapData.MaxChallengeRatingPerRoom + 1);
+                challengeRating = Random.Range(1, mapData.MaxChallengeRatingPerRoom + 1);
                 currentMapChallengeRating -= challengeRating;
             }
 

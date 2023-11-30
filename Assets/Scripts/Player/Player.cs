@@ -65,10 +65,21 @@ public class Player : MonoBehaviour, IDamageable
 
     public void Damage(int amount)
     {
-        currentLives.Value--;
+        currentLives.Value = Mathf.Max(0, currentLives.Value - amount);
         onUpdateLives.Invoke();
         onPlayerDamaged?.Invoke();
         if (currentLives.Value <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Kill()
+    {
+        currentLives.Value = 0;
+        onUpdateLives.Invoke();
+        onPlayerDamaged?.Invoke();
+        if(currentLives.Value <= 0)
         {
             Die();
         }
