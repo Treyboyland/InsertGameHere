@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.Events;
 
 public class GameTime : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class GameTime : MonoBehaviour
     [SerializeField]
     TMP_Text textBox;
 
+    public UnityEvent<float> OnTimeRemaining = new UnityEvent<float>();
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +61,7 @@ public class GameTime : MonoBehaviour
         {
             remaining = 0;
         }
+        OnTimeRemaining.Invoke(remaining);
 
         int minutes = (int)(remaining / 60);
         int seconds = (int)(remaining % 60);

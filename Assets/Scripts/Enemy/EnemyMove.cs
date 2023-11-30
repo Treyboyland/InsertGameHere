@@ -13,7 +13,7 @@ public abstract class EnemyMove : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameObject.FindObjectOfType<Player>();
+            player = FindObjectOfType<Player>();
         }
         if (!player)
         {

@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DamagePlayerOnCollision : MonoBehaviour
 {
     [SerializeField] int _damageAmount = 1;
+
+    [SerializeField] bool instaKill;
+
+    public UnityEvent OnHitPlayer;
 
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
@@ -30,7 +35,15 @@ public class DamagePlayerOnCollision : MonoBehaviour
     {
         if (player)
         {
-            player.Damage(_damageAmount);
+            OnHitPlayer.Invoke();
+            if (instaKill)
+            {
+                player.Kill();
+            }
+            else
+            {
+                player.Damage(_damageAmount);
+            }
         }
     }
 }

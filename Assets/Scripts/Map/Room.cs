@@ -156,7 +156,7 @@ public class Room : MonoBehaviour
             var possibleConfigs = roomData.EnemySpawnLocations.Where(x => x.Count <= challengeRating).ToList();
             if (possibleConfigs.Count > 0)
             {
-                int chosenIndex = UnityEngine.Random.Range(0, possibleConfigs.Count);
+                int chosenIndex = Random.Range(0, possibleConfigs.Count);
                 chosenEnemyPositions = possibleConfigs[chosenIndex].CloneList(); //Normal set here results in data loss on clear
                 CreateEnemySpawners(challengeRating);
             }
@@ -181,7 +181,7 @@ public class Room : MonoBehaviour
 
         for (int i = 0; i < remainder; i++)
         {
-            int chosenIndex = UnityEngine.Random.Range(0, ratingsPerSpawner.Count);
+            int chosenIndex = Random.Range(0, ratingsPerSpawner.Count);
             ratingsPerSpawner[chosenIndex] = ratingsPerSpawner[chosenIndex] + 1;
         }
 

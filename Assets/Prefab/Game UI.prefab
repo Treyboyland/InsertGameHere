@@ -1303,10 +1303,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelSplits:
   - Level: 10
+    TimeInSeconds: 90
+  - Level: 10
+    TimeInSeconds: 90
+  - Level: 10
+    TimeInSeconds: 120
+  - Level: 10
+    TimeInSeconds: 120
+  - Level: 10
+    TimeInSeconds: 150
+  - Level: 10
+    TimeInSeconds: 150
+  - Level: 10
+    TimeInSeconds: 180
+  - Level: 10
+    TimeInSeconds: 180
+  - Level: 10
+    TimeInSeconds: 180
+  - Level: 10
     TimeInSeconds: 180
   _currentLevel: {fileID: 11400000, guid: 9e2ba7ff178370c4d8623de78d2e4f67, type: 2}
   elapsed: {fileID: 11400000, guid: 30709f8d629772640b0a67abe8808e60, type: 2}
   textBox: {fileID: 82864182543364186}
+  OnTimeRemaining:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4467416090764743626
 MonoBehaviour:
   m_ObjectHideFlags: 0

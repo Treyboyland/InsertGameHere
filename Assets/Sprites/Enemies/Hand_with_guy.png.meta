@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1474e69da2edb364ba41abe81261c49e
+guid: 1a39f920aa7eb8b488079ce87668bb77
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_0
+      name: Hand_with_guy_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,41 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36c4caaf45a9e6e4c8e8ab192abe6666
-      internalID: 404479581
+      spriteID: 07d87ec9526c59249accd45c69c73235
+      internalID: 594223310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19c37f2ae0a49da4fa1ab1a5988caf16
-      internalID: -355915983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_2
+      name: Hand_with_guy_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,41 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9f28ed5f4137e946a7a651be3b2285c
-      internalID: 538285805
+      spriteID: e33aa0e318297af49a38e4858f5429e3
+      internalID: -502289710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0f7df0a62f775e4aaf334679cce8da2
-      internalID: 873904251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_4
+      name: Hand_with_guy_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,41 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe5b05d475b15549b73cbe35809b3ef
-      internalID: 1652636799
+      spriteID: 02309d140467f5d46979e272b8e9dea4
+      internalID: -1534822923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd6ad605fbaeb4a4884a82d76034ba57
-      internalID: 1396846856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_6
+      name: Hand_with_guy_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,41 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c18d60fa6886e43892a022ea1e7edf
-      internalID: -20859510
+      spriteID: c7e9491343bd93e468181e7f37839662
+      internalID: -570210443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6496c903f7cbd2c4385b8730d3ce020a
-      internalID: 530510619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_8
+      name: Hand_with_guy_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,41 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b458cef75d75b8e41a937a09d62b9e31
-      internalID: 1323629882
+      spriteID: c77d6a808f7781d4da605c2e1894130e
+      internalID: 2064719092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c733c3b7aa3eb2748882750d56a5fb00
-      internalID: 2109571211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_10
+      name: Hand_with_guy_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 856f1e628b8f4a34aab170628701458e
-      internalID: 1942009882
+      spriteID: cd99a184567afc749916657b43b6e8d6
+      internalID: -301690232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jukebox_Sprite_Sheet_11
+      name: Hand_with_guy_6
       rect:
         serializedVersion: 2
-        x: 352
+        x: 384
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,8 +257,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc70e0262f883c42aed71979e52d82f
-      internalID: 660620720
+      spriteID: acc464b24ac1f16499f7223fa0245887
+      internalID: -442039999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d09c2e8a0ab2cb4c99ffc82d72d2138
+      internalID: -629234898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809bccdca0dbf5d479288c8f067e2eac
+      internalID: 191594857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82816db4acb3e904bacc6866355db6c5
+      internalID: 1098801518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b635cde82d24142ba5ecb865f1c279
+      internalID: -218962643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2e1474fd1aff848aafb9680eb5c932
+      internalID: 520846060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204017a848d449d41a9f630949b5468e
+      internalID: -620227729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a16d9861c03548409806a001b3c7b81
+      internalID: -922827822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf0a1cb7c402ef4d8823077d5b9b668
+      internalID: 49069373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand_with_guy_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1e0fcf4b6e0874e9e348168e71a53a
+      internalID: 2075345167
       vertices: []
       indices: 
       edges: []
@@ -379,18 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jukebox_Sprite_Sheet_0: 404479581
-      Jukebox_Sprite_Sheet_1: -355915983
-      Jukebox_Sprite_Sheet_10: 1942009882
-      Jukebox_Sprite_Sheet_11: 660620720
-      Jukebox_Sprite_Sheet_2: 538285805
-      Jukebox_Sprite_Sheet_3: 873904251
-      Jukebox_Sprite_Sheet_4: 1652636799
-      Jukebox_Sprite_Sheet_5: 1396846856
-      Jukebox_Sprite_Sheet_6: -20859510
-      Jukebox_Sprite_Sheet_7: 530510619
-      Jukebox_Sprite_Sheet_8: 1323629882
-      Jukebox_Sprite_Sheet_9: 2109571211
+      Hand_with_guy_0: 594223310
+      Hand_with_guy_1: -502289710
+      Hand_with_guy_10: -218962643
+      Hand_with_guy_11: 520846060
+      Hand_with_guy_12: -620227729
+      Hand_with_guy_13: -922827822
+      Hand_with_guy_14: 49069373
+      Hand_with_guy_15: 2075345167
+      Hand_with_guy_2: -1534822923
+      Hand_with_guy_3: -570210443
+      Hand_with_guy_4: 2064719092
+      Hand_with_guy_5: -301690232
+      Hand_with_guy_6: -442039999
+      Hand_with_guy_7: -629234898
+      Hand_with_guy_8: 191594857
+      Hand_with_guy_9: 1098801518
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
