@@ -47,7 +47,7 @@ public class ItemSpawner : MonoBehaviour
 
         foreach (var obj in pool[prefab])
         {
-            if (!obj.activeInHierarchy)
+            if (obj != null && !obj.activeInHierarchy)
             {
                 return obj;
             }

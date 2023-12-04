@@ -10,14 +10,6 @@ public class BossWeaponCircleFire : EnemyWeaponFire
 
     [SerializeField] List<float> fireAngles;
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void Fire(float elapsed)
     {
         if (player == null)
@@ -40,7 +32,7 @@ public class BossWeaponCircleFire : EnemyWeaponFire
 
 
 
-    IEnumerator FireForTime(float seconds)
+    public IEnumerator FireForTime(float seconds)
     {
         float totalElapsed = 0;
 

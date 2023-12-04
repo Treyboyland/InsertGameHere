@@ -261,6 +261,26 @@ MonoBehaviour:
   onPassSound: {fileID: 11400000, guid: 438412f51731ee649ae61075fc1697fe, type: 2}
   onFailSound: {fileID: 11400000, guid: b4489c982b32b5a4f81087c98ab1a366, type: 2}
   _playerRef: {fileID: 11400000, guid: 4327b219907c30b47bb52efd9cce91cb, type: 2}
+  currentLevel: {fileID: 11400000, guid: 9e2ba7ff178370c4d8623de78d2e4f67, type: 2}
+  gameCartridges:
+  - {fileID: 11400000, guid: c98c9c83a211be14eb79d9b6a1afd9d0, type: 2}
+  - {fileID: 11400000, guid: 6357a1fcc5a01524493c355f076d13cf, type: 2}
+  - {fileID: 11400000, guid: d879619944ad3664cacc180a6f91dfd2, type: 2}
+  - {fileID: 11400000, guid: cdbafb5f1c6f47d409fcd344244a11c5, type: 2}
+  - {fileID: 11400000, guid: 5dabf428397ba31428ec8375e2058874, type: 2}
+  - {fileID: 11400000, guid: fbf54b9ac8f077e4cb1f0d5ecd907800, type: 2}
+  - {fileID: 11400000, guid: efd5e94ab067bb540a3a8546f285182f, type: 2}
+  - {fileID: 11400000, guid: 4e691fc861a9e274fa69f3119b503e03, type: 2}
+  - {fileID: 11400000, guid: f311cc820c1bfed43a75f73cdabe03fb, type: 2}
+  - {fileID: 11400000, guid: db5d6df011fa2cd499106dab60915880, type: 2}
+  - {fileID: 11400000, guid: 24c820736028e5346ae3891cbe243477, type: 2}
+  - {fileID: 11400000, guid: f22a19a989b8c744f9013f8bb6472d9a, type: 2}
+  - {fileID: 11400000, guid: 17904eea0b697b74dbd300ff1596d6d3, type: 2}
+  - {fileID: 11400000, guid: 2fe2a22034d134946bcd532674e2018d, type: 2}
+  - {fileID: 11400000, guid: a293f08959d4e9a48aba254a35a737dc, type: 2}
+  - {fileID: 11400000, guid: 3c6a08700d41a4b40b238cc01b8d6484, type: 2}
+  randomizeCartridgeDrop: 1
+  beNice: 1
   _inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
 --- !u!61 &1613914773592011602
 BoxCollider2D:

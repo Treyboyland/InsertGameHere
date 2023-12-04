@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbf24b5bac8cda745952f4a9bf53e2f4, type: 3}
-  m_Name: ItemSO-RedBull
+  m_Name: GameSO-UntitledGame
   m_EditorClassIdentifier: 
-  itemName: Red Bull
-  description: Gives you wings
-  isKeyItem: 0
-  addToInventory: 0
-  _onPickupEffects:
-  - {fileID: 11400000, guid: c3206dd84ffadb34ab179ec030686223, type: 2}
+  itemName: Untitled Game
+  description: A character moves around the screen, but the game crashes whenever
+    a door or chest is opened, or someone else is talked to.
+  isKeyItem: 1
+  addToInventory: 1
+  shouldNotifyOnPickup: 0
+  _onPickupEffects: []

@@ -121,7 +121,7 @@ public class GameMapUI : MonoBehaviour
         Vector2Int dimensions = new Vector2Int();
         dimensions.x = data.Map.GetLength(0);
         dimensions.y = data.Map.GetLength(1);
-        Debug.LogWarning("Dimensions: " + dimensions);
+        //Debug.LogWarning("Dimensions: " + dimensions);
         SetGridSize(dimensions);
 
         //X -> Rank 0, Y -> Rank 1

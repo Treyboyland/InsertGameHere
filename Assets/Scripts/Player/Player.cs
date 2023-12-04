@@ -63,6 +63,15 @@ public class Player : MonoBehaviour, IDamageable
         onUpdateLives.Invoke();
     }
 
+    private void Update()
+    {
+        if (currentLives.Value > maxLives.Value)
+        {
+            //No overheal
+            currentLives.Value = maxLives.Value;
+        }
+    }
+
     public void Damage(int amount)
     {
         currentLives.Value = Mathf.Max(0, currentLives.Value - amount);
@@ -79,7 +88,7 @@ public class Player : MonoBehaviour, IDamageable
         currentLives.Value = 0;
         onUpdateLives.Invoke();
         onPlayerDamaged?.Invoke();
-        if(currentLives.Value <= 0)
+        if (currentLives.Value <= 0)
         {
             Die();
         }

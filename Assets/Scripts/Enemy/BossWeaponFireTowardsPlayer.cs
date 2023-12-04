@@ -36,7 +36,7 @@ public class BossWeaponFireTowardsPlayer : EnemyWeaponFire
         StartCoroutine(FireOverTime(numToFire));
     }
 
-    IEnumerator FireOverTime(int numToFire)
+    public IEnumerator FireOverTime(int numToFire)
     {
         for (int i = 0; i < numToFire; i++)
         {

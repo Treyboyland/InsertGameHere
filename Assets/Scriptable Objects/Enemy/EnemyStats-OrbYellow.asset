@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f9a3a2441b772459ade7a9c3599103, type: 3}
+  m_Name: EnemyStats-OrbYellow
+  m_EditorClassIdentifier: 
+  health: 20
+  numPhases: 1
+  speed: 1
+  distanceFromPlayer: 0
+  secondsBetweenMove: 0.5
+  fireRate: 1
+  challengeRating: 2
+  score: 300
+  roomTheme: {fileID: 11400000, guid: 371d9105404b4904a9a90174bfd7a378, type: 2}

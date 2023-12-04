@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasicEnemyItemDrop : MonoBehaviour
 {
     [SerializeField]
-    DropTableSO table;
+    DropTableAbstract table;
 
     [SerializeField]
     float dropProbability;

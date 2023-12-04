@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public static class HelperFunctions
@@ -88,5 +89,23 @@ public static class HelperFunctions
     public static int RandomInt(this Vector2Int vector)
     {
         return Random.Range(vector.x, vector.y);
+    }
+
+    public static DropTableSO.ItemWeight GetItem(this List<DropTableSO.ItemWeight> itemWeight)
+    {
+        int total = itemWeight.Select(x => x.Weight).Sum();
+        int current = 0;
+        int randomValue = UnityEngine.Random.Range(0, total);
+
+        foreach (var item in itemWeight)
+        {
+            current += item.Weight;
+            if (randomValue < current)
+            {
+                return item;
+            }
+        }
+
+        return itemWeight[itemWeight.Count - 1];
     }
 }

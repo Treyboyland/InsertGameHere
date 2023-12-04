@@ -51,6 +51,12 @@ public class GameMapCreator : MonoBehaviour
     RoomThemeSO specialRoomTheme;
 
     [SerializeField]
+    bool randomizeThemes;
+
+    [SerializeField]
+    List<RoomThemeSO> themePerLevel;
+
+    [SerializeField]
     List<RoomThemeSO> otherThemes;
 
     MapData mapData;
@@ -78,7 +84,7 @@ public class GameMapCreator : MonoBehaviour
 
     public void GenerateGameMap()
     {
-        chosenTheme = otherThemes.RandomItem();
+        chosenTheme = randomizeThemes ? otherThemes.RandomItem() : GetThemeForLevel(currentLevel.Value);
         roomPool.DisableAll();
         mapData = mapConfig.GenerateMap(currentLevel.Value);
         specialRoomLocations.Clear();
@@ -108,7 +114,7 @@ public class GameMapCreator : MonoBehaviour
                             var player = playerRef.Value.GetComponent<Player>();
                             player.transform.position = roomData.CenterPlayerSpawn.transform.position;
                             player.CurrentRoomLocation = roomData.RoomLocation;
-                           
+
                         }
                         roomDictionary.Add(roomData.RoomLocation, roomData);
                     }
@@ -127,6 +133,20 @@ public class GameMapCreator : MonoBehaviour
 
         // player.transform.position = new Vector3(mapData.StartingPosition.x * dimensions.x + spacing.x * mapData.StartingPosition.x,
         //     mapData.StartingPosition.y * dimensions.y + spacing.y + mapData.StartingPosition.y);
+    }
+
+    RoomThemeSO GetThemeForLevel(int level)
+    {
+        if (level < 0 && themePerLevel.Count > 0)
+        {
+            return themePerLevel[0];
+        }
+        if (level >= themePerLevel.Count)
+        {
+            return themePerLevel[themePerLevel.Count - 1];
+        }
+
+        return themePerLevel[level];
     }
 
     void AddRandomRooms()
