@@ -53,7 +53,10 @@ public class Cabinet : MonoBehaviour
 
         if (hasItems)
         {
-            AddCartridgeToInventory();
+            if(currentLevel != null)
+            {
+                AddCartridgeToInventory();
+            }
             onPassSound?.Invoke();
             onCabinetPassed.Invoke();
         }

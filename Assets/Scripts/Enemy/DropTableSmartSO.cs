@@ -64,11 +64,40 @@ public class DropTableSmartSO : DropTableAbstract
 
         Debug.LogWarning($"Health {healthProc} Time {timeProc} Key {keyProc} Max {max} Prob {probability}");
 
-        bool useHealth, useKey, useTime;
+        float choiceRand, randomChoiceMax;
 
-        useHealth = probability <= healthProc && healthProc == max;
-        useTime = probability <= timeProc && timeProc == max;
-        useKey = probability <= keyProc && keyProc == max;
+        randomChoiceMax = healthProc + timeProc + keyProc;
+        choiceRand = Random.Range(0.0f, randomChoiceMax);
+
+        float cap = timeProc;
+
+
+        bool useHealth, useKey, useTime, healthChosen = false, keyChosen = false, timeChosen = false;
+
+        if(choiceRand <= cap)
+        {
+            timeChosen = true;
+        }
+        else 
+        {
+            cap+= healthProc;
+            if(choiceRand <= cap)
+            {
+                healthChosen = true;
+            }
+            else
+            {
+                cap += keyProc;
+                if(choiceRand <= cap)
+                {
+                    keyChosen = true;
+                }
+            }
+        }
+
+        useHealth = probability <= healthProc && healthChosen;
+        useTime = probability <= timeProc && timeChosen;
+        useKey = probability <= keyProc && keyChosen;
 
         List<ItemWeight> toUse;
 

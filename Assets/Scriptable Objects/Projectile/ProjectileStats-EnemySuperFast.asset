@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08060dbdf18901e4c8729c3858d21786, type: 3}
-  m_Name: ProjectileStats-EnemyFast
+  m_Name: ProjectileStats-EnemySuperFast
   m_EditorClassIdentifier: 
   damage: 1
   isPiercing: 0
-  speed: 5
+  speed: 10
   lifetime: 2
