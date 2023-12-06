@@ -15,8 +15,7 @@ MonoBehaviour:
   itemName: Insert Game Here
   description: A character stands in front of an arcade cabinet, looking at a character
     who stands in front of an arcade cabinet, looking at a character who stands in
-    front of an arcade cabinet, looking at a character who stands in font of an arcade
-    cabinet, looking at...
+    front of an arcade cabinet, looking at...
   isKeyItem: 1
   addToInventory: 1
   shouldNotifyOnPickup: 0
