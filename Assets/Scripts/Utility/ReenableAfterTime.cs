@@ -8,6 +8,13 @@ public class ReenableAfterTime : MonoBehaviour
 
     [SerializeField] private float secondsToWait;
 
+    [SerializeField] private bool checkForItems;
+
+    [SerializeField] private List<ItemAndCount> items;
+
+    [SerializeField]
+    RuntimeInventory inventory;
+
     bool wasReactivated;
 
     public bool WasReactivated => wasReactivated;
@@ -26,7 +33,7 @@ public class ReenableAfterTime : MonoBehaviour
         if (!toActivate.activeInHierarchy)
         {
             elapsed += Time.deltaTime;
-            if (elapsed >= secondsToWait)
+            if (elapsed >= secondsToWait && (!checkForItems || !inventory.HasItems(items)))
             {
                 toActivate.SetActive(true);
                 wasReactivated = true;
