@@ -7,6 +7,8 @@ public abstract class EnemyMove : MonoBehaviour
     [SerializeField]
     protected Enemy enemy;
 
+    public Enemy Enemy => enemy;
+
     protected static Player player;
 
     public virtual bool ShouldPerformAction()

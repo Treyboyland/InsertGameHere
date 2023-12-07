@@ -30,6 +30,6 @@ public class PickupHandler : MonoBehaviour
 
         pickupInfo.OnPickup?.Invoke();
 
-        Destroy(other.gameObject);
+        other.gameObject.SetActive(false);
     }
 }

@@ -139,6 +139,24 @@ MonoBehaviour:
   cabinetRoom: {fileID: 11400000, guid: 287a0f1bd8ad91f4b8976d83015c2cad, type: 2}
   cartridgeRoom: {fileID: 11400000, guid: 00d307a2b0156484d874a3cc0ad11f0e, type: 2}
   specialRoomTheme: {fileID: 11400000, guid: 22cdd3e65970c354dae2d6aae87a5024, type: 2}
+  randomizeThemes: 0
+  themePerLevel:
+  - {fileID: 11400000, guid: 5405840f859e2734a80835ceeefc69f5, type: 2}
+  - {fileID: 11400000, guid: 5405840f859e2734a80835ceeefc69f5, type: 2}
+  - {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
+  - {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
+  - {fileID: 11400000, guid: 4f6c579297f204148abf1aea9f28115a, type: 2}
+  - {fileID: 11400000, guid: 4f6c579297f204148abf1aea9f28115a, type: 2}
+  - {fileID: 11400000, guid: 4c1e59cab49703546863575304928de9, type: 2}
+  - {fileID: 11400000, guid: 4c1e59cab49703546863575304928de9, type: 2}
+  - {fileID: 11400000, guid: 0caab34d97e98f144815fec9175a5b44, type: 2}
+  - {fileID: 11400000, guid: 0caab34d97e98f144815fec9175a5b44, type: 2}
+  - {fileID: 11400000, guid: 74096a19fc849e244821af601cd73570, type: 2}
+  - {fileID: 11400000, guid: 74096a19fc849e244821af601cd73570, type: 2}
+  - {fileID: 11400000, guid: 4ad43c92810c8194fa4fb062b6f8561d, type: 2}
+  - {fileID: 11400000, guid: 4ad43c92810c8194fa4fb062b6f8561d, type: 2}
+  - {fileID: 11400000, guid: 371d9105404b4904a9a90174bfd7a378, type: 2}
+  - {fileID: 11400000, guid: 371d9105404b4904a9a90174bfd7a378, type: 2}
   otherThemes:
   - {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
   - {fileID: 11400000, guid: 4f6c579297f204148abf1aea9f28115a, type: 2}

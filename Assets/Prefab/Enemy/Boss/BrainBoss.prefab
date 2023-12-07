@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  manualFire: 0
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 0.5
@@ -187,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  manualFire: 0
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 1
@@ -281,7 +283,31 @@ MonoBehaviour:
       m_Calls: []
   OnSpecificEnemyDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
+        m_TargetAssemblyTypeName: RuntimeInventory, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7da03f59f29f6ea4087f821123620f52, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ItemSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2442bd201997bee45893e2cab825b5b4, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7da03f59f29f6ea4087f821123620f52, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5141432982719796429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  manualFire: 0
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 0.3
@@ -511,6 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  manualFire: 0
   bulletPool: {fileID: 8565297398941369666}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   secondsBetweenShots: 1
@@ -581,6 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6637956189026628491}
+  manualFire: 0
   bulletPool: {fileID: 6445468578525590223}
   _ownerSet: {fileID: 11400000, guid: f4870577d799eef43b274a44e148328c, type: 2}
   degreesPerSecond: 75

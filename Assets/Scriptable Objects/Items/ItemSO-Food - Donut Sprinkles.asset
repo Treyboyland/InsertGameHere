@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf24b5bac8cda745952f4a9bf53e2f4, type: 3}
+  m_Name: ItemSO-Food - Donut Sprinkles
+  m_EditorClassIdentifier: 
+  itemName: Spinkle Donut
+  description: Ruining a perfectly good thing
+  isKeyItem: 0
+  addToInventory: 0
+  shouldNotifyOnPickup: 0
+  _onPickupEffects:
+  - {fileID: 11400000, guid: e471932b98390f64f981612a386d56b9, type: 2}

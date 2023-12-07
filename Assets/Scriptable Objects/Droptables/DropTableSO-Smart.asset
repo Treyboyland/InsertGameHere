@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bde30aa2dfc894c9c1cdb8bbc2d5b3, type: 3}
+  m_Name: DropTableSO-Smart
+  m_EditorClassIdentifier: 
+  healthDropProbability:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.100000024
+      outSlope: -0.100000024
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.9
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  keyDropProbability:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9
+      inSlope: -0.59999996
+      outSlope: -0.59999996
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 0.2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeDropProbability:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.95
+      inSlope: -0.025157567
+      outSlope: -0.025157567
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 29.812103
+      value: 0.2
+      inSlope: -0.0142350765
+      outSlope: -0.0142350765
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 60
+      value: 0.1
+      inSlope: -0.0033125859
+      outSlope: -0.0033125859
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  chestProbability: 0.2
+  healthDrops:
+  - Item: {fileID: 278445988717604482, guid: 9e6c809d96797c349ac443ef95d9203a, type: 3}
+    Weight: 30
+  - Item: {fileID: 278445988717604482, guid: 1444e4944c8b1fd46a0eda412ee908b7, type: 3}
+    Weight: 30
+  - Item: {fileID: 278445988717604482, guid: ac0217c84966d024891bdb36b41e740f, type: 3}
+    Weight: 30
+  - Item: {fileID: 278445988717604482, guid: 3263e8e70dd5bff43bf21122b4dc113a, type: 3}
+    Weight: 10
+  - Item: {fileID: 278445988717604482, guid: 78657654c3f0ef8439949b1e1fabf523, type: 3}
+    Weight: 10
+  - Item: {fileID: 278445988717604482, guid: 7253a39ee93892d4497436809798f468, type: 3}
+    Weight: 5
+  keyDrops:
+  - Item: {fileID: 1068305369324959587, guid: 705d1ad68b07ad844bc82387d59ecd94, type: 3}
+    Weight: 85
+  - Item: {fileID: 1068305369324959587, guid: d70c1037980e9d14e8dfa20df2b83281, type: 3}
+    Weight: 10
+  - Item: {fileID: 1068305369324959587, guid: 7e66326a4f7e96a4c8236c06b7aa3675, type: 3}
+    Weight: 5
+  timeDrops:
+  - Item: {fileID: 5328395533377796939, guid: 2a97ccec8492b0e4ab490e7364057e45, type: 3}
+    Weight: 50
+  - Item: {fileID: 5328395533377796939, guid: f68f141b6a362724bb8f01d2a6426e89, type: 3}
+    Weight: 25
+  - Item: {fileID: 5328395533377796939, guid: 90bacdf3b4477b44f99f3029e2d6c451, type: 3}
+    Weight: 10
+  - Item: {fileID: 5328395533377796939, guid: ab4a2793dd6af4845b69a284973bf3e8, type: 3}
+    Weight: 10
+  - Item: {fileID: 5328395533377796939, guid: 0b485c6f209bb4d47843072ce82b6274, type: 3}
+    Weight: 5
+  scoreDrops:
+  - Item: {fileID: 4429351167859713833, guid: e9bff3115d9f1ce4fb0fd155c214c347, type: 3}
+    Weight: 50
+  - Item: {fileID: 6162177746823191017, guid: cea1a16a6765c1f46bb7df89dc81a8a6, type: 3}
+    Weight: 25
+  - Item: {fileID: 6162177746823191017, guid: 9babeb532d44f774388533bba6418c8b, type: 3}
+    Weight: 20
+  - Item: {fileID: 6162177746823191017, guid: 1e15e2f4bf190c043840cf4371ff68b5, type: 3}
+    Weight: 5
+  keyItem: {fileID: 11400000, guid: 3dc9e6126f546b3409c5fd4b62a064e0, type: 2}
+  chestItem: {fileID: 1895061887900878663, guid: ded277e30bccc2f48b4194ff62f928d9, type: 3}
+  lives: {fileID: 11400000, guid: da3734c4a5203724fa7a84858e021362, type: 2}
+  remainingTime: {fileID: 11400000, guid: 3907ee8fd73bde04a8b4e3baee5b102c, type: 2}
+  inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}

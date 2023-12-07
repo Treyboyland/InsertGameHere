@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61aa9f15d53433649b3266f213a631e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  table: {fileID: 11400000, guid: f9d4d5f29f340594981275186b22fd04, type: 2}
-  dropProbability: 0.5
+  table: {fileID: 11400000, guid: cc7fd9bd22e655f48a4552a4b20b3523, type: 2}
+  dropProbability: 1
 --- !u!1 &3125660679235041399
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +470,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: _Scenes/Hub
   secondsToDelay: 3
+--- !u!1 &4724693849316830811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5062811435932056384}
+  - component: {fileID: 1853456071521127264}
+  - component: {fileID: 5629107163215114332}
+  m_Layer: 0
+  m_Name: Health Pickup Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5062811435932056384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724693849316830811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8107850755830187074}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853456071521127264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724693849316830811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c869e04ae4045344ba0f25923c98f953, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5629107163215114332}
+        m_TargetAssemblyTypeName: WwiseEventPoster, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5629107163215114332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724693849316830811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31471d46d53e4984d8f334dcca15a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToPost:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db9fde401cec07d4888d6476623be3e2, type: 2}
 --- !u!1 &6527568500855146813
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +687,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8107850755830187074}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3392423952436954177
 MonoBehaviour:
@@ -729,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61aa9f15d53433649b3266f213a631e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  table: {fileID: 11400000, guid: e2932c5925debcb41a10ea9acf6c1c19, type: 2}
+  table: {fileID: 11400000, guid: 75fa3dcb804616d4da8bad0c11a621b9, type: 2}
   dropProbability: 1
 --- !u!1 &7862459770459573745
 GameObject:
@@ -1053,6 +1130,7 @@ Transform:
   - {fileID: 2560269889317102983}
   - {fileID: 670268223493041751}
   - {fileID: 2107068293037651751}
+  - {fileID: 5062811435932056384}
   - {fileID: 8224950333955625662}
   - {fileID: 4460641714105211842}
   m_Father: {fileID: 8107850755673963805}
@@ -1752,7 +1830,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8107850755830187074}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4851152850042629471
 MonoBehaviour:

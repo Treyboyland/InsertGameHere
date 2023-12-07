@@ -31,6 +31,9 @@ public class GameTime : MonoBehaviour
     rho.RuntimeFloat elapsed;
 
     [SerializeField]
+    rho.RuntimeFloat remainingRuntime;
+
+    [SerializeField]
     TMP_Text textBox;
 
     public UnityEvent<float> OnTimeRemaining = new UnityEvent<float>();
@@ -61,6 +64,7 @@ public class GameTime : MonoBehaviour
         {
             remaining = 0;
         }
+        remainingRuntime.Value = remaining;
         OnTimeRemaining.Invoke(remaining);
 
         int minutes = (int)(remaining / 60);

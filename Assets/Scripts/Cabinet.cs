@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using rho;
 
 public class Cabinet : MonoBehaviour
 {
@@ -19,6 +20,19 @@ public class Cabinet : MonoBehaviour
 
     [SerializeField]
     RuntimeGameObject _playerRef;
+
+    [SerializeField]
+    RuntimeInt currentLevel;
+
+    [SerializeField]
+    List<ItemSO> gameCartridges;
+
+    [SerializeField]
+    bool randomizeCartridgeDrop;
+
+    [Tooltip("Game will always award a new cartridge")]
+    [SerializeField]
+    bool beNice;
 
     [SerializeField]
     RuntimeInventory _inventory;
@@ -39,6 +53,10 @@ public class Cabinet : MonoBehaviour
 
         if (hasItems)
         {
+            if(currentLevel != null)
+            {
+                AddCartridgeToInventory();
+            }
             onPassSound?.Invoke();
             onCabinetPassed.Invoke();
         }
@@ -52,5 +70,53 @@ public class Cabinet : MonoBehaviour
     public bool HasNeededItems()
     {
         return itemsToCheck.All(invSlot => _inventory.HasItems(invSlot.Item, invSlot.Count));
+    }
+
+    void AddCartridgeToInventory()
+    {
+        List<ItemSO> possibleCartriges = new List<ItemSO>();
+
+        if(beNice)
+        {
+            foreach(var cartridge in gameCartridges)
+            {
+                if(!_inventory.HasItem(cartridge))
+                {
+                    possibleCartriges.Add(cartridge);
+                }
+            }
+        }
+        else
+        {
+            possibleCartriges.AddRange(gameCartridges);
+        }
+
+        if(possibleCartriges.Count == 0)
+        {
+            return;
+        }
+
+        if (randomizeCartridgeDrop)
+        {
+            _inventory.AddItem(possibleCartriges.RandomItem());
+        }
+        else
+        {
+            ItemSO toAdd;
+            if (currentLevel.Value < 0)
+            {
+                toAdd = gameCartridges[0];
+            }
+            else if (currentLevel.Value >= gameCartridges.Count)
+            {
+                toAdd = gameCartridges[gameCartridges.Count - 1];
+            }
+            else
+            {
+                toAdd = gameCartridges[currentLevel.Value];
+            }
+
+            _inventory.AddItem(toAdd);
+        }
     }
 }

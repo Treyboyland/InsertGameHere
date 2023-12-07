@@ -39,7 +39,7 @@ public class RuntimeInventory : ScriptableObject
         var itemMax = item.IsKeyItem ? 1 : int.MaxValue;
         var newCount = Mathf.Clamp(amount, 0, itemMax);
 
-        if(newCount == 0 && currentCount != 0)
+        if (newCount == 0 && currentCount != 0)
         {
             _dict.Remove(item);
             ItemCountChanged?.Invoke(item, newCount);
@@ -69,6 +69,11 @@ public class RuntimeInventory : ScriptableObject
     }
 
     public int GetItemCount(ItemSO item) => _dict.ContainsKey(item) ? _dict[item] : 0;
-    public bool HasItem(ItemSO item) => _dict.ContainsKey(item);
+    public bool HasItem(ItemSO item) => _dict.ContainsKey(item) && _dict[item] > 0;
     public bool HasItems(ItemSO item, int amount) => _dict.ContainsKey(item) && _dict[item] >= amount;
+
+    public bool HasItems(List<ItemAndCount> items)
+    { 
+        return items.Select(x => HasItems(x.Item, x.Count)).Where(x => x == false).Count() == 0;
+    }
 }
