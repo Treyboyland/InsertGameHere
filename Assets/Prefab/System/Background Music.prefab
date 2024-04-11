@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866a2e6b98029fa44b454ee106529722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleSceneName: Title
   backgroundMusicStartEvent:
     idInternal: 0
     valueGuidInternal: 

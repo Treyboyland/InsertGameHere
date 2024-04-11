@@ -16,6 +16,10 @@ public class TimeoutMainMenu : MonoBehaviour
     [SerializeField]
     GameEvent loadTitle;
 
+    [Tooltip("True if game should return to title after a certain amount of time idle")]
+    [SerializeField]
+    bool shouldTimeout;
+
     float secondsToWait;
 
     float elapsed = 0;
@@ -32,14 +36,19 @@ public class TimeoutMainMenu : MonoBehaviour
     {
         elapsed += Time.deltaTime;
 
-        if (elapsed >= secondsToWait && ConfigManager.Manager.CurrentConfiguration.IsArcadeCabinet)
+        if (elapsed >= secondsToWait && shouldTimeout && ConfigManager.Manager.CurrentConfiguration.IsArcadeCabinet)
         {
-            if (ConfigManager.Manager.CurrentConfiguration.WipeCartridgesOnTitleScreen)
-            {
-                ClearCartridges();
-            }
-            loadTitle.Invoke();
+            GoToTitle();
         }
+    }
+
+    public void GoToTitle()
+    {
+        if (ConfigManager.Manager.CurrentConfiguration.WipeCartridgesOnTitleScreen)
+        {
+            ClearCartridges();
+        }
+        loadTitle.Invoke();
     }
 
     void ClearCartridges()

@@ -709,99 +709,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3380861429072149471, guid: bd8664e176186614eb542d093a2032be, type: 3}
   m_PrefabInstance: {fileID: 208454103}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &214705973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 214705974}
-  - component: {fileID: 214705975}
-  - component: {fileID: 214705976}
-  m_Layer: 0
-  m_Name: Timeout Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &214705974
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214705973}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &214705975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214705973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b98f8837d5cad04a9f2db20e22c948c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
-  cabinetCartridges:
-  - {fileID: 11400000, guid: c98c9c83a211be14eb79d9b6a1afd9d0, type: 2}
-  - {fileID: 11400000, guid: 6357a1fcc5a01524493c355f076d13cf, type: 2}
-  - {fileID: 11400000, guid: d879619944ad3664cacc180a6f91dfd2, type: 2}
-  - {fileID: 11400000, guid: cdbafb5f1c6f47d409fcd344244a11c5, type: 2}
-  - {fileID: 11400000, guid: 5dabf428397ba31428ec8375e2058874, type: 2}
-  - {fileID: 11400000, guid: fbf54b9ac8f077e4cb1f0d5ecd907800, type: 2}
-  - {fileID: 11400000, guid: efd5e94ab067bb540a3a8546f285182f, type: 2}
-  - {fileID: 11400000, guid: 4e691fc861a9e274fa69f3119b503e03, type: 2}
-  - {fileID: 11400000, guid: f311cc820c1bfed43a75f73cdabe03fb, type: 2}
-  - {fileID: 11400000, guid: db5d6df011fa2cd499106dab60915880, type: 2}
-  - {fileID: 11400000, guid: 15f5bde002f815e4f849dda840dac788, type: 2}
-  - {fileID: 11400000, guid: 3c6a08700d41a4b40b238cc01b8d6484, type: 2}
-  - {fileID: 11400000, guid: 24c820736028e5346ae3891cbe243477, type: 2}
-  - {fileID: 11400000, guid: f22a19a989b8c744f9013f8bb6472d9a, type: 2}
-  - {fileID: 11400000, guid: 17904eea0b697b74dbd300ff1596d6d3, type: 2}
-  - {fileID: 11400000, guid: 2fe2a22034d134946bcd532674e2018d, type: 2}
-  - {fileID: 11400000, guid: a293f08959d4e9a48aba254a35a737dc, type: 2}
-  loadTitle: {fileID: 11400000, guid: 7cbbf095c511fb14699075da77a4dd52, type: 2}
---- !u!114 &214705976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214705973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066fdf7a2b7cd514ca41837a1f4e9520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: b3e3e7309d4b95143823b42f44973f19, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 214705975}
-        m_TargetAssemblyTypeName: TimeoutMainMenu, Assembly-CSharp
-        m_MethodName: ResetTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &225601197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,7 +5916,6 @@ MonoBehaviour:
   currentLevel: {fileID: 0}
   gameCartridges: []
   randomizeCartridgeDrop: 0
-  beNice: 0
   _inventory: {fileID: 11400000, guid: cb2df77e47f360443a863b9f29a95cdc, type: 2}
 --- !u!1001 &1768907790
 PrefabInstance:
@@ -7240,6 +7146,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+--- !u!1001 &1096304832595411310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203803, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_Name
+      value: Timeout Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
 --- !u!1001 &1275399401784796326
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6363,6 +6363,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2504197f5288c8d49bc044e826236305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1832266538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203800, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203801, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: shouldTimeout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096304832801203803, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
+      propertyPath: m_Name
+      value: Timeout Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ae0e070fdd3df04abaa75510368a49c, type: 3}
 --- !u!1 &1994117620
 GameObject:
   m_ObjectHideFlags: 0

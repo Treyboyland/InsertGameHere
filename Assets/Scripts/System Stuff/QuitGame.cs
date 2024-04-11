@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class QuitGame : MonoBehaviour
 {
+    [SerializeField]
+    GameEvent onForceTimeout;
+
     public void HandleQuit(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -14,7 +17,10 @@ public class QuitGame : MonoBehaviour
             {
                 if (ConfigManager.Manager.CurrentConfiguration.IsArcadeCabinet || ConfigManager.Manager.CurrentConfiguration.PreventExiting)
                 {
-                    //Do Nothing
+                    if (onForceTimeout != null)
+                    {
+                        onForceTimeout.Invoke();
+                    }
                 }
                 else
                 {

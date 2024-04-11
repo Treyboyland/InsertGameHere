@@ -38,7 +38,6 @@ public class ConfigManager : MonoBehaviour
 
     void ReadConfig()
     {
-
         try
         {
             XmlSerializer serializer = new XmlSerializer(typeof(GameConfig));
