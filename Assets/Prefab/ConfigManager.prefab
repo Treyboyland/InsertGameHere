@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &238152529158140565
+--- !u!1 &333723284543718917
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 490005322593226282}
-  - component: {fileID: -4712887468615820971}
+  - component: {fileID: 333723284543718971}
+  - component: {fileID: 333723284543718916}
   m_Layer: 0
-  m_Name: Background Music
+  m_Name: ConfigManager
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &490005322593226282
+--- !u!4 &333723284543718971
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238152529158140565}
+  m_GameObject: {fileID: 333723284543718917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3847213, y: 1.8186538, z: -0.24915273}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4712887468615820971
+--- !u!114 &333723284543718916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238152529158140565}
+  m_GameObject: {fileID: 333723284543718917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 866a2e6b98029fa44b454ee106529722, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e8a66bc47ece0f44b995f89c403cacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleSceneName: Title
-  backgroundMusicStartEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3d03a0cf618598d42a0a2c95c738687b, type: 2}
+  defaultConfig:
+    WipeCartridgesOnTitleScreen: 0
+    EasyCartridgeAcquiring: 1
+    PreventExiting: 0
+    IsArcadeCabinet: 0
+    IdleTimeout: 60

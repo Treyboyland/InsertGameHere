@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour, IPushable, IMoveable
     [SerializeField]
     float secondsToWait;
 
+    [SerializeField]
+    GameEvent playerMoved;
+
     float elapsed = 0;
 
     Vector2 currentMovementVector;
@@ -30,6 +33,7 @@ public class PlayerMovement : MonoBehaviour, IPushable, IMoveable
         //Debug.LogWarning("Handling");
         currentMovementVector = context.ReadValue<Vector2>();
         elapsed = 0;
+        playerMoved.Invoke();
     }
 
     Queue<Action> _physicsActions = new Queue<Action>();

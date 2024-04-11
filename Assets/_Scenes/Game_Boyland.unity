@@ -264,9 +264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a3f2a3c7f19324bbd3b2dff0d3c213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 519420031}
-  mapCreator: {fileID: 1062533286}
-  player: {fileID: 1772886971}
+  roomDictionary: {fileID: 0}
+  playerRef: {fileID: 0}
   secondsToMove: 0.25
 --- !u!20 &519420031
 Camera:
@@ -491,6 +490,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &734868895
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 333723284543718917, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_Name
+      value: ConfigManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333723284543718971, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e3182089760ada498737fe2e8837d16, type: 3}
 --- !u!1 &837958586
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,13 +577,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1772886971}
-  mapCreator: {fileID: 1062533286}
+  roomDictionary: {fileID: 0}
   onPlayerPositionUpdated: {fileID: 11400000, guid: 9a7b97f7ce7f5c146ad02f4798ed0fba, type: 2}
   onNewPlayerMapPosition: {fileID: 11400000, guid: c1ec201ec3ebe6c49ae55bef0c6aee76, type: 2}
-  moveDownEvent: {fileID: 11400000, guid: 2c8e34c431dca15489f4f0332290bd8c, type: 2}
-  moveUpEvent: {fileID: 11400000, guid: 19c9d0d0bb6a0da4fa8e354d435e87cf, type: 2}
-  moveLeftEvent: {fileID: 11400000, guid: 3554982003f7b2c48a2915e066d97c72, type: 2}
-  moveRightEvent: {fileID: 11400000, guid: f76bb9267c137114d880b1034bf78a6c, type: 2}
+  playerRoomUpdated: {fileID: 0}
 --- !u!4 &837958588
 Transform:
   m_ObjectHideFlags: 0
@@ -679,11 +732,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPool: {fileID: 1062533285}
-  generator: {fileID: 1613953948}
+  mapConfig: {fileID: 0}
+  currentLevel: {fileID: 0}
   dimensions: {x: 18, y: 10}
   spacing: {x: 0, y: 0}
-  player: {fileID: 1772886971}
+  playerRef: {fileID: 0}
   onSetPlayerStartingPosition: {fileID: 11400000, guid: beababd693fce8846a6b593b154a35b5, type: 2}
+  onGenerationComplete: {fileID: 0}
   codedRooms: []
   designedRooms:
   - {fileID: 6967505523095003687, guid: a7aca52088aff7e45ba04e65f1847056, type: 3}
@@ -692,9 +747,12 @@ MonoBehaviour:
   cabinetRoom: {fileID: 11400000, guid: 287a0f1bd8ad91f4b8976d83015c2cad, type: 2}
   cartridgeRoom: {fileID: 11400000, guid: 00d307a2b0156484d874a3cc0ad11f0e, type: 2}
   specialRoomTheme: {fileID: 11400000, guid: 22cdd3e65970c354dae2d6aae87a5024, type: 2}
+  randomizeThemes: 0
+  themePerLevel: []
   otherThemes:
   - {fileID: 11400000, guid: 6e81c616f7b1f804d9e7968c88e45a45, type: 2}
   - {fileID: 11400000, guid: 5405840f859e2734a80835ceeefc69f5, type: 2}
+  roomDictionary: {fileID: 0}
 --- !u!4 &1062533287
 Transform:
   m_ObjectHideFlags: 0
@@ -967,17 +1025,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f21c81610c6feb748854932f6b1ef1b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1772886972 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9015623255759432539, guid: 3819a592561719e4da64ccd057ee7c20, type: 3}
-  m_PrefabInstance: {fileID: 9015623257531265255}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d20c73acad433f4e93db4db8b10a78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1896218031 stripped
@@ -1389,7 +1436,7 @@ PrefabInstance:
     - target: {fileID: 82864181525909304, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 82864181714534259, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: m_Name
       value: Game UI
@@ -1481,7 +1528,7 @@ PrefabInstance:
     - target: {fileID: 82864182308615042, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 82864182543364184, guid: 75220875daf609c448ca03f38709c9af, type: 3}
       propertyPath: generator
       value: 
@@ -1594,11 +1641,11 @@ PrefabInstance:
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1772886972}
+      objectReference: {fileID: 0}
     - target: {fileID: 8107850756132475310, guid: 48a128f8d47b34148bc5a020038528e9, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
