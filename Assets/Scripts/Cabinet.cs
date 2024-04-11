@@ -30,10 +30,6 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     bool randomizeCartridgeDrop;
 
-    [Tooltip("Game will always award a new cartridge")]
-    [SerializeField]
-    bool beNice;
-
     [SerializeField]
     RuntimeInventory _inventory;
 
@@ -76,7 +72,7 @@ public class Cabinet : MonoBehaviour
     {
         List<ItemSO> possibleCartriges = new List<ItemSO>();
 
-        if(beNice)
+        if(ConfigManager.Manager.CurrentConfiguration.EasyCartridgeAcquiring)
         {
             foreach(var cartridge in gameCartridges)
             {

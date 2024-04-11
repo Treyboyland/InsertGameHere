@@ -10733,6 +10733,7 @@ MonoBehaviour:
   body: {fileID: 9015623255759432528}
   thresholdMagnitude: 5
   secondsToWait: 0.05
+  playerMoved: {fileID: 11400000, guid: b3e3e7309d4b95143823b42f44973f19, type: 2}
 --- !u!114 &9015623255759432537
 MonoBehaviour:
   m_ObjectHideFlags: 0

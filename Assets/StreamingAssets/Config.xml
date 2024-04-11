@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WipeCartridgesOnTitleScreen>false</WipeCartridgesOnTitleScreen>
+  <EasyCartridgeAcquiring>true</EasyCartridgeAcquiring>
+  <PreventExiting>false</PreventExiting>
+  <IsArcadeCabinet>false</IsArcadeCabinet>
+  <IdleTimeout>90</IdleTimeout>
+</GameConfig>

@@ -10,7 +10,21 @@ public class QuitGame : MonoBehaviour
         if (context.started)
         {
             //TODO: If cabinet, probably don't want this
-            Application.Quit();
+            if (ConfigManager.Manager != null)
+            {
+                if (ConfigManager.Manager.CurrentConfiguration.IsArcadeCabinet || ConfigManager.Manager.CurrentConfiguration.PreventExiting)
+                {
+                    //Do Nothing
+                }
+                else
+                {
+                    Application.Quit();
+                }
+            }
+            else
+            {
+                Application.Quit();
+            }
         }
     }
 }
