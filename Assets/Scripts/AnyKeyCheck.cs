@@ -12,6 +12,6 @@ public class AnyKeyCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InputSystem.onAnyButtonPress.Call(x => onPressEvent.Invoke());
+        InputSystem.onAnyButtonPress.CallOnce(x => onPressEvent.Invoke());
     }
 }
